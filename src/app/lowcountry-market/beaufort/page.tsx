@@ -249,7 +249,7 @@ export default function BeaufortPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <GlassCard hover className="h-full">
+                <GlassCard solidWhite hover className="h-full">
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${colors.gradient} flex items-center justify-center mb-4`}>
                     <neighborhood.icon className={`w-7 h-7 ${colors.text}`} />
                   </div>
@@ -291,7 +291,7 @@ export default function BeaufortPage() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
+          <GlassCard hover className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
             <div className="text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 {copy.cta.headline}

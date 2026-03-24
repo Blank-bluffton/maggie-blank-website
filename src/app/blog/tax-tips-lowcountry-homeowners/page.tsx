@@ -295,7 +295,7 @@ export default function TaxTipsBlog() {
           
           <div className="space-y-4 mt-8">
             {copy.deductions.items.map((item, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-800 text-sm mb-3">{item.description}</p>
                 <div className="flex items-center gap-2 text-cyan-600 text-sm">
@@ -325,7 +325,7 @@ export default function TaxTipsBlog() {
           
           <div className="grid md:grid-cols-2 gap-4 mt-8">
             {copy.lowcountry.benefits.map((benefit, index) => (
-              <GlassCard key={index} hover delay={index * 0.1}>
+              <GlassCard key={index} solidWhite hover delay={index * 0.1}>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{benefit.title}</h3>
                 <p className="text-gray-800 text-sm">{benefit.description}</p>
               </GlassCard>
@@ -351,7 +351,7 @@ export default function TaxTipsBlog() {
           
           <div className="space-y-4 mt-6">
             {copy.selfEmployed.deductions.map((item, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
                 <p className="text-white text-sm">{item.description}</p>
               </GlassCard>
@@ -424,7 +424,7 @@ export default function TaxTipsBlog() {
           
           <div className="grid md:grid-cols-2 gap-4 mt-8">
             {copy.strategies.strategies.map((strategy, index) => (
-              <GlassCard key={index} hover delay={index * 0.1}>
+              <GlassCard key={index} solidWhite hover delay={index * 0.1}>
                 <h3 className="text-gray-800 font-semibold mb-2">{strategy.title}</h3>
                 <p className="text-gray-800 text-sm">{strategy.description}</p>
               </GlassCard>

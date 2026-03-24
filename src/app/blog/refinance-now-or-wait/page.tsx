@@ -304,7 +304,7 @@ export default function RefinanceBlog() {
           
           <div className="space-y-3 mt-8">
             {copy.market.conditions.map((item, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div>
                     <h4 className="text-gray-800 font-semibold">{item.metric}</h4>
@@ -371,7 +371,7 @@ export default function RefinanceBlog() {
           
           <div className="space-y-4">
             {copy.shouldYouRefinance.scenarios.map((scenario, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <h3 className={`text-lg font-semibold mb-2 ${scenario.answer.includes("YES") ? "text-green-400" : scenario.answer.includes("WAIT") ? "text-amber-400" : "text-cyan-400"}`}>
                   {scenario.answer}
                 </h3>
@@ -394,7 +394,7 @@ export default function RefinanceBlog() {
           
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             {copy.lowcountryFactors.factors.map((factor, index) => (
-              <GlassCard key={index} hover delay={index * 0.1}>
+              <GlassCard key={index} solidWhite hover delay={index * 0.1}>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{factor.title}</h3>
                 <p className="text-gray-800 text-sm">{factor.description}</p>
               </GlassCard>
@@ -415,7 +415,7 @@ export default function RefinanceBlog() {
           
           <div className="space-y-4 mt-8">
             {copy.types.options.map((option, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">{option.type}</h3>
                 <p className="text-gray-800 text-sm mb-3">{option.description}</p>
                 <p className="text-cyan-600 text-sm">

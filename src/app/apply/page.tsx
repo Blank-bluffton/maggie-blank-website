@@ -80,7 +80,7 @@ export default function ApplyPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.process.steps.map((step, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-pink-100 to-purple-100 border border-pink-300 mb-4">
                 <span className="text-pink-600 font-bold text-sm">{String(index + 1).padStart(2, '0')}</span>
               </div>
@@ -95,7 +95,7 @@ export default function ApplyPage() {
       <Section background="dark">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Purchase CTA */}
-          <GlassCard hover delay={0.1} className="relative overflow-hidden group">
+          <GlassCard solidWhite hover delay={0.1} className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 mb-6">
               <copy.ctas.purchase.icon className="w-7 h-7 text-cyan-400" />
@@ -112,7 +112,7 @@ export default function ApplyPage() {
           </GlassCard>
 
           {/* Refinance CTA */}
-          <GlassCard hover delay={0.2} className="relative overflow-hidden group">
+          <GlassCard solidWhite hover delay={0.2} className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 mb-6">
               <copy.ctas.refinance.icon className="w-7 h-7 text-purple-400" />
@@ -129,7 +129,7 @@ export default function ApplyPage() {
           </GlassCard>
 
           {/* Consultation CTA */}
-          <GlassCard hover delay={0.3} className="relative overflow-hidden group">
+          <GlassCard solidWhite hover delay={0.3} className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/30 mb-6">
               <copy.ctas.consult.icon className="w-7 h-7 text-pink-400" />
@@ -149,7 +149,7 @@ export default function ApplyPage() {
 
       {/* Trust Elements */}
       <Section background="gradient">
-        <GlassCard hover={false} darkText className="max-w-3xl mx-auto text-center">
+        <GlassCard solidWhite darkText hover className="max-w-3xl mx-auto text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
             <div className="flex items-center gap-3">
               <Shield className="w-6 h-6 text-cyan-600" />

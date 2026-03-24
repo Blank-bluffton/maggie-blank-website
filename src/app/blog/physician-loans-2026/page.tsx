@@ -145,7 +145,7 @@ export default function PhysicianLoans2026() {
             <p>
               One of the most attractive features of physician loans is the down payment flexibility. Here's what's typically available:
             </p>
-            <GlassCard hover={false} className="my-8 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
+            <GlassCard hover className="my-8 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
               <h3 className="text-lg font-semibold text-white mb-4">Physician Loan Down Payment Options</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">

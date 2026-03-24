@@ -138,7 +138,7 @@ export default function NeighborhoodsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {blufftonNeighborhoods.map((hood, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
                   <hood.icon className="w-6 h-6 text-cyan-600" />
@@ -178,7 +178,7 @@ export default function NeighborhoodsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {hiltonHeadNeighborhoods.map((hood, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-blue-900/20 flex items-center justify-center flex-shrink-0">
                   <hood.icon className="w-6 h-6 text-blue-800" />

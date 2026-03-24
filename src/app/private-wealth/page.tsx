@@ -145,18 +145,7 @@ export default function PrivateWealthPage() {
               href={option.href || '/contact'}
               className="block group"
             >
-              <GlassCard 
-                hover={true} 
-                delay={index * 0.1}
-                darkText
-                className={`
-                  h-full border transition-all duration-300 group-hover:scale-[1.02]
-                  ${option.title === 'Jumbo Loans' ? 'group-hover:border-pink-400' : ''}
-                  ${option.title === 'Portfolio Lending' ? 'group-hover:border-purple-400' : ''}
-                  ${option.title === 'Investment Property Loans' ? 'group-hover:border-cyan-400' : ''}
-                  ${option.title === 'Executive & Physician Packages' ? 'group-hover:border-pink-400' : ''}
-                `}
-              >
+              <GlassCard solidWhite darkText hover delay={index * 0.1}>
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`
                     w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0
@@ -210,7 +199,7 @@ export default function PrivateWealthPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {copy.benefits.items.map((item, index) => (
-              <GlassCard key={item.title} hover={false} className="border-pink-500/20">
+              <GlassCard key={item.title} solidWhite hover className="border-pink-500/20">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-pink-400" />
@@ -233,7 +222,7 @@ export default function PrivateWealthPage() {
             {copy.requirements.headline}
           </h2>
           
-          <GlassCard darkText hover={false} className="text-left">
+          <GlassCard solidWhite darkText hover className="text-left">
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3 text-gray-700">

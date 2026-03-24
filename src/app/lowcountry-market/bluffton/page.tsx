@@ -246,15 +246,7 @@ export default function BlufftonNeighborhoodsPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
             >
-              <GlassCard 
-                hover={false} 
-                className={`
-                  ${index % 2 === 0 
-                    ? 'bg-gradient-to-br from-cyan-500/10 via-purple-500/5 to-pink-500/10 border-cyan-500/20' 
-                    : 'bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-cyan-500/10 border-pink-500/20'
-                  }
-                `}
-              >
+              <GlassCard hover>
                 {/* Header with gradient accent */}
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
                   <div className="flex-1">
@@ -368,7 +360,7 @@ export default function BlufftonNeighborhoodsPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <GlassCard hover={false} className="bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-cyan-500/10 border-purple-500/20 sticky top-8">
+            <GlassCard hover className="bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-cyan-500/10 border-purple-500/20 sticky top-8">
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Not Sure Which Community Is Right for You?</h3>

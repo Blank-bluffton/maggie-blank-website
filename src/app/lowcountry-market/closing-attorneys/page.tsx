@@ -47,7 +47,7 @@ export default function ClosingAttorneysPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {attorneys.map((attorney, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">{attorney.name}</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-gray-800">

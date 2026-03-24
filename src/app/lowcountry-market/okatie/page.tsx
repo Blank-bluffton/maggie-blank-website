@@ -160,7 +160,7 @@ export default function OkatiePage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GlassCard hover={false} className="text-center py-6">
+              <GlassCard solidWhite hover className="text-center py-6">
                 <p className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
@@ -202,7 +202,7 @@ export default function OkatiePage() {
         >
           {neighborhoods.map((neighborhood, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <GlassCard hover className="h-full group">
+              <GlassCard solidWhite hover className="h-full group">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-cyan-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <neighborhood.icon className="w-7 h-7 text-cyan-600" />
@@ -283,7 +283,7 @@ export default function OkatiePage() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
+            <GlassCard solidWhite hover className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
               <div className="text-center">
                 <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Mortgage Options</h3>

@@ -198,7 +198,7 @@ export default function FirstTimeBuyersPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.programs.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <div className="flex items-center justify-between mb-4">
                 <card.icon className="w-10 h-10 text-cyan-600" />
                 <span className="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm font-medium rounded-full">
@@ -222,7 +222,7 @@ export default function FirstTimeBuyersPage() {
 
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.costs.sections.map((section, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
@@ -256,7 +256,7 @@ export default function FirstTimeBuyersPage() {
             </ul>
           </div>
 
-          <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
+          <GlassCard hover className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
             <div className="text-center">
               <Calculator className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Mortgage Calculator</h3>

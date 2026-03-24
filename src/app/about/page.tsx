@@ -382,7 +382,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="relative py-16 overflow-hidden">
         <div className="max-w-4xl mx-auto px-6">
-          <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/5 via-transparent to-cyan-500/5">
+          <GlassCard solidWhite hover className="bg-gradient-to-br from-pink-500/5 via-transparent to-cyan-500/5">
             <StatsBar stats={copy.professional.stats} />
           </GlassCard>
         </div>
@@ -402,7 +402,7 @@ export default function AboutPage() {
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              <GlassCard hover={false} className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 overflow-hidden">
+              <GlassCard solidWhite hover className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 overflow-hidden">
                 <img 
                   src="/IMG_1750.jpg" 
                   alt="Maggie Blank with her family" 
@@ -489,7 +489,7 @@ export default function AboutPage() {
               {copy.personal.intro}
             </p>
             
-            <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/5 to-cyan-500/5">
+            <GlassCard solidWhite hover className="bg-gradient-to-br from-pink-500/5 to-cyan-500/5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {copy.personal.facts.map((fact, index) => (
                   <PersonalFact 

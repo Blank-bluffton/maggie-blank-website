@@ -93,17 +93,7 @@ export default function LoanSolutionsPage() {
               href={`/${loan.slug}`}
               className="block group"
             >
-              <GlassCard 
-                hover={true} 
-                delay={index * 0.1}
-                darkText
-                className={`
-                  h-full border transition-all duration-300 group-hover:scale-[1.02]
-                  ${loan.color === 'cyan' ? 'group-hover:border-cyan-500/40' : ''}
-                  ${loan.color === 'pink' ? 'group-hover:border-pink-500/40' : ''}
-                  ${loan.color === 'purple' ? 'group-hover:border-purple-500/40' : ''}
-                `}
-              >
+              <GlassCard solidWhite darkText hover delay={index * 0.1}>
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`
                     w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0
@@ -166,7 +156,7 @@ export default function LoanSolutionsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <GlassCard hover={false} className="text-center">
+          <GlassCard solidWhite hover className="text-center">
             <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-cyan-400" />
             </div>
@@ -176,7 +166,7 @@ export default function LoanSolutionsPage() {
             </p>
           </GlassCard>
 
-          <GlassCard hover={false} className="text-center">
+          <GlassCard solidWhite hover className="text-center">
             <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-pink-400" />
             </div>
@@ -186,7 +176,7 @@ export default function LoanSolutionsPage() {
             </p>
           </GlassCard>
 
-          <GlassCard hover={false} className="text-center">
+          <GlassCard solidWhite hover className="text-center">
             <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-purple-400" />
             </div>

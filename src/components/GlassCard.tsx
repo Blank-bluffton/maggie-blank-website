@@ -8,8 +8,10 @@ interface GlassCardProps {
   className?: string;
   hover?: boolean;
   delay?: number;
-  /** Use dark text (for use on light/gradient backgrounds where bg-white card needs readable contrast) */
+  /** Use dark text (for use on light/gradient backgrounds where the card needs readable contrast) */
   darkText?: boolean;
+  /** Opaque white background — use when card sits on a light section without its own gradient */
+  solidWhite?: boolean;
 }
 
 export default function GlassCard({ 
@@ -18,6 +20,7 @@ export default function GlassCard({
   hover = true,
   delay = 0,
   darkText = false,
+  solidWhite = false,
 }: GlassCardProps) {
   return (
     <motion.div
@@ -25,11 +28,11 @@ export default function GlassCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay }}
-      className={`bg-white rounded-xl p-6 shadow-md ${
+      className={`rounded-xl p-6 shadow-md ${
         hover 
           ? 'hover:shadow-xl hover:-translate-y-1 transition-all duration-300' 
           : ''
-      } ${className}`}
+      } ${solidWhite ? 'bg-white' : ''} ${className}`}
     >
       <div className={darkText ? 'text-gray-800' : ''}>
         {children}

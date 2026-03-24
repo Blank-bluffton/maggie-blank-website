@@ -158,7 +158,7 @@ export default function FirstTimeBuyerProgramsSC() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
-              <GlassCard hover={false}>
+              <GlassCard solidWhite hover>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <Home className="w-6 h-6 text-cyan-400" />
@@ -181,7 +181,7 @@ export default function FirstTimeBuyerProgramsSC() {
                 </ul>
               </GlassCard>
 
-              <GlassCard hover={false}>
+              <GlassCard solidWhite hover>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <PiggyBank className="w-6 h-6 text-cyan-400" />

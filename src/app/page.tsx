@@ -237,9 +237,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {copy.whyMaggie.features.map((feature, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <feature.icon className="w-10 h-10 text-cyan-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{feature.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
@@ -258,7 +258,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {copy.loanSolutions.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{card.description}</p>
               <Link
@@ -294,15 +294,15 @@ export default function Home() {
             </Link>
           </div>
           
-          <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
+          <GlassCard hover className="bg-gradient-to-br from-cyan-600 to-teal-700 border-cyan-400">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center">
-                  <Stethoscope className="w-8 h-8 text-cyan-400" />
+                <div className="w-16 h-16 rounded-2xl bg-cyan-500/30 flex items-center justify-center">
+                  <Stethoscope className="w-8 h-8 text-cyan-200" />
                 </div>
                 <div>
                   <h3 className="text-white font-semibold text-lg">Physician Loan Benefits</h3>
-                  <p className="text-white text-sm">Tailored for medical professionals</p>
+                  <p className="text-cyan-100 text-sm">Tailored for medical professionals</p>
                 </div>
               </div>
               
@@ -315,7 +315,7 @@ export default function Home() {
                   "Entity structuring available"
                 ].map((benefit, i) => (
                   <li key={i} className="flex items-center gap-3 text-white">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-cyan-300 flex-shrink-0" />
                     {benefit}
                   </li>
                 ))}
@@ -328,7 +328,7 @@ export default function Home() {
       {/* Lowcountry Market Section */}
       <Section id="lowcountry" background="gradient">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <GlassCard hover={false} darkText className="overflow-hidden">
+          <GlassCard solidWhite darkText hover className="overflow-hidden">
             <img 
               src="/IMG_4402.jpg" 
               alt="Lowcountry landscape" 

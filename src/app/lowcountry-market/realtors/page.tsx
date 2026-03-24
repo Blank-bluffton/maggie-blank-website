@@ -55,7 +55,7 @@ export default function RealtorsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {realtors.map((realtor, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">{realtor.name}</h3>
               <div className="space-y-3">
                 {realtor.phone && (
@@ -110,7 +110,7 @@ export default function RealtorsPage() {
           </p>
         </div>
 
-        <GlassCard hover={false} className="max-w-2xl mx-auto">
+        <GlassCard solidWhite hover className="max-w-2xl mx-auto">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
               <Users className="w-6 h-6 text-cyan-400" />

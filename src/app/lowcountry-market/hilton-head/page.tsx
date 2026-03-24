@@ -200,7 +200,7 @@ export default function HiltonHeadPage() {
         >
           {copy.neighborhoods.map((hood, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <GlassCard hover className="h-full group">
+              <GlassCard solidWhite hover className="h-full group">
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${hood.accent} flex items-center justify-center mb-4`}>
                   <hood.icon className="w-7 h-7 text-gray-800" />
                 </div>
@@ -261,7 +261,7 @@ export default function HiltonHeadPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + index * 0.1 }}
                 >
-                  <GlassCard hover={false} className="p-5">
+                  <GlassCard solidWhite hover className="p-5">
                     <div className="flex items-start gap-4">
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
                         <span className="text-pink-400 text-sm font-bold">{index + 1}</span>
@@ -283,7 +283,7 @@ export default function HiltonHeadPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20 sticky top-24">
+            <GlassCard solidWhite hover className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20 sticky top-24">
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Ready to Buy in Hilton Head?</h3>

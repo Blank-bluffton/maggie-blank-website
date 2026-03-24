@@ -157,7 +157,7 @@ export default function ConstructionPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.howItWorks.steps.map((step, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
                   {step.number}
@@ -180,14 +180,7 @@ export default function ConstructionPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.benefits.cards.map((card, index) => (
-            <GlassCard 
-              key={index} 
-              hover 
-              delay={index * 0.1}
-              darkText
-              className={index === 1 ? "border-pink-300 bg-gradient-to-br from-pink-50 to-transparent" : 
-                         index === 2 ? "border-purple-300 bg-gradient-to-br from-purple-50 to-transparent" : ""}
-            >
+            <GlassCard key={index} darkText hover delay={index * 0.1}>
               <card.icon className={`w-10 h-10 mb-4 ${index === 0 ? 'text-cyan-600' : index === 1 ? 'text-pink-600' : index === 2 ? 'text-purple-600' : 'text-teal-600'}`} />
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
@@ -213,7 +206,7 @@ export default function ConstructionPage() {
             </ul>
           </div>
 
-          <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
+          <GlassCard hover className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
             <div className="text-center">
               <Hammer className="w-12 h-12 text-pink-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Building in the Lowcountry?</h3>
@@ -234,10 +227,7 @@ export default function ConstructionPage() {
 
       {/* Process CTA */}
       <Section>
-        <GlassCard 
-          hover={false} 
-          className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 border-cyan-500/20"
-        >
+        <GlassCard hover className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 border-cyan-500/20">
           <div className="text-center max-w-3xl mx-auto">
             <Home className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">

@@ -151,12 +151,7 @@ export default function BlogPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {blogPosts.map((post, index) => (
-            <GlassCard 
-              key={post.slug}
-              hover={true}
-              delay={index * 0.05}
-              className="flex flex-col overflow-hidden"
-            >
+            <GlassCard key={post.slug} solidWhite hover delay={index * 0.05} className="flex flex-col overflow-hidden">
               <div className="relative h-48 overflow-hidden rounded-t-lg -m-6 mb-4">
                 <img 
                   src={post.image} 

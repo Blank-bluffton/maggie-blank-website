@@ -560,7 +560,7 @@ export default function LowcountryMarketPage() {
         >
           {copy.marketOverview.stats.map((stat, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <GlassCard hover={false} className="text-center py-8">
+              <GlassCard solidWhite hover className="text-center py-8">
                 <p className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
@@ -603,7 +603,7 @@ export default function LowcountryMarketPage() {
               transition={{ delay: index * 0.1 }}
             >
               <Link href={community.link || '#'}>
-                <GlassCard hover className="h-full cursor-pointer group">
+                <GlassCard solidWhite hover className="h-full cursor-pointer group">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center flex-shrink-0 group-hover:from-blue-900/20 group-hover:to-purple-500/20 transition-all">
                       <community.icon className="w-6 h-6 text-cyan-600 group-hover:text-blue-800 transition-colors" />
@@ -650,12 +650,7 @@ export default function LowcountryMarketPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.blufftonNeighborhoods.neighborhoods.map((neighborhood, index) => (
-            <GlassCard 
-              key={neighborhood.name}
-              hover={true}
-              delay={index * 0.05}
-              className="border-cyan-500/20 hover:border-cyan-500/50 flex flex-col"
-            >
+            <GlassCard key={neighborhood.name} solidWhite hover delay={index * 0.05} className="border-cyan-500/20 hover:border-cyan-500/50 flex flex-col">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
                   <neighborhood.icon className="w-5 h-5 text-cyan-600" />
@@ -704,12 +699,7 @@ export default function LowcountryMarketPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.hiltonHeadNeighborhoods.neighborhoods.map((neighborhood, index) => (
-            <GlassCard 
-              key={neighborhood.name}
-              hover={true}
-              delay={index * 0.05}
-              className="border-blue-900/20 hover:border-blue-900/50 flex flex-col"
-            >
+            <GlassCard key={neighborhood.name} solidWhite hover delay={index * 0.05} className="border-blue-900/20 hover:border-blue-900/50 flex flex-col">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-blue-900/20 flex items-center justify-center flex-shrink-0">
                   <neighborhood.icon className="w-5 h-5 text-blue-800" />
@@ -758,12 +748,7 @@ export default function LowcountryMarketPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {copy.privateSchools.schools.map((school, index) => (
-            <GlassCard 
-              key={school.name}
-              hover={true}
-              delay={index * 0.05}
-              className="border-purple-500/20 hover:border-purple-500/50 flex flex-col"
-            >
+            <GlassCard key={school.name} solidWhite hover delay={index * 0.05} className="border-purple-500/20 hover:border-purple-500/50 flex flex-col">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
                   <Award className="w-5 h-5 text-purple-600" />
@@ -816,11 +801,7 @@ export default function LowcountryMarketPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {copy.publicSchools.regions.map((region, regionIndex) => (
-            <GlassCard 
-              key={region.region}
-              hover={false}
-              className="border-cyan-500/20"
-            >
+            <GlassCard key={region.region} solidWhite hover className="border-cyan-500/20">
               <h3 className="text-xl font-semibold text-white mb-6">{region.region}</h3>
               <div className="space-y-4">
                 {region.schools.map((school, index) => (
@@ -867,12 +848,7 @@ export default function LowcountryMarketPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {copy.lifestyle.categories.map((category, index) => (
-            <GlassCard 
-              key={category.name}
-              hover={true}
-              delay={index * 0.05}
-              className="border-cyan-500/20 hover:border-cyan-500/50 flex flex-col items-center text-center"
-            >
+            <GlassCard key={category.name} solidWhite hover delay={index * 0.05} className="border-cyan-500/20 hover:border-cyan-500/50 flex flex-col items-center text-center">
               <div className="w-14 h-14 rounded-full bg-cyan-500/20 flex items-center justify-center mb-4">
                 <category.icon className="w-7 h-7 text-cyan-600" />
               </div>
@@ -1005,7 +981,7 @@ export default function LowcountryMarketPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <GlassCard hover={false} className="bg-gradient-to-br from-blue-900/10 via-purple-500/10 to-cyan-500/10 border-blue-900/20">
+            <GlassCard solidWhite hover className="bg-gradient-to-br from-blue-900/10 via-purple-500/10 to-cyan-500/10 border-blue-900/20">
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Flood Insurance Quote</h3>
@@ -1056,7 +1032,7 @@ export default function LowcountryMarketPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GlassCard hover className="h-full">
+              <GlassCard solidWhite hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-900/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-blue-800" />

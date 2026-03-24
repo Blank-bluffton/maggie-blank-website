@@ -236,7 +236,7 @@ export default function GolfCommunityBlog() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {copy.considerations.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
               <p className="text-gray-800 text-sm leading-relaxed">{card.description}</p>
@@ -286,7 +286,7 @@ export default function GolfCommunityBlog() {
           </h2>
           <div className="space-y-6">
             {copy.lowcountry.regions.map((region, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <h3 className="text-xl font-semibold text-white mb-2">{region.area}</h3>
                 <p className="text-white">{region.communities}</p>
               </GlassCard>

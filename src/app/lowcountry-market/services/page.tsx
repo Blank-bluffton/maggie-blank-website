@@ -142,7 +142,7 @@ export default function ServicesPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.05}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.05}>
               <span className="text-xs font-medium text-cyan-600 uppercase tracking-wider mb-2 block">
                 {service.category}
               </span>

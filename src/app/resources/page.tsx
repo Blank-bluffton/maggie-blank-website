@@ -159,17 +159,7 @@ export default function ResourcesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {copy.categories.cards.map((card, index) => (
             <Link key={index} href={card.link}>
-              <GlassCard 
-                hover 
-                delay={index * 0.1}
-                darkText
-                className={`h-full transition-all duration-300 group ${
-                  card.color === 'cyan' ? 'hover:border-cyan-400' :
-                  card.color === 'pink' ? 'hover:border-pink-400' :
-                  card.color === 'purple' ? 'hover:border-purple-400' :
-                  'hover:border-teal-400'
-                }`}
-              >
+              <GlassCard solidWhite darkText hover delay={index * 0.1}>
                 <div className="flex items-start gap-4">
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 ${
                     card.color === 'cyan' ? 'bg-cyan-100' :
@@ -224,11 +214,7 @@ export default function ResourcesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {copy.resources.items.map((item, index) => (
             <Link key={index} href={item.link}>
-              <GlassCard 
-                hover 
-                delay={index * 0.05}
-                className="h-full group"
-              >
+              <GlassCard solidWhite hover delay={index * 0.05} className="h-full group">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gray-800/50 flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-white group-hover:text-cyan-400 transition-colors" />

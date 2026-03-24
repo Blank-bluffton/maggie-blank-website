@@ -59,7 +59,7 @@ export default function InsurancePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {agents.map((agent, index) => (
-            <GlassCard key={index} hover={true} delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">{agent.name}</h3>
               <div className="space-y-3">
                 {agent.phone && (
@@ -99,7 +99,7 @@ export default function InsurancePage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-          <GlassCard hover className="border-cyan-500/20 hover:border-cyan-500/50">
+          <GlassCard solidWhite hover className="border-cyan-500/20 hover:border-cyan-500/50">
             <div className="flex items-start gap-4 mb-4">
               <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
                 <Shield className="w-6 h-6 text-cyan-400" />
@@ -114,7 +114,7 @@ export default function InsurancePage() {
             </p>
           </GlassCard>
 
-          <GlassCard hover className="border-blue-900/20 hover:border-blue-900/50">
+          <GlassCard solidWhite hover className="border-blue-900/20 hover:border-blue-900/50">
             <div className="flex items-start gap-4 mb-4">
               <div className="w-12 h-12 rounded-xl bg-blue-900/20 flex items-center justify-center flex-shrink-0">
                 <Shield className="w-6 h-6 text-blue-800" />

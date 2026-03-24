@@ -207,19 +207,7 @@ export default function RefinancePage() {
 
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.refinanceTypes.types.map((type, index) => (
-            <GlassCard 
-              key={index} 
-              hover 
-              delay={index * 0.1}
-              darkText
-              className={
-                type.accent === 'cyan' 
-                  ? 'border-cyan-500/20 hover:border-cyan-500/40' 
-                  : type.accent === 'purple'
-                  ? 'border-purple-500/20 hover:border-purple-500/40'
-                  : 'border-pink-500/20 hover:border-pink-500/40'
-              }
-            >
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 ${
                 type.accent === 'cyan' 
                   ? 'bg-cyan-100' 
@@ -275,7 +263,7 @@ export default function RefinancePage() {
             </Link>
           </div>
 
-          <GlassCard hover={false} className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20">
+          <GlassCard solidWhite hover className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20">
             <div className="text-center mb-6">
               <Calculator className="w-10 h-10 text-purple-400 mx-auto mb-3" />
               <h3 className="text-white font-semibold text-lg">Example Savings</h3>
@@ -321,7 +309,7 @@ export default function RefinancePage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {copy.whenToRefinance.items.map((item, index) => (
-            <GlassCard key={index} hover delay={index * 0.05} className="border-white/5">
+            <GlassCard key={index} solidWhite hover delay={index * 0.05} className="border-white/5">
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
                   <CheckCircle2 className="w-4 h-4 text-pink-400" />

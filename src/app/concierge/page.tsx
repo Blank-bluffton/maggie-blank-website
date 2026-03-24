@@ -137,13 +137,7 @@ export default function ConciergePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {copy.whatIsConcierge.items.map((item, index) => (
-            <GlassCard 
-              key={item.title} 
-              hover={true} 
-              delay={index * 0.1}
-              darkText
-              className="border-cyan-200 hover:border-cyan-400"
-            >
+            <GlassCard key={item.title} solidWhite darkText hover delay={index * 0.1} className="border-cyan-200 hover:border-cyan-400">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
                   <item.icon className="w-6 h-6 text-cyan-600" />
@@ -214,7 +208,7 @@ export default function ConciergePage() {
       {/* Lead Magnet Section */}
       <Section id="download" background="dark">
         <div className="max-w-4xl mx-auto">
-          <GlassCard hover={false} className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-transparent">
+          <GlassCard hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-transparent">
             <div className="text-center mb-8">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 {copy.leadMagnet.headline}

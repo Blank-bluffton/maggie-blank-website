@@ -247,7 +247,7 @@ export default function ConventionalLoansPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.benefits.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1} darkText>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
@@ -276,7 +276,7 @@ export default function ConventionalLoansPage() {
             </ul>
           </div>
 
-          <GlassCard hover={false} darkText className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
+          <GlassCard solidWhite darkText hover className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
             <div className="text-center">
               <Percent className="w-12 h-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-gray-800 font-semibold text-xl mb-2">Competitive Rates</h3>
@@ -308,7 +308,7 @@ export default function ConventionalLoansPage() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Conventional */}
-          <GlassCard hover={false} className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/5 to-transparent">
+          <GlassCard solidWhite hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/5 to-transparent">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                 <Home className="w-5 h-5 text-cyan-400" />
@@ -326,7 +326,7 @@ export default function ConventionalLoansPage() {
           </GlassCard>
 
           {/* FHA */}
-          <GlassCard hover={false} className="border-orange-500/20">
+          <GlassCard solidWhite hover className="border-orange-500/20">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
                 <Shield className="w-5 h-5 text-orange-400" />
@@ -344,7 +344,7 @@ export default function ConventionalLoansPage() {
           </GlassCard>
 
           {/* USDA */}
-          <GlassCard hover={false} className="border-green-500/20">
+          <GlassCard solidWhite hover className="border-green-500/20">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center">
                 <Scale className="w-5 h-5 text-green-400" />
@@ -373,7 +373,7 @@ export default function ConventionalLoansPage() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {copy.whenMakesSense.scenarios.map((scenario, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
+            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
               <h3 className="text-lg font-semibold text-white mb-2">{scenario.title}</h3>
               <p className="text-white text-sm leading-relaxed">{scenario.description}</p>
             </GlassCard>

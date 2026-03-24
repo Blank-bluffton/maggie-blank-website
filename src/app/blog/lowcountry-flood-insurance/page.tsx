@@ -286,7 +286,7 @@ export default function FloodInsuranceBlog() {
           
           <div className="space-y-4 mt-8">
             {copy.zones.zones.map((zone, index) => (
-              <GlassCard key={index} hover={false}>
+              <GlassCard key={index} solidWhite hover>
                 <div className="flex flex-col md:flex-row md:items-center gap-4 mb-3">
                   <span className="inline-flex items-center px-3 py-1 bg-cyan-500/20 text-cyan-600 font-mono font-semibold rounded">
                     {zone.zone}
@@ -319,17 +319,17 @@ export default function FloodInsuranceBlog() {
           ))}
           
           <div className="grid md:grid-cols-3 gap-4 mt-8">
-            <GlassCard hover={false}>
+            <GlassCard solidWhite hover>
               <h4 className="text-gray-800 text-sm mb-2">Zone X (Moderate)</h4>
               <p className="text-2xl font-bold text-gray-800">{copy.costs.averages.zoneX}</p>
               <p className="text-gray-800 text-sm mt-2">per year</p>
             </GlassCard>
-            <GlassCard hover={false}>
+            <GlassCard solidWhite hover>
               <h4 className="text-gray-800 text-sm mb-2">Zone AE (High)</h4>
               <p className="text-2xl font-bold text-gray-800">{copy.costs.averages.zoneAE}</p>
               <p className="text-gray-800 text-sm mt-2">per year</p>
             </GlassCard>
-            <GlassCard hover={false}>
+            <GlassCard solidWhite hover>
               <h4 className="text-gray-800 text-sm mb-2">Zone VE (Highest)</h4>
               <p className="text-2xl font-bold text-gray-800">{copy.costs.averages.zoneVE}</p>
               <p className="text-gray-800 text-sm mt-2">per year</p>
@@ -387,7 +387,7 @@ export default function FloodInsuranceBlog() {
           
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             {copy.savings.strategies.map((strategy, index) => (
-              <GlassCard key={index} hover delay={index * 0.1}>
+              <GlassCard key={index} solidWhite hover delay={index * 0.1}>
                 <strategy.icon className="w-8 h-8 text-cyan-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{strategy.title}</h3>
                 <p className="text-gray-800 text-sm">{strategy.description}</p>

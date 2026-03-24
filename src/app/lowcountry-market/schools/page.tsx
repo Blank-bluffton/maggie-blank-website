@@ -137,12 +137,7 @@ export default function SchoolsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {privateSchools.map((school, index) => (
-            <GlassCard 
-              key={school.name}
-              hover={true}
-              delay={index * 0.05}
-              className="border-purple-500/20 hover:border-purple-500/50 flex flex-col"
-            >
+            <GlassCard key={school.name} solidWhite hover delay={index * 0.05} className="border-purple-500/20 hover:border-purple-500/50 flex flex-col">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
                   <GraduationCap className="w-5 h-5 text-purple-600" />
@@ -186,11 +181,7 @@ export default function SchoolsPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {publicSchoolRegions.map((region, regionIndex) => (
-            <GlassCard 
-              key={region.region}
-              hover={false}
-              className="border-cyan-500/20"
-            >
+            <GlassCard key={region.region} solidWhite hover className="border-cyan-500/20">
               <h3 className="text-xl font-semibold text-white mb-6">{region.region}</h3>
               <div className="space-y-4">
                 {region.schools.map((school, index) => (
