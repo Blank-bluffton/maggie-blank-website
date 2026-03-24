@@ -21,8 +21,8 @@ const attorneys = [
   },
   {
     name: "Hale & Hale",
-    phone: "(843) 555-0303",
-    address: "Bluffton, SC",
+    phone: "(843) 837-3000",
+    address: "1533 Fording Island Rd Suite 294, Hilton Head, SC 29926",
     specialties: ["Residential Closings", "Refinance Closings", "Contract Review"]
   },
   {
