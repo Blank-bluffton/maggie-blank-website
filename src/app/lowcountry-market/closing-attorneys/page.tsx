@@ -38,7 +38,6 @@ export default function ClosingAttorneysPage() {
     <>
       <Hero
         headline="Closing Attorneys"
-        subheadline="Trusted legal professionals to handle your real estate closing in the Lowcountry."
         ctaPrimary="Learn More"
         ctaPrimaryLink="/contact"
         variant="compact"
