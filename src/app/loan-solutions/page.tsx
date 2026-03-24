@@ -5,7 +5,6 @@ import CTABand from '@/components/CTABand';
 import Link from 'next/link';
 import { 
   Stethoscope, 
-  Briefcase, 
   FileCheck, 
   ArrowRight,
   CheckCircle2,
@@ -31,15 +30,6 @@ const loanTypes = [
     highlight: 'Jumbo & Portfolio Loans',
     cta: 'Learn More',
     color: 'pink'
-  },
-  {
-    slug: 'self-employed',
-    icon: Briefcase,
-    title: 'Self-Employed',
-    description: 'Mortgage solutions designed for entrepreneurs, freelancers, and business owners. We understand how to document your unique income situation.',
-    highlight: 'Alternative Documentation',
-    cta: 'Learn More',
-    color: 'purple'
   },
   {
     slug: 'conventional',
