@@ -223,12 +223,12 @@ export default function ConventionalLoansPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             {copy.whatIs.headline}
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">
+          <p className="text-gray-200 text-lg leading-relaxed mb-8">
             {copy.whatIs.description}
           </p>
           <div className="grid sm:grid-cols-2 gap-4 text-left">
             {copy.whatIs.features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-3 text-gray-300">
+              <div key={index} className="flex items-start gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 {feature}
               </div>
@@ -250,7 +250,7 @@ export default function ConventionalLoansPage() {
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">{card.description}</p>
+              <p className="text-gray-200 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -265,7 +265,7 @@ export default function ConventionalLoansPage() {
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-300">
+                <li key={index} className="flex items-start gap-3 text-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -277,7 +277,7 @@ export default function ConventionalLoansPage() {
             <div className="text-center">
               <Percent className="w-12 h-12 text-purple-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Competitive Rates</h3>
-              <p className="text-gray-300 text-sm mb-6">
+              <p className="text-gray-200 text-sm mb-6">
                 Conventional loans often feature the lowest interest rates of any loan type — especially for borrowers with strong credit.
               </p>
               <Link
@@ -298,7 +298,7 @@ export default function ConventionalLoansPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.comparison.headline}
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto">
             {copy.comparison.description}
           </p>
         </div>
@@ -314,7 +314,7 @@ export default function ConventionalLoansPage() {
             </div>
             <ul className="space-y-3">
               {copy.comparison.conventional.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -332,7 +332,7 @@ export default function ConventionalLoansPage() {
             </div>
             <ul className="space-y-3">
               {copy.comparison.fha.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
                   <span className="text-orange-400">•</span>
                   {item}
                 </li>
@@ -350,7 +350,7 @@ export default function ConventionalLoansPage() {
             </div>
             <ul className="space-y-3">
               {copy.comparison.usda.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
                   <span className="text-green-400">•</span>
                   {item}
                 </li>
@@ -372,7 +372,7 @@ export default function ConventionalLoansPage() {
           {copy.whenMakesSense.scenarios.map((scenario, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <h3 className="text-lg font-semibold text-white mb-2">{scenario.title}</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">{scenario.description}</p>
+              <p className="text-gray-200 text-sm leading-relaxed">{scenario.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -408,7 +408,7 @@ export default function ConventionalLoansPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-300 mb-8">
+          <p className="text-gray-200 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 

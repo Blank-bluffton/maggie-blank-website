@@ -88,7 +88,7 @@ export default function SelfEmployedMortgageGuide() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-200 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 15, 2026
@@ -202,7 +202,7 @@ export default function SelfEmployedMortgageGuide() {
 
             <h2 id="comparison">Side-by-Side Comparison</h2>
             <div className="overflow-x-auto my-8">
-              <table className="w-full text-left text-gray-300">
+              <table className="w-full text-left text-gray-200">
                 <thead>
                   <tr className="border-b border-gray-700">
                     <th className="py-3 px-4 font-semibold text-white">Factor</th>
@@ -245,19 +245,19 @@ export default function SelfEmployedMortgageGuide() {
               Whether you choose tax returns or bank statements, expect these common requirements:
             </p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-300">
+              <li className="flex items-start gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Credit score</strong> — Typically 620+ for most programs</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300">
+              <li className="flex items-start gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Debt-to-income ratio</strong> — Usually max 43-50%</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300">
+              <li className="flex items-start gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Business documentation</strong> — Business license, EIN, contracts</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300">
+              <li className="flex items-start gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Reserves</strong> — Some programs require 2+ months of mortgage payments in reserve</span>
               </li>
@@ -295,7 +295,7 @@ export default function SelfEmployedMortgageGuide() {
 
             <div className="my-8 p-6 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl border border-cyan-500/20">
               <h3 className="text-xl font-semibold text-white mb-4">Ready to explore your mortgage options?</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-200 mb-6">
                 Let's discuss your self-employed situation and find the right path to homeownership.
               </p>
               <div className="flex flex-wrap gap-4">

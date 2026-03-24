@@ -130,7 +130,7 @@ export default function ConciergePage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.whatIsConcierge.headline}
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto">
             {copy.whatIsConcierge.subhead}
           </p>
         </div>
@@ -149,7 +149,7 @@ export default function ConciergePage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-200 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -165,7 +165,7 @@ export default function ConciergePage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.whoItFor.headline}
           </h2>
-          <p className="text-gray-300 mb-10">
+          <p className="text-gray-200 mb-10">
             {copy.whoItFor.subhead}
           </p>
 
@@ -176,7 +176,7 @@ export default function ConciergePage() {
                 className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl text-left"
               >
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                <span className="text-gray-300">{profile}</span>
+                <span className="text-gray-200">{profile}</span>
               </div>
             ))}
           </div>
@@ -198,8 +198,8 @@ export default function ConciergePage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-white/5 border border-white/10 rounded-xl"
             >
               <div className="md:border-r md:border-white/10 md:pr-6">
-                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">Traditional Lending</span>
-                <p className="text-gray-300 mt-2">{item.traditional}</p>
+                <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">Traditional Lending</span>
+                <p className="text-gray-200 mt-2">{item.traditional}</p>
               </div>
               <div>
                 <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider">Concierge Approach</span>
@@ -218,7 +218,7 @@ export default function ConciergePage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 {copy.leadMagnet.headline}
               </h2>
-              <p className="text-gray-300 max-w-xl mx-auto">
+              <p className="text-gray-200 max-w-xl mx-auto">
                 {copy.leadMagnet.subhead}
               </p>
             </div>
@@ -230,7 +230,7 @@ export default function ConciergePage() {
                   {copy.leadMagnet.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300 text-sm">{benefit}</span>
+                      <span className="text-gray-200 text-sm">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -240,7 +240,7 @@ export default function ConciergePage() {
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-cyan-500/20 rounded-full mb-4">
                   <Download className="w-10 h-10 text-cyan-400" />
                 </div>
-                <p className="text-gray-300 text-sm mb-4">
+                <p className="text-gray-200 text-sm mb-4">
                   Free PDF Download
                 </p>
                 <Link

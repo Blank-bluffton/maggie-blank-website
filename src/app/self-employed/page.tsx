@@ -197,10 +197,10 @@ export default function SelfEmployedPage() {
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-4">{card.description}</p>
+              <p className="text-gray-200 text-sm leading-relaxed mb-4">{card.description}</p>
               <div className="pt-3 border-t border-white/10">
                 <p className="text-xs text-cyan-400 font-medium">Best for:</p>
-                <p className="text-xs text-gray-500">{card.bestFor}</p>
+                <p className="text-xs text-gray-400">{card.bestFor}</p>
               </div>
             </GlassCard>
           ))}
@@ -221,7 +221,7 @@ export default function SelfEmployedPage() {
               <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                  <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
@@ -241,7 +241,7 @@ export default function SelfEmployedPage() {
             </h2>
             <ul className="space-y-3">
               {copy.tips.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-300">
+                <li key={index} className="flex items-start gap-3 text-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -253,10 +253,10 @@ export default function SelfEmployedPage() {
             <div className="text-center">
               <TrendingUp className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Why Self-Employed Loans Work</h3>
-              <p className="text-gray-300 text-sm mb-4">
+              <p className="text-gray-200 text-sm mb-4">
                 Traditional lenders only look at tax returns, which often understate your true income due to aggressive deductions.
               </p>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-200 text-sm">
                 We look at the actual money coming in — because that's what matters for mortgage qualification.
               </p>
             </div>

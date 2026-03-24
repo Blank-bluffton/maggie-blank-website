@@ -185,7 +185,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-300 text-lg max-w-2xl mx-auto"
+            className="text-gray-200 text-lg max-w-2xl mx-auto"
           >
             From oceanfront resorts to exclusive gated golf communities, discover the neighborhood that fits your lifestyle.
           </motion.p>
@@ -210,7 +210,7 @@ export default function HiltonHeadPage() {
                   {hood.priceRange}
                 </p>
                 
-                <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-200 text-sm mb-4 leading-relaxed">
                   {hood.description}
                 </p>
                 
@@ -218,7 +218,7 @@ export default function HiltonHeadPage() {
                   {hood.highlights.map((highlight, i) => (
                     <span 
                       key={i}
-                      className="px-2.5 py-1 rounded-lg bg-white/5 text-gray-300 text-xs border border-white/10"
+                      className="px-2.5 py-1 rounded-lg bg-white/5 text-gray-200 text-xs border border-white/10"
                     >
                       {highlight}
                     </span>
@@ -247,7 +247,7 @@ export default function HiltonHeadPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-300 text-lg mb-8"
+              className="text-gray-200 text-lg mb-8"
             >
               {copy.tips.subheadline}
             </motion.p>
@@ -268,7 +268,7 @@ export default function HiltonHeadPage() {
                       </div>
                       <div>
                         <h4 className="text-white font-semibold mb-1">{tip.title}</h4>
-                        <p className="text-gray-300 text-sm">{tip.description}</p>
+                        <p className="text-gray-200 text-sm">{tip.description}</p>
                       </div>
                     </div>
                   </GlassCard>
@@ -287,7 +287,7 @@ export default function HiltonHeadPage() {
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Ready to Buy in Hilton Head?</h3>
-                <p className="text-gray-300 text-sm mb-6">
+                <p className="text-gray-200 text-sm mb-6">
                   From flood insurance to HOA financing, we understand the nuances of island mortgages. Let's talk strategy.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -327,7 +327,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-300 text-lg max-w-xl mx-auto mb-8"
+            className="text-gray-200 text-lg max-w-xl mx-auto mb-8"
           >
             {copy.cta.subhead}
           </motion.p>
