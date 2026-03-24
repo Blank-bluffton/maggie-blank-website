@@ -61,10 +61,10 @@ export default function ApplyPage() {
       {/* Hero Section */}
       <Section background="gradient">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
             {copy.hero.headline}
           </h1>
-          <p className="text-lg sm:text-xl text-white leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-900 leading-relaxed">
             {copy.hero.subheadline}
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function ApplyPage() {
       {/* Process Steps */}
       <Section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             {copy.process.headline}
           </h2>
         </div>
@@ -84,8 +84,8 @@ export default function ApplyPage() {
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 border border-pink-500/30 mb-4">
                 <span className="text-pink-400 font-bold text-sm">{String(index + 1).padStart(2, '0')}</span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{step.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+              <p className="text-gray-900 text-sm leading-relaxed">{step.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -100,11 +100,11 @@ export default function ApplyPage() {
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 mb-6">
               <copy.ctas.purchase.icon className="w-7 h-7 text-cyan-400" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-3">{copy.ctas.purchase.title}</h3>
-            <p className="text-white text-sm mb-6">{copy.ctas.purchase.description}</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">{copy.ctas.purchase.title}</h3>
+            <p className="text-gray-900 text-sm mb-6">{copy.ctas.purchase.description}</p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
             >
               {copy.ctas.purchase.button}
               <ArrowRight className="w-4 h-4" />
@@ -117,11 +117,11 @@ export default function ApplyPage() {
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 mb-6">
               <copy.ctas.refinance.icon className="w-7 h-7 text-purple-400" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-3">{copy.ctas.refinance.title}</h3>
-            <p className="text-white text-sm mb-6">{copy.ctas.refinance.description}</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">{copy.ctas.refinance.title}</h3>
+            <p className="text-gray-900 text-sm mb-6">{copy.ctas.refinance.description}</p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-purple-500 to-fuchsia-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
+              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-purple-500 to-fuchsia-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
             >
               {copy.ctas.refinance.button}
               <ArrowRight className="w-4 h-4" />
@@ -134,11 +134,11 @@ export default function ApplyPage() {
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/30 mb-6">
               <copy.ctas.consult.icon className="w-7 h-7 text-pink-400" />
             </div>
-            <h3 className="text-xl font-semibold text-white mb-3">{copy.ctas.consult.title}</h3>
-            <p className="text-white text-sm mb-6">{copy.ctas.consult.description}</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">{copy.ctas.consult.title}</h3>
+            <p className="text-gray-900 text-sm mb-6">{copy.ctas.consult.description}</p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+              className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-pink-500 to-rose-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
             >
               {copy.ctas.consult.button}
               <ArrowRight className="w-4 h-4" />
@@ -153,16 +153,16 @@ export default function ApplyPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
             <div className="flex items-center gap-3">
               <Shield className="w-6 h-6 text-cyan-400" />
-              <span className="text-white">{copy.trust.nmls}</span>
+              <span className="text-gray-900">{copy.trust.nmls}</span>
             </div>
             <div className="flex items-center gap-3">
               <Lock className="w-6 h-6 text-purple-400" />
-              <span className="text-white">{copy.trust.secure}</span>
+              <span className="text-gray-900">{copy.trust.secure}</span>
             </div>
           </div>
           
           <div className="mt-8 pt-8 border-t border-gray-800">
-            <div className="flex flex-wrap items-center justify-center gap-4 text-white text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-gray-900 text-sm">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400" />
                 <span>No hard credit pull to start</span>

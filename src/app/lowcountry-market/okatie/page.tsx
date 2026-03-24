@@ -118,25 +118,25 @@ export default function OkatiePage() {
               Back to Lowcountry Market
             </Link>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Okatie & <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Hardeeville</span>
             </h1>
             
-            <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-gray-900 max-w-2xl mx-auto mb-8">
               The growth corridor of the Lowcountry. New master-planned communities, golf resorts, and affordable new construction make this area ideal for first-time buyers and investors.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm">
+              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-900 text-sm">
                 New Construction
               </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm">
+              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-900 text-sm">
                 Golf Communities
               </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm">
+              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-900 text-sm">
                 I-95 Access
               </span>
-              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm">
+              <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-900 text-sm">
                 Affordable
               </span>
             </div>
@@ -164,7 +164,7 @@ export default function OkatiePage() {
                 <p className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
-                <p className="text-white mt-1 text-sm">{stat.label}</p>
+                <p className="text-gray-900 mt-1 text-sm">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}
@@ -178,7 +178,7 @@ export default function OkatiePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             Find Your <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">Community</span>
           </motion.h2>
@@ -187,7 +187,7 @@ export default function OkatiePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-900 text-lg max-w-2xl mx-auto"
           >
             From established neighborhoods to new master-planned communities, Okatie and Hardeeville offer diverse options for every lifestyle and budget.
           </motion.p>
@@ -208,14 +208,14 @@ export default function OkatiePage() {
                     <neighborhood.icon className="w-7 h-7 text-cyan-400" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-cyan-400 transition-colors">
                       {neighborhood.name}
                     </h3>
                     <p className="text-pink-400 font-medium">{neighborhood.priceRange}</p>
                   </div>
                 </div>
                 
-                <p className="text-white mb-5 leading-relaxed">
+                <p className="text-gray-900 mb-5 leading-relaxed">
                   {neighborhood.description}
                 </p>
                 
@@ -223,7 +223,7 @@ export default function OkatiePage() {
                   {neighborhood.highlights.map((highlight, i) => (
                     <span 
                       key={i}
-                      className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-sm flex items-center gap-1.5"
+                      className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-900 text-sm flex items-center gap-1.5"
                     >
                       <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400" />
                       {highlight}
@@ -244,10 +244,10 @@ export default function OkatiePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Why Buy in <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Okatie/Hardeeville</span>
             </h2>
-            <p className="text-white text-lg mb-8">
+            <p className="text-gray-900 text-lg mb-8">
               The Okatie and Hardeeville area represents the fastest-growing corridor in the Lowcountry. With new construction, golf communities, and affordable price points, it's ideal for first-time buyers, families, and investors.
             </p>
 
@@ -269,9 +269,9 @@ export default function OkatiePage() {
                   className="flex items-start gap-3"
                 >
                   <div className="w-6 h-6 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-4 h-4 text-white" />
+                    <CheckCircle2 className="w-4 h-4 text-gray-900" />
                   </div>
-                  <p className="text-white">{item}</p>
+                  <p className="text-gray-900">{item}</p>
                 </motion.div>
               ))}
             </div>
@@ -286,20 +286,20 @@ export default function OkatiePage() {
             <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
               <div className="text-center">
                 <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-                <h3 className="text-white font-semibold text-xl mb-2">Mortgage Options</h3>
-                <p className="text-white text-sm mb-6">
+                <h3 className="text-gray-900 font-semibold text-xl mb-2">Mortgage Options</h3>
+                <p className="text-gray-900 text-sm mb-6">
                   We help buyers in Okatie and Hardeeville find the right financing — from conventional loans to physician loans and new construction financing.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
                   >
                     Talk to Maggie
                   </Link>
                   <Link
                     href="/apply"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/5 border border-white/10 text-white font-medium rounded-xl hover:bg-white/10 transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/5 border border-white/10 text-gray-900 font-medium rounded-xl hover:bg-white/10 transition-all"
                   >
                     Get Pre-Approved
                   </Link>

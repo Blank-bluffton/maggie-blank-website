@@ -150,7 +150,7 @@ export default function ConstructionPage() {
       {/* How It Works Section */}
       <Section id="how-it-works" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.howItWorks.headline}
           </h2>
         </div>
@@ -163,8 +163,8 @@ export default function ConstructionPage() {
                   {step.number}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{step.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+              <p className="text-gray-900 text-sm leading-relaxed">{step.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -173,7 +173,7 @@ export default function ConstructionPage() {
       {/* Benefits Section */}
       <Section id="benefits">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.benefits.headline}
           </h2>
         </div>
@@ -188,8 +188,8 @@ export default function ConstructionPage() {
                          index === 2 ? "border-purple-500/30 bg-gradient-to-br from-purple-500/5 to-transparent" : ""}
             >
               <card.icon className={`w-10 h-10 mb-4 ${index === 0 ? 'text-cyan-400' : index === 1 ? 'text-pink-400' : index === 2 ? 'text-purple-400' : 'text-teal-400'}`} />
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
+              <p className="text-gray-900 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -199,12 +199,12 @@ export default function ConstructionPage() {
       <Section id="requirements" background="dark">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               {copy.requirements.headline}
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-white">
+                <li key={index} className="flex items-start gap-3 text-gray-900">
                   <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -215,13 +215,13 @@ export default function ConstructionPage() {
           <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
             <div className="text-center">
               <Hammer className="w-12 h-12 text-pink-400 mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-xl mb-2">Building in the Lowcountry?</h3>
-              <p className="text-white text-sm mb-6">
+              <h3 className="text-gray-900 font-semibold text-xl mb-2">Building in the Lowcountry?</h3>
+              <p className="text-gray-900 text-sm mb-6">
                 We work with experienced local builders who understand coastal construction, permits, and the unique challenges of building in Beaufort County.
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
               >
                 Get Builder Recommendations
                 <ArrowRight className="w-4 h-4" />
@@ -239,23 +239,23 @@ export default function ConstructionPage() {
         >
           <div className="text-center max-w-3xl mx-auto">
             <Home className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Your Dream Home Starts Here
             </h2>
-            <p className="text-white text-lg mb-8">
+            <p className="text-gray-900 text-lg mb-8">
               Whether you're building a custom home on the water, a family home in Belfair, or a retirement retreat in Sun City, we make construction financing simple.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
               >
                 Start Your Build
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-pink-500/50 text-white font-semibold rounded-xl hover:bg-pink-500/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-pink-500/50 text-gray-900 font-semibold rounded-xl hover:bg-pink-500/10 transition-all"
               >
                 Apply Now
               </Link>
@@ -283,17 +283,17 @@ export default function ConstructionPage() {
       {/* Download Guide Section */}
       <Section background="dark">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-white mb-8">
+          <p className="text-gray-900 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 
             href="/Lowcountry Physician Relocation Guide.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
           >
             <ArrowRight className="w-5 h-5" />
             Download Free Guide

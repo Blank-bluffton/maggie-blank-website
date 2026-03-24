@@ -507,21 +507,21 @@ export default function LowcountryMarketPage() {
         <div className="flex flex-wrap justify-center gap-4">
           <a 
             href="#communities"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             <Building2 className="w-5 h-5" />
             Communities
           </a>
           <a 
             href="#private-schools"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             <Users className="w-5 h-5" />
             Schools
           </a>
           <a 
             href="#lifestyle"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             <Award className="w-5 h-5" />
             Lifestyle
@@ -536,7 +536,7 @@ export default function LowcountryMarketPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             {copy.marketOverview.headline}
           </motion.h2>
@@ -545,7 +545,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-3xl mx-auto"
+            className="text-gray-900 text-lg max-w-3xl mx-auto"
           >
             {copy.marketOverview.subheadline}
           </motion.p>
@@ -564,7 +564,7 @@ export default function LowcountryMarketPage() {
                 <p className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
-                <p className="text-white mt-2">{stat.label}</p>
+                <p className="text-gray-900 mt-2">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}
@@ -578,7 +578,7 @@ export default function LowcountryMarketPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             {copy.communities.headline}
           </motion.h2>
@@ -587,7 +587,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-900 text-lg max-w-2xl mx-auto"
           >
             {copy.communities.subheadline}
           </motion.p>
@@ -609,18 +609,18 @@ export default function LowcountryMarketPage() {
                       <community.icon className="w-6 h-6 text-cyan-400 group-hover:text-blue-800 transition-colors" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-white group-hover:text-blue-800 transition-colors">{community.name}</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-800 transition-colors">{community.name}</h3>
                       <p className="text-cyan-400 text-sm">{community.priceRange}</p>
                     </div>
                   </div>
                   
-                  <p className="text-white mb-4">{community.description}</p>
+                  <p className="text-gray-900 mb-4">{community.description}</p>
                   
                   <div className="flex flex-wrap gap-2">
                     {community.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 rounded-full bg-white/5 text-white text-sm"
+                        className="px-3 py-1 rounded-full bg-white/5 text-gray-900 text-sm"
                       >
                         {highlight}
                       </span>
@@ -640,10 +640,10 @@ export default function LowcountryMarketPage() {
       {/* Bluffton Neighborhoods Section */}
       <Section id="bluffton-neighborhoods" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.blufftonNeighborhoods.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.blufftonNeighborhoods.subheadline}
           </p>
         </div>
@@ -661,16 +661,16 @@ export default function LowcountryMarketPage() {
                   <neighborhood.icon className="w-5 h-5 text-cyan-400" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{neighborhood.name}</h3>
+                  <h3 className="text-gray-900 font-semibold">{neighborhood.name}</h3>
                   <p className="text-cyan-400 text-sm">{neighborhood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-white text-sm mb-4 flex-grow">{neighborhood.description}</p>
+              <p className="text-gray-900 text-sm mb-4 flex-grow">{neighborhood.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {neighborhood.highlights.map((highlight, i) => (
                   <span 
                     key={i}
-                    className="px-2 py-1 bg-white/10 rounded text-xs text-white"
+                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-900"
                   >
                     {highlight}
                   </span>
@@ -681,7 +681,7 @@ export default function LowcountryMarketPage() {
                   href={neighborhood.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-sm font-medium rounded-lg transition-colors"
                 >
                   Visit Website <ArrowRight className="w-4 h-4" />
                 </a>
@@ -694,10 +694,10 @@ export default function LowcountryMarketPage() {
       {/* Hilton Head Neighborhoods Section */}
       <Section id="hilton-head-neighborhoods" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.hiltonHeadNeighborhoods.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.hiltonHeadNeighborhoods.subheadline}
           </p>
         </div>
@@ -715,16 +715,16 @@ export default function LowcountryMarketPage() {
                   <neighborhood.icon className="w-5 h-5 text-blue-800" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{neighborhood.name}</h3>
+                  <h3 className="text-gray-900 font-semibold">{neighborhood.name}</h3>
                   <p className="text-blue-800 text-sm">{neighborhood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-white text-sm mb-4 flex-grow">{neighborhood.description}</p>
+              <p className="text-gray-900 text-sm mb-4 flex-grow">{neighborhood.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {neighborhood.highlights.map((highlight, i) => (
                   <span 
                     key={i}
-                    className="px-2 py-1 bg-white/10 rounded text-xs text-white"
+                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-900"
                   >
                     {highlight}
                   </span>
@@ -735,7 +735,7 @@ export default function LowcountryMarketPage() {
                   href={neighborhood.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-900 hover:bg-blue-800 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-900 hover:bg-blue-800 text-gray-900 text-sm font-medium rounded-lg transition-colors"
                 >
                   Visit Website <ArrowRight className="w-4 h-4" />
                 </a>
@@ -748,10 +748,10 @@ export default function LowcountryMarketPage() {
       {/* Private Schools Section */}
       <Section id="private-schools" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.privateSchools.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.privateSchools.subheadline}
           </p>
         </div>
@@ -769,13 +769,13 @@ export default function LowcountryMarketPage() {
                   <Award className="w-5 h-5 text-purple-400" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{school.name}</h3>
+                  <h3 className="text-gray-900 font-semibold">{school.name}</h3>
                   <p className="text-purple-400 text-sm">{school.grades}</p>
                 </div>
               </div>
-              <p className="text-white text-sm mb-4 flex-grow">{school.description}</p>
+              <p className="text-gray-900 text-sm mb-4 flex-grow">{school.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-white/10 rounded text-xs text-white">
+                <span className="px-2 py-1 bg-white/10 rounded text-xs text-gray-900">
                   {school.type}
                 </span>
               </div>
@@ -784,7 +784,7 @@ export default function LowcountryMarketPage() {
                   href={school.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-400 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-400 text-gray-900 text-sm font-medium rounded-lg transition-colors"
                 >
                   Visit Website <ArrowRight className="w-4 h-4" />
                 </a>
@@ -796,7 +796,7 @@ export default function LowcountryMarketPage() {
         <div className="text-center mt-12">
           <Link
             href="/lowcountry-market/schools"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-purple-500 hover:bg-purple-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-purple-500 hover:bg-purple-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             View All Schools <ArrowRight className="w-4 h-4" />
           </Link>
@@ -806,10 +806,10 @@ export default function LowcountryMarketPage() {
       {/* Public Schools Section */}
       <Section id="public-schools" background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.publicSchools.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.publicSchools.subheadline}
           </p>
         </div>
@@ -821,7 +821,7 @@ export default function LowcountryMarketPage() {
               hover={false}
               className="border-cyan-500/20"
             >
-              <h3 className="text-xl font-semibold text-white mb-6">{region.region}</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-6">{region.region}</h3>
               <div className="space-y-4">
                 {region.schools.map((school, index) => (
                   <div key={school.name} className="flex items-start gap-3 p-3 bg-white/5 rounded-lg">
@@ -830,12 +830,12 @@ export default function LowcountryMarketPage() {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="text-white font-medium">{school.name}</h4>
+                        <h4 className="text-gray-900 font-medium">{school.name}</h4>
                         <span className="px-2 py-0.5 bg-cyan-500/20 rounded text-xs text-cyan-400">
                           {school.type}
                         </span>
                       </div>
-                      <p className="text-white text-sm">{school.description}</p>
+                      <p className="text-gray-900 text-sm">{school.description}</p>
                     </div>
                   </div>
                 ))}
@@ -847,7 +847,7 @@ export default function LowcountryMarketPage() {
         <div className="text-center mt-12">
           <Link
             href="/lowcountry-market/schools"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             View All Schools <ArrowRight className="w-4 h-4" />
           </Link>
@@ -857,10 +857,10 @@ export default function LowcountryMarketPage() {
       {/* Lifestyle Section */}
       <Section id="lifestyle" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.lifestyle.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.lifestyle.subheadline}
           </p>
         </div>
@@ -876,8 +876,8 @@ export default function LowcountryMarketPage() {
               <div className="w-14 h-14 rounded-full bg-cyan-500/20 flex items-center justify-center mb-4">
                 <category.icon className="w-7 h-7 text-cyan-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">{category.name}</h3>
-              <p className="text-white text-sm">{category.description}</p>
+              <h3 className="text-gray-900 font-semibold mb-2">{category.name}</h3>
+              <p className="text-gray-900 text-sm">{category.description}</p>
               {category.courses && (
                 <div className="mt-4 w-full">
                   <a 
@@ -908,7 +908,7 @@ export default function LowcountryMarketPage() {
 
         {/* Golf Courses Section */}
         <div className="mt-12 p-8 bg-white rounded-xl">
-          <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Top Golf Courses in the Lowcountry</h3>
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Top Golf Courses in the Lowcountry</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {(copy.lifestyle.categories.find(c => c.name === "Golf")?.courses || []).map((course, index) => (
               <a 
@@ -918,7 +918,7 @@ export default function LowcountryMarketPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="text-gray-800 font-medium">{course.name}</span>
+                <span className="text-gray-900 font-medium">{course.name}</span>
                 <ArrowRight className="w-4 h-4 text-cyan-600" />
               </a>
             ))}
@@ -927,7 +927,7 @@ export default function LowcountryMarketPage() {
 
         {/* Restaurants Section */}
         <div className="mt-12 p-8 bg-white rounded-xl">
-          <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Favorite Restaurants in the Lowcountry</h3>
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Favorite Restaurants in the Lowcountry</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {(copy.lifestyle.categories.find(c => c.name === "Dining")?.restaurants || []).map((restaurant, index) => (
               <a 
@@ -937,7 +937,7 @@ export default function LowcountryMarketPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="text-gray-800 font-medium">{restaurant.name}</span>
+                <span className="text-gray-900 font-medium">{restaurant.name}</span>
                 <ArrowRight className="w-4 h-4 text-cyan-600" />
               </a>
             ))}
@@ -949,7 +949,7 @@ export default function LowcountryMarketPage() {
             href={copy.lifestyle.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             Explore Local Life <ArrowRight className="w-4 h-4" />
           </a>
@@ -964,7 +964,7 @@ export default function LowcountryMarketPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl sm:text-4xl font-bold text-white mb-4"
+              className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
             >
               {copy.floodInsurance.headline}
             </motion.h2>
@@ -973,7 +973,7 @@ export default function LowcountryMarketPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-white text-lg mb-8"
+              className="text-gray-900 text-lg mb-8"
             >
               {copy.floodInsurance.subheadline}
             </motion.p>
@@ -990,8 +990,8 @@ export default function LowcountryMarketPage() {
                   <div className="flex items-start gap-3">
                     <Shield className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-white font-semibold mb-1">{section.title}</h4>
-                      <p className="text-white text-sm">{section.description}</p>
+                      <h4 className="text-gray-900 font-semibold mb-1">{section.title}</h4>
+                      <p className="text-gray-900 text-sm">{section.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -1008,13 +1008,13 @@ export default function LowcountryMarketPage() {
             <GlassCard hover={false} className="bg-gradient-to-br from-blue-900/10 via-purple-500/10 to-cyan-500/10 border-blue-900/20">
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-                <h3 className="text-white font-semibold text-xl mb-2">Flood Insurance Quote</h3>
-                <p className="text-white text-sm mb-6">
+                <h3 className="text-gray-900 font-semibold text-xl mb-2">Flood Insurance Quote</h3>
+                <p className="text-gray-900 text-sm mb-6">
                   We work with multiple carriers to find the best flood insurance rates for your specific property.
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
                 >
                   Get Flood Insurance Quote
                   <ArrowRight className="w-4 h-4" />
@@ -1032,7 +1032,7 @@ export default function LowcountryMarketPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             {copy.whyLocal.headline}
           </motion.h2>
@@ -1041,7 +1041,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-900 text-lg max-w-2xl mx-auto"
           >
             {copy.whyLocal.subheadline}
           </motion.p>
@@ -1062,8 +1062,8 @@ export default function LowcountryMarketPage() {
                     <CheckCircle2 className="w-5 h-5 text-blue-800" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">{reason.title}</h3>
-                    <p className="text-white text-sm">{reason.description}</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{reason.title}</h3>
+                    <p className="text-gray-900 text-sm">{reason.description}</p>
                   </div>
                 </div>
               </GlassCard>

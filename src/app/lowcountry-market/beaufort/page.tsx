@@ -162,31 +162,31 @@ export default function BeaufortPage() {
           >
             <Link 
               href="/lowcountry-market"
-              className="inline-flex items-center gap-2 text-white hover:text-cyan-400 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-gray-900 hover:text-cyan-400 transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Lowcountry Market
             </Link>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
               {copy.hero.headline}
             </h1>
             
-            <p className="text-xl text-white max-w-2xl mx-auto mb-10">
+            <p className="text-xl text-gray-900 max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href={copy.hero.ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
               >
                 {copy.hero.ctaPrimary}
                 <ChevronRight className="w-4 h-4" />
               </Link>
               <Link
                 href={copy.hero.ctaSecondaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-gray-900 font-semibold rounded-xl hover:bg-white/10 transition-all"
               >
                 <ArrowLeft className="w-4 h-4" />
                 {copy.hero.ctaSecondary}
@@ -219,7 +219,7 @@ export default function BeaufortPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             {copy.intro.headline}
           </motion.h2>
@@ -228,7 +228,7 @@ export default function BeaufortPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-3xl mx-auto"
+            className="text-gray-900 text-lg max-w-3xl mx-auto"
           >
             {copy.intro.subheadline}
           </motion.p>
@@ -254,7 +254,7 @@ export default function BeaufortPage() {
                     <neighborhood.icon className={`w-7 h-7 ${colors.text}`} />
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-white mb-1">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
                     {neighborhood.name}
                   </h3>
                   
@@ -262,7 +262,7 @@ export default function BeaufortPage() {
                     {neighborhood.priceRange}
                   </p>
                   
-                  <p className="text-white text-sm mb-4">
+                  <p className="text-gray-900 text-sm mb-4">
                     {neighborhood.description}
                   </p>
                   
@@ -270,7 +270,7 @@ export default function BeaufortPage() {
                     {neighborhood.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className={`px-3 py-1 rounded-full bg-white/5 text-white text-xs`}
+                        className={`px-3 py-1 rounded-full bg-white/5 text-gray-900 text-xs`}
                       >
                         {highlight}
                       </span>
@@ -293,24 +293,24 @@ export default function BeaufortPage() {
         >
           <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20">
             <div className="text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 {copy.cta.headline}
               </h2>
-              <p className="text-white text-lg mb-8">
+              <p className="text-gray-900 text-lg mb-8">
                 {copy.cta.subhead}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href={copy.cta.ctaPrimaryLink}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
                 >
                   {copy.cta.ctaPrimary}
                   <ChevronRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href={copy.cta.ctaSecondaryLink}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-gray-900 font-semibold rounded-xl hover:bg-white/10 transition-all"
                 >
                   {copy.cta.ctaSecondary}
                 </Link>

@@ -88,7 +88,7 @@ export default function PhysicianLoans2026() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-white mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-900 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 20, 2026
@@ -146,27 +146,27 @@ export default function PhysicianLoans2026() {
               One of the most attractive features of physician loans is the down payment flexibility. Here's what's typically available:
             </p>
             <GlassCard hover={false} className="my-8 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
-              <h3 className="text-lg font-semibold text-white mb-4">Physician Loan Down Payment Options</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Physician Loan Down Payment Options</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white">100% Financing</strong>
-                    <p className="text-white text-sm">No down payment required for qualified physicians</p>
+                    <strong className="text-gray-900">100% Financing</strong>
+                    <p className="text-gray-900 text-sm">No down payment required for qualified physicians</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white">95% Financing</strong>
-                    <p className="text-white text-sm">5% down payment with no PMI</p>
+                    <strong className="text-gray-900">95% Financing</strong>
+                    <p className="text-gray-900 text-sm">5% down payment with no PMI</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white">90% Financing</strong>
-                    <p className="text-white text-sm">10% down payment for more flexibility</p>
+                    <strong className="text-gray-900">90% Financing</strong>
+                    <p className="text-gray-900 text-sm">10% down payment for more flexibility</p>
                   </div>
                 </div>
               </div>
@@ -191,23 +191,23 @@ export default function PhysicianLoans2026() {
               While requirements vary by lender, here's what typically qualifies you for a physician loan:
             </p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>MD, DO, DDS, DMD, or equivalent medical/dental degree</span>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Completion of residency (or currently in residency with attending contract)</span>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Employment contract or letter of intent from hospital/practice</span>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Credit score typically 680+ (some programs go lower)</span>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Debt-to-income ratio considered with student debt adjustments</span>
               </li>
@@ -245,14 +245,14 @@ export default function PhysicianLoans2026() {
             </ul>
 
             <div className="my-8 p-6 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl border border-cyan-500/20">
-              <h3 className="text-xl font-semibold text-white mb-4">Ready to explore your physician loan options?</h3>
-              <p className="text-white mb-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to explore your physician loan options?</h3>
+              <p className="text-gray-900 mb-6">
                 Let's discuss your situation and find the right program for your needs.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/apply"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
                 >
                   Get Pre-Approved <ArrowRight className="w-4 h-4" />
                 </Link>

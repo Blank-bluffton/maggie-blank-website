@@ -130,10 +130,10 @@ export default function PrivateWealthPage() {
       {/* Options Section */}
       <Section id="options" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.options.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             {copy.options.subhead}
           </p>
         </div>
@@ -173,7 +173,7 @@ export default function PrivateWealthPage() {
                     `} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-900 transition-colors">
                       {option.title}
                     </h3>
                     <span className={`
@@ -189,7 +189,7 @@ export default function PrivateWealthPage() {
                   </div>
                 </div>
                 
-                <p className="text-white text-sm leading-relaxed mb-4">
+                <p className="text-gray-900 text-sm leading-relaxed mb-4">
                   {option.description}
                 </p>
               </GlassCard>
@@ -202,7 +202,7 @@ export default function PrivateWealthPage() {
       <Section id="benefits" background="dark" backgroundImage="/IMG_4405.jpg">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               {copy.benefits.headline}
             </h2>
           </div>
@@ -215,8 +215,8 @@ export default function PrivateWealthPage() {
                     <CheckCircle2 className="w-5 h-5 text-pink-400" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                    <p className="text-white text-sm">{item.description}</p>
+                    <h3 className="text-gray-900 font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-900 text-sm">{item.description}</p>
                   </div>
                 </div>
               </GlassCard>
@@ -228,7 +228,7 @@ export default function PrivateWealthPage() {
       {/* Requirements Section */}
       <Section id="requirements" background="gradient">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
             {copy.requirements.headline}
           </h2>
           
@@ -237,7 +237,7 @@ export default function PrivateWealthPage() {
               {copy.requirements.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-white">{item}</span>
+                  <span className="text-gray-900">{item}</span>
                 </li>
               ))}
             </ul>
@@ -258,17 +258,17 @@ export default function PrivateWealthPage() {
       {/* Download Guide Section */}
       <Section background="dark">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-white mb-8">
+          <p className="text-gray-900 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 
             href="/Lowcountry Physician Relocation Guide.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
           >
             <ArrowRight className="w-5 h-5" />
             Download Free Guide

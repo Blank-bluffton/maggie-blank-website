@@ -101,7 +101,7 @@ export default function ContactPage() {
             >
               {/* Direct Contact Info */}
               <div className="glass-card p-6">
-                <h3 className="heading-md text-white mb-6">Direct Contact</h3>
+                <h3 className="heading-md text-gray-900 mb-6">Direct Contact</h3>
                 <div className="space-y-4">
                   <motion.a 
                     href="tel:+18437063101"
@@ -113,7 +113,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-slate-500 text-xs">Office</p>
-                      <p className="text-white font-medium group-hover:text-cyan-400 transition-colors">843-706-3101</p>
+                      <p className="text-gray-900 font-medium group-hover:text-cyan-400 transition-colors">843-706-3101</p>
                     </div>
                   </motion.a>
 
@@ -127,7 +127,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-slate-500 text-xs">Cell</p>
-                      <p className="text-white font-medium group-hover:text-pink-400 transition-colors">843-575-7768</p>
+                      <p className="text-gray-900 font-medium group-hover:text-pink-400 transition-colors">843-575-7768</p>
                     </div>
                   </motion.a>
 
@@ -141,7 +141,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-slate-500 text-xs">Email</p>
-                      <p className="text-white font-medium group-hover:text-purple-400 transition-colors">maggieblank@synovus.com</p>
+                      <p className="text-gray-900 font-medium group-hover:text-purple-400 transition-colors">maggieblank@synovus.com</p>
                     </div>
                   </motion.a>
 
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-slate-500 text-xs">Office</p>
-                      <p className="text-white font-medium">3 Belfair Village Drive</p>
+                      <p className="text-gray-900 font-medium">3 Belfair Village Drive</p>
                       <p className="text-slate-400 text-sm">Bluffton, SC 29910</p>
                     </div>
                   </motion.div>
@@ -163,18 +163,18 @@ export default function ContactPage() {
 
               {/* Office Hours */}
               <div className="glass-card p-6">
-                <h3 className="heading-md text-white mb-4 flex items-center gap-2">
+                <h3 className="heading-md text-gray-900 mb-4 flex items-center gap-2">
                   <Clock className="w-5 h-5 text-cyan-400" />
                   Office Hours
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-slate-700/50">
                     <span className="text-slate-400">Monday - Friday</span>
-                    <span className="text-white font-medium">8:30 AM - 5:00 PM</span>
+                    <span className="text-gray-900 font-medium">8:30 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-slate-700/50">
                     <span className="text-slate-400">Saturday</span>
-                    <span className="text-white font-medium">By Appointment</span>
+                    <span className="text-gray-900 font-medium">By Appointment</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-slate-400">Sunday</span>
@@ -204,7 +204,7 @@ export default function ContactPage() {
 
               {/* Map Placeholder */}
               <div className="glass-card p-6">
-                <h3 className="heading-md text-white mb-4">Location</h3>
+                <h3 className="heading-md text-gray-900 mb-4">Location</h3>
                 <div className="relative h-48 rounded-xl overflow-hidden bg-slate-900/80 border border-slate-700">
                   {/* Map placeholder with decorative elements */}
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -259,7 +259,7 @@ export default function ContactPage() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="heading-lg text-white mb-4">
+          <h2 className="heading-lg text-gray-900 mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-slate-400 mb-8">

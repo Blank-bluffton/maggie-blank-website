@@ -144,13 +144,13 @@ export default function NeighborhoodsPage() {
                   <hood.icon className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white">{hood.name}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">{hood.name}</h3>
                   <p className="text-cyan-400 text-sm font-medium">{hood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-white">{hood.description}</p>
+              <p className="text-gray-900">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-white">{hood.type}</span>
+                <span className="text-xs text-gray-900">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -159,7 +159,7 @@ export default function NeighborhoodsPage() {
         <div className="text-center mt-12">
           <Link
             href="/lowcountry-market/bluffton"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             View All Bluffton Neighborhoods <ArrowRight className="w-4 h-4" />
           </Link>
@@ -168,10 +168,10 @@ export default function NeighborhoodsPage() {
 
       <Section background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Find Your Hilton Head Neighborhood
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             From oceanfront resorts to exclusive gated communities, Hilton Head offers world-class living with championship golf and pristine beaches.
           </p>
         </div>
@@ -184,13 +184,13 @@ export default function NeighborhoodsPage() {
                   <hood.icon className="w-6 h-6 text-blue-800" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white">{hood.name}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">{hood.name}</h3>
                   <p className="text-blue-400 text-sm font-medium">{hood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-white">{hood.description}</p>
+              <p className="text-gray-900">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-white">{hood.type}</span>
+                <span className="text-xs text-gray-900">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -199,7 +199,7 @@ export default function NeighborhoodsPage() {
         <div className="text-center mt-12">
           <Link
             href="/lowcountry-market/hilton-head"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-900 hover:bg-blue-800 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             View All Hilton Head Neighborhoods <ArrowRight className="w-4 h-4" />
           </Link>
@@ -208,12 +208,12 @@ export default function NeighborhoodsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-white mb-6">
+          <p className="text-gray-900 mb-6">
             Need help finding the right neighborhood for your lifestyle and budget?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
           >
             Let's Talk <ArrowRight className="w-4 h-4" />
           </Link>

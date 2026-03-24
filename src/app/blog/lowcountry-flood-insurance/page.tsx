@@ -258,11 +258,11 @@ export default function FloodInsuranceBlog() {
       {/* Introduction Section */}
       <Section>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             {copy.intro.headline}
           </h2>
           {copy.intro.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -274,12 +274,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <MapPin className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.zones.headline}
             </h2>
           </div>
           {copy.zones.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -291,10 +291,10 @@ export default function FloodInsuranceBlog() {
                   <span className="inline-flex items-center px-3 py-1 bg-cyan-500/20 text-cyan-400 font-mono font-semibold rounded">
                     {zone.zone}
                   </span>
-                  <span className="text-white font-semibold">{zone.risk}</span>
+                  <span className="text-gray-900 font-semibold">{zone.risk}</span>
                 </div>
-                <p className="text-white text-sm mb-3">{zone.description}</p>
-                <p className="text-white text-sm">
+                <p className="text-gray-900 text-sm mb-3">{zone.description}</p>
+                <p className="text-gray-900 text-sm">
                   <span className="text-cyan-400 font-medium">Lowcountry examples:</span> {zone.lowcountry}
                 </p>
               </GlassCard>
@@ -308,43 +308,43 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <DollarSign className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.costs.headline}
             </h2>
           </div>
           {copy.costs.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <div className="grid md:grid-cols-3 gap-4 mt-8">
             <GlassCard hover={false}>
-              <h4 className="text-white text-sm mb-2">Zone X (Moderate)</h4>
-              <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneX}</p>
-              <p className="text-white text-sm mt-2">per year</p>
+              <h4 className="text-gray-900 text-sm mb-2">Zone X (Moderate)</h4>
+              <p className="text-2xl font-bold text-gray-900">{copy.costs.averages.zoneX}</p>
+              <p className="text-gray-900 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
-              <h4 className="text-white text-sm mb-2">Zone AE (High)</h4>
-              <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneAE}</p>
-              <p className="text-white text-sm mt-2">per year</p>
+              <h4 className="text-gray-900 text-sm mb-2">Zone AE (High)</h4>
+              <p className="text-2xl font-bold text-gray-900">{copy.costs.averages.zoneAE}</p>
+              <p className="text-gray-900 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
-              <h4 className="text-white text-sm mb-2">Zone VE (Highest)</h4>
-              <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneVE}</p>
-              <p className="text-white text-sm mt-2">per year</p>
+              <h4 className="text-gray-900 text-sm mb-2">Zone VE (Highest)</h4>
+              <p className="text-2xl font-bold text-gray-900">{copy.costs.averages.zoneVE}</p>
+              <p className="text-gray-900 text-sm mt-2">per year</p>
             </GlassCard>
           </div>
 
           <div className="mt-8">
-            <h3 className="text-xl font-semibold text-white mb-4">Factors Affecting Your Premium</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Factors Affecting Your Premium</h3>
             <div className="space-y-3">
               {copy.costs.factors.map((item, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 bg-gray-800/50 rounded-lg">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-white font-medium">{item.factor}:</span>
-                    <span className="text-white"> {item.description}</span>
+                    <span className="text-gray-900 font-medium">{item.factor}:</span>
+                    <span className="text-gray-900"> {item.description}</span>
                   </div>
                 </div>
               ))}
@@ -358,12 +358,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Shield className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.requirements.headline}
             </h2>
           </div>
           {copy.requirements.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -375,12 +375,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <TrendingDown className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.savings.headline}
             </h2>
           </div>
           {copy.savings.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -389,8 +389,8 @@ export default function FloodInsuranceBlog() {
             {copy.savings.strategies.map((strategy, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <strategy.icon className="w-8 h-8 text-cyan-400 mb-3" />
-                <h3 className="text-lg font-semibold text-white mb-2">{strategy.title}</h3>
-                <p className="text-white text-sm">{strategy.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{strategy.title}</h3>
+                <p className="text-gray-900 text-sm">{strategy.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -402,12 +402,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <FileText className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.selfEmployed.headline}
             </h2>
           </div>
           {copy.selfEmployed.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -425,12 +425,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.physician.headline}
             </h2>
           </div>
           {copy.physician.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -448,12 +448,12 @@ export default function FloodInsuranceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Calculator className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.closing.headline}
             </h2>
           </div>
           {copy.closing.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}

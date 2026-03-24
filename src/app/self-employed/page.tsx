@@ -187,7 +187,7 @@ export default function SelfEmployedPage() {
       {/* Options Section */}
       <Section id="options" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.options.headline}
           </h2>
         </div>
@@ -196,11 +196,11 @@ export default function SelfEmployedPage() {
           {copy.options.cards.map((card, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed mb-4">{card.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
+              <p className="text-gray-900 text-sm leading-relaxed mb-4">{card.description}</p>
               <div className="pt-3 border-t border-white/10">
                 <p className="text-xs text-cyan-400 font-medium">Best for:</p>
-                <p className="text-xs text-white">{card.bestFor}</p>
+                <p className="text-xs text-gray-900">{card.bestFor}</p>
               </div>
             </GlassCard>
           ))}
@@ -210,7 +210,7 @@ export default function SelfEmployedPage() {
       {/* Documentation Section */}
       <Section id="documentation">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.documentation.headline}
           </h2>
         </div>
@@ -218,10 +218,10 @@ export default function SelfEmployedPage() {
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.documentation.sections.map((section, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-sm">
+                  <li key={i} className="flex items-start gap-2 text-gray-900 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
@@ -236,12 +236,12 @@ export default function SelfEmployedPage() {
       <Section id="tips" background="dark">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               {copy.tips.headline}
             </h2>
             <ul className="space-y-3">
               {copy.tips.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-white">
+                <li key={index} className="flex items-start gap-3 text-gray-900">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -252,11 +252,11 @@ export default function SelfEmployedPage() {
           <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
             <div className="text-center">
               <TrendingUp className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-xl mb-2">Why Self-Employed Loans Work</h3>
-              <p className="text-white text-sm mb-4">
+              <h3 className="text-gray-900 font-semibold text-xl mb-2">Why Self-Employed Loans Work</h3>
+              <p className="text-gray-900 text-sm mb-4">
                 Traditional lenders only look at tax returns, which often understate your true income due to aggressive deductions.
               </p>
-              <p className="text-white text-sm">
+              <p className="text-gray-900 text-sm">
                 We look at the actual money coming in — because that's what matters for mortgage qualification.
               </p>
             </div>

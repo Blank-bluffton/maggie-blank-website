@@ -197,10 +197,10 @@ export default function RefinancePage() {
       {/* Refinance Types Section */}
       <Section id="refinance-types" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.refinanceTypes.headline}
           </h2>
-          <p className="text-lg text-white max-w-2xl mx-auto">
+          <p className="text-lg text-gray-900 max-w-2xl mx-auto">
             {copy.refinanceTypes.subhead}
           </p>
         </div>
@@ -234,11 +234,11 @@ export default function RefinancePage() {
                     : 'text-pink-400'
                 }`} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">{type.title}</h3>
-              <p className="text-white text-sm mb-5 leading-relaxed">{type.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{type.title}</h3>
+              <p className="text-gray-900 text-sm mb-5 leading-relaxed">{type.description}</p>
               <ul className="space-y-2.5">
                 {type.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-sm">
+                  <li key={i} className="flex items-start gap-2 text-gray-900 text-sm">
                     <CheckCircle2 className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
                       type.accent === 'cyan' 
                         ? 'text-cyan-400' 
@@ -259,15 +259,15 @@ export default function RefinancePage() {
       <Section id="savings">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               {copy.savings.headline}
             </h2>
-            <p className="text-lg text-white mb-8">
+            <p className="text-lg text-gray-900 mb-8">
               {copy.savings.subhead}
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
             >
               Get Your Custom Savings Estimate
               <ArrowRight className="w-4 h-4" />
@@ -277,33 +277,33 @@ export default function RefinancePage() {
           <GlassCard hover={false} className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20">
             <div className="text-center mb-6">
               <Calculator className="w-10 h-10 text-purple-400 mx-auto mb-3" />
-              <h3 className="text-white font-semibold text-lg">Example Savings</h3>
-              <p className="text-white text-sm">If you refinanced today</p>
+              <h3 className="text-gray-900 font-semibold text-lg">Example Savings</h3>
+              <p className="text-gray-900 text-sm">If you refinanced today</p>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="text-center p-4 rounded-xl bg-white/5">
-                <p className="text-white text-xs mb-1">Current Rate</p>
-                <p className="text-2xl font-bold text-white">{copy.savings.example.currentRate}%</p>
+                <p className="text-gray-900 text-xs mb-1">Current Rate</p>
+                <p className="text-2xl font-bold text-gray-900">{copy.savings.example.currentRate}%</p>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5">
-                <p className="text-white text-xs mb-1">New Rate</p>
+                <p className="text-gray-900 text-xs mb-1">New Rate</p>
                 <p className="text-2xl font-bold text-purple-400">{copy.savings.example.newRate}%</p>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-4 rounded-xl bg-purple-500/10 border border-purple-500/20">
-                <p className="text-white text-xs mb-1">Monthly Savings</p>
+                <p className="text-gray-900 text-xs mb-1">Monthly Savings</p>
                 <p className="text-2xl font-bold text-pink-400">${copy.savings.example.monthlySavings}</p>
               </div>
               <div className="text-center p-4 rounded-xl bg-pink-500/10 border border-pink-500/20">
-                <p className="text-white text-xs mb-1">Lifetime Savings</p>
+                <p className="text-gray-900 text-xs mb-1">Lifetime Savings</p>
                 <p className="text-2xl font-bold text-cyan-400">${copy.savings.example.lifetimeSavings.toLocaleString()}</p>
               </div>
             </div>
             
-            <p className="text-xs text-white mt-4 text-center">
+            <p className="text-xs text-gray-900 mt-4 text-center">
               *Example based on ${copy.savings.example.loanAmount.toLocaleString()} loan, {copy.savings.example.term}-year term. Actual savings depend on rate, term, and closing costs.
             </p>
           </GlassCard>
@@ -313,7 +313,7 @@ export default function RefinancePage() {
       {/* When to Refinance Section */}
       <Section id="when-to-refinance" background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {copy.whenToRefinance.headline}
           </h2>
         </div>
@@ -326,8 +326,8 @@ export default function RefinancePage() {
                   <CheckCircle2 className="w-4 h-4 text-pink-400" />
                 </div>
                 <div>
-                  <h4 className="text-white font-medium text-sm mb-1">{item.title}</h4>
-                  <p className="text-white text-xs leading-relaxed">{item.description}</p>
+                  <h4 className="text-gray-900 font-medium text-sm mb-1">{item.title}</h4>
+                  <p className="text-gray-900 text-xs leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </GlassCard>

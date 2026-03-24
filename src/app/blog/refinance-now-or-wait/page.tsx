@@ -276,11 +276,11 @@ export default function RefinanceBlog() {
       {/* Introduction Section */}
       <Section>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             {copy.intro.headline}
           </h2>
           {copy.intro.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -292,12 +292,12 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <TrendingUp className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.market.headline}
             </h2>
           </div>
           {copy.market.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -307,12 +307,12 @@ export default function RefinanceBlog() {
               <GlassCard key={index} hover={false}>
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div>
-                    <h4 className="text-white font-semibold">{item.metric}</h4>
-                    <p className="text-white text-sm">{item.note}</p>
+                    <h4 className="text-gray-900 font-semibold">{item.metric}</h4>
+                    <p className="text-gray-900 text-sm">{item.note}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold text-cyan-400">{item.current}</p>
-                    <p className="text-white text-sm flex items-center gap-1 justify-end">
+                    <p className="text-gray-900 text-sm flex items-center gap-1 justify-end">
                       {item.trend === "Stable" ? <ArrowRight className="w-3 h-3" /> : <ArrowDown className="w-3 h-3 text-green-400" />}
                       {item.trend}
                     </p>
@@ -323,7 +323,7 @@ export default function RefinanceBlog() {
           </div>
 
           <div className="mt-6 p-4 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-            <p className="text-white">
+            <p className="text-gray-900">
               <span className="text-cyan-400 font-semibold">Market Insight:</span> {copy.market.insight}
             </p>
           </div>
@@ -335,12 +335,12 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Calculator className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.breakEven.headline}
             </h2>
           </div>
           {copy.breakEven.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -353,7 +353,7 @@ export default function RefinanceBlog() {
 
           <ul className="space-y-3 mt-8">
             {copy.breakEven.factors.map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-white">
+              <li key={index} className="flex items-start gap-3 text-gray-900">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                 {item}
               </li>
@@ -365,7 +365,7 @@ export default function RefinanceBlog() {
       {/* Should You Refinance */}
       <Section id="scenarios" background="dark">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
             {copy.shouldYouRefinance.headline}
           </h2>
           
@@ -375,7 +375,7 @@ export default function RefinanceBlog() {
                 <h3 className={`text-lg font-semibold mb-2 ${scenario.answer.includes("YES") ? "text-green-400" : scenario.answer.includes("WAIT") ? "text-amber-400" : "text-cyan-400"}`}>
                   {scenario.answer}
                 </h3>
-                <p className="text-white">{scenario.description}</p>
+                <p className="text-gray-900">{scenario.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -387,7 +387,7 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Home className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.lowcountryFactors.headline}
             </h2>
           </div>
@@ -395,8 +395,8 @@ export default function RefinanceBlog() {
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             {copy.lowcountryFactors.factors.map((factor, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
-                <h3 className="text-lg font-semibold text-white mb-2">{factor.title}</h3>
-                <p className="text-white text-sm">{factor.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{factor.title}</h3>
+                <p className="text-gray-900 text-sm">{factor.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -408,7 +408,7 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <RefreshCw className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {copy.types.headline}
             </h2>
           </div>
@@ -416,8 +416,8 @@ export default function RefinanceBlog() {
           <div className="space-y-4 mt-8">
             {copy.types.options.map((option, index) => (
               <GlassCard key={index} hover={false}>
-                <h3 className="text-lg font-semibold text-white mb-1">{option.type}</h3>
-                <p className="text-white text-sm mb-3">{option.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">{option.type}</h3>
+                <p className="text-gray-900 text-sm mb-3">{option.description}</p>
                 <p className="text-cyan-400 text-sm">
                   <span className="font-medium">Best for:</span> {option.bestFor}
                 </p>
@@ -432,12 +432,12 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.physician.headline}
             </h2>
           </div>
           {copy.physician.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -455,12 +455,12 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <DollarSign className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.selfEmployed.headline}
             </h2>
           </div>
           {copy.selfEmployed.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -478,12 +478,12 @@ export default function RefinanceBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Percent className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {copy.decision.headline}
             </h2>
           </div>
           {copy.decision.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}

@@ -78,10 +78,10 @@ export default function LoanSolutionsPage() {
       {/* Loan Types Grid */}
       <Section id="loans" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Explore Your Options
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             Click on any loan type to learn more about specific programs, requirements, and benefits.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function LoanSolutionsPage() {
                     `} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-900 transition-colors">
                       {loan.title}
                     </h3>
                     <span className={`
@@ -133,7 +133,7 @@ export default function LoanSolutionsPage() {
                   </div>
                 </div>
                 
-                <p className="text-white text-sm leading-relaxed mb-4">
+                <p className="text-gray-900 text-sm leading-relaxed mb-4">
                   {loan.description}
                 </p>
 
@@ -156,10 +156,10 @@ export default function LoanSolutionsPage() {
       {/* Why Choose Maggie Section */}
       <Section id="why" background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Why Work With Maggie Blank
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             Experience the difference of working with a local mortgage expert who understands the Lowcountry market.
           </p>
         </div>
@@ -169,8 +169,8 @@ export default function LoanSolutionsPage() {
             <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-cyan-400" />
             </div>
-            <h3 className="text-white font-semibold mb-2">Local Expertise</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-gray-900 font-semibold mb-2">Local Expertise</h3>
+            <p className="text-gray-900 text-sm">
               Deep knowledge of the Bluffton, Hilton Head, and Beaufort markets. We understand local neighborhoods and values.
             </p>
           </GlassCard>
@@ -179,8 +179,8 @@ export default function LoanSolutionsPage() {
             <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-pink-400" />
             </div>
-            <h3 className="text-white font-semibold mb-2">Personal Service</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-gray-900 font-semibold mb-2">Personal Service</h3>
+            <p className="text-gray-900 text-sm">
               Direct access to Maggie herself. No call centers or automated systems — just honest, responsive communication.
             </p>
           </GlassCard>
@@ -189,8 +189,8 @@ export default function LoanSolutionsPage() {
             <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-6 h-6 text-purple-400" />
             </div>
-            <h3 className="text-white font-semibold mb-2">Proven Results</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-gray-900 font-semibold mb-2">Proven Results</h3>
+            <p className="text-gray-900 text-sm">
               President's Club award winner. Known for closing on time and making the mortgage process smooth and stress-free.
             </p>
           </GlassCard>
