@@ -33,7 +33,7 @@ export default function Section({
     <>
       {/* Overlay for readability when background image is present */}
       {backgroundImage && (
-        <div className="absolute inset-0 bg-black/40 z-0" />
+        <div className="absolute inset-0 bg-black/20 z-0" />
       )}
       {background === 'gradient' && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
