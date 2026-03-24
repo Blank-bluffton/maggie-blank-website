@@ -29,6 +29,12 @@ const realtors = [
     address: "Bluffton, SC",
     specialties: ["Residential", "New Construction", "Relocation"],
     email: "lowcountryjen@gmail.com"
+  },
+  {
+    name: "Charter One - Shelley and Gary Elliott",
+    phone: "",
+    address: "Hilton Head, SC",
+    specialties: ["Residential", "Luxury Homes", "Investment"]
   }
 ];
 
