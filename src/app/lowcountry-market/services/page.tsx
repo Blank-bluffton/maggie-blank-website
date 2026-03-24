@@ -49,7 +49,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Services You Can Trust
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             Buying a home involves more than just the mortgage. We've built a network of trusted local professionals to help you every step of the way.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                   <p className={`text-${service.color}-400 text-sm`}>Local experts</p>
                 </div>
               </div>
-              <p className="text-gray-200 mb-4">
+              <p className="text-gray-100 mb-4">
                 {service.description}
               </p>
               <Link
@@ -87,7 +87,7 @@ export default function ServicesPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-200 mb-6">
+          <p className="text-gray-100 mb-6">
             Need a recommendation for a specific service?
           </p>
           <Link

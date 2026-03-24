@@ -181,7 +181,7 @@ export default function PhysicianLoansPage() {
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-200 text-sm leading-relaxed">{card.description}</p>
+              <p className="text-gray-100 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -196,7 +196,7 @@ export default function PhysicianLoansPage() {
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-200">
+                <li key={index} className="flex items-start gap-3 text-gray-100">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -208,7 +208,7 @@ export default function PhysicianLoansPage() {
             <div className="text-center">
               <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Estimated Buying Power</h3>
-              <p className="text-gray-200 text-sm mb-6">
+              <p className="text-gray-100 text-sm mb-6">
                 With physician loan programs, many doctors qualify for significantly more home than with conventional financing.
               </p>
               <Link
@@ -242,7 +242,7 @@ export default function PhysicianLoansPage() {
             </div>
             <ul className="space-y-3">
               {copy.comparison.conventional.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-100 text-sm">
                   <span className="text-red-400">✕</span>
                   {item}
                 </li>
@@ -260,7 +260,7 @@ export default function PhysicianLoansPage() {
             </div>
             <ul className="space-y-3">
               {copy.comparison.physician.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-200 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-100 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -290,7 +290,7 @@ export default function PhysicianLoansPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-200 mb-8">
+          <p className="text-gray-100 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician — from housing markets and neighborhoods to schools, financing, and local resources.
           </p>
           <a 

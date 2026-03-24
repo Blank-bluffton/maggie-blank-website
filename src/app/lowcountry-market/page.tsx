@@ -545,7 +545,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-200 text-lg max-w-3xl mx-auto"
+            className="text-gray-100 text-lg max-w-3xl mx-auto"
           >
             {copy.marketOverview.subheadline}
           </motion.p>
@@ -564,7 +564,7 @@ export default function LowcountryMarketPage() {
                 <p className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
-                <p className="text-gray-200 mt-2">{stat.label}</p>
+                <p className="text-gray-100 mt-2">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}
@@ -587,7 +587,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-200 text-lg max-w-2xl mx-auto"
+            className="text-gray-100 text-lg max-w-2xl mx-auto"
           >
             {copy.communities.subheadline}
           </motion.p>
@@ -614,13 +614,13 @@ export default function LowcountryMarketPage() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-200 mb-4">{community.description}</p>
+                  <p className="text-gray-100 mb-4">{community.description}</p>
                   
                   <div className="flex flex-wrap gap-2">
                     {community.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 rounded-full bg-white/5 text-gray-200 text-sm"
+                        className="px-3 py-1 rounded-full bg-white/5 text-gray-100 text-sm"
                       >
                         {highlight}
                       </span>
@@ -643,7 +643,7 @@ export default function LowcountryMarketPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.blufftonNeighborhoods.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.blufftonNeighborhoods.subheadline}
           </p>
         </div>
@@ -665,12 +665,12 @@ export default function LowcountryMarketPage() {
                   <p className="text-cyan-400 text-sm">{neighborhood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-gray-200 text-sm mb-4 flex-grow">{neighborhood.description}</p>
+              <p className="text-gray-100 text-sm mb-4 flex-grow">{neighborhood.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {neighborhood.highlights.map((highlight, i) => (
                   <span 
                     key={i}
-                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-200"
+                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-100"
                   >
                     {highlight}
                   </span>
@@ -697,7 +697,7 @@ export default function LowcountryMarketPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.hiltonHeadNeighborhoods.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.hiltonHeadNeighborhoods.subheadline}
           </p>
         </div>
@@ -719,12 +719,12 @@ export default function LowcountryMarketPage() {
                   <p className="text-blue-800 text-sm">{neighborhood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-gray-200 text-sm mb-4 flex-grow">{neighborhood.description}</p>
+              <p className="text-gray-100 text-sm mb-4 flex-grow">{neighborhood.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {neighborhood.highlights.map((highlight, i) => (
                   <span 
                     key={i}
-                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-200"
+                    className="px-2 py-1 bg-white/10 rounded text-xs text-gray-100"
                   >
                     {highlight}
                   </span>
@@ -751,7 +751,7 @@ export default function LowcountryMarketPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.privateSchools.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.privateSchools.subheadline}
           </p>
         </div>
@@ -773,9 +773,9 @@ export default function LowcountryMarketPage() {
                   <p className="text-purple-400 text-sm">{school.grades}</p>
                 </div>
               </div>
-              <p className="text-gray-200 text-sm mb-4 flex-grow">{school.description}</p>
+              <p className="text-gray-100 text-sm mb-4 flex-grow">{school.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-white/10 rounded text-xs text-gray-200">
+                <span className="px-2 py-1 bg-white/10 rounded text-xs text-gray-100">
                   {school.type}
                 </span>
               </div>
@@ -809,7 +809,7 @@ export default function LowcountryMarketPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.publicSchools.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.publicSchools.subheadline}
           </p>
         </div>
@@ -835,7 +835,7 @@ export default function LowcountryMarketPage() {
                           {school.type}
                         </span>
                       </div>
-                      <p className="text-gray-200 text-sm">{school.description}</p>
+                      <p className="text-gray-100 text-sm">{school.description}</p>
                     </div>
                   </div>
                 ))}
@@ -860,7 +860,7 @@ export default function LowcountryMarketPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.lifestyle.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.lifestyle.subheadline}
           </p>
         </div>
@@ -877,7 +877,7 @@ export default function LowcountryMarketPage() {
                 <category.icon className="w-7 h-7 text-cyan-400" />
               </div>
               <h3 className="text-white font-semibold mb-2">{category.name}</h3>
-              <p className="text-gray-200 text-sm">{category.description}</p>
+              <p className="text-gray-100 text-sm">{category.description}</p>
               {category.courses && (
                 <div className="mt-4 w-full">
                   <a 
@@ -973,7 +973,7 @@ export default function LowcountryMarketPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-200 text-lg mb-8"
+              className="text-gray-100 text-lg mb-8"
             >
               {copy.floodInsurance.subheadline}
             </motion.p>
@@ -991,7 +991,7 @@ export default function LowcountryMarketPage() {
                     <Shield className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="text-white font-semibold mb-1">{section.title}</h4>
-                      <p className="text-gray-200 text-sm">{section.description}</p>
+                      <p className="text-gray-100 text-sm">{section.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -1009,7 +1009,7 @@ export default function LowcountryMarketPage() {
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Flood Insurance Quote</h3>
-                <p className="text-gray-200 text-sm mb-6">
+                <p className="text-gray-100 text-sm mb-6">
                   We work with multiple carriers to find the best flood insurance rates for your specific property.
                 </p>
                 <Link
@@ -1041,7 +1041,7 @@ export default function LowcountryMarketPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-200 text-lg max-w-2xl mx-auto"
+            className="text-gray-100 text-lg max-w-2xl mx-auto"
           >
             {copy.whyLocal.subheadline}
           </motion.p>
@@ -1063,7 +1063,7 @@ export default function LowcountryMarketPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">{reason.title}</h3>
-                    <p className="text-gray-200 text-sm">{reason.description}</p>
+                    <p className="text-gray-100 text-sm">{reason.description}</p>
                   </div>
                 </div>
               </GlassCard>

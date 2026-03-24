@@ -144,7 +144,7 @@ export default function BlogPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Latest Articles
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             Stay informed about the Lowcountry mortgage market, financing strategies, and community insights.
           </p>
         </div>
@@ -173,10 +173,10 @@ export default function BlogPage() {
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {post.title}
                 </h3>
-                <p className="text-gray-200 text-sm mb-4 flex-grow">
+                <p className="text-gray-100 text-sm mb-4 flex-grow">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-4 text-xs text-gray-200 mb-4">
+                <div className="flex items-center gap-4 text-xs text-gray-100 mb-4">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
                     {post.date}
@@ -203,7 +203,7 @@ export default function BlogPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Can't find what you're looking for?
           </h2>
-          <p className="text-gray-200 mb-6">
+          <p className="text-gray-100 mb-6">
             Get personalized guidance from Maggie Blank directly.
           </p>
           <Link

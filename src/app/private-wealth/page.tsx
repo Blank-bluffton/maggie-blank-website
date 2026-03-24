@@ -133,7 +133,7 @@ export default function PrivateWealthPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.options.headline}
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             {copy.options.subhead}
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function PrivateWealthPage() {
                   </div>
                 </div>
                 
-                <p className="text-gray-200 text-sm leading-relaxed mb-4">
+                <p className="text-gray-100 text-sm leading-relaxed mb-4">
                   {option.description}
                 </p>
               </GlassCard>
@@ -216,7 +216,7 @@ export default function PrivateWealthPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-200 text-sm">{item.description}</p>
+                    <p className="text-gray-100 text-sm">{item.description}</p>
                   </div>
                 </div>
               </GlassCard>
@@ -237,7 +237,7 @@ export default function PrivateWealthPage() {
               {copy.requirements.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-200">{item}</span>
+                  <span className="text-gray-100">{item}</span>
                 </li>
               ))}
             </ul>
@@ -261,7 +261,7 @@ export default function PrivateWealthPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-200 mb-8">
+          <p className="text-gray-100 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 

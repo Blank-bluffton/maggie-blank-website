@@ -151,7 +151,7 @@ export default function ResourcesPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.categories.headline}
           </h2>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-100 max-w-2xl mx-auto">
             {copy.categories.subhead}
           </p>
         </div>
@@ -188,9 +188,9 @@ export default function ResourcesPage() {
                       <h3 className="text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">
                         {card.title}
                       </h3>
-                      <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="w-5 h-5 text-gray-100 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <p className="text-gray-200 text-sm leading-relaxed mb-3">
+                    <p className="text-gray-100 text-sm leading-relaxed mb-3">
                       {card.description}
                     </p>
                     <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${
@@ -215,7 +215,7 @@ export default function ResourcesPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.resources.headline}
           </h2>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-100 max-w-2xl mx-auto">
             {copy.resources.subhead}
           </p>
         </div>
@@ -230,18 +230,18 @@ export default function ResourcesPage() {
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gray-800/50 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-gray-200 group-hover:text-cyan-400 transition-colors" />
+                    <item.icon className="w-6 h-6 text-gray-100 group-hover:text-cyan-400 transition-colors" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-1">
                       <h3 className="text-white font-medium group-hover:text-cyan-400 transition-colors">
                         {item.title}
                       </h3>
-                      <span className="px-2 py-0.5 bg-gray-800 text-gray-200 text-xs rounded-full">
+                      <span className="px-2 py-0.5 bg-gray-800 text-gray-100 text-xs rounded-full">
                         {item.tag}
                       </span>
                     </div>
-                    <p className="text-gray-200 text-sm leading-relaxed">
+                    <p className="text-gray-100 text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>

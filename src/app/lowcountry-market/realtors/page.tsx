@@ -105,7 +105,7 @@ export default function RealtorsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Partner With Local Experts
           </h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             We've built relationships with top realtors across Bluffton, Hilton Head, and Beaufort. They know the market, and we close together.
           </p>
         </div>
@@ -117,10 +117,10 @@ export default function RealtorsPage() {
             </div>
             <div>
               <h3 className="text-xl font-semibold text-white mb-2">Work With a Trusted Partner</h3>
-              <p className="text-gray-200 mb-4">
+              <p className="text-gray-100 mb-4">
                 Whether you're buying your first home or investing in a second property, our network of local realtors is here to guide you.
               </p>
-              <ul className="space-y-2 text-gray-200 mb-6">
+              <ul className="space-y-2 text-gray-100 mb-6">
                 <li>✓ Local market expertise</li>
                 <li>✓ Neighborhood knowledge</li>
                 <li>✓ Smooth transaction coordination</li>
@@ -133,7 +133,7 @@ export default function RealtorsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-200 mb-6">
+          <p className="text-gray-100 mb-6">
             Need a realtor recommendation?
           </p>
           <Link

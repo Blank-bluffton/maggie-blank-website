@@ -271,7 +271,7 @@ export default function TaxTipsBlog() {
             {copy.intro.headline}
           </h2>
           {copy.intro.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -288,7 +288,7 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.deductions.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -297,7 +297,7 @@ export default function TaxTipsBlog() {
             {copy.deductions.items.map((item, index) => (
               <GlassCard key={index} hover={false}>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-gray-200 text-sm mb-3">{item.description}</p>
+                <p className="text-gray-100 text-sm mb-3">{item.description}</p>
                 <div className="flex items-center gap-2 text-cyan-400 text-sm">
                   <CheckCircle2 className="w-4 h-4" />
                   <span className="font-medium">Limit:</span> {item.limit}
@@ -318,7 +318,7 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.lowcountry.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -327,7 +327,7 @@ export default function TaxTipsBlog() {
             {copy.lowcountry.benefits.map((benefit, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-gray-200 text-sm">{benefit.description}</p>
+                <p className="text-gray-100 text-sm">{benefit.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -344,7 +344,7 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.selfEmployed.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -353,13 +353,13 @@ export default function TaxTipsBlog() {
             {copy.selfEmployed.deductions.map((item, index) => (
               <GlassCard key={index} hover={false}>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-200 text-sm">{item.description}</p>
+                <p className="text-gray-100 text-sm">{item.description}</p>
               </GlassCard>
             ))}
           </div>
 
           <div className="mt-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
-            <p className="text-gray-200 text-sm">
+            <p className="text-gray-100 text-sm">
               <span className="text-amber-400 font-semibold">Note:</span> {copy.selfEmployed.note}
             </p>
           </div>
@@ -383,14 +383,14 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.physician.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <ul className="space-y-3 mt-6">
             {copy.physician.items.map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-200">
+              <li key={index} className="flex items-start gap-3 text-gray-100">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                 {item}
               </li>
@@ -398,7 +398,7 @@ export default function TaxTipsBlog() {
           </ul>
 
           <div className="mt-6 p-4 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-            <p className="text-gray-200 text-sm">
+            <p className="text-gray-100 text-sm">
               <span className="text-cyan-400 font-semibold">Note:</span> {copy.physician.note}
             </p>
           </div>
@@ -426,7 +426,7 @@ export default function TaxTipsBlog() {
             {copy.strategies.strategies.map((strategy, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <h3 className="text-white font-semibold mb-2">{strategy.title}</h3>
-                <p className="text-gray-200 text-sm">{strategy.description}</p>
+                <p className="text-gray-100 text-sm">{strategy.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -443,14 +443,14 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.firstTime.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <ul className="space-y-3 mt-6">
             {copy.firstTime.benefits.map((benefit, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-200">
+              <li key={index} className="flex items-start gap-3 text-gray-100">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                 {benefit}
               </li>
@@ -476,7 +476,7 @@ export default function TaxTipsBlog() {
             </h2>
           </div>
           {copy.important.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-200 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-100 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -487,7 +487,7 @@ export default function TaxTipsBlog() {
                 <span className="flex-shrink-0 w-6 h-6 bg-amber-500/20 rounded-full flex items-center justify-center text-amber-400 text-sm font-medium">
                   !
                 </span>
-                <span className="text-gray-200">{item}</span>
+                <span className="text-gray-100">{item}</span>
               </div>
             ))}
           </div>

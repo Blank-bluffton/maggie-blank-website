@@ -207,7 +207,7 @@ export default function BlufftonNeighborhoodsPage() {
         >
           <Link 
             href="/lowcountry-market"
-            className="inline-flex items-center gap-2 text-gray-200 hover:text-cyan-400 transition-colors"
+            className="inline-flex items-center gap-2 text-gray-100 hover:text-cyan-400 transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
             Back to Lowcountry Market
@@ -231,7 +231,7 @@ export default function BlufftonNeighborhoodsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-200 text-lg max-w-2xl mx-auto"
+            className="text-gray-100 text-lg max-w-2xl mx-auto"
           >
             {copy.neighborhoods.subheadline}
           </motion.p>
@@ -277,7 +277,7 @@ export default function BlufftonNeighborhoodsPage() {
                       </span>
                     </div>
                     <p className="text-cyan-400 font-semibold text-lg mb-3">{neighborhood.priceRange}</p>
-                    <p className="text-gray-200 leading-relaxed">{neighborhood.description}</p>
+                    <p className="text-gray-100 leading-relaxed">{neighborhood.description}</p>
                   </div>
                 </div>
 
@@ -289,7 +289,7 @@ export default function BlufftonNeighborhoodsPage() {
                       className="flex items-center gap-2 p-3 rounded-lg bg-white/5"
                     >
                       <highlight.icon className="w-5 h-5 text-pink-400" />
-                      <span className="text-gray-200 text-sm">{highlight.label}</span>
+                      <span className="text-gray-100 text-sm">{highlight.label}</span>
                     </div>
                   ))}
                 </div>
@@ -299,15 +299,15 @@ export default function BlufftonNeighborhoodsPage() {
                   <div className="flex items-start gap-2">
                     <School className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-gray-200 text-xs uppercase tracking-wide mb-1">Schools</p>
-                      <p className="text-gray-200 text-sm">{neighborhood.schools}</p>
+                      <p className="text-gray-100 text-xs uppercase tracking-wide mb-1">Schools</p>
+                      <p className="text-gray-100 text-sm">{neighborhood.schools}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Building2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-gray-200 text-xs uppercase tracking-wide mb-1">Amenities</p>
-                      <p className="text-gray-200 text-sm">{neighborhood.amenities}</p>
+                      <p className="text-gray-100 text-xs uppercase tracking-wide mb-1">Amenities</p>
+                      <p className="text-gray-100 text-sm">{neighborhood.amenities}</p>
                     </div>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function BlufftonNeighborhoodsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-200 text-lg mb-8"
+              className="text-gray-100 text-lg mb-8"
             >
               {copy.buyingConsiderations.subheadline}
             </motion.p>
@@ -354,7 +354,7 @@ export default function BlufftonNeighborhoodsPage() {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">{item.title}</h4>
-                      <p className="text-gray-200 text-sm">{item.description}</p>
+                      <p className="text-gray-100 text-sm">{item.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -372,7 +372,7 @@ export default function BlufftonNeighborhoodsPage() {
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Not Sure Which Community Is Right for You?</h3>
-                <p className="text-gray-200 text-sm mb-6">
+                <p className="text-gray-100 text-sm mb-6">
                   Let's talk about your priorities — budget, lifestyle, amenities — and find the perfect Bluffton neighborhood for your goals.
                 </p>
                 <Link
@@ -400,19 +400,19 @@ export default function BlufftonNeighborhoodsPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/lowcountry-market/hilton-head"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-100 hover:text-white hover:bg-white/10 transition-all"
             >
               Hilton Head
             </Link>
             <Link 
               href="/lowcountry-market/beaufort"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-100 hover:text-white hover:bg-white/10 transition-all"
             >
               Beaufort
             </Link>
             <Link 
               href="/lowcountry-market/okatie"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-100 hover:text-white hover:bg-white/10 transition-all"
             >
               Okatie / Hardeeville
             </Link>
