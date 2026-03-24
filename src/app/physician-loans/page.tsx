@@ -196,7 +196,7 @@ export default function PhysicianLoansPage() {
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-300">
+                <li key={index} className="flex items-start gap-3 text-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
