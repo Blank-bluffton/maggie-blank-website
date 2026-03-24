@@ -1,6 +1,5 @@
 'use client';
 
-import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
@@ -48,14 +47,6 @@ const agents = [
 export default function InsurancePage() {
   return (
     <>
-      <Hero
-        headline="Insurance Partners"
-        subheadline="Connect with local insurance agents for home, flood, and wind coverage in the Lowcountry."
-        ctaPrimary="Get Quotes"
-        ctaPrimaryLink="/contact"
-        variant="compact"
-      />
-
       <Section background="default">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
