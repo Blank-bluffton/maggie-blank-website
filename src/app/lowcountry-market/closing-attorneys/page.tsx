@@ -9,8 +9,8 @@ import { ArrowRight, FileText, MapPin, Phone, Mail } from 'lucide-react';
 const attorneys = [
   {
     name: "Bannon Law Group",
-    phone: "(843) 555-0101",
-    address: "Bluffton, SC",
+    phone: "(843) 815-4505",
+    address: "10 Westbury Park Way Unit A, Bluffton, SC 29910",
     specialties: ["Residential Closings", "Commercial Real Estate", "Title Insurance"]
   },
   {
