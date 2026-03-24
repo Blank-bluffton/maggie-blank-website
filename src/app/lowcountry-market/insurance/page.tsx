@@ -9,8 +9,8 @@ import { ArrowRight, MapPin, Phone, Shield } from 'lucide-react';
 const agents = [
   {
     name: "Carolina Heritage Insurance",
-    phone: "(843) 555-0101",
-    address: "Bluffton, SC",
+    phone: "(843) 689-3030",
+    address: "92 Main Street Suite C, Hilton Head, SC 29926",
     specialties: ["Homeowners", "Flood Insurance", "Auto"]
   },
   {
