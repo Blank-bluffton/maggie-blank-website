@@ -4,15 +4,16 @@ import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
-import { ArrowRight, Users, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Users, MapPin, Phone, Mail } from 'lucide-react';
 
 const realtors = [
   {
-    name: "Dunes Real Estate - Bill Kelley",
-    phone: "",
+    name: "Dunes Real Estate - Bill Kelly",
+    phone: "(843) 816-0116",
     address: "Hilton Head, SC",
     specialties: ["Residential", "Investment Properties", "Luxury Homes"],
-    website: "https://billk.dunesrealestate.com"
+    website: "https://billk.dunesrealestate.com",
+    email: "bill@billkellyrealestate.com"
   },
   {
     name: "The Agency - Lorie Sauer",
@@ -59,6 +60,12 @@ export default function RealtorsPage() {
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{realtor.address}</span>
                 </div>
+                {realtor.email && (
+                  <div className="flex items-center gap-3 text-gray-700">
+                    <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                    <a href={`mailto:${realtor.email}`} className="hover:text-cyan-400">{realtor.email}</a>
+                  </div>
+                )}
               </div>
               <div className="mt-4 pt-4 border-t border-gray-700">
                 <p className="text-sm text-gray-600 mb-2">Specialties:</p>
