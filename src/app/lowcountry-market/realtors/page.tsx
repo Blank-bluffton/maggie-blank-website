@@ -34,7 +34,8 @@ const realtors = [
     name: "Charter One - Shelley and Gary Elliott",
     phone: "(770) 639-1174",
     address: "Hilton Head, SC",
-    specialties: ["Residential", "Luxury Homes", "Investment"]
+    specialties: ["Residential", "Luxury Homes", "Investment"],
+    email: "shelleyandgary@charteronerealty.com"
   }
 ];
 
