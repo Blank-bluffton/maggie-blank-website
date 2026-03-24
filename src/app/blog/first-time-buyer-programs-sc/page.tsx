@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     url: "https://maggie-website-pi.vercel.app/blog/first-time-buyer-programs-sc",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
-    publishedTime: "2026-03-18T00:00:00.000Z",
     authors: ["Maggie Blank"],
     images: [
       {

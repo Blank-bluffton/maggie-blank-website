@@ -1,4 +1,4 @@
-'use client';
+
 
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
@@ -15,10 +15,7 @@ export const metadata = {
     title: "The Ultimate Move-to-Lowcountry Checklist",
     description: "Everything you need to know before moving to Bluffton, Hilton Head, or Beaufort SC.",
     type: "article",
-    publishedTime: "2026-02-18T00:00:00.000Z",
     authors: ["Maggie Blank"],
-    section: "Local Market",
-    tags: ["relocation", "Lowcountry", "moving checklist", "Bluffton", "Hilton Head"]
   }
 };
 
@@ -303,8 +300,8 @@ export default function BlogPost() {
       <CTABand
         headline="Ready to make the move?"
         subheadline="Get pre-approved and start your Lowcountry home search with confidence."
-        ctaText="Apply Now"
-        ctaLink="/apply"
+        ctaPrimary="Apply Now"
+        ctaPrimaryLink="/apply"
       />
 
       {/* JSON-LD Schema */}

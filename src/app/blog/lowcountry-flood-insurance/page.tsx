@@ -48,10 +48,6 @@ export const metadata: Metadata = {
     title: "Flood Insurance in the Lowcountry: Costs, Zones, and Savings",
     description: "Understand flood insurance requirements, costs, and savings strategies for Lowcountry homeowners.",
   },
-  publishedTime: "2026-01-20T10:00:00.000Z",
-  modifiedTime: "2026-01-20T10:00:00.000Z",
-  section: "Local Market",
-  tags: ["flood insurance", "homeowners insurance", "Lowcountry", "Bluffton", "Hilton Head", "Beaufort", "FEMA", "savings"]
 };
 
 const copy = {
@@ -206,7 +202,7 @@ const copy = {
 
   cta: {
     headline: "Get a Clear Picture of Your Total Costs",
-    subhead: "Let's include flood insurance and all associated costs in your pre-approval so there are no surprises.",
+    subheadline: "Let's include flood insurance and all associated costs in your pre-approval so there are no surprises.",
     ctaPrimary: "Schedule a Consultation",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Get Pre-Approved",
@@ -473,7 +469,7 @@ export default function FloodInsuranceBlog() {
       {/* CTA Band */}
       <CTABand
         headline={copy.cta.headline}
-        subhead={copy.cta.subhead}
+        subheadline={copy.cta.subheadline}
         ctaPrimary={copy.cta.ctaPrimary}
         ctaPrimaryLink={copy.cta.ctaPrimaryLink}
         ctaSecondary={copy.cta.ctaSecondary}

@@ -7,6 +7,7 @@ import Link from 'next/link';
 interface CTABandProps {
   headline: string;
   subhead?: string;
+  subheadline?: string;
   ctaPrimary?: string;
   ctaPrimaryLink?: string;
   ctaSecondary?: string;
@@ -16,11 +17,14 @@ interface CTABandProps {
 export default function CTABand({
   headline,
   subhead,
+  subheadline,
   ctaPrimary = 'Get Started',
   ctaPrimaryLink = '/contact',
   ctaSecondary,
   ctaSecondaryLink
 }: CTABandProps) {
+  // Support both subhead and subheadline props
+  const description = subhead || subheadline;
   return (
     <section className="py-20 lg:py-28 relative overflow-hidden">
       {/* Background glow */}
@@ -47,9 +51,9 @@ export default function CTABand({
           </h2>
 
           {/* Subheadline */}
-          {subhead && (
+          {description && (
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              {subhead}
+              {description}
             </p>
           )}
 

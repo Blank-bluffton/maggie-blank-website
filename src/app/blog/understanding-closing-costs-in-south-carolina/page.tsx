@@ -1,4 +1,4 @@
-'use client';
+
 
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
@@ -15,10 +15,7 @@ export const metadata = {
     title: "Understanding Closing Costs in South Carolina",
     description: "A comprehensive guide to closing costs for Lowcountry homebuyers.",
     type: "article",
-    publishedTime: "2026-01-22T00:00:00.000Z",
     authors: ["Maggie Blank"],
-    section: "Mortgage Education",
-    tags: ["closing costs", "South Carolina", "mortgage education"]
   }
 };
 
@@ -301,8 +298,8 @@ export default function BlogPost() {
       <CTABand
         headline="Let's estimate your closing costs"
         subheadline="Get a detailed breakdown of what you'll pay at closing."
-        ctaText="Contact Maggie"
-        ctaLink="/contact"
+        ctaPrimary="Contact Maggie"
+        ctaPrimaryLink="/contact"
       />
 
       {/* JSON-LD Schema */}

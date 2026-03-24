@@ -1,4 +1,4 @@
-'use client';
+
 
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
@@ -15,10 +15,7 @@ export const metadata = {
     title: "Why Local Lenders Beat Big Banks for Lowcountry Buyers",
     description: "Discover why working with a local mortgage lender delivers better service, faster closings, and more flexible financing.",
     type: "article",
-    publishedTime: "2026-02-10T00:00:00.000Z",
     authors: ["Maggie Blank"],
-    section: "Mortgage Strategy",
-    tags: ["local lender", "big banks", "mortgage comparison", "Lowcountry"]
   }
 };
 
@@ -249,8 +246,8 @@ export default function BlogPost() {
       <CTABand
         headline="Work with a local lender who knows the Lowcountry"
         subheadline="Get personalized service and local market expertise for your home purchase."
-        ctaText="Contact Maggie"
-        ctaLink="/contact"
+        ctaPrimary="Contact Maggie"
+        ctaPrimaryLink="/contact"
       />
 
       {/* JSON-LD Schema */}

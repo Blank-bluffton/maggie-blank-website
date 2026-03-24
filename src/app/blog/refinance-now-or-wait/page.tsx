@@ -48,10 +48,6 @@ export const metadata: Metadata = {
     title: "Refinance Now or Wait? Lowcountry Market Analysis",
     description: "Analysis of current refinance rates and market conditions for Lowcountry homeowners.",
   },
-  publishedTime: "2026-02-18T10:00:00.000Z",
-  modifiedTime: "2026-02-18T10:00:00.000Z",
-  section: "Refinancing",
-  tags: ["refinance", "mortgage rates", "Lowcountry", "Bluffton", "Hilton Head", "market analysis", "financial planning"]
 };
 
 const copy = {
@@ -224,7 +220,7 @@ const copy = {
 
   cta: {
     headline: "Get Your Personalized Refinance Analysis",
-    subhead: "Find out exactly what you'd save with a refinance — no obligation, no hard credit pull to get a rate estimate.",
+    subheadline: "Find out exactly what you'd save with a refinance — no obligation, no hard credit pull to get a rate estimate.",
     ctaPrimary: "Get Rate Quote",
     ctaPrimaryLink: "/apply",
     ctaSecondary: "Schedule Consultation",
@@ -497,7 +493,7 @@ export default function RefinanceBlog() {
       {/* CTA Band */}
       <CTABand
         headline={copy.cta.headline}
-        subhead={copy.cta.subhead}
+        subheadline={copy.cta.subheadline}
         ctaPrimary={copy.cta.ctaPrimary}
         ctaPrimaryLink={copy.cta.ctaPrimaryLink}
         ctaSecondary={copy.cta.ctaSecondary}

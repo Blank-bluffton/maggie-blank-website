@@ -1,4 +1,4 @@
-'use client';
+
 
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
@@ -16,10 +16,7 @@ export const metadata: Metadata = {
     title: "How to Get the Best Mortgage Rate in the Lowcountry",
     description: "Discover proven strategies for securing the lowest mortgage rates in Bluffton, Hilton Head, and Beaufort.",
     type: "article",
-    publishedTime: "2026-01-15T00:00:00.000Z",
     authors: ["Maggie Blank"],
-    section: "Mortgage Strategy",
-    tags: ["mortgage rates", "Lowcountry", "mortgage strategy"]
   }
 };
 
@@ -238,8 +235,8 @@ export default function BlogPost() {
       <CTABand
         headline="Let's find your best rate"
         subheadline="Get a personalized mortgage quote for your Lowcountry home."
-        ctaText="Contact Maggie"
-        ctaLink="/contact"
+        ctaPrimary="Contact Maggie"
+        ctaPrimaryLink="/contact"
       />
 
       {/* JSON-LD Schema */}

@@ -48,10 +48,6 @@ export const metadata: Metadata = {
     title: "Tax Tips for Lowcountry Homeowners",
     description: "Essential tax deductions and strategies for Lowcountry homeowners.",
   },
-  publishedTime: "2026-03-10T10:00:00.000Z",
-  modifiedTime: "2026-03-10T10:00:00.000Z",
-  section: "Financial Planning",
-  tags: ["tax tips", "homeowner deductions", "mortgage", "Lowcountry", "Bluffton", "Hilton Head", "financial planning"]
 };
 
 const copy = {
@@ -215,7 +211,7 @@ const copy = {
 
   cta: {
     headline: "Make the Most of Your Lowcountry Homeownership",
-    subhead: "Understanding your tax benefits is part of smart financial planning. Let's discuss your mortgage options and how homeownership fits into your overall financial strategy.",
+    subheadline: "Understanding your tax benefits is part of smart financial planning. Let's discuss your mortgage options and how homeownership fits into your overall financial strategy.",
     ctaPrimary: "Get Pre-Approved",
     ctaPrimaryLink: "/apply",
     ctaSecondary: "Schedule Financial Consultation",
@@ -501,7 +497,7 @@ export default function TaxTipsBlog() {
       {/* CTA Band */}
       <CTABand
         headline={copy.cta.headline}
-        subhead={copy.cta.subhead}
+        subheadline={copy.cta.subheadline}
         ctaPrimary={copy.cta.ctaPrimary}
         ctaPrimaryLink={copy.cta.ctaPrimaryLink}
         ctaSecondary={copy.cta.ctaSecondary}

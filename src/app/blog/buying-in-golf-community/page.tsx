@@ -46,10 +46,6 @@ export const metadata: Metadata = {
     title: "Buying in a Golf Community: What Lowcountry Buyers Need to Know",
     description: "Everything Bluffton, Hilton Head, and Beaufort buyers need to know about purchasing a home in a golf community.",
   },
-  publishedTime: "2025-12-15T10:00:00.000Z",
-  modifiedTime: "2025-12-15T10:00:00.000Z",
-  section: "Local Market",
-  tags: ["golf community", "real estate", "Lowcountry", "Bluffton", "Hilton Head", "buying guide"]
 };
 
 const copy = {
@@ -163,7 +159,7 @@ const copy = {
 
   cta: {
     headline: "Ready to Explore Golf Community Living?",
-    subhead: "Let's discuss your financing options and find the right golf community for your lifestyle and budget.",
+    subheadline: "Let's discuss your financing options and find the right golf community for your lifestyle and budget.",
     ctaPrimary: "Schedule a Consultation",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Get Pre-Approved",
@@ -367,7 +363,7 @@ export default function GolfCommunityBlog() {
       {/* CTA Band */}
       <CTABand
         headline={copy.cta.headline}
-        subhead={copy.cta.subhead}
+        subheadline={copy.cta.subheadline}
         ctaPrimary={copy.cta.ctaPrimary}
         ctaPrimaryLink={copy.cta.ctaPrimaryLink}
         ctaSecondary={copy.cta.ctaSecondary}

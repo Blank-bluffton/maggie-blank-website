@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     url: "https://maggie-website-pi.vercel.app/blog/physician-loans-2026",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
-    publishedTime: "2026-03-20T00:00:00.000Z",
     authors: ["Maggie Blank"],
     images: [
       {
