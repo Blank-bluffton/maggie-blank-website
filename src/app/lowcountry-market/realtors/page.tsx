@@ -25,9 +25,10 @@ const realtors = [
   },
   {
     name: "Lowcountry Live Oak Realty - Jennifer Windley",
-    phone: "",
+    phone: "(843) 384-1685",
     address: "Bluffton, SC",
-    specialties: ["Residential", "New Construction", "Relocation"]
+    specialties: ["Residential", "New Construction", "Relocation"],
+    email: "lowcountryjen@gmail.com"
   }
 ];
 
