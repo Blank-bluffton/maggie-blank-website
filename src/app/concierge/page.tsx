@@ -116,7 +116,7 @@ export default function ConciergePage() {
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
         trustBullets={copy.hero.trustBullets}
-        variant="default"
+        variant="compact"
         backgroundImage="/IMG_4406.JPG"
       />
 
