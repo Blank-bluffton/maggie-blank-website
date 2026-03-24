@@ -220,16 +220,16 @@ export default function ConventionalLoansPage() {
       {/* What Is Conventional Section */}
       <Section id="what-is">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
             {copy.whatIs.headline}
           </h2>
-          <p className="text-white text-lg leading-relaxed mb-8">
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
             {copy.whatIs.description}
           </p>
           <div className="grid sm:grid-cols-2 gap-4 text-left">
             {copy.whatIs.features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-3 text-white">
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+              <div key={index} className="flex items-start gap-3 text-gray-700">
+                <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                 {feature}
               </div>
             ))}
