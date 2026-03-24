@@ -13,6 +13,13 @@ const realtors = [
     address: "Hilton Head, SC",
     specialties: ["Residential", "Investment Properties", "Luxury Homes"],
     website: "https://billk.dunesrealestate.com"
+  },
+  {
+    name: "The Agency - Lorie Sauer",
+    phone: "(912) 656-2969",
+    address: "Hilton Head, SC",
+    specialties: ["Residential", "Luxury Homes", "First-Time Buyers"],
+    website: "https://loriesauer.com"
   }
 ];
 
