@@ -162,7 +162,7 @@ export default function BeaufortPage() {
           >
             <Link 
               href="/lowcountry-market"
-              className="inline-flex items-center gap-2 text-gray-100 hover:text-cyan-400 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-white hover:text-cyan-400 transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Lowcountry Market
@@ -172,7 +172,7 @@ export default function BeaufortPage() {
               {copy.hero.headline}
             </h1>
             
-            <p className="text-xl text-gray-100 max-w-2xl mx-auto mb-10">
+            <p className="text-xl text-white max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
             
@@ -228,7 +228,7 @@ export default function BeaufortPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-100 text-lg max-w-3xl mx-auto"
+            className="text-white text-lg max-w-3xl mx-auto"
           >
             {copy.intro.subheadline}
           </motion.p>
@@ -262,7 +262,7 @@ export default function BeaufortPage() {
                     {neighborhood.priceRange}
                   </p>
                   
-                  <p className="text-gray-100 text-sm mb-4">
+                  <p className="text-white text-sm mb-4">
                     {neighborhood.description}
                   </p>
                   
@@ -270,7 +270,7 @@ export default function BeaufortPage() {
                     {neighborhood.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className={`px-3 py-1 rounded-full bg-white/5 text-gray-100 text-xs`}
+                        className={`px-3 py-1 rounded-full bg-white/5 text-white text-xs`}
                       >
                         {highlight}
                       </span>
@@ -296,7 +296,7 @@ export default function BeaufortPage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 {copy.cta.headline}
               </h2>
-              <p className="text-gray-100 text-lg mb-8">
+              <p className="text-white text-lg mb-8">
                 {copy.cta.subhead}
               </p>
               

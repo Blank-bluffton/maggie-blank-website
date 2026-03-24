@@ -164,7 +164,7 @@ export default function ConstructionPage() {
                 </span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-              <p className="text-gray-100 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-white text-sm leading-relaxed">{step.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -189,7 +189,7 @@ export default function ConstructionPage() {
             >
               <card.icon className={`w-10 h-10 mb-4 ${index === 0 ? 'text-cyan-400' : index === 1 ? 'text-pink-400' : index === 2 ? 'text-purple-400' : 'text-teal-400'}`} />
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-100 text-sm leading-relaxed">{card.description}</p>
+              <p className="text-white text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -204,7 +204,7 @@ export default function ConstructionPage() {
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-100">
+                <li key={index} className="flex items-start gap-3 text-white">
                   <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -216,7 +216,7 @@ export default function ConstructionPage() {
             <div className="text-center">
               <Hammer className="w-12 h-12 text-pink-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Building in the Lowcountry?</h3>
-              <p className="text-gray-100 text-sm mb-6">
+              <p className="text-white text-sm mb-6">
                 We work with experienced local builders who understand coastal construction, permits, and the unique challenges of building in Beaufort County.
               </p>
               <Link
@@ -242,7 +242,7 @@ export default function ConstructionPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Your Dream Home Starts Here
             </h2>
-            <p className="text-gray-100 text-lg mb-8">
+            <p className="text-white text-lg mb-8">
               Whether you're building a custom home on the water, a family home in Belfair, or a retirement retreat in Sun City, we make construction financing simple.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -286,7 +286,7 @@ export default function ConstructionPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-100 mb-8">
+          <p className="text-white mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 

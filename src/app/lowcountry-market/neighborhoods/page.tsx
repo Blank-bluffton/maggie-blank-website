@@ -148,9 +148,9 @@ export default function NeighborhoodsPage() {
                   <p className="text-cyan-400 text-sm font-medium">{hood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-gray-100">{hood.description}</p>
+              <p className="text-white">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-gray-100">{hood.type}</span>
+                <span className="text-xs text-white">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -171,7 +171,7 @@ export default function NeighborhoodsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Find Your Hilton Head Neighborhood
           </h2>
-          <p className="text-gray-100 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             From oceanfront resorts to exclusive gated communities, Hilton Head offers world-class living with championship golf and pristine beaches.
           </p>
         </div>
@@ -188,9 +188,9 @@ export default function NeighborhoodsPage() {
                   <p className="text-blue-400 text-sm font-medium">{hood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-gray-100">{hood.description}</p>
+              <p className="text-white">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-gray-100">{hood.type}</span>
+                <span className="text-xs text-white">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -208,7 +208,7 @@ export default function NeighborhoodsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-100 mb-6">
+          <p className="text-white mb-6">
             Need help finding the right neighborhood for your lifestyle and budget?
           </p>
           <Link

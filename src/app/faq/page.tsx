@@ -284,7 +284,7 @@ function TrustBadge({ icon: Icon, text }: { icon: any; text: string }) {
   return (
     <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
       <Icon className="w-4 h-4 text-cyan-400" />
-      <span className="text-gray-100 text-sm">{text}</span>
+      <span className="text-white text-sm">{text}</span>
     </div>
   );
 }
@@ -317,7 +317,7 @@ export default function FAQPage() {
               Frequently Asked <span className="text-gradient-cyan">Questions</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto mb-10">
+            <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-10">
               Find answers to common questions about buying a home, securing a mortgage, 
               and financing your Lowcountry property.
             </p>
@@ -339,7 +339,7 @@ export default function FAQPage() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="text-gray-100"
+                className="text-white"
               >
                 <ChevronDown className="w-6 h-6" />
               </motion.div>
@@ -410,7 +410,7 @@ export default function FAQPage() {
               Still have questions?
             </h2>
 
-            <p className="text-gray-100 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Every borrower's situation is unique. Let's talk about your specific 
               goals and find the right financing solution for you.
             </p>
@@ -436,8 +436,8 @@ export default function FAQPage() {
 
             {/* Contact info */}
             <div className="mt-8 pt-8 border-t border-white/10">
-              <p className="text-gray-100 text-sm mb-4">Or reach out directly:</p>
-              <div className="flex flex-wrap justify-center gap-6 text-gray-100 text-sm">
+              <p className="text-white text-sm mb-4">Or reach out directly:</p>
+              <div className="flex flex-wrap justify-center gap-6 text-white text-sm">
                 <a 
                   href="tel:8437063101" 
                   className="flex items-center gap-2 hover:text-cyan-400 transition-colors"
@@ -478,31 +478,31 @@ export default function FAQPage() {
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href="/physician-loans"
-                className="px-5 py-2 rounded-full bg-white/5 border border-pink-500/20 text-gray-100 hover:text-white hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-pink-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 Physician Loans
               </Link>
               <Link
                 href="/first-time-buyers"
-                className="px-5 py-2 rounded-full bg-white/5 border border-cyan-500/20 text-gray-100 hover:text-white hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-cyan-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 First-Time Buyers
               </Link>
               <Link
                 href="/self-employed"
-                className="px-5 py-2 rounded-full bg-white/5 border border-purple-500/20 text-gray-100 hover:text-white hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-purple-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 Self-Employed
               </Link>
               <Link
                 href="/loan-solutions"
-                className="px-5 py-2 rounded-full bg-white/5 border border-teal-500/20 text-gray-100 hover:text-white hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-teal-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 All Loan Options
               </Link>
               <Link
                 href="/about"
-                className="px-5 py-2 rounded-full bg-white/5 border border-white/20 text-gray-100 hover:text-white hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-white/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 About Maggie
               </Link>

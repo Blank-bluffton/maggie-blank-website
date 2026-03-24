@@ -227,7 +227,7 @@ function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
           <div className="text-3xl sm:text-4xl font-bold text-gradient-pink mb-1">
             {stat.value}
           </div>
-          <div className="text-sm text-gray-100">{stat.label}</div>
+          <div className="text-sm text-white">{stat.label}</div>
         </motion.div>
       ))}
     </div>
@@ -247,7 +247,7 @@ function PersonalFact({ icon: Icon, text, delay }: { icon: any; text: string; de
       <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
         <Icon className="w-5 h-5 text-pink-400" />
       </div>
-      <span className="text-gray-100">{text}</span>
+      <span className="text-white">{text}</span>
     </motion.div>
   );
 }
@@ -263,7 +263,7 @@ function CredentialBadge({ icon: Icon, text, delay }: { icon: any; text: string;
       className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-pink-500/20"
     >
       <Icon className="w-4 h-4 text-pink-400" />
-      <span className="text-sm text-gray-100">{text}</span>
+      <span className="text-sm text-white">{text}</span>
     </motion.div>
   );
 }
@@ -279,7 +279,7 @@ function TrustBullet({ text, delay }: { text: string; delay: number }) {
       className="flex items-start gap-3"
     >
       <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-      <span className="text-gray-100">{text}</span>
+      <span className="text-white">{text}</span>
     </motion.div>
   );
 }
@@ -319,7 +319,7 @@ export default function AboutPage() {
               Meet <span className="text-gradient-pink">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-100 max-w-2xl mx-auto mb-10">
+            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
 
@@ -334,7 +334,7 @@ export default function AboutPage() {
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10"
                 >
                   <Shield className="w-4 h-4 text-cyan-400" />
-                  <span className="text-gray-100 text-sm">{bullet}</span>
+                  <span className="text-white text-sm">{bullet}</span>
                 </motion.div>
               ))}
             </div>
@@ -408,12 +408,12 @@ export default function AboutPage() {
                   alt="Maggie Blank with her family" 
                   className="w-full h-auto rounded-lg"
                 />
-                <p className="text-gray-100 text-sm text-center mt-4">
+                <p className="text-white text-sm text-center mt-4">
                   Maggie with her family — Robert and Reagan
                 </p>
               </GlassCard>
               
-              <div className="space-y-4 text-gray-100 leading-relaxed text-lg">
+              <div className="space-y-4 text-white leading-relaxed text-lg">
                 {copy.story.body.split('\n\n').map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -485,7 +485,7 @@ export default function AboutPage() {
               {copy.personal.headline}
             </h2>
             
-            <p className="text-gray-100 text-center mb-8 max-w-xl mx-auto">
+            <p className="text-white text-center mb-8 max-w-xl mx-auto">
               {copy.personal.intro}
             </p>
             

@@ -88,7 +88,7 @@ export default function PhysicianLoans2026() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-100 mb-8">
+          <div className="flex items-center gap-6 text-sm text-white mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 20, 2026
@@ -152,21 +152,21 @@ export default function PhysicianLoans2026() {
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">100% Financing</strong>
-                    <p className="text-gray-100 text-sm">No down payment required for qualified physicians</p>
+                    <p className="text-white text-sm">No down payment required for qualified physicians</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">95% Financing</strong>
-                    <p className="text-gray-100 text-sm">5% down payment with no PMI</p>
+                    <p className="text-white text-sm">5% down payment with no PMI</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">90% Financing</strong>
-                    <p className="text-gray-100 text-sm">10% down payment for more flexibility</p>
+                    <p className="text-white text-sm">10% down payment for more flexibility</p>
                   </div>
                 </div>
               </div>
@@ -191,23 +191,23 @@ export default function PhysicianLoans2026() {
               While requirements vary by lender, here's what typically qualifies you for a physician loan:
             </p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-100">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>MD, DO, DDS, DMD, or equivalent medical/dental degree</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-100">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Completion of residency (or currently in residency with attending contract)</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-100">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Employment contract or letter of intent from hospital/practice</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-100">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Credit score typically 680+ (some programs go lower)</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-100">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>Debt-to-income ratio considered with student debt adjustments</span>
               </li>
@@ -246,7 +246,7 @@ export default function PhysicianLoans2026() {
 
             <div className="my-8 p-6 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl border border-cyan-500/20">
               <h3 className="text-xl font-semibold text-white mb-4">Ready to explore your physician loan options?</h3>
-              <p className="text-gray-100 mb-6">
+              <p className="text-white mb-6">
                 Let's discuss your situation and find the right program for your needs.
               </p>
               <div className="flex flex-wrap gap-4">
