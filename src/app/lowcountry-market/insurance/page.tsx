@@ -15,8 +15,8 @@ const agents = [
   },
   {
     name: "State Farm Insurance",
-    phone: "(843) 555-0202",
-    address: "Hilton Head, SC",
+    phone: "(843) 836-9900",
+    address: "152 State Street Suite 102, Bluffton, SC 29910",
     specialties: ["Homeowners", "Life Insurance", "Business"]
   },
   {
