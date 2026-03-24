@@ -8,6 +8,12 @@ import { ArrowRight, MapPin, Phone, Shield } from 'lucide-react';
 
 const agents = [
   {
+    name: "Belmont Insurance Services",
+    phone: "",
+    address: "1 Westbury Park Way #101, Bluffton, SC 29910",
+    specialties: ["Homeowners", "Flood Insurance", "Auto"]
+  },
+  {
     name: "Carolina Heritage Insurance",
     phone: "(843) 689-3030",
     address: "92 Main Street Suite C, Hilton Head, SC 29926",
@@ -65,10 +71,12 @@ export default function InsurancePage() {
             <GlassCard key={index} hover={true} delay={index * 0.1}>
               <h3 className="text-xl font-semibold text-white mb-4">{agent.name}</h3>
               <div className="space-y-3">
-                <div className="flex items-center gap-3 text-gray-400">
-                  <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>{agent.phone}</span>
-                </div>
+                {agent.phone && (
+                  <div className="flex items-center gap-3 text-gray-400">
+                    <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                    <span>{agent.phone}</span>
+                  </div>
+                )}
                 <div className="flex items-center gap-3 text-gray-400">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{agent.address}</span>
