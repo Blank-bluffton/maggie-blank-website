@@ -35,7 +35,8 @@ const realtors = [
     phone: "(770) 639-1174",
     address: "Hilton Head, SC",
     specialties: ["Residential", "Luxury Homes", "Investment"],
-    email: "shelleyandgary@charteronerealty.com"
+    email: "shelleyandgary@charteronerealty.com",
+    website: "https://wesellthelowcountry.com"
   }
 ];
 
