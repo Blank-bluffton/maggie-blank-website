@@ -313,7 +313,7 @@ export default function ConventionalLoansPage() {
               <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                 <Home className="w-5 h-5 text-cyan-300" />
               </div>
-              <h3 className="text-white font-semibold text-lg">{copy.comparison.conventional.title}</h3>
+              <h3 className="text-cyan-300 font-bold text-lg">{copy.comparison.conventional.title}</h3>
             </div>
             <ul className="space-y-3">
               {copy.comparison.conventional.items.map((item, i) => (
@@ -331,7 +331,7 @@ export default function ConventionalLoansPage() {
               <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
                 <Shield className="w-5 h-5 text-orange-300" />
               </div>
-              <h3 className="text-white font-semibold text-lg">{copy.comparison.fha.title}</h3>
+              <h3 className="text-orange-300 font-bold text-lg">{copy.comparison.fha.title}</h3>
             </div>
             <ul className="space-y-3">
               {copy.comparison.fha.items.map((item, i) => (
@@ -349,7 +349,7 @@ export default function ConventionalLoansPage() {
               <div className="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center">
                 <Scale className="w-5 h-5 text-green-300" />
               </div>
-              <h3 className="text-white font-semibold text-lg">{copy.comparison.usda.title}</h3>
+              <h3 className="text-green-300 font-bold text-lg">{copy.comparison.usda.title}</h3>
             </div>
             <ul className="space-y-3">
               {copy.comparison.usda.items.map((item, i) => (
