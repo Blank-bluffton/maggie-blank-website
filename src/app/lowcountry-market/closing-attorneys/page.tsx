@@ -27,8 +27,8 @@ const attorneys = [
   },
   {
     name: "Liberty Oak Law Firm",
-    phone: "(843) 555-0404",
-    address: "Beaufort, SC",
+    phone: "(843) 671-5550",
+    address: "71 Lighthouse Rd # 230, Hilton Head, SC 29928",
     specialties: ["Real Estate Closings", "Title Clearance", "Entity Transactions"]
   }
 ];
