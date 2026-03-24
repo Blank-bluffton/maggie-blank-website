@@ -57,7 +57,7 @@ const copy = {
         priceRange: "$400K - $1.5M",
         highlights: ["Historic District", "May River", "Top Schools", "New Construction"],
         icon: Building2,
-        link: "/lowcountry-market/bluffton"
+        link: "/lowcountry-market/neighborhoods"
       },
       {
         name: "Hilton Head Island",
@@ -65,7 +65,7 @@ const copy = {
         priceRange: "$500K - $3M+",
         highlights: ["Beach Communities", "Golf Resorts", "Private Islands", "Marina Living"],
         icon: Waves,
-        link: "/lowcountry-market/hilton-head"
+        link: "/lowcountry-market/neighborhoods"
       },
       {
         name: "Beaufort",
