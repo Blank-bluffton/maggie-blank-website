@@ -22,6 +22,12 @@ const realtors = [
     specialties: ["Residential", "Luxury Homes", "First-Time Buyers"],
     website: "https://loriesauer.com",
     email: "lorie.sauer@theagencyre.com"
+  },
+  {
+    name: "Lowcountry Live Oak Realty - Jennifer Windley",
+    phone: "",
+    address: "Bluffton, SC",
+    specialties: ["Residential", "New Construction", "Relocation"]
   }
 ];
 
