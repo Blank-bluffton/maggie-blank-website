@@ -147,7 +147,7 @@ export default function BlogPost() {
                 <div className="text-gray-200 col-span-2 pt-4 border-t border-gray-700">
                   <span className="text-cyan-400">Monthly Savings: $138</span>
                   <br />
-                  <span className="text-gray-400">Break-even: 58 months</span>
+                  <span className="text-gray-200">Break-even: 58 months</span>
                 </div>
               </div>
             </div>

@@ -322,17 +322,17 @@ export default function FloodInsuranceBlog() {
             <GlassCard hover={false}>
               <h4 className="text-gray-200 text-sm mb-2">Zone X (Moderate)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneX}</p>
-              <p className="text-gray-400 text-sm mt-2">per year</p>
+              <p className="text-gray-200 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
               <h4 className="text-gray-200 text-sm mb-2">Zone AE (High)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneAE}</p>
-              <p className="text-gray-400 text-sm mt-2">per year</p>
+              <p className="text-gray-200 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
               <h4 className="text-gray-200 text-sm mb-2">Zone VE (Highest)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneVE}</p>
-              <p className="text-gray-400 text-sm mt-2">per year</p>
+              <p className="text-gray-200 text-sm mt-2">per year</p>
             </GlassCard>
           </div>
 

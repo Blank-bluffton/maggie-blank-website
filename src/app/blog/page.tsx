@@ -176,7 +176,7 @@ export default function BlogPage() {
                 <p className="text-gray-200 text-sm mb-4 flex-grow">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-4 text-xs text-gray-400 mb-4">
+                <div className="flex items-center gap-4 text-xs text-gray-200 mb-4">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
                     {post.date}

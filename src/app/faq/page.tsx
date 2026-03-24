@@ -339,7 +339,7 @@ export default function FAQPage() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="text-gray-400"
+                className="text-gray-200"
               >
                 <ChevronDown className="w-6 h-6" />
               </motion.div>
@@ -436,7 +436,7 @@ export default function FAQPage() {
 
             {/* Contact info */}
             <div className="mt-8 pt-8 border-t border-white/10">
-              <p className="text-gray-400 text-sm mb-4">Or reach out directly:</p>
+              <p className="text-gray-200 text-sm mb-4">Or reach out directly:</p>
               <div className="flex flex-wrap justify-center gap-6 text-gray-200 text-sm">
                 <a 
                   href="tel:8437063101" 

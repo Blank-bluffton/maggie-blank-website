@@ -188,7 +188,7 @@ export default function ResourcesPage() {
                       <h3 className="text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">
                         {card.title}
                       </h3>
-                      <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
                     </div>
                     <p className="text-gray-200 text-sm leading-relaxed mb-3">
                       {card.description}
@@ -237,11 +237,11 @@ export default function ResourcesPage() {
                       <h3 className="text-white font-medium group-hover:text-cyan-400 transition-colors">
                         {item.title}
                       </h3>
-                      <span className="px-2 py-0.5 bg-gray-800 text-gray-400 text-xs rounded-full">
+                      <span className="px-2 py-0.5 bg-gray-800 text-gray-200 text-xs rounded-full">
                         {item.tag}
                       </span>
                     </div>
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-200 text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>

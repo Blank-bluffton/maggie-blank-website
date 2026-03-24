@@ -299,14 +299,14 @@ export default function BlufftonNeighborhoodsPage() {
                   <div className="flex items-start gap-2">
                     <School className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Schools</p>
+                      <p className="text-gray-200 text-xs uppercase tracking-wide mb-1">Schools</p>
                       <p className="text-gray-200 text-sm">{neighborhood.schools}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Building2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-gray-400 text-xs uppercase tracking-wide mb-1">Amenities</p>
+                      <p className="text-gray-200 text-xs uppercase tracking-wide mb-1">Amenities</p>
                       <p className="text-gray-200 text-sm">{neighborhood.amenities}</p>
                     </div>
                   </div>

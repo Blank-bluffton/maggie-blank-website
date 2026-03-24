@@ -150,7 +150,7 @@ export default function NeighborhoodsPage() {
               </div>
               <p className="text-gray-200">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-gray-400">{hood.type}</span>
+                <span className="text-xs text-gray-200">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -190,7 +190,7 @@ export default function NeighborhoodsPage() {
               </div>
               <p className="text-gray-200">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-gray-400">{hood.type}</span>
+                <span className="text-xs text-gray-200">{hood.type}</span>
               </div>
             </GlassCard>
           ))}

@@ -200,7 +200,7 @@ export default function SelfEmployedPage() {
               <p className="text-gray-200 text-sm leading-relaxed mb-4">{card.description}</p>
               <div className="pt-3 border-t border-white/10">
                 <p className="text-xs text-cyan-400 font-medium">Best for:</p>
-                <p className="text-xs text-gray-400">{card.bestFor}</p>
+                <p className="text-xs text-gray-200">{card.bestFor}</p>
               </div>
             </GlassCard>
           ))}

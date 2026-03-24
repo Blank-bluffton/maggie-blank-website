@@ -198,7 +198,7 @@ export default function ConciergePage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-white/5 border border-white/10 rounded-xl"
             >
               <div className="md:border-r md:border-white/10 md:pr-6">
-                <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">Traditional Lending</span>
+                <span className="text-xs font-medium text-gray-200 uppercase tracking-wider">Traditional Lending</span>
                 <p className="text-gray-200 mt-2">{item.traditional}</p>
               </div>
               <div>

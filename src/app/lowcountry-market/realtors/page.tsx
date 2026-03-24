@@ -133,7 +133,7 @@ export default function RealtorsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-200 mb-6">
             Need a realtor recommendation?
           </p>
           <Link

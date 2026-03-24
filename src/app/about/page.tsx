@@ -408,7 +408,7 @@ export default function AboutPage() {
                   alt="Maggie Blank with her family" 
                   className="w-full h-auto rounded-lg"
                 />
-                <p className="text-gray-400 text-sm text-center mt-4">
+                <p className="text-gray-200 text-sm text-center mt-4">
                   Maggie with her family — Robert and Reagan
                 </p>
               </GlassCard>

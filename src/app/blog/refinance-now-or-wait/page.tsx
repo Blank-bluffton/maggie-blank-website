@@ -312,7 +312,7 @@ export default function RefinanceBlog() {
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold text-cyan-400">{item.current}</p>
-                    <p className="text-gray-400 text-sm flex items-center gap-1 justify-end">
+                    <p className="text-gray-200 text-sm flex items-center gap-1 justify-end">
                       {item.trend === "Stable" ? <ArrowRight className="w-3 h-3" /> : <ArrowDown className="w-3 h-3 text-green-400" />}
                       {item.trend}
                     </p>

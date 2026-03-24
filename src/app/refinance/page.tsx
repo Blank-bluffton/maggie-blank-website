@@ -303,7 +303,7 @@ export default function RefinancePage() {
               </div>
             </div>
             
-            <p className="text-xs text-gray-400 mt-4 text-center">
+            <p className="text-xs text-gray-200 mt-4 text-center">
               *Example based on ${copy.savings.example.loanAmount.toLocaleString()} loan, {copy.savings.example.term}-year term. Actual savings depend on rate, term, and closing costs.
             </p>
           </GlassCard>
