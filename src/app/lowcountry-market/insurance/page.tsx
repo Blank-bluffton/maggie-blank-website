@@ -21,8 +21,8 @@ const agents = [
   },
   {
     name: "Gallagher Insurance",
-    phone: "(843) 555-0505",
-    address: "Beaufort, SC",
+    phone: "(843) 706-3006",
+    address: "6 Johnston Way, Bluffton, SC 29910",
     specialties: ["Business Insurance", "Homeowners", "Specialty"]
   },
   {
