@@ -21,8 +21,8 @@ const agents = [
   },
   {
     name: "Hilton Head Insurance & Brokerage",
-    phone: "(843) 555-0303",
-    address: "Hilton Head, SC",
+    phone: "(843) 252-0840",
+    address: "55 New Orleans Rd Suite 203, Hilton Head, SC 29928",
     specialties: ["Coastal Insurance", "Flood", "Wind"]
   },
   {
