@@ -171,7 +171,7 @@ export default function PhysicianLoansPage() {
       {/* Benefits Section */}
       <Section id="benefits" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.benefits.headline}
           </h2>
         </div>
@@ -180,8 +180,8 @@ export default function PhysicianLoansPage() {
           {copy.benefits.cards.map((card, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
-              <p className="text-gray-900 text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -191,12 +191,12 @@ export default function PhysicianLoansPage() {
       <Section id="requirements">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               {copy.requirements.headline}
             </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-900">
+                <li key={index} className="flex items-start gap-3 text-white">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -207,13 +207,13 @@ export default function PhysicianLoansPage() {
           <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
             <div className="text-center">
               <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-              <h3 className="text-gray-900 font-semibold text-xl mb-2">Estimated Buying Power</h3>
-              <p className="text-gray-900 text-sm mb-6">
+              <h3 className="text-white font-semibold text-xl mb-2">Estimated Buying Power</h3>
+              <p className="text-white text-sm mb-6">
                 With physician loan programs, many doctors qualify for significantly more home than with conventional financing.
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
               >
                 Get Custom Quote
                 <ArrowRight className="w-4 h-4" />
@@ -226,7 +226,7 @@ export default function PhysicianLoansPage() {
       {/* Comparison Section */}
       <Section id="comparison" background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.comparison.headline}
           </h2>
         </div>
@@ -238,11 +238,11 @@ export default function PhysicianLoansPage() {
               <div className="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center">
                 <Banknote className="w-6 h-6 text-red-400" />
               </div>
-              <h3 className="text-gray-900 font-semibold text-xl">{copy.comparison.conventional.title}</h3>
+              <h3 className="text-white font-semibold text-xl">{copy.comparison.conventional.title}</h3>
             </div>
             <ul className="space-y-3">
               {copy.comparison.conventional.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-900 text-sm">
+                <li key={i} className="flex items-start gap-2 text-white text-sm">
                   <span className="text-red-400">✕</span>
                   {item}
                 </li>
@@ -256,11 +256,11 @@ export default function PhysicianLoansPage() {
               <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                 <Stethoscope className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-gray-900 font-semibold text-xl">{copy.comparison.physician.title}</h3>
+              <h3 className="text-white font-semibold text-xl">{copy.comparison.physician.title}</h3>
             </div>
             <ul className="space-y-3">
               {copy.comparison.physician.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-gray-900 text-sm">
+                <li key={i} className="flex items-start gap-2 text-white text-sm">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -287,17 +287,17 @@ export default function PhysicianLoansPage() {
       {/* Download Guide Section */}
       <Section background="dark">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-900 mb-8">
+          <p className="text-white mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician — from housing markets and neighborhoods to schools, financing, and local resources.
           </p>
           <a 
             href="/Lowcountry Physician Relocation Guide.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
           >
             <GraduationCap className="w-5 h-5" />
             Download Free Guide

@@ -205,7 +205,7 @@ function FAQItem({
         onClick={onToggle}
         className="w-full flex items-center justify-between p-5 sm:p-6 text-left hover:bg-white/5 transition-colors"
       >
-        <span className="text-gray-900 font-medium pr-4 text-sm sm:text-base">{question}</span>
+        <span className="text-white font-medium pr-4 text-sm sm:text-base">{question}</span>
         <ChevronDown 
           className={`w-5 h-5 text-cyan-600 flex-shrink-0 transition-transform duration-300 ${
             isOpen ? 'rotate-180' : ''
@@ -221,7 +221,7 @@ function FAQItem({
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 text-gray-800 leading-relaxed text-sm sm:text-base">
+            <div className="px-5 sm:px-6 pb-5 sm:pb-6 text-white leading-relaxed text-sm sm:text-base">
               {answer}
             </div>
           </motion.div>
@@ -261,7 +261,7 @@ function FAQCategory({
         <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center">
           <Icon className="w-5 h-5 text-cyan-400" />
         </div>
-        <h3 className="text-xl font-semibold text-gray-900">{category}</h3>
+        <h3 className="text-xl font-semibold text-white">{category}</h3>
       </div>
       
       <div className="space-y-3">
@@ -284,7 +284,7 @@ function TrustBadge({ icon: Icon, text }: { icon: any; text: string }) {
   return (
     <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
       <Icon className="w-4 h-4 text-cyan-400" />
-      <span className="text-gray-900 text-sm">{text}</span>
+      <span className="text-white text-sm">{text}</span>
     </div>
   );
 }
@@ -313,11 +313,11 @@ export default function FAQPage() {
               <span className="text-cyan-400 text-sm font-medium">Mortgage Guidance</span>
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
               Frequently Asked <span className="text-gradient-cyan">Questions</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto mb-10">
+            <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-10">
               Find answers to common questions about buying a home, securing a mortgage, 
               and financing your Lowcountry property.
             </p>
@@ -339,7 +339,7 @@ export default function FAQPage() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="text-gray-900"
+                className="text-white"
               >
                 <ChevronDown className="w-6 h-6" />
               </motion.div>
@@ -357,7 +357,7 @@ export default function FAQPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Mortgage Questions, Answered
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto">
@@ -406,11 +406,11 @@ export default function FAQPage() {
               <HelpCircle className="w-8 h-8 text-cyan-400" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Still have questions?
             </h2>
 
-            <p className="text-gray-900 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Every borrower's situation is unique. Let's talk about your specific 
               goals and find the right financing solution for you.
             </p>
@@ -419,7 +419,7 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group glow-cyan"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group glow-cyan"
               >
                 <Phone className="w-5 h-5" />
                 Schedule a Call
@@ -428,7 +428,7 @@ export default function FAQPage() {
               
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/20 text-gray-900 font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
               >
                 Get Pre-Approved
               </Link>
@@ -436,8 +436,8 @@ export default function FAQPage() {
 
             {/* Contact info */}
             <div className="mt-8 pt-8 border-t border-white/10">
-              <p className="text-gray-900 text-sm mb-4">Or reach out directly:</p>
-              <div className="flex flex-wrap justify-center gap-6 text-gray-900 text-sm">
+              <p className="text-white text-sm mb-4">Or reach out directly:</p>
+              <div className="flex flex-wrap justify-center gap-6 text-white text-sm">
                 <a 
                   href="tel:8437063101" 
                   className="flex items-center gap-2 hover:text-cyan-400 transition-colors"
@@ -474,35 +474,35 @@ export default function FAQPage() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-lg font-medium text-gray-900 mb-6">Explore More</h3>
+            <h3 className="text-lg font-medium text-white mb-6">Explore More</h3>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href="/physician-loans"
-                className="px-5 py-2 rounded-full bg-white/5 border border-pink-500/20 text-gray-900 hover:text-gray-900 hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-pink-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 Physician Loans
               </Link>
               <Link
                 href="/first-time-buyers"
-                className="px-5 py-2 rounded-full bg-white/5 border border-cyan-500/20 text-gray-900 hover:text-gray-900 hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-cyan-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 First-Time Buyers
               </Link>
               <Link
                 href="/self-employed"
-                className="px-5 py-2 rounded-full bg-white/5 border border-purple-500/20 text-gray-900 hover:text-gray-900 hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-purple-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 Self-Employed
               </Link>
               <Link
                 href="/loan-solutions"
-                className="px-5 py-2 rounded-full bg-white/5 border border-teal-500/20 text-gray-900 hover:text-gray-900 hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-teal-500/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 All Loan Options
               </Link>
               <Link
                 href="/about"
-                className="px-5 py-2 rounded-full bg-white/5 border border-white/20 text-gray-900 hover:text-gray-900 hover:bg-white/10 transition-all text-sm"
+                className="px-5 py-2 rounded-full bg-white/5 border border-white/20 text-white hover:text-white hover:bg-white/10 transition-all text-sm"
               >
                 About Maggie
               </Link>

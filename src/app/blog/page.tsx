@@ -141,10 +141,10 @@ export default function BlogPage() {
 
       <Section background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Latest Articles
           </h2>
-          <p className="text-gray-900 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Stay informed about the Lowcountry mortgage market, financing strategies, and community insights.
           </p>
         </div>
@@ -164,19 +164,19 @@ export default function BlogPage() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-cyan-500/90 text-gray-900 text-xs font-medium rounded-full">
+                  <span className="px-3 py-1 bg-cyan-500/90 text-white text-xs font-medium rounded-full">
                     {post.category}
                   </span>
                 </div>
               </div>
               <div className="flex-1 flex flex-col">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   {post.title}
                 </h3>
-                <p className="text-gray-900 text-sm mb-4 flex-grow">
+                <p className="text-white text-sm mb-4 flex-grow">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-4 text-xs text-gray-900 mb-4">
+                <div className="flex items-center gap-4 text-xs text-white mb-4">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
                     {post.date}
@@ -200,15 +200,15 @@ export default function BlogPage() {
 
       <Section background="gradient">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Can't find what you're looking for?
           </h2>
-          <p className="text-gray-900 mb-6">
+          <p className="text-white mb-6">
             Get personalized guidance from Maggie Blank directly.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
           >
             Schedule a Consultation <ArrowRight className="w-4 h-4" />
           </Link>

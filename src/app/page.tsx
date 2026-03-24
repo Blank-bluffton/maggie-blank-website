@@ -218,7 +218,7 @@ export default function Home() {
         customCta={
           <button
             onClick={() => setIsGuideModalOpen(true)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
           >
             <Download className="w-5 h-5" />
             Download Free Guide
@@ -229,10 +229,10 @@ export default function Home() {
       {/* Why Maggie Section */}
       <Section id="why-maggie" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.whyMaggie.headline}
           </h2>
-          <p className="text-lg text-gray-900 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             {copy.whyMaggie.subhead}
           </p>
         </div>
@@ -241,8 +241,8 @@ export default function Home() {
           {copy.whyMaggie.features.map((feature, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <feature.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-900 text-sm leading-relaxed">{feature.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{feature.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -251,7 +251,7 @@ export default function Home() {
       {/* Loan Solutions Section */}
       <Section id="loan-solutions">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.loanSolutions.headline}
           </h2>
         </div>
@@ -259,8 +259,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {copy.loanSolutions.cards.map((card, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
-              <p className="text-gray-900 text-sm mb-4">{card.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
+              <p className="text-white text-sm mb-4">{card.description}</p>
               <Link
                 href={card.link}
                 className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
@@ -277,17 +277,17 @@ export default function Home() {
       <Section id="physician-spotlight" background="dark">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               {copy.physicianSpotlight.headline}
             </h2>
-            <div className="text-gray-900 space-y-4 leading-relaxed">
+            <div className="text-white space-y-4 leading-relaxed">
               {copy.physicianSpotlight.body.split('\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
             </div>
             <Link
               href={copy.physicianSpotlight.ctaLink}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-medium rounded-xl mt-8 hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium rounded-xl mt-8 hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
             >
               {copy.physicianSpotlight.cta}
               <ArrowRight className="w-4 h-4" />
@@ -301,8 +301,8 @@ export default function Home() {
                   <Stethoscope className="w-8 h-8 text-cyan-400" />
                 </div>
                 <div>
-                  <h3 className="text-gray-900 font-semibold text-lg">Physician Loan Benefits</h3>
-                  <p className="text-gray-900 text-sm">Tailored for medical professionals</p>
+                  <h3 className="text-white font-semibold text-lg">Physician Loan Benefits</h3>
+                  <p className="text-white text-sm">Tailored for medical professionals</p>
                 </div>
               </div>
               
@@ -314,7 +314,7 @@ export default function Home() {
                   "Contract employment accepted",
                   "Entity structuring available"
                 ].map((benefit, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-900">
+                  <li key={i} className="flex items-center gap-3 text-white">
                     <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                     {benefit}
                   </li>
@@ -334,10 +334,10 @@ export default function Home() {
               alt="Lowcountry landscape" 
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
-            <h3 className="text-gray-900 font-semibold text-lg mb-4">Communities We Serve</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">Communities We Serve</h3>
             <div className="grid grid-cols-2 gap-3">
               {copy.lowcountryMarket.areas.map((area, i) => (
-                <div key={i} className="flex items-center gap-2 text-gray-900">
+                <div key={i} className="flex items-center gap-2 text-white">
                   <MapPin className="w-4 h-4 text-cyan-400" />
                   {area}
                 </div>
@@ -346,10 +346,10 @@ export default function Home() {
           </GlassCard>
           
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               {copy.lowcountryMarket.headline}
             </h2>
-            <div className="text-gray-900 space-y-4 leading-relaxed">
+            <div className="text-white space-y-4 leading-relaxed">
               {copy.lowcountryMarket.body.split('\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}

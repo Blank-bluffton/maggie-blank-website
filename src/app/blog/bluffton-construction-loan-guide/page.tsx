@@ -88,7 +88,7 @@ export default function BlufftonConstructionLoanGuide() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-900 mb-8">
+          <div className="flex items-center gap-6 text-sm text-white mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 22, 2026
@@ -138,9 +138,9 @@ export default function BlufftonConstructionLoanGuide() {
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <Key className="w-6 h-6 text-cyan-400" />
                   </div>
-                  <h3 className="text-gray-900 font-semibold text-lg">Construction-to-Permanent</h3>
+                  <h3 className="text-white font-semibold text-lg">Construction-to-Permanent</h3>
                 </div>
-                <ul className="space-y-2 text-gray-900 text-sm">
+                <ul className="space-y-2 text-white text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>One application, one closing</span>
@@ -165,9 +165,9 @@ export default function BlufftonConstructionLoanGuide() {
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <Hammer className="w-6 h-6 text-cyan-400" />
                   </div>
-                  <h3 className="text-gray-900 font-semibold text-lg">Construction-Only</h3>
+                  <h3 className="text-white font-semibold text-lg">Construction-Only</h3>
                 </div>
-                <ul className="space-y-2 text-gray-900 text-sm">
+                <ul className="space-y-2 text-white text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Short-term (6-12 months)</span>
@@ -233,27 +233,27 @@ export default function BlufftonConstructionLoanGuide() {
               Construction loans typically have stricter requirements than traditional mortgages because they're considered higher risk:
             </p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Credit score</strong> — Typically 680+ for construction loans</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Down payment</strong> — Usually 20-25% of total project cost (land + construction)</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Debt-to-income</strong> — Usually max 43-45% including projected mortgage</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Qualified builder</strong> — Must use an approved/licensed builder with insurance</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Detailed plans</strong> — Complete specifications for appraisal</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Timeline</strong> — Construction typically must be completed within 12 months</span>
               </li>
@@ -264,27 +264,27 @@ export default function BlufftonConstructionLoanGuide() {
               Construction costs in the Bluffton area vary based on location, lot price, and home specifications. Here's a general breakdown for 2026:
             </p>
             <GlassCard hover={false} className="my-8 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Sample Budget for a 2,500 sq ft Custom Home</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Sample Budget for a 2,500 sq ft Custom Home</h3>
               <div className="space-y-3">
-                <div className="flex justify-between text-gray-900">
+                <div className="flex justify-between text-white">
                   <span>Lot (0.5 acre in established community)</span>
-                  <span className="text-gray-900 font-medium">$150,000 - $300,000</span>
+                  <span className="text-white font-medium">$150,000 - $300,000</span>
                 </div>
-                <div className="flex justify-between text-gray-900">
+                <div className="flex justify-between text-white">
                   <span>Construction ($175-225/sq ft)</span>
-                  <span className="text-gray-900 font-medium">$437,500 - $562,500</span>
+                  <span className="text-white font-medium">$437,500 - $562,500</span>
                 </div>
-                <div className="flex justify-between text-gray-900">
+                <div className="flex justify-between text-white">
                   <span>Design, permits, impact fees</span>
-                  <span className="text-gray-900 font-medium">$25,000 - $40,000</span>
+                  <span className="text-white font-medium">$25,000 - $40,000</span>
                 </div>
-                <div className="border-t border-gray-700 pt-3 flex justify-between text-gray-900">
+                <div className="border-t border-gray-700 pt-3 flex justify-between text-white">
                   <span>Total Project Cost</span>
-                  <span className="text-gray-900 font-bold text-lg">$612,500 - $902,500</span>
+                  <span className="text-white font-bold text-lg">$612,500 - $902,500</span>
                 </div>
               </div>
             </GlassCard>
-            <p className="text-gray-900 text-sm">
+            <p className="text-white text-sm">
               *Costs are estimates and vary based on location, finishes, site conditions, and builder. Flood insurance is required in many Lowcountry communities and adds to ongoing costs.
             </p>
 
@@ -316,14 +316,14 @@ export default function BlufftonConstructionLoanGuide() {
             </ul>
 
             <div className="my-8 p-6 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl border border-cyan-500/20">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to build your dream home in Bluffton?</h3>
-              <p className="text-gray-900 mb-6">
+              <h3 className="text-xl font-semibold text-white mb-4">Ready to build your dream home in Bluffton?</h3>
+              <p className="text-white mb-6">
                 Let's discuss your construction loan options and get you started on the path to your new home.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/apply"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
                 >
                   Get Pre-Approved <ArrowRight className="w-4 h-4" />
                 </Link>

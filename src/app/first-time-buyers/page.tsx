@@ -191,7 +191,7 @@ export default function FirstTimeBuyersPage() {
       {/* Programs Section */}
       <Section id="programs" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.programs.headline}
           </h2>
         </div>
@@ -205,8 +205,8 @@ export default function FirstTimeBuyersPage() {
                   {card.minDown} down
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
-              <p className="text-gray-900 text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -215,7 +215,7 @@ export default function FirstTimeBuyersPage() {
       {/* Understanding Costs Section */}
       <Section id="costs">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.costs.headline}
           </h2>
         </div>
@@ -223,10 +223,10 @@ export default function FirstTimeBuyersPage() {
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.costs.sections.map((section, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">{section.title}</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-gray-900 text-sm">
+                  <li key={i} className="flex items-start gap-2 text-white text-sm">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
@@ -241,12 +241,12 @@ export default function FirstTimeBuyersPage() {
       <Section id="mistakes" background="dark">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               {copy.mistakes.headline}
             </h2>
             <ul className="space-y-3">
               {copy.mistakes.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-gray-900">
+                <li key={index} className="flex items-start gap-3 text-white">
                   <span className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
                     <span className="text-red-400 text-sm">!</span>
                   </span>
@@ -259,13 +259,13 @@ export default function FirstTimeBuyersPage() {
           <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
             <div className="text-center">
               <Calculator className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-              <h3 className="text-gray-900 font-semibold text-xl mb-2">Mortgage Calculator</h3>
-              <p className="text-gray-900 text-sm mb-6">
+              <h3 className="text-white font-semibold text-xl mb-2">Mortgage Calculator</h3>
+              <p className="text-white text-sm mb-6">
                 Get a rough estimate of your monthly mortgage payment based on home price, down payment, and loan terms.
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 glass text-gray-900 font-medium rounded-xl hover:bg-white/10 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 glass text-white font-medium rounded-xl hover:bg-white/10 transition-all"
               >
                 Try Calculator
                 <ArrowRight className="w-4 h-4" />

@@ -88,7 +88,7 @@ export default function FirstTimeBuyerProgramsSC() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-900 mb-8">
+          <div className="flex items-center gap-6 text-sm text-white mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 18, 2026
@@ -163,9 +163,9 @@ export default function FirstTimeBuyerProgramsSC() {
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <Home className="w-6 h-6 text-cyan-400" />
                   </div>
-                  <h3 className="text-gray-900 font-semibold text-lg">SC Housing Mortgage</h3>
+                  <h3 className="text-white font-semibold text-lg">SC Housing Mortgage</h3>
                 </div>
-                <ul className="space-y-2 text-gray-900 text-sm">
+                <ul className="space-y-2 text-white text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Competitive interest rates</span>
@@ -186,9 +186,9 @@ export default function FirstTimeBuyerProgramsSC() {
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <PiggyBank className="w-6 h-6 text-cyan-400" />
                   </div>
-                  <h3 className="text-gray-900 font-semibold text-lg">Down Payment Assistance</h3>
+                  <h3 className="text-white font-semibold text-lg">Down Payment Assistance</h3>
                 </div>
-                <ul className="space-y-2 text-gray-900 text-sm">
+                <ul className="space-y-2 text-white text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Up to $7,500 available</span>
@@ -210,23 +210,23 @@ export default function FirstTimeBuyerProgramsSC() {
               While specific requirements vary by program, here's what typically determines eligibility:
             </p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Income limits</strong> — Programs have maximum income thresholds based on household size and county</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Credit score</strong> — Typically 620-640 minimum, though some programs allow lower</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Property location</strong> — Must be your primary residence in South Carolina</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>First-time buyer status</strong> — Must meet the three-year rule or be a first-time buyer</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-900">
+              <li className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Homebuyer education</strong> — Some programs require completion of a homeownership course</span>
               </li>
@@ -275,14 +275,14 @@ export default function FirstTimeBuyerProgramsSC() {
             </ul>
 
             <div className="my-8 p-6 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl border border-cyan-500/20">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to explore your first-time buyer options?</h3>
-              <p className="text-gray-900 mb-6">
+              <h3 className="text-xl font-semibold text-white mb-4">Ready to explore your first-time buyer options?</h3>
+              <p className="text-white mb-6">
                 Let's find the right program for your budget and goals in the Lowcountry.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/apply"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
                 >
                   Check Your Eligibility <ArrowRight className="w-4 h-4" />
                 </Link>

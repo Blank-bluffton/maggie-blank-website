@@ -60,21 +60,21 @@ export default function InsurancePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {agents.map((agent, index) => (
             <GlassCard key={index} hover={true} delay={index * 0.1}>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">{agent.name}</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">{agent.name}</h3>
               <div className="space-y-3">
                 {agent.phone && (
-                  <div className="flex items-center gap-3 text-gray-900">
+                  <div className="flex items-center gap-3 text-white">
                     <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                     <span>{agent.phone}</span>
                   </div>
                 )}
-                <div className="flex items-center gap-3 text-gray-900">
+                <div className="flex items-center gap-3 text-white">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{agent.address}</span>
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-gray-700">
-                <p className="text-sm text-gray-800 mb-2">Specialties:</p>
+                <p className="text-sm text-white mb-2">Specialties:</p>
                 <div className="flex flex-wrap gap-2">
                   {agent.specialties?.map((specialty, i) => (
                     <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
@@ -90,10 +90,10 @@ export default function InsurancePage() {
 
       <Section background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Protect Your Investment
           </h2>
-          <p className="text-gray-900 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Living in the Lowcountry means understanding flood, wind, and coastal insurance. We connect you with agents who know the area.
           </p>
         </div>
@@ -105,11 +105,11 @@ export default function InsurancePage() {
                 <Shield className="w-6 h-6 text-cyan-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">Flood Insurance</h3>
+                <h3 className="text-xl font-semibold text-white">Flood Insurance</h3>
                 <p className="text-cyan-400 text-sm">Required in many zones</p>
               </div>
             </div>
-            <p className="text-gray-900">
+            <p className="text-white">
               Properties in AE and VE flood zones require flood insurance. We'll help you understand your options and costs.
             </p>
           </GlassCard>
@@ -120,11 +120,11 @@ export default function InsurancePage() {
                 <Shield className="w-6 h-6 text-blue-800" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">Homeowners Insurance</h3>
+                <h3 className="text-xl font-semibold text-white">Homeowners Insurance</h3>
                 <p className="text-blue-800 text-sm">Standard coverage</p>
               </div>
             </div>
-            <p className="text-gray-900">
+            <p className="text-white">
               Protect your home and belongings with comprehensive coverage tailored to coastal living.
             </p>
           </GlassCard>
@@ -133,12 +133,12 @@ export default function InsurancePage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-900 mb-6">
+          <p className="text-white mb-6">
             Need insurance recommendations for your new home?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
           >
             Get Recommendations <ArrowRight className="w-4 h-4" />
           </Link>

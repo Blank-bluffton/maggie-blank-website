@@ -48,7 +48,7 @@ export default function RealtorsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
             Trusted Realtors
           </h2>
-          <p className="text-gray-800 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             We work with experienced real estate professionals throughout the Lowcountry to ensure smooth transactions.
           </p>
         </div>
@@ -56,20 +56,20 @@ export default function RealtorsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {realtors.map((realtor, index) => (
             <GlassCard key={index} hover={true} delay={index * 0.1}>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">{realtor.name}</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">{realtor.name}</h3>
               <div className="space-y-3">
                 {realtor.phone && (
-                  <div className="flex items-center gap-3 text-gray-800">
+                  <div className="flex items-center gap-3 text-white">
                     <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                     <span>{realtor.phone}</span>
                   </div>
                 )}
-                <div className="flex items-center gap-3 text-gray-800">
+                <div className="flex items-center gap-3 text-white">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{realtor.address}</span>
                 </div>
                 {realtor.email && (
-                  <div className="flex items-center gap-3 text-gray-800">
+                  <div className="flex items-center gap-3 text-white">
                     <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                     <a href={`mailto:${realtor.email}`} className="hover:text-cyan-400">{realtor.email}</a>
                   </div>
@@ -102,10 +102,10 @@ export default function RealtorsPage() {
 
       <Section background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Partner With Local Experts
           </h2>
-          <p className="text-gray-900 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             We've built relationships with top realtors across Bluffton, Hilton Head, and Beaufort. They know the market, and we close together.
           </p>
         </div>
@@ -116,11 +116,11 @@ export default function RealtorsPage() {
               <Users className="w-6 h-6 text-cyan-400" />
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Work With a Trusted Partner</h3>
-              <p className="text-gray-900 mb-4">
+              <h3 className="text-xl font-semibold text-white mb-2">Work With a Trusted Partner</h3>
+              <p className="text-white mb-4">
                 Whether you're buying your first home or investing in a second property, our network of local realtors is here to guide you.
               </p>
-              <ul className="space-y-2 text-gray-900 mb-6">
+              <ul className="space-y-2 text-white mb-6">
                 <li>✓ Local market expertise</li>
                 <li>✓ Neighborhood knowledge</li>
                 <li>✓ Smooth transaction coordination</li>
@@ -133,12 +133,12 @@ export default function RealtorsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-900 mb-6">
+          <p className="text-white mb-6">
             Need a realtor recommendation?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
           >
             Let's Connect <ArrowRight className="w-4 h-4" />
           </Link>

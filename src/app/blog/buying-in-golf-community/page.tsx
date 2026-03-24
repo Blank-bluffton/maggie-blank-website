@@ -215,11 +215,11 @@ export default function GolfCommunityBlog() {
       {/* Introduction Section */}
       <Section>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             {copy.intro.headline}
           </h2>
           {copy.intro.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-white text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -229,7 +229,7 @@ export default function GolfCommunityBlog() {
       {/* Key Considerations Section */}
       <Section id="considerations" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.considerations.headline}
           </h2>
         </div>
@@ -238,8 +238,8 @@ export default function GolfCommunityBlog() {
           {copy.considerations.cards.map((card, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
-              <p className="text-gray-900 text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -248,18 +248,18 @@ export default function GolfCommunityBlog() {
       {/* Financing Section */}
       <Section id="financing">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             {copy.financing.headline}
           </h2>
           {copy.financing.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-white text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <ul className="space-y-4 mt-8">
             {copy.financing.items.map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-900">
+              <li key={index} className="flex items-start gap-3 text-white">
                 <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
                 {item}
               </li>
@@ -270,8 +270,8 @@ export default function GolfCommunityBlog() {
             <div className="flex items-center gap-4">
               <Calculator className="w-10 h-10 text-cyan-400" />
               <div>
-                <h3 className="text-gray-900 font-semibold">Financing Consultation</h3>
-                <p className="text-gray-900 text-sm">Get a personalized analysis of how HOA and club dues will affect your buying power.</p>
+                <h3 className="text-white font-semibold">Financing Consultation</h3>
+                <p className="text-white text-sm">Get a personalized analysis of how HOA and club dues will affect your buying power.</p>
               </div>
             </div>
           </div>
@@ -281,14 +281,14 @@ export default function GolfCommunityBlog() {
       {/* Lowcountry Golf Communities */}
       <Section id="communities" background="dark">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
             {copy.lowcountry.headline}
           </h2>
           <div className="space-y-6">
             {copy.lowcountry.regions.map((region, index) => (
               <GlassCard key={index} hover={false}>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{region.area}</h3>
-                <p className="text-gray-900">{region.communities}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{region.area}</h3>
+                <p className="text-white">{region.communities}</p>
               </GlassCard>
             ))}
           </div>
@@ -298,7 +298,7 @@ export default function GolfCommunityBlog() {
       {/* Questions to Ask */}
       <Section id="questions">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
             {copy.tips.headline}
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -307,7 +307,7 @@ export default function GolfCommunityBlog() {
                 <span className="flex-shrink-0 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center text-cyan-400 text-sm font-medium">
                   {index + 1}
                 </span>
-                <span className="text-gray-900">{item}</span>
+                <span className="text-white">{item}</span>
               </div>
             ))}
           </div>
@@ -319,12 +319,12 @@ export default function GolfCommunityBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Users className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
               {copy.physician.headline}
             </h2>
           </div>
           {copy.physician.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-white text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -342,12 +342,12 @@ export default function GolfCommunityBlog() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Home className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
               {copy.firstTime.headline}
             </h2>
           </div>
           {copy.firstTime.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-900 text-lg leading-relaxed mb-6">
+            <p key={index} className="text-white text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}

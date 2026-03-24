@@ -227,7 +227,7 @@ function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
           <div className="text-3xl sm:text-4xl font-bold text-gradient-pink mb-1">
             {stat.value}
           </div>
-          <div className="text-sm text-gray-900">{stat.label}</div>
+          <div className="text-sm text-white">{stat.label}</div>
         </motion.div>
       ))}
     </div>
@@ -247,7 +247,7 @@ function PersonalFact({ icon: Icon, text, delay }: { icon: any; text: string; de
       <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
         <Icon className="w-5 h-5 text-pink-400" />
       </div>
-      <span className="text-gray-900">{text}</span>
+      <span className="text-white">{text}</span>
     </motion.div>
   );
 }
@@ -263,7 +263,7 @@ function CredentialBadge({ icon: Icon, text, delay }: { icon: any; text: string;
       className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-pink-500/20"
     >
       <Icon className="w-4 h-4 text-pink-400" />
-      <span className="text-sm text-gray-900">{text}</span>
+      <span className="text-sm text-white">{text}</span>
     </motion.div>
   );
 }
@@ -279,7 +279,7 @@ function TrustBullet({ text, delay }: { text: string; delay: number }) {
       className="flex items-start gap-3"
     >
       <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-      <span className="text-gray-900">{text}</span>
+      <span className="text-white">{text}</span>
     </motion.div>
   );
 }
@@ -315,11 +315,11 @@ export default function AboutPage() {
               <span className="text-pink-400 text-sm font-medium">Your Lowcountry Mortgage Expert</span>
             </motion.div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
               Meet <span className="text-gradient-pink">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-900 max-w-2xl mx-auto mb-10">
+            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
 
@@ -334,7 +334,7 @@ export default function AboutPage() {
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10"
                 >
                   <Shield className="w-4 h-4 text-cyan-400" />
-                  <span className="text-gray-900 text-sm">{bullet}</span>
+                  <span className="text-white text-sm">{bullet}</span>
                 </motion.div>
               ))}
             </div>
@@ -348,14 +348,14 @@ export default function AboutPage() {
             >
               <Link
                 href={copy.hero.ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all hover:-translate-y-1"
               >
                 {copy.hero.ctaPrimary}
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href={copy.hero.ctaSecondaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/20 text-gray-900 font-semibold rounded-xl hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
               >
                 {copy.hero.ctaSecondary}
               </Link>
@@ -397,7 +397,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 text-center">
               {copy.story.headline}
             </h2>
             
@@ -408,12 +408,12 @@ export default function AboutPage() {
                   alt="Maggie Blank with her family" 
                   className="w-full h-auto rounded-lg"
                 />
-                <p className="text-gray-900 text-sm text-center mt-4">
+                <p className="text-white text-sm text-center mt-4">
                   Maggie with her family — Robert and Reagan
                 </p>
               </GlassCard>
               
-              <div className="space-y-4 text-gray-900 leading-relaxed text-lg">
+              <div className="space-y-4 text-white leading-relaxed text-lg">
                 {copy.story.body.split('\n\n').map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -432,7 +432,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 text-center">
               {copy.professional.headline}
             </h2>
             
@@ -459,7 +459,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 text-center">
               {copy.whyClients.headline}
             </h2>
             
@@ -481,11 +481,11 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-center">
               {copy.personal.headline}
             </h2>
             
-            <p className="text-gray-900 text-center mb-8 max-w-xl mx-auto">
+            <p className="text-white text-center mb-8 max-w-xl mx-auto">
               {copy.personal.intro}
             </p>
             

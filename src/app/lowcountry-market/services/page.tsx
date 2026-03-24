@@ -46,10 +46,10 @@ export default function ServicesPage() {
 
       <Section background="dark">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Services You Can Trust
           </h2>
-          <p className="text-gray-900 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Buying a home involves more than just the mortgage. We've built a network of trusted local professionals to help you every step of the way.
           </p>
         </div>
@@ -67,11 +67,11 @@ export default function ServicesPage() {
                   <service.icon className={`w-6 h-6 text-${service.color}-400`} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">{service.name}</h3>
+                  <h3 className="text-xl font-semibold text-white">{service.name}</h3>
                   <p className={`text-${service.color}-400 text-sm`}>Local experts</p>
                 </div>
               </div>
-              <p className="text-gray-900 mb-4">
+              <p className="text-white mb-4">
                 {service.description}
               </p>
               <Link
@@ -87,12 +87,12 @@ export default function ServicesPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-900 mb-6">
+          <p className="text-white mb-6">
             Need a recommendation for a specific service?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
           >
             Let's Talk <ArrowRight className="w-4 h-4" />
           </Link>

@@ -176,7 +176,7 @@ export default function HiltonHeadPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
             Premier Island Neighborhoods
           </motion.h2>
@@ -185,7 +185,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-900 text-lg max-w-2xl mx-auto"
+            className="text-white text-lg max-w-2xl mx-auto"
           >
             From oceanfront resorts to exclusive gated golf communities, discover the neighborhood that fits your lifestyle.
           </motion.p>
@@ -202,15 +202,15 @@ export default function HiltonHeadPage() {
             <motion.div key={index} variants={itemVariants}>
               <GlassCard hover className="h-full group">
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${hood.accent} flex items-center justify-center mb-4`}>
-                  <hood.icon className="w-7 h-7 text-gray-900" />
+                  <hood.icon className="w-7 h-7 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-semibold text-gray-900 mb-1">{hood.name}</h3>
+                <h3 className="text-xl font-semibold text-white mb-1">{hood.name}</h3>
                 <p className={`text-sm font-medium bg-gradient-to-r ${hood.accent} bg-clip-text text-transparent mb-4`}>
                   {hood.priceRange}
                 </p>
                 
-                <p className="text-gray-900 text-sm mb-4 leading-relaxed">
+                <p className="text-white text-sm mb-4 leading-relaxed">
                   {hood.description}
                 </p>
                 
@@ -218,7 +218,7 @@ export default function HiltonHeadPage() {
                   {hood.highlights.map((highlight, i) => (
                     <span 
                       key={i}
-                      className="px-2.5 py-1 rounded-lg bg-white/5 text-gray-900 text-xs border border-white/10"
+                      className="px-2.5 py-1 rounded-lg bg-white/5 text-white text-xs border border-white/10"
                     >
                       {highlight}
                     </span>
@@ -238,7 +238,7 @@ export default function HiltonHeadPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+              className="text-3xl sm:text-4xl font-bold text-white mb-4"
             >
               {copy.tips.headline}
             </motion.h2>
@@ -247,7 +247,7 @@ export default function HiltonHeadPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-900 text-lg mb-8"
+              className="text-white text-lg mb-8"
             >
               {copy.tips.subheadline}
             </motion.p>
@@ -267,8 +267,8 @@ export default function HiltonHeadPage() {
                         <span className="text-pink-400 text-sm font-bold">{index + 1}</span>
                       </div>
                       <div>
-                        <h4 className="text-gray-900 font-semibold mb-1">{tip.title}</h4>
-                        <p className="text-gray-900 text-sm">{tip.description}</p>
+                        <h4 className="text-white font-semibold mb-1">{tip.title}</h4>
+                        <p className="text-white text-sm">{tip.description}</p>
                       </div>
                     </div>
                   </GlassCard>
@@ -286,21 +286,21 @@ export default function HiltonHeadPage() {
             <GlassCard hover={false} className="bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 border-pink-500/20 sticky top-24">
               <div className="text-center">
                 <Waves className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-                <h3 className="text-gray-900 font-semibold text-xl mb-2">Ready to Buy in Hilton Head?</h3>
-                <p className="text-gray-900 text-sm mb-6">
+                <h3 className="text-white font-semibold text-xl mb-2">Ready to Buy in Hilton Head?</h3>
+                <p className="text-white text-sm mb-6">
                   From flood insurance to HOA financing, we understand the nuances of island mortgages. Let's talk strategy.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-gray-900 font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
                   >
                     Schedule Consultation
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
                     href="/apply"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 text-gray-900 font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 text-white font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all"
                   >
                     Get Pre-Approved
                   </Link>
@@ -318,7 +318,7 @@ export default function HiltonHeadPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
             {copy.cta.headline}
           </motion.h2>
@@ -327,7 +327,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-900 text-lg max-w-xl mx-auto mb-8"
+            className="text-white text-lg max-w-xl mx-auto mb-8"
           >
             {copy.cta.subhead}
           </motion.p>
@@ -340,14 +340,14 @@ export default function HiltonHeadPage() {
           >
             <Link
               href={copy.cta.ctaPrimaryLink}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
             >
               {copy.cta.ctaPrimary}
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href={copy.cta.ctaSecondaryLink}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-gray-900 font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
             >
               {copy.cta.ctaSecondary}
             </Link>
