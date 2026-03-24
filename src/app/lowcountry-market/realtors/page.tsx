@@ -4,7 +4,16 @@ import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
-import { ArrowRight, Users } from 'lucide-react';
+import { ArrowRight, Users, MapPin, Phone } from 'lucide-react';
+
+const realtors = [
+  {
+    name: "Dunes Real Estate - Bill Kelley",
+    phone: "",
+    address: "Hilton Head, SC",
+    specialties: ["Residential", "Investment Properties", "Luxury Homes"]
+  }
+];
 
 export default function RealtorsPage() {
   return (
@@ -16,6 +25,47 @@ export default function RealtorsPage() {
         ctaPrimaryLink="/contact"
         variant="compact"
       />
+
+      <Section background="default">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
+            Trusted Realtors
+          </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
+            We work with experienced real estate professionals throughout the Lowcountry to ensure smooth transactions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {realtors.map((realtor, index) => (
+            <GlassCard key={index} hover={true} delay={index * 0.1}>
+              <h3 className="text-xl font-semibold text-white mb-4">{realtor.name}</h3>
+              <div className="space-y-3">
+                {realtor.phone && (
+                  <div className="flex items-center gap-3 text-gray-700">
+                    <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                    <span>{realtor.phone}</span>
+                  </div>
+                )}
+                <div className="flex items-center gap-3 text-gray-700">
+                  <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <span>{realtor.address}</span>
+                </div>
+              </div>
+              <div className="mt-4 pt-4 border-t border-gray-700">
+                <p className="text-sm text-gray-600 mb-2">Specialties:</p>
+                <div className="flex flex-wrap gap-2">
+                  {realtor.specialties.map((specialty, i) => (
+                    <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
+                      {specialty}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
 
       <Section background="dark">
         <div className="text-center mb-12">
@@ -50,14 +100,14 @@ export default function RealtorsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-200 mb-6">
-            Looking for a realtor recommendation?
+          <p className="text-gray-400 mb-6">
+            Need a realtor recommendation?
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
           >
-            Get a Recommendation <ArrowRight className="w-4 h-4" />
+            Let's Connect <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </Section>
