@@ -8,20 +8,20 @@ import { ArrowRight, Users, MapPin, Phone, Mail } from 'lucide-react';
 
 const realtors = [
   {
+    name: "Charter One - Shelley and Gary Elliott",
+    phone: "(770) 639-1174",
+    address: "Hilton Head, SC",
+    specialties: ["Residential", "Luxury Homes", "Investment"],
+    email: "shelleyandgary@charteronerealty.com",
+    website: "https://wesellthelowcountry.com"
+  },
+  {
     name: "Dunes Real Estate - Bill Kelly",
     phone: "(843) 816-0116",
     address: "Hilton Head, SC",
     specialties: ["Residential", "Investment Properties", "Luxury Homes"],
     website: "https://billk.dunesrealestate.com",
     email: "bill@billkellyrealestate.com"
-  },
-  {
-    name: "The Agency - Lorie Sauer",
-    phone: "(912) 656-2969",
-    address: "Hilton Head, SC",
-    specialties: ["Residential", "Luxury Homes", "First-Time Buyers"],
-    website: "https://loriesauer.com",
-    email: "lorie.sauer@theagencyre.com"
   },
   {
     name: "Lowcountry Live Oak Realty - Jennifer Windley",
@@ -32,12 +32,12 @@ const realtors = [
     website: "https://lowcountryliveoak.com"
   },
   {
-    name: "Charter One - Shelley and Gary Elliott",
-    phone: "(770) 639-1174",
+    name: "The Agency - Lorie Sauer",
+    phone: "(912) 656-2969",
     address: "Hilton Head, SC",
-    specialties: ["Residential", "Luxury Homes", "Investment"],
-    email: "shelleyandgary@charteronerealty.com",
-    website: "https://wesellthelowcountry.com"
+    specialties: ["Residential", "Luxury Homes", "First-Time Buyers"],
+    website: "https://loriesauer.com",
+    email: "lorie.sauer@theagencyre.com"
   }
 ];
 
