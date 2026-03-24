@@ -27,8 +27,8 @@ const agents = [
   },
   {
     name: "Kinghorn Insurance",
-    phone: "(843) 555-0404",
-    address: "Bluffton, SC",
+    phone: "(843) 837-3911",
+    address: "4 Thurmond Way, Bluffton, SC 29910",
     specialties: ["Homeowners", "Commercial", "Flood"]
   },
   {
