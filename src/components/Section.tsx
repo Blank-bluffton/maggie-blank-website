@@ -32,9 +32,10 @@ export default function Section({
   const sectionContent = (
     <>
       {/* Overlay for readability when background image is present */}
-      {backgroundImage && (
+      {/* Background image without overlay - uncomment if overlay needed */}
+      {/* {backgroundImage && (
         <div className="absolute inset-0 bg-black/20 z-0" />
-      )}
+      )} */}
       {background === 'gradient' && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#526E7A]/5 rounded-full blur-3xl" />
