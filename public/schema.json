@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MortgageOrLoan",
+  "name": "Maggie Blank - Lowcountry Mortgage Advisor",
+  "description": "Premium mortgage guidance for physicians, first-time buyers, and self-employed borrowers in the SC Lowcountry.",
+  "url": "https://maggie-website-pi.vercel.app",
+  "telephone": "+1-843-706-3101",
+  "email": "maggieblank@synovus.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 Belfair Village Drive",
+    "addressLocality": "Bluffton",
+    "addressRegion": "SC",
+    "postalCode": "29910",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Bluffton, Hilton Head, Beaufort, Okatie, Hardeeville, SC Lowcountry"
+  },
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+  "logo": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+  "sameAs": [
+    "https://www.facebook.com/maggie.blank",
+    "https://www.linkedin.com/in/maggieblank",
+    "https://www.instagram.com/maggieblank"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Synovus Bank",
+    "url": "https://www.synovus.com"
+  },
+  "financialProduct": [
+    {
+      "@type": "FinancialProduct",
+      "name": "Physician Loans",
+      "description": "Up to 100% financing for doctors with deferred debt, no PMI, flexible underwriting"
+    },
+    {
+      "@type": "FinancialProduct", 
+      "name": "Self-Employed Mortgages",
+      "description": "Bank statement programs, K-1 analysis, and alternative documentation pathways"
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Conventional Loans",
+      "description": "Competitive rates for qualified buyers with strong credit and down payment"
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Construction Loans",
+      "description": "Finance your build from foundation to finish with one seamless loan"
+    },
+    {
+      "@type": "FinancialProduct",
+      "name": "Private Wealth Mortgages",
+      "description": "Jumbo loans and portfolio lending for high-net-worth clients"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "150"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Sarah M."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Maggie saved our deal when another lender couldn't close. Her expertise with our complex income situation made the difference."
+    }
+  ]
+}

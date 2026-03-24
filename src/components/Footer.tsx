@@ -50,6 +50,7 @@ export default function Footer({
     { text: "Physician Loans", href: "/physician-loans" },
     { text: "First-Time Buyers", href: "/first-time-buyers" },
     { text: "Self-Employed", href: "/self-employed" },
+    { text: "Blog", href: "/blog" },
     { text: "Lowcountry Market", href: "/lowcountry-market" },
     { text: "About Maggie", href: "/about" },
     { text: "Resources", href: "/resources" },
@@ -160,7 +161,7 @@ export default function Footer({
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {footerLinks.slice(0, 6).map((link, index) => (
+              {footerLinks.slice(0, 5).map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
@@ -170,6 +171,53 @@ export default function Footer({
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Blog Section */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Blog</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                >
+                  All Articles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/physician-mortgage-guide-2026"
+                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                >
+                  Physician Loans
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/first-time-buyer-mistakes"
+                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                >
+                  First-Time Buyers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/bluffton-neighborhood-guide"
+                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                >
+                  Local Market
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/self-employed-mortgage-options"
+                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                >
+                  Self-Employed
+                </Link>
+              </li>
             </ul>
           </div>
 

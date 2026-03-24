@@ -93,25 +93,29 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo - links to About page */}
-          <Link href="/about" className="flex items-center gap-3 group">
-            <div className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-md transition-all duration-300 ${
+          {/* Logo - links to homepage */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-md overflow-hidden transition-all duration-300 ${
               isScrolled 
                 ? 'bg-gradient-to-br from-[#526E7A] to-[#4A6D7C]' 
                 : 'bg-white shadow-lg'
             }`}>
-              <span className={`font-bold text-lg ${
-                isScrolled ? 'text-white' : 'text-[#526E7A]'
-              }`}>MB</span>
+              <img 
+                src="/maggie-blank-logo.png" 
+                alt="Maggie Blank Logo" 
+                className="w-10 h-10 object-contain"
+              />
             </div>
-            <div className="flex flex-col">
-              <span className={`font-semibold text-lg tracking-tight ${
-                isScrolled ? 'text-[#333333]' : 'text-[#333333]'
-              }`}>Maggie Blank</span>
-              <span className={`text-xs tracking-widest uppercase ${
-                isScrolled ? 'text-[#777777]' : 'text-[#777777]'
-              }`}>Mortgage Banker</span>
-            </div>
+          </Link>
+
+          {/* Text - links to About page */}
+          <Link href="/about" className="flex flex-col group">
+            <span className={`font-semibold text-lg tracking-tight ${
+              isScrolled ? 'text-[#333333]' : 'text-[#333333]'
+            }`}>Maggie Blank</span>
+            <span className={`text-xs tracking-widest uppercase ${
+              isScrolled ? 'text-[#777777]' : 'text-[#777777]'
+            }`}>Mortgage Banker</span>
           </Link>
 
           {/* Desktop Navigation */}

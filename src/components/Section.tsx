@@ -9,6 +9,7 @@ interface SectionProps {
   id?: string;
   background?: 'default' | 'gradient' | 'dark' | 'warm' | 'white' | 'teal';
   backgroundImage?: string;
+  noAnimate?: boolean;
 }
 
 export default function Section({ 
@@ -16,7 +17,8 @@ export default function Section({
   className = '',
   id,
   background = 'default',
-  backgroundImage
+  backgroundImage,
+  noAnimate = false
 }: SectionProps) {
   const backgrounds = {
     default: 'bg-[#F8F8F8]',
@@ -27,17 +29,8 @@ export default function Section({
     teal: 'bg-[#526E7A]'
   };
 
-  return (
-    <section 
-      id={id}
-      className={`py-20 lg:py-28 ${backgrounds[background]} ${className}`}
-      style={backgroundImage ? {
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundBlendMode: 'overlay'
-      } : undefined}
-    >
+  const sectionContent = (
+    <>
       {/* Overlay for readability when background image is present */}
       {backgroundImage && (
         <div className="absolute inset-0 bg-[#F8F8F8]/60 z-0" />
@@ -50,6 +43,42 @@ export default function Section({
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {children}
       </div>
-    </section>
+    </>
+  );
+
+  if (noAnimate) {
+    return (
+      <section 
+        id={id}
+        className={`py-20 lg:py-28 ${backgrounds[background]} ${className}`}
+        style={backgroundImage ? {
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay'
+        } : undefined}
+      >
+        {sectionContent}
+      </section>
+    );
+  }
+
+  return (
+    <motion.section 
+      id={id}
+      className={`py-20 lg:py-28 ${backgrounds[background]} ${className}`}
+      style={backgroundImage ? {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundBlendMode: 'overlay'
+      } : undefined}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      {sectionContent}
+    </motion.section>
   );
 }
