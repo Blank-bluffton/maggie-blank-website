@@ -121,7 +121,7 @@ export default function ConciergePage() {
       />
 
       {/* What Is Concierge Section */}
-      <Section id="what-is-concierge" background="gradient">
+      <Section id="what-is-concierge" background="warm">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-6">
             <Sparkles className="w-4 h-4 text-cyan-400" />
@@ -184,7 +184,7 @@ export default function ConciergePage() {
       </Section>
 
       {/* Comparison Section */}
-      <Section id="comparison" background="gradient">
+      <Section id="comparison" background="warm">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.compared.headline}
