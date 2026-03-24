@@ -28,7 +28,8 @@ const realtors = [
     phone: "(843) 384-1685",
     address: "Bluffton, SC",
     specialties: ["Residential", "New Construction", "Relocation"],
-    email: "lowcountryjen@gmail.com"
+    email: "lowcountryjen@gmail.com",
+    website: "https://lowcountryliveoak.com"
   },
   {
     name: "Charter One - Shelley and Gary Elliott",
