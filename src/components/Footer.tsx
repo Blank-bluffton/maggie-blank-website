@@ -188,7 +188,7 @@ export default function Footer({
               </li>
               <li>
                 <Link
-                  href="/blog/physician-mortgage-guide-2026"
+                  href="/blog/physician-loans-2026"
                   className="text-white/80 hover:text-[#C5A059] transition-colors"
                 >
                   Physician Loans
@@ -196,7 +196,7 @@ export default function Footer({
               </li>
               <li>
                 <Link
-                  href="/blog/first-time-buyer-mistakes"
+                  href="/blog/first-time-buyer-programs-sc"
                   className="text-white/80 hover:text-[#C5A059] transition-colors"
                 >
                   First-Time Buyers
@@ -204,7 +204,7 @@ export default function Footer({
               </li>
               <li>
                 <Link
-                  href="/blog/bluffton-neighborhood-guide"
+                  href="/blog/buying-in-golf-community"
                   className="text-white/80 hover:text-[#C5A059] transition-colors"
                 >
                   Local Market
@@ -212,7 +212,7 @@ export default function Footer({
               </li>
               <li>
                 <Link
-                  href="/blog/self-employed-mortgage-options"
+                  href="/blog/self-employed-mortgage-guide"
                   className="text-white/80 hover:text-[#C5A059] transition-colors"
                 >
                   Self-Employed

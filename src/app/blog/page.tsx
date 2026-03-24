@@ -80,48 +80,48 @@ const blogPosts = [
     image: "/IMG_4395.JPG"
   },
   {
-    slug: "first-time-buyer-mistakes",
-    title: "7 First-Time Buyer Mistakes That Cost You Money",
-    excerpt: "Avoid these common pitfalls that trip up first-time homebuyers in the Lowcountry market.",
-    category: "First-Time Buyers",
+    slug: "how-to-get-the-best-mortgage-rate-in-the-lowcountry",
+    title: "How to Get the Best Mortgage Rate in the Lowcountry",
+    excerpt: " insider strategies for locking in the best rate when buying in Bluffton, Hilton Head, and surrounding communities.",
+    category: "Financial Planning",
     date: "March 15, 2026",
-    readTime: "5 min read",
+    readTime: "7 min read",
     image: "/IMG_4402.jpg"
   },
   {
-    slug: "self-employed-mortgage-options",
-    title: "Self-Employed? Here Are Your Mortgage Options",
-    excerpt: "Bank statements, K-1s, and profit & loss — understanding how self-employed borrowers qualify in today's market.",
-    category: "Self-Employed",
+    slug: "why-local-lenders-beat-big-banks-for-lowcountry-buyers",
+    title: "Why Local Lenders Beat Big Banks for Lowcountry Buyers",
+    excerpt: " working with a local lender means faster closings, better terms, and a partner who knows the Lowcountry market.",
+    category: "Lender Selection",
     date: "March 10, 2026",
     readTime: "6 min read",
     image: "/IMG_4395.JPG"
   },
   {
-    slug: "bluffton-neighborhood-guide",
-    title: "Bluffton Neighborhoods: Which One Is Right for You?",
-    excerpt: "A comprehensive guide to Bluffton's best communities — from golf communities to marsh-front neighborhoods.",
+    slug: "the-ultimate-move-to-lowcountry-checklist",
+    title: "The Ultimate Move to Lowcountry Checklist",
+    excerpt: " everything you need to do before moving to Bluffton, Hilton Head, or Beaufort — from financing to finding a mover.",
     category: "Local Market",
     date: "March 5, 2026",
     readTime: "7 min read",
     image: "/IMG_4405.jpg"
   },
   {
-    slug: "lowcountry-flood-insurance-guide",
-    title: "Understanding Flood Insurance in the Lowcountry",
-    excerpt: "What Bluffton and Hilton Head buyers need to know about flood zones, insurance costs, and FEMA requirements.",
+    slug: "understanding-closing-costs-in-south-carolina",
+    title: "Understanding Closing Costs in South Carolina",
+    excerpt: " what Bluffton and Hilton Head buyers need to know about SC closing costs, title insurance, and attorney involvement.",
     category: "Local Market",
     date: "February 28, 2026",
     readTime: "5 min read",
     image: "/IMG_4406.JPG"
   },
   {
-    slug: "construction-loan-guide",
-    title: "Build Your Dream Home: Construction-to-Permanent Loans",
-    excerpt: "Everything you need to know about financing a new build in the Lowcountry — from lot selection to final walkthrough.",
-    category: "Construction",
+    slug: "refinance-now-or-wait",
+    title: "Refinance Now or Wait? Lowcountry Market Analysis",
+    excerpt: " whether rates justify refinancing now — and what Lowcountry homeowners should consider before locking in a new rate.",
+    category: "Refinancing",
     date: "February 20, 2026",
-    readTime: "9 min read",
+    readTime: "8 min read",
     image: "/IMG_4404.JPG"
   }
 ];
