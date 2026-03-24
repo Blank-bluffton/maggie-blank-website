@@ -21,12 +21,12 @@ export default function Section({
   noAnimate = false
 }: SectionProps) {
   const backgrounds = {
-    default: 'bg-[#F8F8F8]',
-    gradient: 'relative',
-    dark: 'bg-[#333333]',
-    warm: 'bg-[#F9F8F5]',
-    white: 'bg-white',
-    teal: 'bg-[#526E7A]'
+    default: 'bg-[#F8F8F8] text-gray-800',
+    gradient: 'relative text-gray-800',
+    dark: 'bg-[#333333] text-white',
+    warm: 'bg-[#F9F8F5] text-gray-800',
+    white: 'bg-white text-gray-800',
+    teal: 'bg-[#526E7A] text-white'
   };
 
   const sectionContent = (
