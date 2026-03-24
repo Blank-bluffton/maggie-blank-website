@@ -1,6 +1,5 @@
 'use client';
 
-import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
@@ -36,13 +35,6 @@ const attorneys = [
 export default function ClosingAttorneysPage() {
   return (
     <>
-      <Hero
-        headline="Closing Attorneys"
-        ctaPrimary="Learn More"
-        ctaPrimaryLink="/contact"
-        variant="compact"
-      />
-
       <Section background="default">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
