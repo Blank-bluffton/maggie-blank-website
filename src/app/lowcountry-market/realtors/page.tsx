@@ -1,6 +1,5 @@
 'use client';
 
-import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
@@ -44,14 +43,6 @@ const realtors = [
 export default function RealtorsPage() {
   return (
     <>
-      <Hero
-        headline="Trusted Realtors"
-        subheadline="Connect with experienced local real estate professionals who know the Lowcountry market."
-        ctaPrimary="Get Connected"
-        ctaPrimaryLink="/contact"
-        variant="compact"
-      />
-
       <Section background="default">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
