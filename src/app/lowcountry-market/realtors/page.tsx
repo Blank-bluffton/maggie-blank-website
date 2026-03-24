@@ -11,7 +11,8 @@ const realtors = [
     name: "Dunes Real Estate - Bill Kelley",
     phone: "",
     address: "Hilton Head, SC",
-    specialties: ["Residential", "Investment Properties", "Luxury Homes"]
+    specialties: ["Residential", "Investment Properties", "Luxury Homes"],
+    website: "https://billk.dunesrealestate.com"
   }
 ];
 
@@ -54,13 +55,23 @@ export default function RealtorsPage() {
               </div>
               <div className="mt-4 pt-4 border-t border-gray-700">
                 <p className="text-sm text-gray-600 mb-2">Specialties:</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {realtor.specialties.map((specialty, i) => (
                     <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
                       {specialty}
                     </span>
                   ))}
                 </div>
+                {realtor.website && (
+                  <a
+                    href={realtor.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
+                  >
+                    Visit Website <ArrowRight className="w-4 h-4" />
+                  </a>
+                )}
               </div>
             </GlassCard>
           ))}
