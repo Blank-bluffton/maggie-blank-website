@@ -254,7 +254,7 @@ export default function PhysicianLoansPage() {
           </GlassCard>
 
           {/* Physician Loan */}
-          <GlassCard solidWhite hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/5 to-transparent">
+          <GlassCard hover className="border-cyan-500/30 bg-gray-800">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                 <Stethoscope className="w-6 h-6 text-cyan-400" />

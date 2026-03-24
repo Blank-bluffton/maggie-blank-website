@@ -35,7 +35,7 @@ const attorneys = [
 export default function ClosingAttorneysPage() {
   return (
     <>
-      <Section background="default">
+      <Section background="default" backgroundImage="https://raw.githubusercontent.com/Blank-bluffton/maggie-blank-website/main/public/IMG_4565.JPG">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
             Trusted Closing Attorneys

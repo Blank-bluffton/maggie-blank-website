@@ -133,7 +133,7 @@ export default function BlufftonConstructionLoanGuide() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
-              <GlassCard solidWhite hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/5 to-transparent">
+              <GlassCard hover className="border-cyan-500/30 bg-gray-800">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
                     <Key className="w-6 h-6 text-cyan-400" />
@@ -263,7 +263,7 @@ export default function BlufftonConstructionLoanGuide() {
             <p>
               Construction costs in the Bluffton area vary based on location, lot price, and home specifications. Here's a general breakdown for 2026:
             </p>
-            <GlassCard solidWhite hover className="my-8 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
+            <GlassCard hover className="my-8 bg-gray-800">
               <h3 className="text-lg font-semibold text-white mb-4">Sample Budget for a 2,500 sq ft Custom Home</h3>
               <div className="space-y-3">
                 <div className="flex justify-between text-white">

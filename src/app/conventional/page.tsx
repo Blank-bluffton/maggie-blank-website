@@ -308,10 +308,10 @@ export default function ConventionalLoansPage() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Conventional */}
-          <GlassCard solidWhite hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/5 to-transparent">
+          <GlassCard hover className="border-cyan-500/40 bg-gray-800">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
-                <Home className="w-5 h-5 text-cyan-400" />
+                <Home className="w-5 h-5 text-cyan-300" />
               </div>
               <h3 className="text-white font-semibold text-lg">{copy.comparison.conventional.title}</h3>
             </div>
@@ -326,10 +326,10 @@ export default function ConventionalLoansPage() {
           </GlassCard>
 
           {/* FHA */}
-          <GlassCard solidWhite hover className="border-orange-500/20">
+          <GlassCard hover className="border-orange-500/40 bg-gray-800">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
-                <Shield className="w-5 h-5 text-orange-400" />
+                <Shield className="w-5 h-5 text-orange-300" />
               </div>
               <h3 className="text-white font-semibold text-lg">{copy.comparison.fha.title}</h3>
             </div>
@@ -344,10 +344,10 @@ export default function ConventionalLoansPage() {
           </GlassCard>
 
           {/* USDA */}
-          <GlassCard solidWhite hover className="border-green-500/20">
+          <GlassCard hover className="border-green-500/40 bg-gray-800">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center">
-                <Scale className="w-5 h-5 text-green-400" />
+                <Scale className="w-5 h-5 text-green-300" />
               </div>
               <h3 className="text-white font-semibold text-lg">{copy.comparison.usda.title}</h3>
             </div>
@@ -373,9 +373,9 @@ export default function ConventionalLoansPage() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {copy.whenMakesSense.scenarios.map((scenario, index) => (
-            <GlassCard key={index} solidWhite hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-white mb-2">{scenario.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{scenario.description}</p>
+            <GlassCard key={index} solidWhite darkText hover delay={index * 0.1}>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{scenario.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{scenario.description}</p>
             </GlassCard>
           ))}
         </div>
