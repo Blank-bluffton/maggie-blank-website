@@ -39,11 +39,6 @@ const copy = {
         icon: Stethoscope
       },
       {
-        title: "Self-Employed Expertise",
-        description: "Bank statements, K-2s, profit & loss — if you're self-employed, you know the documentation dance. Maggie makes complex income documentation feel manageable.",
-        icon: FileText
-      },
-      {
         title: "Lowcountry Market Authority",
         description: "Bluffton. Hilton Head. Beaufort. Okatie. Every community has nuances — flood zones, HOA dynamics, coastal insurance. Maggie knows the local terrain.",
         icon: MapPin
@@ -69,12 +64,6 @@ const copy = {
         title: "Private Wealth Mortgages",
         description: "Jumbo loans and portfolio lending for high-net-worth clients. Custom financing solutions for luxury properties.",
         link: "/private-wealth",
-        linkText: "Learn More"
-      },
-      {
-        title: "Self-Employed Mortgages",
-        description: "Bank statement programs, K-1 analysis, and alternative documentation pathways.",
-        link: "/self-employed",
         linkText: "Learn More"
       },
       {
