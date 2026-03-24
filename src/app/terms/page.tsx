@@ -54,7 +54,7 @@ export default function TermsPage() {
       
       <CTABand
         headline="Questions about terms?"
-        subheadline="We're here to help."
+        subhead="We're here to help."
         ctaPrimary="Contact Us"
         ctaPrimaryLink="/contact"
       />

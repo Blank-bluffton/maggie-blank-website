@@ -41,25 +41,29 @@ const copy = {
         icon: Building2,
         title: "Jumbo Loans",
         description: "Financing beyond conforming limits for luxury properties. Loans from $1M to $5M+ with competitive rates and flexible terms.",
-        highlight: "Up to $5M+"
+        highlight: "Up to $5M+",
+        href: "/loan-solutions"
       },
       {
         icon: Gem,
         title: "Portfolio Lending",
         description: "Non-agency loans tailored to your specific situation. Asset-based underwriting, foreign national financing, and complex income structures.",
-        highlight: "Flexible Underwriting"
+        highlight: "Flexible Underwriting",
+        href: "/loan-solutions"
       },
       {
         icon: TrendingUp,
         title: "Investment Property Loans",
         description: "Financing for rental properties, vacation homes, and multi-family investments in the Lowcountry market.",
-        highlight: "DSCR Available"
+        highlight: "DSCR Available",
+        href: "/loan-solutions"
       },
       {
         icon: Briefcase,
         title: "Executive & Physician Packages",
         description: "Specialized programs for high-income professionals. Stock options, bonus income, and complex compensation structures welcomed.",
-        highlight: "Income Diversity"
+        highlight: "Income Diversity",
+        href: "/loan-solutions"
       }
     ]
   },
@@ -138,7 +142,7 @@ export default function PrivateWealthPage() {
           {copy.options.cards.map((option, index) => (
             <Link 
               key={option.title} 
-              href={option.cta || '#'}
+              href={option.href || '/contact'}
               className="block group"
             >
               <GlassCard 

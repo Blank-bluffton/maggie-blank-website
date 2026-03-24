@@ -48,7 +48,7 @@ export default function PrivacyPage() {
       
       <CTABand
         headline="Questions about privacy?"
-        subheadline="We're here to help with any concerns."
+        subhead="We're here to help with any concerns."
         ctaPrimary="Contact Us"
         ctaPrimaryLink="/contact"
       />

@@ -910,7 +910,7 @@ export default function LowcountryMarketPage() {
         <div className="mt-12 p-8 bg-white rounded-xl">
           <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Top Golf Courses in the Lowcountry</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {copy.lifestyle.categories.find(c => c.name === "Golf")?.courses.map((course, index) => (
+            {(copy.lifestyle.categories.find(c => c.name === "Golf")?.courses || []).map((course, index) => (
               <a 
                 key={course.name}
                 href={course.link}
@@ -929,7 +929,7 @@ export default function LowcountryMarketPage() {
         <div className="mt-12 p-8 bg-white rounded-xl">
           <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Favorite Restaurants in the Lowcountry</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {copy.lifestyle.categories.find(c => c.name === "Dining")?.restaurants.map((restaurant, index) => (
+            {(copy.lifestyle.categories.find(c => c.name === "Dining")?.restaurants || []).map((restaurant, index) => (
               <a 
                 key={restaurant.name}
                 href={restaurant.link}
