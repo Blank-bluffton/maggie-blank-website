@@ -20,7 +20,8 @@ const realtors = [
     phone: "(912) 656-2969",
     address: "Hilton Head, SC",
     specialties: ["Residential", "Luxury Homes", "First-Time Buyers"],
-    website: "https://loriesauer.com"
+    website: "https://loriesauer.com",
+    email: "lorie.sauer@theagencyre.com"
   }
 ];
 
