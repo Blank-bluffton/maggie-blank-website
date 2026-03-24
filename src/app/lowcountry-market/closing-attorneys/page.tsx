@@ -13,12 +13,6 @@ const attorneys = [
     specialties: ["Residential Closings", "Commercial Real Estate", "Title Insurance"]
   },
   {
-    name: "Mikkelson Law Firm",
-    phone: "(843) 757-9330",
-    address: "214 Bluffton Rd, Bluffton, SC 29910",
-    specialties: ["Real Estate Law", "Closings", "Title Searches"]
-  },
-  {
     name: "Hale & Hale",
     phone: "(843) 837-3000",
     address: "1533 Fording Island Rd Suite 294, Hilton Head, SC 29926",
@@ -29,6 +23,12 @@ const attorneys = [
     phone: "(843) 671-5550",
     address: "71 Lighthouse Rd # 230, Hilton Head, SC 29928",
     specialties: ["Real Estate Closings", "Title Clearance", "Entity Transactions"]
+  },
+  {
+    name: "Mikkelson Law Firm",
+    phone: "(843) 757-9330",
+    address: "214 Bluffton Rd, Bluffton, SC 29910",
+    specialties: ["Real Estate Law", "Closings", "Title Searches"]
   }
 ];
 
