@@ -61,10 +61,10 @@ export default function ApplyPage() {
       {/* Hero Section */}
       <Section background="gradient">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 tracking-tight">
             {copy.hero.headline}
           </h1>
-          <p className="text-lg sm:text-xl text-white leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
             {copy.hero.subheadline}
           </p>
         </div>
@@ -73,19 +73,19 @@ export default function ApplyPage() {
       {/* Process Steps */}
       <Section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
             {copy.process.headline}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.process.steps.map((step, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 border border-pink-500/30 mb-4">
-                <span className="text-pink-400 font-bold text-sm">{String(index + 1).padStart(2, '0')}</span>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-pink-100 to-purple-100 border border-pink-300 mb-4">
+                <span className="text-pink-600 font-bold text-sm">{String(index + 1).padStart(2, '0')}</span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{step.description}</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -149,30 +149,30 @@ export default function ApplyPage() {
 
       {/* Trust Elements */}
       <Section background="gradient">
-        <GlassCard hover={false} className="max-w-3xl mx-auto text-center">
+        <GlassCard hover={false} darkText className="max-w-3xl mx-auto text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
             <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-cyan-400" />
-              <span className="text-white">{copy.trust.nmls}</span>
+              <Shield className="w-6 h-6 text-cyan-600" />
+              <span className="text-gray-700">{copy.trust.nmls}</span>
             </div>
             <div className="flex items-center gap-3">
-              <Lock className="w-6 h-6 text-purple-400" />
-              <span className="text-white">{copy.trust.secure}</span>
+              <Lock className="w-6 h-6 text-purple-600" />
+              <span className="text-gray-700">{copy.trust.secure}</span>
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-gray-800">
-            <div className="flex flex-wrap items-center justify-center gap-4 text-white text-sm">
+          <div className="mt-8 pt-8 border-t border-gray-200">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-gray-700 text-sm">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                <CheckCircle2 className="w-4 h-4 text-cyan-600" />
                 <span>No hard credit pull to start</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-pink-400" />
+                <CheckCircle2 className="w-4 h-4 text-pink-600" />
                 <span>Dedicated loan officer</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-purple-400" />
+                <CheckCircle2 className="w-4 h-4 text-purple-600" />
                 <span>Local closing team</span>
               </div>
             </div>

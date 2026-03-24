@@ -222,7 +222,7 @@ export default function BlufftonNeighborhoodsPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
           >
             {copy.neighborhoods.headline}
           </motion.h2>
@@ -231,7 +231,7 @@ export default function BlufftonNeighborhoodsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-800 text-lg max-w-2xl mx-auto"
           >
             {copy.neighborhoods.subheadline}
           </motion.p>
@@ -259,7 +259,7 @@ export default function BlufftonNeighborhoodsPage() {
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-2xl font-bold text-white">{neighborhood.name}</h3>
+                      <h3 className="text-2xl font-bold text-gray-800">{neighborhood.name}</h3>
                       <span className={`
                         px-3 py-1 rounded-full text-xs font-medium
                         ${neighborhood.type.includes('Luxury') || neighborhood.type.includes('Ultra') 
@@ -276,8 +276,8 @@ export default function BlufftonNeighborhoodsPage() {
                         {neighborhood.type}
                       </span>
                     </div>
-                    <p className="text-cyan-400 font-semibold text-lg mb-3">{neighborhood.priceRange}</p>
-                    <p className="text-white leading-relaxed">{neighborhood.description}</p>
+                    <p className="text-cyan-600 font-semibold text-lg mb-3">{neighborhood.priceRange}</p>
+                    <p className="text-gray-800 leading-relaxed">{neighborhood.description}</p>
                   </div>
                 </div>
 
@@ -286,10 +286,10 @@ export default function BlufftonNeighborhoodsPage() {
                   {neighborhood.highlights.map((highlight, i) => (
                     <div 
                       key={i}
-                      className="flex items-center gap-2 p-3 rounded-lg bg-white/5"
+                      className="flex items-center gap-2 p-3 rounded-lg bg-gray-200/80"
                     >
-                      <highlight.icon className="w-5 h-5 text-pink-400" />
-                      <span className="text-white text-sm">{highlight.label}</span>
+                      <highlight.icon className="w-5 h-5 text-pink-600" />
+                      <span className="text-gray-800 text-sm">{highlight.label}</span>
                     </div>
                   ))}
                 </div>
@@ -297,17 +297,17 @@ export default function BlufftonNeighborhoodsPage() {
                 {/* Details Row */}
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8 pt-4 border-t border-white/10">
                   <div className="flex items-start gap-2">
-                    <School className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <School className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white text-xs uppercase tracking-wide mb-1">Schools</p>
-                      <p className="text-white text-sm">{neighborhood.schools}</p>
+                      <p className="text-gray-800 text-xs uppercase tracking-wide mb-1">Schools</p>
+                      <p className="text-gray-800 text-sm">{neighborhood.schools}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <Building2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <Building2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white text-xs uppercase tracking-wide mb-1">Amenities</p>
-                      <p className="text-white text-sm">{neighborhood.amenities}</p>
+                      <p className="text-gray-800 text-xs uppercase tracking-wide mb-1">Amenities</p>
+                      <p className="text-gray-800 text-sm">{neighborhood.amenities}</p>
                     </div>
                   </div>
                 </div>
@@ -396,23 +396,23 @@ export default function BlufftonNeighborhoodsPage() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-2xl font-bold text-white mb-4">Explore Other Lowcountry Markets</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">Explore Other Lowcountry Markets</h3>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/lowcountry-market/hilton-head"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-gray-200/80 border border-white/10 text-gray-800 hover:text-gray-800 hover:bg-gray-200 transition-all"
             >
               Hilton Head
             </Link>
             <Link 
               href="/lowcountry-market/beaufort"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-gray-200/80 border border-white/10 text-gray-800 hover:text-gray-800 hover:bg-gray-200 transition-all"
             >
               Beaufort
             </Link>
             <Link 
               href="/lowcountry-market/okatie"
-              className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-white hover:bg-white/10 transition-all"
+              className="px-6 py-3 rounded-xl bg-gray-200/80 border border-white/10 text-gray-800 hover:text-gray-800 hover:bg-gray-200 transition-all"
             >
               Okatie / Hardeeville
             </Link>

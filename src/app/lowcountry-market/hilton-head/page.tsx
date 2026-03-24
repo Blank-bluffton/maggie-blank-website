@@ -176,7 +176,7 @@ export default function HiltonHeadPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
           >
             Premier Island Neighborhoods
           </motion.h2>
@@ -185,7 +185,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-2xl mx-auto"
+            className="text-gray-800 text-lg max-w-2xl mx-auto"
           >
             From oceanfront resorts to exclusive gated golf communities, discover the neighborhood that fits your lifestyle.
           </motion.p>
@@ -202,15 +202,15 @@ export default function HiltonHeadPage() {
             <motion.div key={index} variants={itemVariants}>
               <GlassCard hover className="h-full group">
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${hood.accent} flex items-center justify-center mb-4`}>
-                  <hood.icon className="w-7 h-7 text-white" />
+                  <hood.icon className="w-7 h-7 text-gray-800" />
                 </div>
                 
-                <h3 className="text-xl font-semibold text-white mb-1">{hood.name}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-1">{hood.name}</h3>
                 <p className={`text-sm font-medium bg-gradient-to-r ${hood.accent} bg-clip-text text-transparent mb-4`}>
                   {hood.priceRange}
                 </p>
                 
-                <p className="text-white text-sm mb-4 leading-relaxed">
+                <p className="text-gray-800 text-sm mb-4 leading-relaxed">
                   {hood.description}
                 </p>
                 
@@ -218,7 +218,7 @@ export default function HiltonHeadPage() {
                   {hood.highlights.map((highlight, i) => (
                     <span 
                       key={i}
-                      className="px-2.5 py-1 rounded-lg bg-white/5 text-white text-xs border border-white/10"
+                      className="px-2.5 py-1 rounded-lg bg-gray-200/80 text-gray-800 text-xs border border-white/10"
                     >
                       {highlight}
                     </span>
@@ -318,7 +318,7 @@ export default function HiltonHeadPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
           >
             {copy.cta.headline}
           </motion.h2>
@@ -327,7 +327,7 @@ export default function HiltonHeadPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-lg max-w-xl mx-auto mb-8"
+            className="text-gray-800 text-lg max-w-xl mx-auto mb-8"
           >
             {copy.cta.subhead}
           </motion.p>
@@ -340,14 +340,14 @@ export default function HiltonHeadPage() {
           >
             <Link
               href={copy.cta.ctaPrimaryLink}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-gray-800 font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/25 transition-all"
             >
               {copy.cta.ctaPrimary}
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href={copy.cta.ctaSecondaryLink}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-200 text-gray-800 font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
             >
               {copy.cta.ctaSecondary}
             </Link>

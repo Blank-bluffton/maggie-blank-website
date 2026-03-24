@@ -143,27 +143,27 @@ export default function ServicesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <GlassCard key={index} hover={true} delay={index * 0.05}>
-              <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider mb-2 block">
+              <span className="text-xs font-medium text-cyan-600 uppercase tracking-wider mb-2 block">
                 {service.category}
               </span>
-              <h3 className="text-xl font-semibold text-white mb-4">{service.name}</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">{service.name}</h3>
               <div className="space-y-2">
                 {service.phone && (
                   <div className="flex items-center gap-2 text-gray-700">
-                    <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                    <Phone className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                     <span>{service.phone}</span>
                   </div>
                 )}
                 {service.email && (
                   <div className="flex items-center gap-2 text-gray-700">
-                    <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                    <a href={`mailto:${service.email}`} className="hover:text-cyan-400">{service.email}</a>
+                    <Mail className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <a href={`mailto:${service.email}`} className="hover:text-cyan-600">{service.email}</a>
                   </div>
                 )}
                 {service.website && (
                   <div className="flex items-center gap-2 text-gray-700">
-                    <Globe className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                    <a href={service.website} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+                    <Globe className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <a href={service.website} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600">
                       Visit Website
                     </a>
                   </div>
@@ -181,7 +181,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
           >
             Let's Connect <ArrowRight className="w-4 h-4" />
           </Link>

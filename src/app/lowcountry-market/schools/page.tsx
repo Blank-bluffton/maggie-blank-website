@@ -127,10 +127,10 @@ export default function SchoolsPage() {
       {/* Private Schools */}
       <Section id="private-schools" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Private Schools in the Lowcountry
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-800 max-w-2xl mx-auto">
             The Lowcountry offers excellent private education options for families. Here are some of the top schools in the area.
           </p>
         </div>
@@ -145,16 +145,16 @@ export default function SchoolsPage() {
             >
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                  <GraduationCap className="w-5 h-5 text-purple-400" />
+                  <GraduationCap className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{school.name}</h3>
-                  <p className="text-purple-400 text-sm">{school.grades}</p>
+                  <h3 className="text-gray-800 font-semibold">{school.name}</h3>
+                  <p className="text-purple-600 text-sm">{school.grades}</p>
                 </div>
               </div>
-              <p className="text-white text-sm mb-4 flex-grow">{school.description}</p>
+              <p className="text-gray-800 text-sm mb-4 flex-grow">{school.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-white/10 rounded text-xs text-white">
+                <span className="px-2 py-1 bg-gray-200 rounded text-xs text-gray-800">
                   {school.type}
                 </span>
               </div>
@@ -163,7 +163,7 @@ export default function SchoolsPage() {
                   href={school.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-400 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-400 text-gray-800 text-sm font-medium rounded-lg transition-colors"
                 >
                   Visit Website <ArrowRight className="w-4 h-4" />
                 </a>
@@ -194,7 +194,7 @@ export default function SchoolsPage() {
               <h3 className="text-xl font-semibold text-white mb-6">{region.region}</h3>
               <div className="space-y-4">
                 {region.schools.map((school, index) => (
-                  <div key={school.name} className="flex items-start gap-3 p-3 bg-white/5 rounded-lg">
+                  <div key={school.name} className="flex items-start gap-3 p-3 bg-white/10 rounded-lg">
                     <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
                       <Building2 className="w-5 h-5 text-cyan-400" />
                     </div>
@@ -218,12 +218,12 @@ export default function SchoolsPage() {
       {/* CTA */}
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-white mb-6">
+          <p className="text-gray-800 mb-6">
             Have questions about schools in a specific neighborhood?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
           >
             Let's Talk <ArrowRight className="w-4 h-4" />
           </Link>

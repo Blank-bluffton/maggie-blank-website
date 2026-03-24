@@ -171,17 +171,17 @@ export default function PhysicianLoansPage() {
       {/* Benefits Section */}
       <Section id="benefits" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.benefits.headline}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.benefits.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
-              <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{card.description}</p>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
+              <card.icon className="w-10 h-10 text-cyan-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -189,26 +189,29 @@ export default function PhysicianLoansPage() {
 
       {/* Requirements Section */}
       <Section id="requirements">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+            {copy.requirements.headline}
+          </h2>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              {copy.requirements.headline}
-            </h2>
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-white">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                <li key={index} className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          <GlassCard hover={false} className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border-cyan-500/20">
+          <GlassCard hover={false} darkText className="bg-gradient-to-br from-cyan-50 to-teal-50 border-cyan-200">
             <div className="text-center">
-              <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-              <h3 className="text-white font-semibold text-xl mb-2">Estimated Buying Power</h3>
-              <p className="text-white text-sm mb-6">
+              <DollarSign className="w-12 h-12 text-cyan-600 mx-auto mb-4" />
+              <h3 className="text-gray-800 font-semibold text-xl mb-2">Estimated Buying Power</h3>
+              <p className="text-gray-600 text-sm mb-6">
                 With physician loan programs, many doctors qualify for significantly more home than with conventional financing.
               </p>
               <Link

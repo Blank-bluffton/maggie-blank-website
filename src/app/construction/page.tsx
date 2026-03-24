@@ -150,21 +150,21 @@ export default function ConstructionPage() {
       {/* How It Works Section */}
       <Section id="how-it-works" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.howItWorks.headline}
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.howItWorks.steps.map((step, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
                   {step.number}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{step.description}</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -173,7 +173,7 @@ export default function ConstructionPage() {
       {/* Benefits Section */}
       <Section id="benefits">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.benefits.headline}
           </h2>
         </div>
@@ -184,12 +184,13 @@ export default function ConstructionPage() {
               key={index} 
               hover 
               delay={index * 0.1}
-              className={index === 1 ? "border-pink-500/30 bg-gradient-to-br from-pink-500/5 to-transparent" : 
-                         index === 2 ? "border-purple-500/30 bg-gradient-to-br from-purple-500/5 to-transparent" : ""}
+              darkText
+              className={index === 1 ? "border-pink-300 bg-gradient-to-br from-pink-50 to-transparent" : 
+                         index === 2 ? "border-purple-300 bg-gradient-to-br from-purple-50 to-transparent" : ""}
             >
-              <card.icon className={`w-10 h-10 mb-4 ${index === 0 ? 'text-cyan-400' : index === 1 ? 'text-pink-400' : index === 2 ? 'text-purple-400' : 'text-teal-400'}`} />
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{card.description}</p>
+              <card.icon className={`w-10 h-10 mb-4 ${index === 0 ? 'text-cyan-600' : index === 1 ? 'text-pink-600' : index === 2 ? 'text-purple-600' : 'text-teal-600'}`} />
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>

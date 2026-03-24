@@ -48,22 +48,22 @@ export default function ClosingAttorneysPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {attorneys.map((attorney, index) => (
             <GlassCard key={index} hover={true} delay={index * 0.1}>
-              <h3 className="text-xl font-semibold text-white mb-4">{attorney.name}</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">{attorney.name}</h3>
               <div className="space-y-3">
-                <div className="flex items-center gap-3 text-white">
-                  <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <div className="flex items-center gap-3 text-gray-800">
+                  <Phone className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   <span>{attorney.phone}</span>
                 </div>
-                <div className="flex items-center gap-3 text-white">
-                  <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <div className="flex items-center gap-3 text-gray-800">
+                  <MapPin className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   <span>{attorney.address}</span>
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-gray-700">
-                <p className="text-sm text-white mb-2">Specialties:</p>
+                <p className="text-sm text-gray-800 mb-2">Specialties:</p>
                 <div className="flex flex-wrap gap-2">
                   {attorney.specialties.map((specialty, i) => (
-                    <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
+                    <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-600 text-xs rounded-full">
                       {specialty}
                     </span>
                   ))}
@@ -76,12 +76,12 @@ export default function ClosingAttorneysPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-white mb-6">
+          <p className="text-gray-800 mb-6">
             Need a closing attorney recommendation?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
             >
             Let's Connect <ArrowRight className="w-4 h-4" />
           </Link>

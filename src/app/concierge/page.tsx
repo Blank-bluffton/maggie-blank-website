@@ -123,14 +123,14 @@ export default function ConciergePage() {
       {/* What Is Concierge Section */}
       <Section id="what-is-concierge" background="warm">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full mb-6">
-            <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span className="text-cyan-400 text-sm font-medium">The Concierge Difference</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-100 border border-cyan-300 rounded-full mb-6">
+            <Sparkles className="w-4 h-4 text-cyan-600" />
+            <span className="text-cyan-600 text-sm font-medium">The Concierge Difference</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.whatIsConcierge.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             {copy.whatIsConcierge.subhead}
           </p>
         </div>
@@ -141,15 +141,16 @@ export default function ConciergePage() {
               key={item.title} 
               hover={true} 
               delay={index * 0.1}
-              className="border-cyan-500/20 hover:border-cyan-500/50"
+              darkText
+              className="border-cyan-200 hover:border-cyan-400"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-6 h-6 text-cyan-400" />
+                <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-cyan-600" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                  <p className="text-white text-sm leading-relaxed">
+                  <h3 className="text-gray-800 font-semibold mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -186,7 +187,7 @@ export default function ConciergePage() {
       {/* Comparison Section */}
       <Section id="comparison" background="warm">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.compared.headline}
           </h2>
         </div>
@@ -195,15 +196,15 @@ export default function ConciergePage() {
           {copy.compared.comparison.map((item, index) => (
             <div 
               key={index}
-              className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-white/5 border border-white/10 rounded-xl"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-gray-100 border border-gray-200 rounded-xl"
             >
-              <div className="md:border-r md:border-white/10 md:pr-6">
-                <span className="text-xs font-medium text-white uppercase tracking-wider">Traditional Lending</span>
-                <p className="text-white mt-2">{item.traditional}</p>
+              <div className="md:border-r md:border-gray-200 md:pr-6">
+                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">Traditional Lending</span>
+                <p className="text-gray-700 mt-2">{item.traditional}</p>
               </div>
               <div>
-                <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider">Concierge Approach</span>
-                <p className="text-white mt-2">{item.concierge}</p>
+                <span className="text-xs font-medium text-cyan-600 uppercase tracking-wider">Concierge Approach</span>
+                <p className="text-gray-700 mt-2">{item.concierge}</p>
               </div>
             </div>
           ))}

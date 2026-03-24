@@ -267,11 +267,11 @@ export default function TaxTipsBlog() {
       {/* Introduction Section */}
       <Section>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
             {copy.intro.headline}
           </h2>
           {copy.intro.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-800 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -282,13 +282,13 @@ export default function TaxTipsBlog() {
       <Section id="deductions" background="gradient">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <Receipt className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <Receipt className="w-8 h-8 text-cyan-600" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
               {copy.deductions.headline}
             </h2>
           </div>
           {copy.deductions.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-800 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -296,9 +296,9 @@ export default function TaxTipsBlog() {
           <div className="space-y-4 mt-8">
             {copy.deductions.items.map((item, index) => (
               <GlassCard key={index} hover={false}>
-                <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-white text-sm mb-3">{item.description}</p>
-                <div className="flex items-center gap-2 text-cyan-400 text-sm">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-gray-800 text-sm mb-3">{item.description}</p>
+                <div className="flex items-center gap-2 text-cyan-600 text-sm">
                   <CheckCircle2 className="w-4 h-4" />
                   <span className="font-medium">Limit:</span> {item.limit}
                 </div>
@@ -312,13 +312,13 @@ export default function TaxTipsBlog() {
       <Section id="sc-benefits">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <Building2 className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <Building2 className="w-8 h-8 text-cyan-600" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
               {copy.lowcountry.headline}
             </h2>
           </div>
           {copy.lowcountry.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-800 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
@@ -326,8 +326,8 @@ export default function TaxTipsBlog() {
           <div className="grid md:grid-cols-2 gap-4 mt-8">
             {copy.lowcountry.benefits.map((benefit, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
-                <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-white text-sm">{benefit.description}</p>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">{benefit.title}</h3>
+                <p className="text-gray-800 text-sm">{benefit.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -377,35 +377,35 @@ export default function TaxTipsBlog() {
       <Section>
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <Users className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <Users className="w-8 h-8 text-cyan-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
               {copy.physician.headline}
             </h2>
           </div>
           {copy.physician.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-800 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <ul className="space-y-3 mt-6">
             {copy.physician.items.map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-white">
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
+              <li key={index} className="flex items-start gap-3 text-gray-800">
+                <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-1" />
                 {item}
               </li>
             ))}
           </ul>
 
           <div className="mt-6 p-4 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-            <p className="text-white text-sm">
-              <span className="text-cyan-400 font-semibold">Note:</span> {copy.physician.note}
+            <p className="text-gray-800 text-sm">
+              <span className="text-cyan-600 font-semibold">Note:</span> {copy.physician.note}
             </p>
           </div>
 
           <Link
             href="/physician-loans"
-            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium mt-6"
+            className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-300 font-medium mt-6"
           >
             Explore Physician Loan Programs <ArrowRight className="w-4 h-4" />
           </Link>
@@ -416,8 +416,8 @@ export default function TaxTipsBlog() {
       <Section background="gradient">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <TrendingUp className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            <TrendingUp className="w-8 h-8 text-cyan-600" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
               {copy.strategies.headline}
             </h2>
           </div>
@@ -425,8 +425,8 @@ export default function TaxTipsBlog() {
           <div className="grid md:grid-cols-2 gap-4 mt-8">
             {copy.strategies.strategies.map((strategy, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
-                <h3 className="text-white font-semibold mb-2">{strategy.title}</h3>
-                <p className="text-white text-sm">{strategy.description}</p>
+                <h3 className="text-gray-800 font-semibold mb-2">{strategy.title}</h3>
+                <p className="text-gray-800 text-sm">{strategy.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -437,21 +437,21 @@ export default function TaxTipsBlog() {
       <Section>
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <Home className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <Home className="w-8 h-8 text-cyan-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
               {copy.firstTime.headline}
             </h2>
           </div>
           {copy.firstTime.paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-white text-lg leading-relaxed mb-6">
+            <p key={index} className="text-gray-800 text-lg leading-relaxed mb-6">
               {paragraph}
             </p>
           ))}
           
           <ul className="space-y-3 mt-6">
             {copy.firstTime.benefits.map((benefit, index) => (
-              <li key={index} className="flex items-start gap-3 text-white">
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
+              <li key={index} className="flex items-start gap-3 text-gray-800">
+                <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-1" />
                 {benefit}
               </li>
             ))}
@@ -459,7 +459,7 @@ export default function TaxTipsBlog() {
 
           <Link
             href="/first-time-buyers"
-            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium mt-6"
+            className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-300 font-medium mt-6"
           >
             Explore First-Time Buyer Programs <ArrowRight className="w-4 h-4" />
           </Link>

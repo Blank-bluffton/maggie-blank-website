@@ -8,13 +8,16 @@ interface GlassCardProps {
   className?: string;
   hover?: boolean;
   delay?: number;
+  /** Use dark text (for use on light/gradient backgrounds where bg-white card needs readable contrast) */
+  darkText?: boolean;
 }
 
 export default function GlassCard({ 
   children, 
   className = '', 
   hover = true,
-  delay = 0
+  delay = 0,
+  darkText = false,
 }: GlassCardProps) {
   return (
     <motion.div
@@ -28,7 +31,9 @@ export default function GlassCard({
           : ''
       } ${className}`}
     >
-      {children}
+      <div className={darkText ? 'text-gray-800' : ''}>
+        {children}
+      </div>
     </motion.div>
   );
 }

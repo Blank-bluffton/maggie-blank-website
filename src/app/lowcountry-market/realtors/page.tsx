@@ -48,7 +48,7 @@ export default function RealtorsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
             Trusted Realtors
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-800 max-w-2xl mx-auto">
             We work with experienced real estate professionals throughout the Lowcountry to ensure smooth transactions.
           </p>
         </div>
@@ -56,22 +56,22 @@ export default function RealtorsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {realtors.map((realtor, index) => (
             <GlassCard key={index} hover={true} delay={index * 0.1}>
-              <h3 className="text-xl font-semibold text-white mb-4">{realtor.name}</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">{realtor.name}</h3>
               <div className="space-y-3">
                 {realtor.phone && (
-                  <div className="flex items-center gap-3 text-white">
-                    <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <div className="flex items-center gap-3 text-gray-800">
+                    <Phone className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                     <span>{realtor.phone}</span>
                   </div>
                 )}
-                <div className="flex items-center gap-3 text-white">
-                  <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <div className="flex items-center gap-3 text-gray-800">
+                  <MapPin className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   <span>{realtor.address}</span>
                 </div>
                 {realtor.email && (
-                  <div className="flex items-center gap-3 text-white">
-                    <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                    <a href={`mailto:${realtor.email}`} className="hover:text-cyan-400">{realtor.email}</a>
+                  <div className="flex items-center gap-3 text-gray-800">
+                    <Mail className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <a href={`mailto:${realtor.email}`} className="hover:text-cyan-600">{realtor.email}</a>
                   </div>
                 )}
               </div>
@@ -79,7 +79,7 @@ export default function RealtorsPage() {
                 <p className="text-sm text-gray-600 mb-2">Specialties:</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {realtor.specialties.map((specialty, i) => (
-                    <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
+                    <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-600 text-xs rounded-full">
                       {specialty}
                     </span>
                   ))}
@@ -89,7 +89,7 @@ export default function RealtorsPage() {
                     href={realtor.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
+                    className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-300 font-medium"
                   >
                     Visit Website <ArrowRight className="w-4 h-4" />
                   </a>
@@ -133,12 +133,12 @@ export default function RealtorsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-white mb-6">
+          <p className="text-gray-800 mb-6">
             Need a realtor recommendation?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
           >
             Let's Connect <ArrowRight className="w-4 h-4" />
           </Link>

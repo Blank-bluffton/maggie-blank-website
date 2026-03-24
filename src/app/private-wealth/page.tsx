@@ -130,10 +130,10 @@ export default function PrivateWealthPage() {
       {/* Options Section */}
       <Section id="options" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.options.headline}
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             {copy.options.subhead}
           </p>
         </div>
@@ -148,40 +148,41 @@ export default function PrivateWealthPage() {
               <GlassCard 
                 hover={true} 
                 delay={index * 0.1}
+                darkText
                 className={`
                   h-full border transition-all duration-300 group-hover:scale-[1.02]
-                  ${option.title === 'Jumbo Loans' ? 'group-hover:border-pink-500/40' : ''}
-                  ${option.title === 'Portfolio Lending' ? 'group-hover:border-purple-500/40' : ''}
-                  ${option.title === 'Investment Property Loans' ? 'group-hover:border-cyan-500/40' : ''}
-                  ${option.title === 'Executive & Physician Packages' ? 'group-hover:border-pink-500/40' : ''}
+                  ${option.title === 'Jumbo Loans' ? 'group-hover:border-pink-400' : ''}
+                  ${option.title === 'Portfolio Lending' ? 'group-hover:border-purple-400' : ''}
+                  ${option.title === 'Investment Property Loans' ? 'group-hover:border-cyan-400' : ''}
+                  ${option.title === 'Executive & Physician Packages' ? 'group-hover:border-pink-400' : ''}
                 `}
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`
                     w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0
-                    ${option.title === 'Jumbo Loans' ? 'bg-pink-500/20' : ''}
-                    ${option.title === 'Portfolio Lending' ? 'bg-purple-500/20' : ''}
-                    ${option.title === 'Investment Property Loans' ? 'bg-cyan-500/20' : ''}
-                    ${option.title === 'Executive & Physician Packages' ? 'bg-pink-500/20' : ''}
+                    ${option.title === 'Jumbo Loans' ? 'bg-pink-100' : ''}
+                    ${option.title === 'Portfolio Lending' ? 'bg-purple-100' : ''}
+                    ${option.title === 'Investment Property Loans' ? 'bg-cyan-100' : ''}
+                    ${option.title === 'Executive & Physician Packages' ? 'bg-pink-100' : ''}
                   `}>
                     <option.icon className={`
                       w-7 h-7
-                      ${option.title === 'Jumbo Loans' ? 'text-pink-400' : ''}
-                      ${option.title === 'Portfolio Lending' ? 'text-purple-400' : ''}
-                      ${option.title === 'Investment Property Loans' ? 'text-cyan-400' : ''}
-                      ${option.title === 'Executive & Physician Packages' ? 'text-pink-400' : ''}
+                      ${option.title === 'Jumbo Loans' ? 'text-pink-600' : ''}
+                      ${option.title === 'Portfolio Lending' ? 'text-purple-600' : ''}
+                      ${option.title === 'Investment Property Loans' ? 'text-cyan-600' : ''}
+                      ${option.title === 'Executive & Physician Packages' ? 'text-pink-600' : ''}
                     `} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-800 transition-colors">
                       {option.title}
                     </h3>
                     <span className={`
                       inline-flex items-center gap-1 text-sm font-medium mt-1
-                      ${option.title === 'Jumbo Loans' ? 'text-pink-400' : ''}
-                      ${option.title === 'Portfolio Lending' ? 'text-purple-400' : ''}
-                      ${option.title === 'Investment Property Loans' ? 'text-cyan-400' : ''}
-                      ${option.title === 'Executive & Physician Packages' ? 'text-pink-400' : ''}
+                      ${option.title === 'Jumbo Loans' ? 'text-pink-600' : ''}
+                      ${option.title === 'Portfolio Lending' ? 'text-purple-600' : ''}
+                      ${option.title === 'Investment Property Loans' ? 'text-cyan-600' : ''}
+                      ${option.title === 'Executive & Physician Packages' ? 'text-pink-600' : ''}
                     `}>
                       <DollarSign className="w-3 h-3" />
                       {option.highlight}
@@ -189,7 +190,7 @@ export default function PrivateWealthPage() {
                   </div>
                 </div>
                 
-                <p className="text-white text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {option.description}
                 </p>
               </GlassCard>
@@ -228,20 +229,20 @@ export default function PrivateWealthPage() {
       {/* Requirements Section */}
       <Section id="requirements" background="gradient">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
             {copy.requirements.headline}
           </h2>
           
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 text-left">
+          <GlassCard darkText hover={false} className="text-left">
             <ul className="space-y-4">
               {copy.requirements.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-white">{item}</span>
+                <li key={index} className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-pink-600 flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </GlassCard>
         </div>
       </Section>
 

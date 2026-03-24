@@ -148,10 +148,10 @@ export default function ResourcesPage() {
       {/* Categories Section */}
       <Section id="categories" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.categories.headline}
           </h2>
-          <p className="text-lg text-white max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {copy.categories.subhead}
           </p>
         </div>
@@ -162,42 +162,43 @@ export default function ResourcesPage() {
               <GlassCard 
                 hover 
                 delay={index * 0.1}
+                darkText
                 className={`h-full transition-all duration-300 group ${
-                  card.color === 'cyan' ? 'hover:border-cyan-500/40' :
-                  card.color === 'pink' ? 'hover:border-pink-500/40' :
-                  card.color === 'purple' ? 'hover:border-purple-500/40' :
-                  'hover:border-teal-500/40'
+                  card.color === 'cyan' ? 'hover:border-cyan-400' :
+                  card.color === 'pink' ? 'hover:border-pink-400' :
+                  card.color === 'purple' ? 'hover:border-purple-400' :
+                  'hover:border-teal-400'
                 }`}
               >
                 <div className="flex items-start gap-4">
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 ${
-                    card.color === 'cyan' ? 'bg-cyan-500/20' :
-                    card.color === 'pink' ? 'bg-pink-500/20' :
-                    card.color === 'purple' ? 'bg-purple-500/20' :
-                    'bg-teal-500/20'
+                    card.color === 'cyan' ? 'bg-cyan-100' :
+                    card.color === 'pink' ? 'bg-pink-100' :
+                    card.color === 'purple' ? 'bg-purple-100' :
+                    'bg-teal-100'
                   }`}>
                     <card.icon className={`w-7 h-7 ${
-                      card.color === 'cyan' ? 'text-cyan-400' :
-                      card.color === 'pink' ? 'text-pink-400' :
-                      card.color === 'purple' ? 'text-purple-400' :
-                      'text-teal-400'
+                      card.color === 'cyan' ? 'text-cyan-600' :
+                      card.color === 'pink' ? 'text-pink-600' :
+                      card.color === 'purple' ? 'text-purple-600' :
+                      'text-teal-600'
                     }`} />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-lg font-semibold text-gray-800 group-hover:text-cyan-600 transition-colors">
                         {card.title}
                       </h3>
-                      <ChevronRight className="w-5 h-5 text-white group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <p className="text-white text-sm leading-relaxed mb-3">
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
                       {card.description}
                     </p>
                     <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${
-                      card.color === 'cyan' ? 'bg-cyan-500/20 text-cyan-400' :
-                      card.color === 'pink' ? 'bg-pink-500/20 text-pink-400' :
-                      card.color === 'purple' ? 'bg-purple-500/20 text-purple-400' :
-                      'bg-teal-500/20 text-teal-400'
+                      card.color === 'cyan' ? 'bg-cyan-100 text-cyan-700' :
+                      card.color === 'pink' ? 'bg-pink-100 text-pink-700' :
+                      card.color === 'purple' ? 'bg-purple-100 text-purple-700' :
+                      'bg-teal-100 text-teal-700'
                     }`}>
                       {card.stats}
                     </span>

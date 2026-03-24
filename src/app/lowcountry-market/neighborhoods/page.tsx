@@ -141,16 +141,16 @@ export default function NeighborhoodsPage() {
             <GlassCard key={index} hover={true} delay={index * 0.1}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
-                  <hood.icon className="w-6 h-6 text-cyan-400" />
+                  <hood.icon className="w-6 h-6 text-cyan-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white">{hood.name}</h3>
-                  <p className="text-cyan-400 text-sm font-medium">{hood.priceRange}</p>
+                  <h3 className="text-xl font-semibold text-gray-800">{hood.name}</h3>
+                  <p className="text-cyan-600 text-sm font-medium">{hood.priceRange}</p>
                 </div>
               </div>
-              <p className="text-white">{hood.description}</p>
+              <p className="text-gray-800">{hood.description}</p>
               <div className="mt-3 pt-3 border-t border-gray-700">
-                <span className="text-xs text-white">{hood.type}</span>
+                <span className="text-xs text-gray-800">{hood.type}</span>
               </div>
             </GlassCard>
           ))}
@@ -159,7 +159,7 @@ export default function NeighborhoodsPage() {
         <div className="text-center mt-12">
           <Link
             href="/lowcountry-market/bluffton"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
           >
             View All Bluffton Neighborhoods <ArrowRight className="w-4 h-4" />
           </Link>
@@ -208,12 +208,12 @@ export default function NeighborhoodsPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-white mb-6">
+          <p className="text-gray-800 mb-6">
             Need help finding the right neighborhood for your lifestyle and budget?
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-800 font-semibold rounded-lg transition-colors"
           >
             Let's Talk <ArrowRight className="w-4 h-4" />
           </Link>

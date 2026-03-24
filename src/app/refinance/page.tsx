@@ -197,10 +197,10 @@ export default function RefinancePage() {
       {/* Refinance Types Section */}
       <Section id="refinance-types" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.refinanceTypes.headline}
           </h2>
-          <p className="text-lg text-white max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {copy.refinanceTypes.subhead}
           </p>
         </div>
@@ -211,6 +211,7 @@ export default function RefinancePage() {
               key={index} 
               hover 
               delay={index * 0.1}
+              darkText
               className={
                 type.accent === 'cyan' 
                   ? 'border-cyan-500/20 hover:border-cyan-500/40' 
@@ -221,30 +222,30 @@ export default function RefinancePage() {
             >
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 ${
                 type.accent === 'cyan' 
-                  ? 'bg-cyan-500/20' 
+                  ? 'bg-cyan-100' 
                   : type.accent === 'purple'
-                  ? 'bg-purple-500/20'
-                  : 'bg-pink-500/20'
+                  ? 'bg-purple-100'
+                  : 'bg-pink-100'
               }`}>
                 <type.icon className={`w-7 h-7 ${
                   type.accent === 'cyan' 
-                    ? 'text-cyan-400' 
+                    ? 'text-cyan-600' 
                     : type.accent === 'purple'
-                    ? 'text-purple-400'
-                    : 'text-pink-400'
+                    ? 'text-purple-600'
+                    : 'text-pink-600'
                 }`} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">{type.title}</h3>
-              <p className="text-white text-sm mb-5 leading-relaxed">{type.description}</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">{type.title}</h3>
+              <p className="text-gray-600 text-sm mb-5 leading-relaxed">{type.description}</p>
               <ul className="space-y-2.5">
                 {type.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-sm">
+                  <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
                     <CheckCircle2 className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
                       type.accent === 'cyan' 
-                        ? 'text-cyan-400' 
+                        ? 'text-cyan-600' 
                         : type.accent === 'purple'
-                        ? 'text-purple-400'
-                        : 'text-pink-400'
+                        ? 'text-purple-600'
+                        : 'text-pink-600'
                     }`} />
                     {benefit}
                   </li>

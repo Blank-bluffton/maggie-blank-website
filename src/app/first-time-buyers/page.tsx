@@ -191,22 +191,22 @@ export default function FirstTimeBuyersPage() {
       {/* Programs Section */}
       <Section id="programs" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.programs.headline}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.programs.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
               <div className="flex items-center justify-between mb-4">
-                <card.icon className="w-10 h-10 text-cyan-400" />
-                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-sm font-medium rounded-full">
+                <card.icon className="w-10 h-10 text-cyan-600" />
+                <span className="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm font-medium rounded-full">
                   {card.minDown} down
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -215,19 +215,19 @@ export default function FirstTimeBuyersPage() {
       {/* Understanding Costs Section */}
       <Section id="costs">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.costs.headline}
           </h2>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.costs.sections.map((section, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}

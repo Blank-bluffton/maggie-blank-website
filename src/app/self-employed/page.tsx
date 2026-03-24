@@ -187,20 +187,20 @@ export default function SelfEmployedPage() {
       {/* Options Section */}
       <Section id="options" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.options.headline}
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {copy.options.cards.map((card, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
-              <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-white text-sm leading-relaxed mb-4">{card.description}</p>
-              <div className="pt-3 border-t border-white/10">
-                <p className="text-xs text-cyan-400 font-medium">Best for:</p>
-                <p className="text-xs text-white">{card.bestFor}</p>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
+              <card.icon className="w-10 h-10 text-cyan-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">{card.description}</p>
+              <div className="pt-3 border-t border-gray-200">
+                <p className="text-xs text-cyan-600 font-medium">Best for:</p>
+                <p className="text-xs text-gray-600">{card.bestFor}</p>
               </div>
             </GlassCard>
           ))}
@@ -210,19 +210,19 @@ export default function SelfEmployedPage() {
       {/* Documentation Section */}
       <Section id="documentation">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.documentation.headline}
           </h2>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
           {copy.documentation.sections.map((section, index) => (
-            <GlassCard key={index} hover delay={index * 0.1}>
-              <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
+            <GlassCard key={index} hover delay={index * 0.1} darkText>
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}

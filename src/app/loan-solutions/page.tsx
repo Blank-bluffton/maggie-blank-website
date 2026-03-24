@@ -78,10 +78,10 @@ export default function LoanSolutionsPage() {
       {/* Loan Types Grid */}
       <Section id="loans" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Explore Your Options
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Click on any loan type to learn more about specific programs, requirements, and benefits.
           </p>
         </div>
@@ -96,6 +96,7 @@ export default function LoanSolutionsPage() {
               <GlassCard 
                 hover={true} 
                 delay={index * 0.1}
+                darkText
                 className={`
                   h-full border transition-all duration-300 group-hover:scale-[1.02]
                   ${loan.color === 'cyan' ? 'group-hover:border-cyan-500/40' : ''}
@@ -106,26 +107,26 @@ export default function LoanSolutionsPage() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`
                     w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0
-                    ${loan.color === 'cyan' ? 'bg-cyan-500/20' : ''}
-                    ${loan.color === 'pink' ? 'bg-pink-500/20' : ''}
-                    ${loan.color === 'purple' ? 'bg-purple-500/20' : ''}
+                    ${loan.color === 'cyan' ? 'bg-cyan-100' : ''}
+                    ${loan.color === 'pink' ? 'bg-pink-100' : ''}
+                    ${loan.color === 'purple' ? 'bg-purple-100' : ''}
                   `}>
                     <loan.icon className={`
                       w-7 h-7
-                      ${loan.color === 'cyan' ? 'text-cyan-400' : ''}
-                      ${loan.color === 'pink' ? 'text-pink-400' : ''}
-                      ${loan.color === 'purple' ? 'text-purple-400' : ''}
+                      ${loan.color === 'cyan' ? 'text-cyan-600' : ''}
+                      ${loan.color === 'pink' ? 'text-pink-600' : ''}
+                      ${loan.color === 'purple' ? 'text-purple-600' : ''}
                     `} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-800 transition-colors">
                       {loan.title}
                     </h3>
                     <span className={`
                       inline-flex items-center gap-1 text-sm font-medium mt-1
-                      ${loan.color === 'cyan' ? 'text-cyan-400' : ''}
-                      ${loan.color === 'pink' ? 'text-pink-400' : ''}
-                      ${loan.color === 'purple' ? 'text-purple-400' : ''}
+                      ${loan.color === 'cyan' ? 'text-cyan-600' : ''}
+                      ${loan.color === 'pink' ? 'text-pink-600' : ''}
+                      ${loan.color === 'purple' ? 'text-purple-600' : ''}
                     `}>
                       <Sparkles className="w-3 h-3" />
                       {loan.highlight}
@@ -133,15 +134,15 @@ export default function LoanSolutionsPage() {
                   </div>
                 </div>
                 
-                <p className="text-white text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {loan.description}
                 </p>
 
                 <div className={`
                   inline-flex items-center gap-2 text-sm font-medium
-                  ${loan.color === 'cyan' ? 'text-cyan-400' : ''}
-                  ${loan.color === 'pink' ? 'text-pink-400' : ''}
-                  ${loan.color === 'purple' ? 'text-purple-400' : ''}
+                  ${loan.color === 'cyan' ? 'text-cyan-600' : ''}
+                  ${loan.color === 'pink' ? 'text-pink-600' : ''}
+                  ${loan.color === 'purple' ? 'text-purple-600' : ''}
                   group-hover:gap-3 transition-all
                 `}>
                   {loan.cta}

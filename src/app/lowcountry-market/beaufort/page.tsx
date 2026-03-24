@@ -123,19 +123,19 @@ const itemVariants = {
 const accentColors = {
   pink: {
     gradient: "from-pink-500/20 to-purple-500/20",
-    text: "text-pink-400",
+    text: "text-pink-600",
     border: "border-pink-500/20",
     glow: "shadow-pink-500/20"
   },
   purple: {
     gradient: "from-purple-500/20 to-cyan-500/20",
-    text: "text-purple-400",
+    text: "text-purple-600",
     border: "border-purple-500/20",
     glow: "shadow-purple-500/20"
   },
   cyan: {
     gradient: "from-cyan-500/20 to-teal-500/20",
-    text: "text-cyan-400",
+    text: "text-cyan-600",
     border: "border-cyan-500/20",
     glow: "shadow-cyan-500/20"
   }
@@ -162,31 +162,31 @@ export default function BeaufortPage() {
           >
             <Link 
               href="/lowcountry-market"
-              className="inline-flex items-center gap-2 text-white hover:text-cyan-400 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-gray-800 hover:text-cyan-600 transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Lowcountry Market
             </Link>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 mb-6">
               {copy.hero.headline}
             </h1>
             
-            <p className="text-xl text-white max-w-2xl mx-auto mb-10">
+            <p className="text-xl text-gray-800 max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href={copy.hero.ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-gray-800 font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
               >
                 {copy.hero.ctaPrimary}
                 <ChevronRight className="w-4 h-4" />
               </Link>
               <Link
                 href={copy.hero.ctaSecondaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-200/80 backdrop-blur-sm border border-white/10 text-gray-800 font-semibold rounded-xl hover:bg-gray-200 transition-all"
               >
                 <ArrowLeft className="w-4 h-4" />
                 {copy.hero.ctaSecondary}
@@ -254,7 +254,7 @@ export default function BeaufortPage() {
                     <neighborhood.icon className={`w-7 h-7 ${colors.text}`} />
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-white mb-1">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-1">
                     {neighborhood.name}
                   </h3>
                   
@@ -262,7 +262,7 @@ export default function BeaufortPage() {
                     {neighborhood.priceRange}
                   </p>
                   
-                  <p className="text-white text-sm mb-4">
+                  <p className="text-gray-800 text-sm mb-4">
                     {neighborhood.description}
                   </p>
                   
@@ -270,7 +270,7 @@ export default function BeaufortPage() {
                     {neighborhood.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className={`px-3 py-1 rounded-full bg-white/5 text-white text-xs`}
+                        className={`px-3 py-1 rounded-full bg-gray-200/80 text-gray-800 text-xs`}
                       >
                         {highlight}
                       </span>
@@ -310,7 +310,7 @@ export default function BeaufortPage() {
                 </Link>
                 <Link
                   href={copy.cta.ctaSecondaryLink}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
                 >
                   {copy.cta.ctaSecondary}
                 </Link>
