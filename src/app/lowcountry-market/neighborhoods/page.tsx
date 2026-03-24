@@ -1,6 +1,5 @@
 'use client';
 
-import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
@@ -9,14 +8,6 @@ import { ArrowRight, MapPin } from 'lucide-react';
 export default function NeighborhoodsPage() {
   return (
     <>
-      <Hero
-        headline="Lowcountry Neighborhoods"
-        subheadline="Explore the diverse communities across Bluffton, Hilton Head, Beaufort, and the surrounding areas."
-        ctaPrimary="Explore Communities"
-        ctaPrimaryLink="/lowcountry-market#communities"
-        variant="compact"
-      />
-
       <Section background="dark">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
