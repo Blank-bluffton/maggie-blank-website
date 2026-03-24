@@ -3,7 +3,46 @@
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ArrowRight, MapPin, Home, Waves, Trees } from 'lucide-react';
+
+const blufftonNeighborhoods = [
+  {
+    name: "May River",
+    description: "The crown jewel of Bluffton. This prestigious marshfront community offers luxury homes with stunning views of the May River, a private deep-water marina, and access to world-class amenities.",
+    priceRange: "$800K - $3.5M+",
+    icon: Waves
+  },
+  {
+    name: "Palmetto Bluff",
+    description: "A historic riverside community with luxury homes, yacht club, golf courses, and nature preserves. One of the most exclusive addresses in the Lowcountry.",
+    priceRange: "$700K - $2.5M+",
+    icon: Trees
+  },
+  {
+    name: "Berkeley Hall",
+    description: "A prestigious golf community with two Robert Trent Jones courses, luxury amenities, and estate homes. Known for its privacy and world-class facilities.",
+    priceRange: "$600K - $2M+",
+    icon: Home
+  },
+  {
+    name: "Belfair",
+    description: "Award-winning golf community with Greg Norman courses, tennis center, and resort-style amenities. Offers a range of home styles from villas to estate homes.",
+    priceRange: "$400K - $1.5M+",
+    icon: Home
+  },
+  {
+    name: "Hampton Hall",
+    description: "Exclusive golf and marina community withPete Dye golf course, full-service marina, and luxury amenities. Perfect for those seeking an active lifestyle.",
+    priceRange: "$500K - $1.8M+",
+    icon: Home
+  },
+  {
+    name: "Sun City",
+    description: "Active 55+ community with golf, tennis, pools, and over 100 clubs. More affordable entry point to Lowcountry living with excellent amenities.",
+    priceRange: "$250K - $600K",
+    icon: Home
+  }
+];
 
 export default function NeighborhoodsPage() {
   return (
@@ -60,6 +99,43 @@ export default function NeighborhoodsPage() {
               View all <ArrowRight className="w-4 h-4" />
             </Link>
           </GlassCard>
+        </div>
+      </Section>
+
+      <Section background="default">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
+            Bluffton's Best Neighborhoods
+          </h2>
+          <p className="text-[#555555] max-w-2xl mx-auto">
+            Each community has its own character, price points, and lifestyle. Here's what you need to know about Bluffton's top neighborhoods.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {blufftonNeighborhoods.map((hood, index) => (
+            <GlassCard key={index} hover={true} delay={index * 0.1}>
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                  <hood.icon className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-white">{hood.name}</h3>
+                  <p className="text-cyan-400 text-sm font-medium">{hood.priceRange}</p>
+                </div>
+              </div>
+              <p className="text-gray-400">{hood.description}</p>
+            </GlassCard>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link
+            href="/lowcountry-market/bluffton"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+          >
+            View All Bluffton Neighborhoods <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </Section>
 
