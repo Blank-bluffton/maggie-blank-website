@@ -20,10 +20,10 @@ const agents = [
     specialties: ["Homeowners", "Flood Insurance", "Auto"]
   },
   {
-    name: "State Farm Insurance",
-    phone: "(843) 836-9900",
-    address: "152 State Street Suite 102, Bluffton, SC 29910",
-    specialties: ["Homeowners", "Life Insurance", "Business"]
+    name: "Gallagher Insurance",
+    phone: "(843) 555-0505",
+    address: "Beaufort, SC",
+    specialties: ["Business Insurance", "Homeowners", "Specialty"]
   },
   {
     name: "Hilton Head Insurance & Brokerage",
@@ -38,10 +38,10 @@ const agents = [
     specialties: ["Homeowners", "Commercial", "Flood"]
   },
   {
-    name: "Gallagher Insurance",
-    phone: "(843) 555-0505",
-    address: "Beaufort, SC",
-    specialties: ["Business Insurance", "Homeowners", "Specialty"]
+    name: "State Farm Insurance",
+    phone: "(843) 836-9900",
+    address: "152 State Street Suite 102, Bluffton, SC 29910",
+    specialties: ["Homeowners", "Life Insurance", "Business"]
   }
 ];
 
