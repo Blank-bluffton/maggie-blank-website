@@ -317,7 +317,7 @@ export default function FAQPage() {
               Frequently Asked <span className="text-gradient-cyan">Questions</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
               Find answers to common questions about buying a home, securing a mortgage, 
               and financing your Lowcountry property.
             </p>
@@ -410,7 +410,7 @@ export default function FAQPage() {
               Still have questions?
             </h2>
 
-            <p className="text-gray-400 mb-8 max-w-lg mx-auto">
+            <p className="text-gray-300 mb-8 max-w-lg mx-auto">
               Every borrower's situation is unique. Let's talk about your specific 
               goals and find the right financing solution for you.
             </p>
@@ -437,7 +437,7 @@ export default function FAQPage() {
             {/* Contact info */}
             <div className="mt-8 pt-8 border-t border-white/10">
               <p className="text-gray-500 text-sm mb-4">Or reach out directly:</p>
-              <div className="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+              <div className="flex flex-wrap justify-center gap-6 text-gray-300 text-sm">
                 <a 
                   href="tel:8437063101" 
                   className="flex items-center gap-2 hover:text-cyan-400 transition-colors"

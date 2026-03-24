@@ -34,7 +34,7 @@ export default function BlogPost() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               February 10, 2026
@@ -87,21 +87,21 @@ export default function BlogPost() {
                   <ClockIcon className="w-5 h-5 text-cyan-400 mt-1" />
                   <div>
                     <span className="text-white font-medium">Same-day pre-approval</span>
-                    <p className="text-gray-400 text-sm">Get a verified pre-approval letter the same day you apply—no waiting 24-48 hours.</p>
+                    <p className="text-gray-300 text-sm">Get a verified pre-approval letter the same day you apply—no waiting 24-48 hours.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <ClockIcon className="w-5 h-5 text-cyan-400 mt-1" />
                   <div>
                     <span className="text-white font-medium">Direct access to underwriters</span>
-                    <p className="text-gray-400 text-sm">When questions arise, I can pick up the phone and speak directly to the decision-maker—not wait for email chains.</p>
+                    <p className="text-gray-300 text-sm">When questions arise, I can pick up the phone and speak directly to the decision-maker—not wait for email chains.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <ClockIcon className="w-5 h-5 text-cyan-400 mt-1" />
                   <div>
                     <span className="text-white font-medium">Flexible closing dates</span>
-                    <p className="text-gray-400 text-sm">We work with your timeline—not the bank's processing schedule.</p>
+                    <p className="text-gray-300 text-sm">We work with your timeline—not the bank's processing schedule.</p>
                   </div>
                 </div>
               </div>

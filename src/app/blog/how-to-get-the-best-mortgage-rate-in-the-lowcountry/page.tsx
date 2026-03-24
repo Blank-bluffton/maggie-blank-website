@@ -35,7 +35,7 @@ export default function BlogPost() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               January 15, 2026

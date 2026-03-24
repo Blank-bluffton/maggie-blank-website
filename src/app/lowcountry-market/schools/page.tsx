@@ -130,7 +130,7 @@ export default function SchoolsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Private Schools in the Lowcountry
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             The Lowcountry offers excellent private education options for families. Here are some of the top schools in the area.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function SchoolsPage() {
                   <p className="text-purple-400 text-sm">{school.grades}</p>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm mb-4 flex-grow">{school.description}</p>
+              <p className="text-gray-300 text-sm mb-4 flex-grow">{school.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-2 py-1 bg-white/10 rounded text-xs text-gray-300">
                   {school.type}
@@ -179,7 +179,7 @@ export default function SchoolsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Public Schools in the Lowcountry
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             The Lowcountry has excellent public school options. Here are the schools serving Bluffton and Hilton Head areas.
           </p>
         </div>
@@ -205,7 +205,7 @@ export default function SchoolsPage() {
                           {school.type}
                         </span>
                       </div>
-                      <p className="text-gray-400 text-sm">{school.description}</p>
+                      <p className="text-gray-300 text-sm">{school.description}</p>
                     </div>
                   </div>
                 ))}
@@ -218,7 +218,7 @@ export default function SchoolsPage() {
       {/* CTA */}
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-300 mb-6">
             Have questions about schools in a specific neighborhood?
           </p>
           <Link

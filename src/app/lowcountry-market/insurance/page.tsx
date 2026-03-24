@@ -63,12 +63,12 @@ export default function InsurancePage() {
               <h3 className="text-xl font-semibold text-white mb-4">{agent.name}</h3>
               <div className="space-y-3">
                 {agent.phone && (
-                  <div className="flex items-center gap-3 text-gray-400">
+                  <div className="flex items-center gap-3 text-gray-300">
                     <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                     <span>{agent.phone}</span>
                   </div>
                 )}
-                <div className="flex items-center gap-3 text-gray-400">
+                <div className="flex items-center gap-3 text-gray-300">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{agent.address}</span>
                 </div>
@@ -93,7 +93,7 @@ export default function InsurancePage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Protect Your Investment
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             Living in the Lowcountry means understanding flood, wind, and coastal insurance. We connect you with agents who know the area.
           </p>
         </div>
@@ -109,7 +109,7 @@ export default function InsurancePage() {
                 <p className="text-cyan-400 text-sm">Required in many zones</p>
               </div>
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Properties in AE and VE flood zones require flood insurance. We'll help you understand your options and costs.
             </p>
           </GlassCard>
@@ -124,7 +124,7 @@ export default function InsurancePage() {
                 <p className="text-blue-800 text-sm">Standard coverage</p>
               </div>
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Protect your home and belongings with comprehensive coverage tailored to coastal living.
             </p>
           </GlassCard>
@@ -133,7 +133,7 @@ export default function InsurancePage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-300 mb-6">
             Need insurance recommendations for your new home?
           </p>
           <Link

@@ -206,7 +206,7 @@ export default function FirstTimeBuyersPage() {
                 </span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{card.description}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -226,7 +226,7 @@ export default function FirstTimeBuyersPage() {
               <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-gray-400 text-sm">
+                  <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
@@ -260,7 +260,7 @@ export default function FirstTimeBuyersPage() {
             <div className="text-center">
               <Calculator className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold text-xl mb-2">Mortgage Calculator</h3>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-gray-300 text-sm mb-6">
                 Get a rough estimate of your monthly mortgage payment based on home price, down payment, and loan terms.
               </p>
               <Link

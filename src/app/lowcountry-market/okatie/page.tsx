@@ -164,7 +164,7 @@ export default function OkatiePage() {
                 <p className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
-                <p className="text-gray-400 mt-1 text-sm">{stat.label}</p>
+                <p className="text-gray-300 mt-1 text-sm">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}
@@ -187,7 +187,7 @@ export default function OkatiePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-gray-300 text-lg max-w-2xl mx-auto"
           >
             From established neighborhoods to new master-planned communities, Okatie and Hardeeville offer diverse options for every lifestyle and budget.
           </motion.p>
@@ -215,7 +215,7 @@ export default function OkatiePage() {
                   </div>
                 </div>
                 
-                <p className="text-gray-400 mb-5 leading-relaxed">
+                <p className="text-gray-300 mb-5 leading-relaxed">
                   {neighborhood.description}
                 </p>
                 
@@ -247,7 +247,7 @@ export default function OkatiePage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Why Buy in <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Okatie/Hardeeville</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-8">
+            <p className="text-gray-300 text-lg mb-8">
               The Okatie and Hardeeville area represents the fastest-growing corridor in the Lowcountry. With new construction, golf communities, and affordable price points, it's ideal for first-time buyers, families, and investors.
             </p>
 
@@ -287,7 +287,7 @@ export default function OkatiePage() {
               <div className="text-center">
                 <DollarSign className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-white font-semibold text-xl mb-2">Mortgage Options</h3>
-                <p className="text-gray-400 text-sm mb-6">
+                <p className="text-gray-300 text-sm mb-6">
                   We help buyers in Okatie and Hardeeville find the right financing — from conventional loans to physician loans and new construction financing.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">

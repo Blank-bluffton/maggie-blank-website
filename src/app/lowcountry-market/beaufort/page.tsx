@@ -162,7 +162,7 @@ export default function BeaufortPage() {
           >
             <Link 
               href="/lowcountry-market"
-              className="inline-flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Lowcountry Market
@@ -228,7 +228,7 @@ export default function BeaufortPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-400 text-lg max-w-3xl mx-auto"
+            className="text-gray-300 text-lg max-w-3xl mx-auto"
           >
             {copy.intro.subheadline}
           </motion.p>
@@ -262,7 +262,7 @@ export default function BeaufortPage() {
                     {neighborhood.priceRange}
                   </p>
                   
-                  <p className="text-gray-400 text-sm mb-4">
+                  <p className="text-gray-300 text-sm mb-4">
                     {neighborhood.description}
                   </p>
                   
@@ -296,7 +296,7 @@ export default function BeaufortPage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 {copy.cta.headline}
               </h2>
-              <p className="text-gray-400 text-lg mb-8">
+              <p className="text-gray-300 text-lg mb-8">
                 {copy.cta.subhead}
               </p>
               

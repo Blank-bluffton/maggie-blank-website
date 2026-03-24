@@ -50,11 +50,11 @@ export default function ClosingAttorneysPage() {
             <GlassCard key={index} hover={true} delay={index * 0.1}>
               <h3 className="text-xl font-semibold text-white mb-4">{attorney.name}</h3>
               <div className="space-y-3">
-                <div className="flex items-center gap-3 text-gray-400">
+                <div className="flex items-center gap-3 text-gray-300">
                   <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{attorney.phone}</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-400">
+                <div className="flex items-center gap-3 text-gray-300">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                   <span>{attorney.address}</span>
                 </div>
@@ -76,7 +76,7 @@ export default function ClosingAttorneysPage() {
 
       <Section background="gradient">
         <div className="text-center">
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-300 mb-6">
             Need a closing attorney recommendation?
           </p>
           <Link

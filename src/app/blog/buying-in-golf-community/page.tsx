@@ -239,7 +239,7 @@ export default function GolfCommunityBlog() {
             <GlassCard key={index} hover delay={index * 0.1}>
               <card.icon className="w-10 h-10 text-cyan-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{card.description}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{card.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -271,7 +271,7 @@ export default function GolfCommunityBlog() {
               <Calculator className="w-10 h-10 text-cyan-400" />
               <div>
                 <h3 className="text-white font-semibold">Financing Consultation</h3>
-                <p className="text-gray-400 text-sm">Get a personalized analysis of how HOA and club dues will affect your buying power.</p>
+                <p className="text-gray-300 text-sm">Get a personalized analysis of how HOA and club dues will affect your buying power.</p>
               </div>
             </div>
           </div>

@@ -308,7 +308,7 @@ export default function RefinanceBlog() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div>
                     <h4 className="text-white font-semibold">{item.metric}</h4>
-                    <p className="text-gray-400 text-sm">{item.note}</p>
+                    <p className="text-gray-300 text-sm">{item.note}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold text-cyan-400">{item.current}</p>
@@ -375,7 +375,7 @@ export default function RefinanceBlog() {
                 <h3 className={`text-lg font-semibold mb-2 ${scenario.answer.includes("YES") ? "text-green-400" : scenario.answer.includes("WAIT") ? "text-amber-400" : "text-cyan-400"}`}>
                   {scenario.answer}
                 </h3>
-                <p className="text-gray-400">{scenario.description}</p>
+                <p className="text-gray-300">{scenario.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -396,7 +396,7 @@ export default function RefinanceBlog() {
             {copy.lowcountryFactors.factors.map((factor, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <h3 className="text-lg font-semibold text-white mb-2">{factor.title}</h3>
-                <p className="text-gray-400 text-sm">{factor.description}</p>
+                <p className="text-gray-300 text-sm">{factor.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -417,7 +417,7 @@ export default function RefinanceBlog() {
             {copy.types.options.map((option, index) => (
               <GlassCard key={index} hover={false}>
                 <h3 className="text-lg font-semibold text-white mb-1">{option.type}</h3>
-                <p className="text-gray-400 text-sm mb-3">{option.description}</p>
+                <p className="text-gray-300 text-sm mb-3">{option.description}</p>
                 <p className="text-cyan-400 text-sm">
                   <span className="font-medium">Best for:</span> {option.bestFor}
                 </p>

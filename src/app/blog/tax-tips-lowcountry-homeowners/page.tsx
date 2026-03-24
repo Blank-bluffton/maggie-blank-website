@@ -297,7 +297,7 @@ export default function TaxTipsBlog() {
             {copy.deductions.items.map((item, index) => (
               <GlassCard key={index} hover={false}>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-gray-400 text-sm mb-3">{item.description}</p>
+                <p className="text-gray-300 text-sm mb-3">{item.description}</p>
                 <div className="flex items-center gap-2 text-cyan-400 text-sm">
                   <CheckCircle2 className="w-4 h-4" />
                   <span className="font-medium">Limit:</span> {item.limit}
@@ -327,7 +327,7 @@ export default function TaxTipsBlog() {
             {copy.lowcountry.benefits.map((benefit, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-gray-400 text-sm">{benefit.description}</p>
+                <p className="text-gray-300 text-sm">{benefit.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -353,7 +353,7 @@ export default function TaxTipsBlog() {
             {copy.selfEmployed.deductions.map((item, index) => (
               <GlassCard key={index} hover={false}>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.description}</p>
+                <p className="text-gray-300 text-sm">{item.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -426,7 +426,7 @@ export default function TaxTipsBlog() {
             {copy.strategies.strategies.map((strategy, index) => (
               <GlassCard key={index} hover delay={index * 0.1}>
                 <h3 className="text-white font-semibold mb-2">{strategy.title}</h3>
-                <p className="text-gray-400 text-sm">{strategy.description}</p>
+                <p className="text-gray-300 text-sm">{strategy.description}</p>
               </GlassCard>
             ))}
           </div>

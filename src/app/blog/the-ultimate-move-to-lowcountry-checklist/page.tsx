@@ -34,7 +34,7 @@ export default function BlogPost() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               February 18, 2026
@@ -66,19 +66,19 @@ export default function BlogPost() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-white font-medium mb-2">Bluffton</h4>
-                  <p className="text-gray-400 text-sm">The fastest-growing town in South Carolina. Offers a mix of master-planned communities (like Belfair, Hampton Lake, Palmetto Bluff), historic Old Town, and easy access to Hilton Head. Great for families and retirees alike. Median home prices: $400K-$700K.</p>
+                  <p className="text-gray-300 text-sm">The fastest-growing town in South Carolina. Offers a mix of master-planned communities (like Belfair, Hampton Lake, Palmetto Bluff), historic Old Town, and easy access to Hilton Head. Great for families and retirees alike. Median home prices: $400K-$700K.</p>
                 </div>
                 <div>
                   <h4 className="text-white font-medium mb-2">Hilton Head Island</h4>
-                  <p className="text-gray-400 text-sm">World-renowned resort island with 12 golf courses, pristine beaches, and exclusive communities. Higher price points and more resort-oriented. Ideal for second homes, retirees, and golf enthusiasts. Median home prices: $500K-$1.2M+.</p>
+                  <p className="text-gray-300 text-sm">World-renowned resort island with 12 golf courses, pristine beaches, and exclusive communities. Higher price points and more resort-oriented. Ideal for second homes, retirees, and golf enthusiasts. Median home prices: $500K-$1.2M+.</p>
                 </div>
                 <div>
                   <h4 className="text-white font-medium mb-2">Beaufort</h4>
-                  <p className="text-gray-400 text-sm">Historic waterfront town with Southern charm, excellent restaurants, and rich history. More affordable than Bluffton or Hilton Head. Great for those who want authentic Lowcountry character. Median home prices: $350K-$550K.</p>
+                  <p className="text-gray-300 text-sm">Historic waterfront town with Southern charm, excellent restaurants, and rich history. More affordable than Bluffton or Hilton Head. Great for those who want authentic Lowcountry character. Median home prices: $350K-$550K.</p>
                 </div>
                 <div>
                   <h4 className="text-white font-medium mb-2">Okatie/Hardeeville</h4>
-                  <p className="text-gray-400 text-sm">Up-and-coming areas with new developments and more affordable options. Growing rapidly with new shopping and amenities. Good for budget-conscious buyers. Median home prices: $300K-$450K.</p>
+                  <p className="text-gray-300 text-sm">Up-and-coming areas with new developments and more affordable options. Growing rapidly with new shopping and amenities. Good for budget-conscious buyers. Median home prices: $300K-$450K.</p>
                 </div>
               </div>
             </div>
@@ -174,17 +174,17 @@ export default function BlogPost() {
                 <div className="text-center">
                   <Waves className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                   <p className="text-white font-medium">Flood Zones</p>
-                  <p className="text-gray-400 text-sm">Check FEMA maps and elevation certificates</p>
+                  <p className="text-gray-300 text-sm">Check FEMA maps and elevation certificates</p>
                 </div>
                 <div className="text-center">
                   <TreePine className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                   <p className="text-white font-medium">HOA Fees</p>
-                  <p className="text-gray-400 text-sm">Range from $200-$1,500+/year depending on community</p>
+                  <p className="text-gray-300 text-sm">Range from $200-$1,500+/year depending on community</p>
                 </div>
                 <div className="text-center">
                   <Building className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                   <p className="text-white font-medium">Property Taxes</p>
-                  <p className="text-gray-400 text-sm">Avg 0.6-0.8% of assessed value in Beaufort County</p>
+                  <p className="text-gray-300 text-sm">Avg 0.6-0.8% of assessed value in Beaufort County</p>
                 </div>
               </div>
             </div>
@@ -272,22 +272,22 @@ export default function BlogPost() {
               <h3 className="text-lg font-semibold text-white mb-4">Quick Reference: Key Contacts</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <p className="text-gray-400">Electricity</p>
+                  <p className="text-gray-300">Electricity</p>
                   <p className="text-white">Palmetto Electric Cooperative</p>
                   <p className="text-cyan-400">1-800-922-6841</p>
                 </div>
                 <div>
-                  <p className="text-gray-400">Water/Sewer</p>
+                  <p className="text-gray-300">Water/Sewer</p>
                   <p className="text-white">Beaufort Jasper Water</p>
                   <p className="text-cyan-400">843-987-8100</p>
                 </div>
                 <div>
-                  <p className="text-gray-400">DMV</p>
+                  <p className="text-gray-300">DMV</p>
                   <p className="text-white">Beaufort County DMV</p>
                   <p className="text-cyan-400">843-255-1100</p>
                 </div>
                 <div>
-                  <p className="text-gray-400">Schools</p>
+                  <p className="text-gray-300">Schools</p>
                   <p className="text-white">Beaufort County School District</p>
                   <p className="text-cyan-400">843-322-2000</p>
                 </div>

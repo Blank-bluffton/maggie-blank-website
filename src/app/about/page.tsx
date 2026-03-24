@@ -227,7 +227,7 @@ function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
           <div className="text-3xl sm:text-4xl font-bold text-gradient-pink mb-1">
             {stat.value}
           </div>
-          <div className="text-sm text-gray-400">{stat.label}</div>
+          <div className="text-sm text-gray-300">{stat.label}</div>
         </motion.div>
       ))}
     </div>
@@ -319,7 +319,7 @@ export default function AboutPage() {
               Meet <span className="text-gradient-pink">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-400 max-w-2xl mx-auto mb-10">
+            <p className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
 
@@ -413,7 +413,7 @@ export default function AboutPage() {
                 </p>
               </GlassCard>
               
-              <div className="space-y-4 text-gray-400 leading-relaxed text-lg">
+              <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
                 {copy.story.body.split('\n\n').map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -485,7 +485,7 @@ export default function AboutPage() {
               {copy.personal.headline}
             </h2>
             
-            <p className="text-gray-400 text-center mb-8 max-w-xl mx-auto">
+            <p className="text-gray-300 text-center mb-8 max-w-xl mx-auto">
               {copy.personal.intro}
             </p>
             

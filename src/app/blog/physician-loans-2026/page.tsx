@@ -88,7 +88,7 @@ export default function PhysicianLoans2026() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 20, 2026
@@ -152,21 +152,21 @@ export default function PhysicianLoans2026() {
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">100% Financing</strong>
-                    <p className="text-gray-400 text-sm">No down payment required for qualified physicians</p>
+                    <p className="text-gray-300 text-sm">No down payment required for qualified physicians</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">95% Financing</strong>
-                    <p className="text-gray-400 text-sm">5% down payment with no PMI</p>
+                    <p className="text-gray-300 text-sm">5% down payment with no PMI</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white">90% Financing</strong>
-                    <p className="text-gray-400 text-sm">10% down payment for more flexibility</p>
+                    <p className="text-gray-300 text-sm">10% down payment for more flexibility</p>
                   </div>
                 </div>
               </div>

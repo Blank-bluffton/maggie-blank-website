@@ -133,7 +133,7 @@ export default function PrivateWealthPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.options.headline}
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             {copy.options.subhead}
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function PrivateWealthPage() {
                   </div>
                 </div>
                 
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">
                   {option.description}
                 </p>
               </GlassCard>
@@ -216,7 +216,7 @@ export default function PrivateWealthPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-400 text-sm">{item.description}</p>
+                    <p className="text-gray-300 text-sm">{item.description}</p>
                   </div>
                 </div>
               </GlassCard>
@@ -261,7 +261,7 @@ export default function PrivateWealthPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Free: Lowcountry Physician Relocation Guide
           </h2>
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-300 mb-8">
             Everything you need to know about relocating to the Lowcountry as a physician.
           </p>
           <a 

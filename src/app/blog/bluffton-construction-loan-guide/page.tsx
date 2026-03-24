@@ -88,7 +88,7 @@ export default function BlufftonConstructionLoanGuide() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 22, 2026
@@ -140,7 +140,7 @@ export default function BlufftonConstructionLoanGuide() {
                   </div>
                   <h3 className="text-white font-semibold text-lg">Construction-to-Permanent</h3>
                 </div>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>One application, one closing</span>
@@ -167,7 +167,7 @@ export default function BlufftonConstructionLoanGuide() {
                   </div>
                   <h3 className="text-white font-semibold text-lg">Construction-Only</h3>
                 </div>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Short-term (6-12 months)</span>
@@ -284,7 +284,7 @@ export default function BlufftonConstructionLoanGuide() {
                 </div>
               </div>
             </GlassCard>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               *Costs are estimates and vary based on location, finishes, site conditions, and builder. Flood insurance is required in many Lowcountry communities and adds to ongoing costs.
             </p>
 

@@ -293,7 +293,7 @@ export default function FloodInsuranceBlog() {
                   </span>
                   <span className="text-white font-semibold">{zone.risk}</span>
                 </div>
-                <p className="text-gray-400 text-sm mb-3">{zone.description}</p>
+                <p className="text-gray-300 text-sm mb-3">{zone.description}</p>
                 <p className="text-gray-300 text-sm">
                   <span className="text-cyan-400 font-medium">Lowcountry examples:</span> {zone.lowcountry}
                 </p>
@@ -320,17 +320,17 @@ export default function FloodInsuranceBlog() {
           
           <div className="grid md:grid-cols-3 gap-4 mt-8">
             <GlassCard hover={false}>
-              <h4 className="text-gray-400 text-sm mb-2">Zone X (Moderate)</h4>
+              <h4 className="text-gray-300 text-sm mb-2">Zone X (Moderate)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneX}</p>
               <p className="text-gray-500 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
-              <h4 className="text-gray-400 text-sm mb-2">Zone AE (High)</h4>
+              <h4 className="text-gray-300 text-sm mb-2">Zone AE (High)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneAE}</p>
               <p className="text-gray-500 text-sm mt-2">per year</p>
             </GlassCard>
             <GlassCard hover={false}>
-              <h4 className="text-gray-400 text-sm mb-2">Zone VE (Highest)</h4>
+              <h4 className="text-gray-300 text-sm mb-2">Zone VE (Highest)</h4>
               <p className="text-2xl font-bold text-white">{copy.costs.averages.zoneVE}</p>
               <p className="text-gray-500 text-sm mt-2">per year</p>
             </GlassCard>
@@ -344,7 +344,7 @@ export default function FloodInsuranceBlog() {
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="text-white font-medium">{item.factor}:</span>
-                    <span className="text-gray-400"> {item.description}</span>
+                    <span className="text-gray-300"> {item.description}</span>
                   </div>
                 </div>
               ))}
@@ -390,7 +390,7 @@ export default function FloodInsuranceBlog() {
               <GlassCard key={index} hover delay={index * 0.1}>
                 <strategy.icon className="w-8 h-8 text-cyan-400 mb-3" />
                 <h3 className="text-lg font-semibold text-white mb-2">{strategy.title}</h3>
-                <p className="text-gray-400 text-sm">{strategy.description}</p>
+                <p className="text-gray-300 text-sm">{strategy.description}</p>
               </GlassCard>
             ))}
           </div>

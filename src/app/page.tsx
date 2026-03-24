@@ -232,7 +232,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             {copy.whyMaggie.headline}
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             {copy.whyMaggie.subhead}
           </p>
         </div>
@@ -242,7 +242,7 @@ export default function Home() {
             <GlassCard key={index} hover delay={index * 0.1}>
               <feature.icon className="w-10 h-10 text-cyan-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{feature.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -260,7 +260,7 @@ export default function Home() {
           {copy.loanSolutions.cards.map((card, index) => (
             <GlassCard key={index} hover delay={index * 0.1}>
               <h3 className="text-lg font-semibold text-white mb-2">{card.title}</h3>
-              <p className="text-gray-400 text-sm mb-4">{card.description}</p>
+              <p className="text-gray-300 text-sm mb-4">{card.description}</p>
               <Link
                 href={card.link}
                 className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
@@ -280,7 +280,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               {copy.physicianSpotlight.headline}
             </h2>
-            <div className="text-gray-400 space-y-4 leading-relaxed">
+            <div className="text-gray-300 space-y-4 leading-relaxed">
               {copy.physicianSpotlight.body.split('\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
@@ -302,7 +302,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold text-lg">Physician Loan Benefits</h3>
-                  <p className="text-gray-400 text-sm">Tailored for medical professionals</p>
+                  <p className="text-gray-300 text-sm">Tailored for medical professionals</p>
                 </div>
               </div>
               
@@ -349,7 +349,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               {copy.lowcountryMarket.headline}
             </h2>
-            <div className="text-gray-400 space-y-4 leading-relaxed">
+            <div className="text-gray-300 space-y-4 leading-relaxed">
               {copy.lowcountryMarket.body.split('\n').map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}

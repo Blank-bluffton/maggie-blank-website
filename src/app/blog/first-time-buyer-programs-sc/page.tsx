@@ -88,7 +88,7 @@ export default function FirstTimeBuyerProgramsSC() {
 
       <Section background="dark">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-gray-300 mb-8">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               March 18, 2026
@@ -165,7 +165,7 @@ export default function FirstTimeBuyerProgramsSC() {
                   </div>
                   <h3 className="text-white font-semibold text-lg">SC Housing Mortgage</h3>
                 </div>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Competitive interest rates</span>
@@ -188,7 +188,7 @@ export default function FirstTimeBuyerProgramsSC() {
                   </div>
                   <h3 className="text-white font-semibold text-lg">Down Payment Assistance</h3>
                 </div>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-gray-300 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span>Up to $7,500 available</span>
