@@ -17,7 +17,7 @@ const agents = [
     name: "State Farm Insurance",
     phone: "(843) 555-0202",
     address: "Hilton Head, SC",
-    specialists: ["Homeowners", "Life Insurance", "Business"]
+    specialties: ["Homeowners", "Life Insurance", "Business"]
   },
   {
     name: "Hilton Head Insurance & Brokerage",
@@ -77,7 +77,7 @@ export default function InsurancePage() {
               <div className="mt-4 pt-4 border-t border-gray-700">
                 <p className="text-sm text-gray-500 mb-2">Specialties:</p>
                 <div className="flex flex-wrap gap-2">
-                  {agent.specialties.map((specialty, i) => (
+                  {agent.specialties?.map((specialty, i) => (
                     <span key={i} className="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full">
                       {specialty}
                     </span>
