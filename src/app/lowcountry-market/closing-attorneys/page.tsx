@@ -15,7 +15,7 @@ const attorneys = [
   },
   {
     name: "Mikkelson Law Firm",
-    phone: "(843) 555-0202",
+    phone: "(843) 757-9330",
     address: "Hilton Head, SC",
     specialties: ["Real Estate Law", "Closings", "Title Searches"]
   },
