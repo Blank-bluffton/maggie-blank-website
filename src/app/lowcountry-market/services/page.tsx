@@ -152,6 +152,13 @@ const services = [
     phone: "843-505-2224",
     email: "",
     website: "https://www.garageexperts.com"
+  },
+  {
+    name: "SVG Accounting Solutions",
+    category: "Accounting",
+    phone: "",
+    email: "",
+    website: "https://www.svgaccounting.com"
   }
 ];
 
