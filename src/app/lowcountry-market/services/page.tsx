@@ -119,9 +119,9 @@ const services = [
     website: "https://www.gardenofedenearthworks.com"
   },
   {
-    name: "A Touch of Class Painting - Henry Capdepon",
+    name: "A Touch of Class Painting",
     category: "Painting",
-    phone: "",
+    phone: "540-842-0534",
     email: "",
     website: ""
   },
