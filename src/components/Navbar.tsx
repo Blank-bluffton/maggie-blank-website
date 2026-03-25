@@ -21,6 +21,7 @@ const navLinks = [
   { 
     label: 'Lowcountry Market', 
     children: [
+      { href: '/lowcountry-market/builders', label: 'Builders' },
       { href: '/lowcountry-market/closing-attorneys', label: 'Closing Attorneys' },
       { href: '/lowcountry-market/insurance', label: 'Insurance' },
       { href: '/lowcountry-market/neighborhoods', label: 'Neighborhoods' },
