@@ -7,18 +7,11 @@ import { ArrowRight, Phone, Mail, Globe } from 'lucide-react';
 
 const services = [
   {
-    name: "Sparklight Telecommunications",
-    category: "Internet & Telecom",
-    phone: "843-815-1600",
+    name: "A Touch of Class Painting",
+    category: "Painting",
+    phone: "540-842-0534",
     email: "",
-    website: "https://www.sparklight.com"
-  },
-  {
-    name: "Bolt Electric",
-    category: "Electrical",
-    phone: "843-757-0025",
-    email: "",
-    website: "https://boltelectricinc.com"
+    website: ""
   },
   {
     name: "Ace Roofing Services",
@@ -28,11 +21,11 @@ const services = [
     website: "https://www.aceroofingservice.com"
   },
   {
-    name: "GutterXperts",
-    category: "Gutters",
-    phone: "843-783-6816",
+    name: "Bolt Electric",
+    category: "Electrical",
+    phone: "843-757-0025",
     email: "",
-    website: "https://www.gutterxperts.biz"
+    website: "https://boltelectricinc.com"
   },
   {
     name: "Brooms & Roses Cleaning Services",
@@ -42,13 +35,6 @@ const services = [
     website: "https://www.broomstoroses.com"
   },
   {
-    name: "Cruise Planners",
-    category: "Travel",
-    phone: "636-492-1146",
-    email: "",
-    website: ""
-  },
-  {
     name: "Coastal Solutions Media",
     category: "Marketing",
     phone: "678-416-5997",
@@ -56,95 +42,11 @@ const services = [
     website: "https://www.coastalsolutionsmedia.com"
   },
   {
-    name: "Pivotal Restoration",
-    category: "Restoration",
-    phone: "843-800-8985",
-    email: "",
-    website: "https://www.pivotalrestoration.com"
-  },
-  {
-    name: "No BS Powerwash",
-    category: "Pressure Washing",
-    phone: "201-803-4033",
-    email: "",
-    website: "https://www.nobspowerwash.com"
-  },
-  {
-    name: "Top Quality Flooring",
-    category: "Flooring",
-    phone: "843-540-4324",
+    name: "Cruise Planners",
+    category: "Travel",
+    phone: "636-492-1146",
     email: "",
     website: ""
-  },
-  {
-    name: "Pinnacle Heating and Air",
-    category: "HVAC",
-    phone: "843-271-3780",
-    email: "",
-    website: "https://www.pinnaclehvacsc.com"
-  },
-  {
-    name: "Patrick Chester CPA",
-    category: "Accounting",
-    phone: "843-271-6788",
-    email: "",
-    website: "https://www.chestertax.com"
-  },
-  {
-    name: "Sage Financial Planning",
-    category: "Financial",
-    phone: "843-301-0074",
-    email: "",
-    website: "https://www.sagefinancialplanning.com"
-  },
-  {
-    name: "Synovus Bank",
-    category: "Banking",
-    phone: "888-796-6887",
-    email: "",
-    website: "https://www.synovus.com"
-  },
-  {
-    name: "Pinnacle Bank",
-    category: "Banking",
-    phone: "800-264-3613",
-    email: "",
-    website: "https://pnfp.com"
-  },
-  {
-    name: "Garden of Eden Landscaping",
-    category: "Landscaping",
-    phone: "843-962-0784",
-    email: "",
-    website: "https://www.gardenofedenearthworks.com"
-  },
-  {
-    name: "A Touch of Class Painting",
-    category: "Painting",
-    phone: "540-842-0534",
-    email: "",
-    website: ""
-  },
-  {
-    name: "Mullen Care Consultants",
-    category: "Senior Care",
-    phone: "404-917-6277",
-    email: "",
-    website: "https://www.mullencareconsultants.com"
-  },
-  {
-    name: "Play Home Technology",
-    category: "Smart Home",
-    phone: "843-815-4292",
-    email: "",
-    website: "https://www.playhometechnology.com"
-  },
-  {
-    name: "Spectrum Paints",
-    category: "Painting",
-    phone: "843-706-0842",
-    email: "",
-    website: "https://www.spectrumpaint.com"
   },
   {
     name: "Garage Experts of Hilton Head",
@@ -154,13 +56,111 @@ const services = [
     website: "https://www.garageexperts.com"
   },
   {
+    name: "Garden of Eden Landscaping",
+    category: "Landscaping",
+    phone: "843-962-0784",
+    email: "",
+    website: "https://www.gardenofedenearthworks.com"
+  },
+  {
+    name: "GutterXperts",
+    category: "Gutters",
+    phone: "843-783-6816",
+    email: "",
+    website: "https://www.gutterxperts.biz"
+  },
+  {
+    name: "Mullen Care Consultants",
+    category: "Senior Care",
+    phone: "404-917-6277",
+    email: "",
+    website: "https://www.mullencareconsultants.com"
+  },
+  {
+    name: "No BS Powerwash",
+    category: "Pressure Washing",
+    phone: "201-803-4033",
+    email: "",
+    website: "https://www.nobspowerwash.com"
+  },
+  {
+    name: "Patrick Chester CPA",
+    category: "Accounting",
+    phone: "843-271-6788",
+    email: "",
+    website: "https://www.chestertax.com"
+  },
+  {
+    name: "Pinnacle Bank",
+    category: "Banking",
+    phone: "800-264-3613",
+    email: "",
+    website: "https://pnfp.com"
+  },
+  {
+    name: "Pinnacle Heating and Air",
+    category: "HVAC",
+    phone: "843-271-3780",
+    email: "",
+    website: "https://www.pinnaclehvacsc.com"
+  },
+  {
+    name: "Pivotal Restoration",
+    category: "Restoration",
+    phone: "843-800-8985",
+    email: "",
+    website: "https://www.pivotalrestoration.com"
+  },
+  {
+    name: "Play Home Technology",
+    category: "Smart Home",
+    phone: "843-815-4292",
+    email: "",
+    website: "https://www.playhometechnology.com"
+  },
+  {
+    name: "Sage Financial Planning",
+    category: "Financial",
+    phone: "843-301-0074",
+    email: "",
+    website: "https://www.sagefinancialplanning.com"
+  },
+  {
+    name: "Sparklight Telecommunications",
+    category: "Internet & Telecom",
+    phone: "843-815-1600",
+    email: "",
+    website: "https://www.sparklight.com"
+  },
+  {
+    name: "Spectrum Paints",
+    category: "Painting",
+    phone: "843-706-0842",
+    email: "",
+    website: "https://www.spectrumpaint.com"
+  },
+  {
     name: "SVG Accounting Solutions",
     category: "Accounting",
     phone: "",
     email: "",
     website: "https://www.svgaccounting.com"
+  },
+  {
+    name: "Synovus Bank",
+    category: "Banking",
+    phone: "888-796-6887",
+    email: "",
+    website: "https://www.synovus.com"
+  },
+  {
+    name: "Top Quality Flooring",
+    category: "Flooring",
+    phone: "843-540-4324",
+    email: "",
+    website: ""
   }
-];
+  ];
 
 export default function ServicesPage() {
   return (
