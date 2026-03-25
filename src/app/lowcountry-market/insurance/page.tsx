@@ -47,7 +47,7 @@ const agents = [
 export default function InsurancePage() {
   return (
     <>
-      <Section background="default" backgroundImage="https://raw.githubusercontent.com/Blank-bluffton/maggie-blank-website/main/public/IMG_4570.JPG" className="relative after:absolute after:inset-0 after:bg-black/60 after:-z-10">
+      <Section background="default" backgroundImage="https://raw.githubusercontent.com/Blank-bluffton/maggie-blank-website/main/public/IMG_4570.JPG" className="relative after:absolute after:inset-0 after:bg-black/80 after:-z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
             Trusted Insurance Agents
