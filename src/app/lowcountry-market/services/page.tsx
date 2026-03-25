@@ -9,9 +9,9 @@ const services = [
   {
     name: "Sparklight Telecommunications",
     category: "Internet & Telecom",
-    phone: "",
+    phone: "843-815-1600",
     email: "",
-    website: ""
+    website: "https://www.sparklight.com"
   },
   {
     name: "Bolt Electric",
