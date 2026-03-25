@@ -51,9 +51,9 @@ const services = [
   {
     name: "Coastal Solutions Media",
     category: "Marketing",
-    phone: "",
+    phone: "678-416-5997",
     email: "",
-    website: ""
+    website: "https://www.coastalsolutionsmedia.com"
   },
   {
     name: "Pivotal Restoration",
