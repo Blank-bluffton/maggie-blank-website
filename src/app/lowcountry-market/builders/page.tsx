@@ -13,7 +13,11 @@ const builders = [
   },
   { name: "AR Homes" },
   { name: "Compass Studio" },
-  { name: "Front Light Building Company" },
+  { 
+    name: "Front Light Building Company",
+    phone: "843-380-4800",
+    website: "https://www.frontlightbuildingco.com"
+  },
   { name: "Jacoby and Sons" },
   { name: "VanGeison Construction" }
 ];
