@@ -145,6 +145,13 @@ const services = [
     phone: "843-706-0842",
     email: "",
     website: "https://www.spectrumpaint.com"
+  },
+  {
+    name: "Garage Experts of Hilton Head",
+    category: "Garage",
+    phone: "843-505-2224",
+    email: "",
+    website: "https://www.garageexperts.com"
   }
 ];
 
