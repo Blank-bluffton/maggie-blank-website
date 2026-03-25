@@ -3,30 +3,34 @@
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
-import { ArrowRight, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Globe, MapPin, Phone } from 'lucide-react';
 
 const attorneys = [
   {
     name: "Bannon Law Group",
     phone: "(843) 815-4505",
+    website: "https://www.bannonlawgroup.com",
     address: "10 Westbury Park Way Unit A, Bluffton, SC 29910",
     specialties: ["Residential Closings", "Commercial Real Estate", "Title Insurance"]
   },
   {
     name: "Hale & Hale",
     phone: "(843) 837-3000",
+    website: "https://www.haleandhalelaw.com",
     address: "1533 Fording Island Rd Suite 294, Hilton Head, SC 29926",
     specialties: ["Residential Closings", "Refinance Closings", "Contract Review"]
   },
   {
     name: "Liberty Oak Law Firm",
     phone: "(843) 671-5550",
+    website: "https://www.libertyoaklaw.com",
     address: "71 Lighthouse Rd # 230, Hilton Head, SC 29928",
     specialties: ["Real Estate Closings", "Title Clearance", "Entity Transactions"]
   },
   {
     name: "Mikkelson Law Firm",
     phone: "(843) 757-9330",
+    website: "https://www.blufftonlawfirm.com",
     address: "214 Bluffton Rd, Bluffton, SC 29910",
     specialties: ["Real Estate Law", "Closings", "Title Searches"]
   }
@@ -54,6 +58,14 @@ export default function ClosingAttorneysPage() {
                   <Phone className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   <span>{attorney.phone}</span>
                 </div>
+                {attorney.website && (
+                  <div className="flex items-center gap-3 text-gray-800">
+                    <Globe className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <a href={attorney.website} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600">
+                      Visit Website
+                    </a>
+                  </div>
+                )}
                 <div className="flex items-center gap-3 text-gray-800">
                   <MapPin className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   <span>{attorney.address}</span>
