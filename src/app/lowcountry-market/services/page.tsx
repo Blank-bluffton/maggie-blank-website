@@ -151,12 +151,12 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <Section background="default">
+      <Section background="default" backgroundImage="/IMG_4565.JPG">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Trusted Local Experts
           </h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto">
             We've built relationships with top service providers across the Lowcountry. Here are the experts we recommend.
           </p>
         </div>
