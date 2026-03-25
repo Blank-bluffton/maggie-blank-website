@@ -30,7 +30,7 @@ const builders = [
     name: "Jacoby and Sons",
     phone: "843-707-1501",
     website: "https://www.jacobyandsons.com"
-  }
+  },
   { 
     name: "VanGeison Construction",
     phone: "843-837-6410",
