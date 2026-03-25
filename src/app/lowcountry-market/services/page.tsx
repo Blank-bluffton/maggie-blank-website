@@ -100,9 +100,9 @@ const services = [
   {
     name: "Synovus Bank",
     category: "Banking",
-    phone: "",
+    phone: "888-796-6887",
     email: "",
-    website: ""
+    website: "https://www.synovus.com"
   },
   {
     name: "Pinnacle Bank",
