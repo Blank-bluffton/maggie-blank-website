@@ -16,9 +16,9 @@ const services = [
   {
     name: "Bolt Electric",
     category: "Electrical",
-    phone: "",
+    phone: "843-757-0025",
     email: "",
-    website: ""
+    website: "https://boltelectricinc.com"
   },
   {
     name: "Ace Roofing Services",
