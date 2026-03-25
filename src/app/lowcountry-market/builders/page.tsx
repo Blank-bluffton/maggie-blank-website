@@ -26,7 +26,11 @@ const builders = [
     phone: "843-380-4800",
     website: "https://www.frontlightbuildingco.com"
   },
-  { name: "Jacoby and Sons" },
+  { 
+    name: "Jacoby and Sons",
+    phone: "843-707-1501",
+    website: "https://www.jacobyandsons.com"
+  }
   { 
     name: "VanGeison Construction",
     phone: "843-837-6410",
