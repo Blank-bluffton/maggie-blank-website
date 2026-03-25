@@ -7,11 +7,6 @@ import { ArrowRight, Building2, Phone, Globe } from 'lucide-react';
 
 const builders = [
   { 
-    name: "Esposito Construction",
-    phone: "843-896-2316",
-    website: "https://www.espositoconstructioninc.com"
-  },
-  { 
     name: "AR Homes",
     phone: "843-757-2300",
     website: "https://www.arhomes.com"
@@ -20,6 +15,11 @@ const builders = [
     name: "Compass Studio",
     phone: "440-467-5848",
     website: "https://www.compassstudio.com"
+  },
+  { 
+    name: "Esposito Construction",
+    phone: "843-896-2316",
+    website: "https://www.espositoconstructioninc.com"
   },
   { 
     name: "Front Light Building Company",
@@ -36,7 +36,7 @@ const builders = [
     phone: "843-837-6410",
     website: "https://www.vangeisonconstruction.com"
   }
-];
+  ];
 
 export default function BuildersPage() {
   return (
