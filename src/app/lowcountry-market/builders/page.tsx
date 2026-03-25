@@ -11,7 +11,11 @@ const builders = [
     phone: "843-896-2316",
     website: "https://www.espositoconstructioninc.com"
   },
-  { name: "AR Homes" },
+  { 
+    name: "AR Homes",
+    phone: "843-757-2300",
+    website: "https://www.arhomes.com"
+  },
   { 
     name: "Compass Studio",
     phone: "440-467-5848",
