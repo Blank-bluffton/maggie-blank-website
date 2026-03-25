@@ -72,7 +72,7 @@ const services = [
   {
     name: "Top Quality Flooring",
     category: "Flooring",
-    phone: "",
+    phone: "843-540-4324",
     email: "",
     website: ""
   },
