@@ -44,7 +44,7 @@ const services = [
   {
     name: "Cruise Planners",
     category: "Travel",
-    phone: "",
+    phone: "636-492-1146",
     email: "",
     website: ""
   },
