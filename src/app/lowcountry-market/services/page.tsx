@@ -84,11 +84,11 @@ const services = [
     website: ""
   },
   {
-    name: "Chester CPA PC",
+    name: "Patrick Chester CPA",
     category: "Accounting",
-    phone: "",
+    phone: "843-271-6788",
     email: "",
-    website: ""
+    website: "https://www.chestertax.com"
   },
   {
     name: "Sage Financial Planning",
