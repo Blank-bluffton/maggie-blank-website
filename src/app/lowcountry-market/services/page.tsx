@@ -138,6 +138,13 @@ const services = [
     phone: "843-815-4292",
     email: "",
     website: "https://www.playhometechnology.com"
+  },
+  {
+    name: "Spectrum Paints",
+    category: "Painting",
+    phone: "843-706-0842",
+    email: "",
+    website: "https://www.spectrumpaint.com"
   }
 ];
 
