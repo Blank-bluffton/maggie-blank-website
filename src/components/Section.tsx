@@ -38,6 +38,7 @@ export default function Section({
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           />
+          <div className="absolute inset-0 bg-white/50" />
         </div>
       )}
       {background === 'gradient' && (
