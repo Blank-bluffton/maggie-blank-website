@@ -114,9 +114,9 @@ const services = [
   {
     name: "Garden of Eden Landscaping",
     category: "Landscaping",
-    phone: "",
+    phone: "843-962-0784",
     email: "",
-    website: ""
+    website: "https://www.gardenofedenearthworks.com"
   },
   {
     name: "A Touch of Class Painting - Henry Capdepon",
