@@ -79,9 +79,9 @@ const services = [
   {
     name: "Pinnacle Heating and Air",
     category: "HVAC",
-    phone: "",
+    phone: "843-271-3780",
     email: "",
-    website: ""
+    website: "https://www.pinnaclehvacsc.com"
   },
   {
     name: "Patrick Chester CPA",
