@@ -124,6 +124,13 @@ const services = [
     phone: "",
     email: "",
     website: ""
+  },
+  {
+    name: "Mullen Care Consultants",
+    category: "Healthcare",
+    phone: "404-917-6277",
+    email: "",
+    website: "https://www.mullencareconsultants.com"
   }
 ];
 
