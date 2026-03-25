@@ -8,7 +8,7 @@ import { ArrowRight, MapPin, Phone, Shield } from 'lucide-react';
 const agents = [
   {
     name: "Belmont Insurance Services",
-    phone: "",
+    phone: "843-338-6156",
     address: "1 Westbury Park Way #101, Bluffton, SC 29910",
     specialties: ["Homeowners", "Flood Insurance", "Auto"]
   },
