@@ -58,9 +58,9 @@ const services = [
   {
     name: "Pivotal Restoration",
     category: "Restoration",
-    phone: "",
+    phone: "843-800-8985",
     email: "",
-    website: ""
+    website: "https://www.pivotalrestoration.com"
   },
   {
     name: "No BS Powerwash",
