@@ -17,7 +17,7 @@ const builders = [
 export default function BuildersPage() {
   return (
     <>
-      <Section background="default" backgroundImage="/IMG_4565.JPG">
+      <Section background="default" backgroundImage="/IMG_4567.jpg">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Trusted Local Builders
