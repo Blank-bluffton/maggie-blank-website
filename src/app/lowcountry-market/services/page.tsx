@@ -107,9 +107,9 @@ const services = [
   {
     name: "Pinnacle Bank",
     category: "Banking",
-    phone: "",
+    phone: "800-264-3613",
     email: "",
-    website: ""
+    website: "https://pnfp.com"
   },
   {
     name: "Garden of Eden Landscaping",
