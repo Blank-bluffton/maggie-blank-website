@@ -131,6 +131,13 @@ const services = [
     phone: "404-917-6277",
     email: "",
     website: "https://www.mullencareconsultants.com"
+  },
+  {
+    name: "Play Home Technology",
+    category: "Smart Home",
+    phone: "843-815-4292",
+    email: "",
+    website: "https://www.playhometechnology.com"
   }
 ];
 
