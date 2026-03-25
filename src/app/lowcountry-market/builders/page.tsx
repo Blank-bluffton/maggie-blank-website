@@ -12,7 +12,11 @@ const builders = [
     website: "https://www.espositoconstructioninc.com"
   },
   { name: "AR Homes" },
-  { name: "Compass Studio" },
+  { 
+    name: "Compass Studio",
+    phone: "440-467-5848",
+    website: "https://www.compassstudio.com"
+  },
   { 
     name: "Front Light Building Company",
     phone: "843-380-4800",
