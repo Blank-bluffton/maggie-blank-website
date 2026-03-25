@@ -93,9 +93,9 @@ const services = [
   {
     name: "Sage Financial Planning",
     category: "Financial",
-    phone: "",
+    phone: "843-301-0074",
     email: "",
-    website: ""
+    website: "https://www.sagefinancialplanning.com"
   },
   {
     name: "Synovus Bank",
