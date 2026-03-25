@@ -3,10 +3,14 @@
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import Link from 'next/link';
-import { ArrowRight, Building2 } from 'lucide-react';
+import { ArrowRight, Building2, Phone, Globe } from 'lucide-react';
 
 const builders = [
-  { name: "Esposito Construction" },
+  { 
+    name: "Esposito Construction",
+    phone: "843-896-2316",
+    website: "https://www.espositoconstructioninc.com"
+  },
   { name: "AR Homes" },
   { name: "Compass Studio" },
   { name: "Front Light Building Company" },
@@ -34,7 +38,21 @@ export default function BuildersPage() {
                 <div className="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center mb-4">
                   <Building2 className="w-7 h-7 text-cyan-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800">{builder.name}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">{builder.name}</h3>
+                {builder.phone && (
+                  <div className="flex items-center gap-2 text-gray-700 text-sm mb-1">
+                    <Phone className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <span>{builder.phone}</span>
+                  </div>
+                )}
+                {builder.website && (
+                  <div className="flex items-center gap-2 text-gray-700 text-sm">
+                    <Globe className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <a href={builder.website} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600">
+                      Visit Website
+                    </a>
+                  </div>
+                )}
               </div>
             </GlassCard>
           ))}
