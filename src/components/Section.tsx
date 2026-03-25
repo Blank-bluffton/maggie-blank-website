@@ -31,11 +31,15 @@ export default function Section({
 
   const sectionContent = (
     <>
-      {/* Overlay for readability when background image is present */}
-      {/* Background image without overlay - uncomment if overlay needed */}
-      {/* {backgroundImage && (
-        <div className="absolute inset-0 bg-black/20 z-0" />
-      )} */}
+      {/* Background image — separate div pattern like Hero component */}
+      {backgroundImage && (
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+        </div>
+      )}
       {background === 'gradient' && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#526E7A]/5 rounded-full blur-3xl" />
@@ -52,12 +56,6 @@ export default function Section({
       <section 
         id={id}
         className={`py-20 lg:py-28 ${backgrounds[background]} ${className}`}
-        style={backgroundImage ? {
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay'
-        } : undefined}
       >
         {sectionContent}
       </section>
@@ -68,12 +66,6 @@ export default function Section({
     <motion.section 
       id={id}
       className={`py-20 lg:py-28 ${backgrounds[background]} ${className}`}
-      style={backgroundImage ? {
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundBlendMode: 'overlay'
-      } : undefined}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
