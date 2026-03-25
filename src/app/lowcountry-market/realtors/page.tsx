@@ -45,10 +45,10 @@ export default function RealtorsPage() {
     <>
       <Section background="default" backgroundImage="https://raw.githubusercontent.com/Blank-bluffton/maggie-blank-website/main/public/IMG_4565.JPG" className="relative after:absolute after:inset-0 after:bg-black after:-z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Trusted Realtors
           </h2>
-          <p className="text-gray-800 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto">
             We work with experienced real estate professionals throughout the Lowcountry to ensure smooth transactions.
           </p>
         </div>
