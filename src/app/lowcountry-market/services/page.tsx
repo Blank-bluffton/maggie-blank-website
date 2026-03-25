@@ -127,7 +127,7 @@ const services = [
   },
   {
     name: "Mullen Care Consultants",
-    category: "Healthcare",
+    category: "Senior Care",
     phone: "404-917-6277",
     email: "",
     website: "https://www.mullencareconsultants.com"
