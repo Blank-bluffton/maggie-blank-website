@@ -19,7 +19,11 @@ const builders = [
     website: "https://www.frontlightbuildingco.com"
   },
   { name: "Jacoby and Sons" },
-  { name: "VanGeison Construction" }
+  { 
+    name: "VanGeison Construction",
+    phone: "843-837-6410",
+    website: "https://www.vangeisonconstruction.com"
+  }
 ];
 
 export default function BuildersPage() {
