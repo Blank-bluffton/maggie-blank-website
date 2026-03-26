@@ -18,11 +18,7 @@ const copy = {
   hero: {
     headline: "A Smarter, Simpler Mortgage Experience",
     subheadline: "Experience a concierge approach to home financing — where you're not just a file, you're a partner. I offer a personalized, high-touch mortgage experience designed for busy professionals, physicians, and families relocating to the Lowcountry.",
-    trustBullets: [
-      "Financial Partner, Not Just a Lender",
-      "High-Touch Guidance From Start to Close",
-      "Trusted Advisor for Life"
-    ]
+    trustBullets: [],
   },
 
   whatIsConcierge: {
@@ -155,12 +151,12 @@ export default function ConciergePage() {
       </Section>
 
       {/* Who It's For Section */}
-      <Section id="who-it-is-for" background="dark">
+      <Section id="who-it-is-for" background="warm">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             {copy.whoItFor.headline}
           </h2>
-          <p className="text-white mb-10">
+          <p className="text-gray-600 mb-10">
             {copy.whoItFor.subhead}
           </p>
 
@@ -168,10 +164,10 @@ export default function ConciergePage() {
             {copy.whoItFor.profiles.map((profile, index) => (
               <div 
                 key={index}
-                className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl text-left"
+                className="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl text-left"
               >
-                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                <span className="text-white">{profile}</span>
+                <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0" />
+                <span className="text-gray-700">{profile}</span>
               </div>
             ))}
           </div>
@@ -205,42 +201,41 @@ export default function ConciergePage() {
         </div>
       </Section>
 
-      {/* Lead Magnet Section */}
-      <Section id="download" background="dark">
+      <Section id="download" background="warm">
         <div className="max-w-4xl mx-auto">
-          <GlassCard hover className="border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-transparent">
+          <GlassCard solidWhite hover className="border-cyan-200">
             <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
                 {copy.leadMagnet.headline}
               </h2>
-              <p className="text-white max-w-xl mx-auto">
+              <p className="text-gray-600 max-w-xl mx-auto">
                 {copy.leadMagnet.subhead}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-white font-semibold mb-4">What's Inside:</h3>
+                <h3 className="text-gray-800 font-semibold mb-4">What's Inside:</h3>
                 <ul className="space-y-3">
                   {copy.leadMagnet.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-white text-sm">{benefit}</span>
+                      <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700 text-sm">{benefit}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-cyan-500/20 rounded-full mb-4">
-                  <Download className="w-10 h-10 text-cyan-400" />
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-cyan-100 rounded-full mb-4">
+                  <Download className="w-10 h-10 text-cyan-600" />
                 </div>
-                <p className="text-white text-sm mb-4">
+                <p className="text-gray-600 text-sm mb-4">
                   Free PDF Download
                 </p>
                 <Link
                   href="/contact?interest=relocation-guide"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg transition-all"
                 >
                   {copy.leadMagnet.cta}
                   <ArrowRight className="w-4 h-4" />

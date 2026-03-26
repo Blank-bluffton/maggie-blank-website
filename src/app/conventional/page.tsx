@@ -28,11 +28,7 @@ const copy = {
     ctaPrimaryLink: "/apply",
     ctaSecondary: "See Requirements",
     ctaSecondaryLink: "#requirements",
-    trustBullets: [
-      "As Low as 3% Down",
-      "Competitive Interest Rates",
-      "No Upfront Mortgage Insurance"
-    ]
+    trustBullets: [],
   },
 
   whatIs: {
@@ -84,41 +80,6 @@ const copy = {
     note: "Requirements may vary based on your specific situation and the lender. We'll help you understand your options."
   },
 
-  comparison: {
-    headline: "Conventional vs. FHA vs. USDA",
-    description: "Understanding the differences helps you choose the right loan program.",
-    conventional: {
-      title: "Conventional",
-      items: [
-        "Down payment: 3-20%",
-        "Credit score: 620+ typical",
-        "PMI: Required under 20% down",
-        "DTI: Up to 43%",
-        "Property type: Primary, second home, investment"
-      ]
-    },
-    fha: {
-      title: "FHA",
-      items: [
-        "Down payment: 3.5%+",
-        "Credit score: 580+ typical",
-        "PMI: Required for all loans",
-        "DTI: Up to 43% (may exceed)",
-        "Property type: Primary residence only"
-      ]
-    },
-    usda: {
-      title: "USDA",
-      items: [
-        "Down payment: 0%",
-        "Credit score: 640+ typical",
-        "PMI: Guarantee fee (no traditional PMI)",
-        "DTI: Up to 41%",
-        "Property type: Rural/suburban eligible"
-      ]
-    }
-  },
-
   whenMakesSense: {
     headline: "When a conventional loan makes sense",
     scenarios: [
@@ -139,34 +100,6 @@ const copy = {
         description: "Looking to buy a rental? Conventional loans work for second homes and investment properties."
       }
     ]
-  },
-
-  process: {
-    headline: "Your path to conventional financing",
-    steps: [
-      {
-        number: "01",
-        title: "Rate Check",
-        description: "We pull your credit and discuss current conventional rates and your eligibility."
-      },
-      {
-        number: "02",
-        title: "Pre-Approval",
-        description: "Get your official pre-approval letter with your approved loan amount."
-      },
-      {
-        number: "03",
-        title: "Find Your Home",
-        description: "Work with your realtor to find the right property in the Lowcountry."
-      },
-      {
-        number: "04",
-        title: "Close Smoothly",
-        description: "Our conventional loan expertise means efficient underwriting and on-time closing."
-      }
-    ],
-    cta: "Start Conventional Process",
-    ctaLink: "/contact"
   },
 
   faq: {
@@ -295,74 +228,6 @@ export default function ConventionalLoansPage() {
         </div>
       </Section>
 
-      {/* Comparison Section */}
-      <Section id="comparison" background="dark">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            {copy.comparison.headline}
-          </h2>
-          <p className="text-white max-w-2xl mx-auto">
-            {copy.comparison.description}
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {/* Conventional */}
-          <GlassCard hover className="border-cyan-500/40 bg-gray-800">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
-                <Home className="w-5 h-5 text-cyan-300" />
-              </div>
-              <h3 className="text-cyan-300 font-bold text-lg">{copy.comparison.conventional.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {copy.comparison.conventional.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-white text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-
-          {/* FHA */}
-          <GlassCard hover className="border-orange-500/40 bg-gray-800">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
-                <Shield className="w-5 h-5 text-orange-300" />
-              </div>
-              <h3 className="text-orange-300 font-bold text-lg">{copy.comparison.fha.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {copy.comparison.fha.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-white text-sm">
-                  <span className="text-orange-400">•</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-
-          {/* USDA */}
-          <GlassCard hover className="border-green-500/40 bg-gray-800">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center">
-                <Scale className="w-5 h-5 text-green-300" />
-              </div>
-              <h3 className="text-green-300 font-bold text-lg">{copy.comparison.usda.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {copy.comparison.usda.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-white text-sm">
-                  <span className="text-green-400">•</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-        </div>
-      </Section>
-
       {/* When Conventional Makes Sense */}
       <Section id="when-makes-sense">
         <div className="text-center mb-12">
@@ -380,14 +245,6 @@ export default function ConventionalLoansPage() {
           ))}
         </div>
       </Section>
-
-      {/* Process Timeline */}
-      <ProcessTimeline
-        headline={copy.process.headline}
-        steps={copy.process.steps}
-        cta={copy.process.cta}
-        ctaLink={copy.process.ctaLink}
-      />
 
       {/* FAQ Section */}
       <FAQAccordion

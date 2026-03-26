@@ -26,11 +26,7 @@ const copy = {
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Explore Options",
     ctaSecondaryLink: "#options",
-    trustBullets: [
-      "Jumbo Loans to $5M+",
-      "Portfolio & Non-QM Lending",
-      "Custom Structuring Available"
-    ]
+    trustBullets: [],
   },
 
   options: {
@@ -199,7 +195,7 @@ export default function PrivateWealthPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {copy.benefits.items.map((item, index) => (
-              <GlassCard key={item.title} solidWhite hover className="border-pink-500/20">
+              <GlassCard key={item.title} solidWhite darkText hover className="border-pink-500/20">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-pink-400" />

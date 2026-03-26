@@ -24,11 +24,7 @@ const copy = {
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Learn How It Works",
     ctaSecondaryLink: "#how-it-works",
-    trustBullets: [
-      "One Loan, One Closing",
-      "Lock Your Rate During Construction",
-      "Lowcountry Builder Network"
-    ]
+    trustBullets: [],
   },
 
   howItWorks: {
