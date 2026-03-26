@@ -15,14 +15,14 @@ import { ArrowRight, CheckCircle2, Stethoscope, FileText, MapPin, Award, Downloa
 // Homepage copy
 const copy = {
   hero: {
-    headline: "A concierge-level experience in physician home financing",
-    subheadline: "Specializing in physician relocation to the Lowcountry, Maggie Blank offers a tailored approach to home financing — combining 15+ years of local insight with a process designed to make your move effortless.",
+    headline: "Strategic Mortgage Guidance for Physicians Moving to the Lowcountry",
+    subheadline: "From your first offer to closing day, experience a seamless, high-touch approach to financing your move to the Lowcountry — built entirely around your career, timeline, and financial strategy.",
     ctaPrimary: "Schedule a Consultation",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Explore Loan Options",
     ctaSecondaryLink: "/loan-solutions",
     trustBullets: [],
-    microProof: "Maggie has helped Lowcountry families finance over $150M in homes"
+    microProof: "Maggie has helped Lowcountry families finance over $250M in homes"
   },
 
   whyMaggie: {
@@ -158,30 +158,6 @@ const copy = {
         role: "First-Time Buyer"
       }
     ]
-  },
-
-  faqPreview: {
-    headline: "Questions people ask.",
-    items: [
-      {
-        question: "How long does the mortgage process take?",
-        answer: "Typical timeline is 30-45 days from application to closing, depending on complexity. Physician loans and self-employed scenarios may take slightly longer due to documentation requirements."
-      },
-      {
-        question: "What down payment do I need?",
-        answer: "It varies by loan type. Conventional can be as low as 3%. Physician loans can go to 0% with no PMI. We'll find the right structure for your situation."
-      },
-      {
-        question: "Can I get pre-approved if I'm self-employed?",
-        answer: "Absolutely. We offer bank statement programs, K-1 analysis, and alternative documentation pathways specifically designed for self-employed borrowers."
-      },
-      {
-        question: "Do you only work in Bluffton?",
-        answer: "We serve the entire Lowcountry region — Hilton Head, Bluffton, Beaufort, Okatie, Hardeeville, and surrounding communities."
-      }
-    ],
-    viewAllLink: "/faq",
-    viewAllText: "View All FAQs"
   },
 
   ctaBand: {
@@ -366,14 +342,6 @@ export default function Home() {
       <TestimonialCarousel
         headline={copy.testimonials.headline}
         items={copy.testimonials.items}
-      />
-
-      {/* FAQ Preview Section */}
-      <FAQAccordion
-        headline={copy.faqPreview.headline}
-        items={copy.faqPreview.items}
-        viewAllLink={copy.faqPreview.viewAllLink}
-        viewAllText={copy.faqPreview.viewAllText}
       />
 
       {/* CTA Band Section */}

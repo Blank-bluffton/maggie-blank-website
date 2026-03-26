@@ -144,7 +144,7 @@ export default function Hero({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="mt-8 text-sm text-[#777777]"
+                className="mt-8 text-sm text-[#333333] font-medium"
               >
                 {microProof}
               </motion.p>
@@ -188,7 +188,7 @@ export default function Hero({
                         <p className="text-sm text-[#777777]">Days to Close</p>
                       </div>
                       <div>
-                        <p className="text-3xl font-bold text-[#333333]">$150M+</p>
+                        <p className="text-3xl font-bold text-[#333333]">$250M+</p>
                         <p className="text-sm text-[#777777]">Funded Locally</p>
                       </div>
                       <div>

@@ -26,11 +26,7 @@ const copy = {
     ctaPrimaryLink: "/apply",
     ctaSecondary: "Learn About Requirements",
     ctaSecondaryLink: "#requirements",
-    trustBullets: [
-      "0% Down Options Available",
-      "No PMI Required",
-      "Deferred Debt Handled"
-    ]
+    trustBullets: [],
   },
 
   benefits: {
@@ -68,28 +64,6 @@ const copy = {
       "Credit score typically 680+ (some programs go lower)",
       "Debt-to-income ratio considered with student debt adjustments"
     ]
-  },
-
-  comparison: {
-    headline: "Physician loans vs. conventional",
-    conventional: {
-      title: "Conventional Loan",
-      items: [
-        "20% down payment typically required",
-        "Student debt counts fully against DTI",
-        "PMI required if under 20% down",
-        "2 years of employment history required"
-      ]
-    },
-    physician: {
-      title: "Physician Loan",
-      items: [
-        "0-5% down payment options",
-        "Deferred student debt may be excluded",
-        "No PMI required",
-        "Contract employment accepted"
-      ]
-    }
   },
 
   process: {
@@ -222,53 +196,6 @@ export default function PhysicianLoansPage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </GlassCard>
-        </div>
-      </Section>
-
-      {/* Comparison Section */}
-      <Section id="comparison" background="dark">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            {copy.comparison.headline}
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* Conventional */}
-          <GlassCard solidWhite hover className="border-red-500/20">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center">
-                <Banknote className="w-6 h-6 text-red-400" />
-              </div>
-              <h3 className="text-white font-semibold text-xl">{copy.comparison.conventional.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {copy.comparison.conventional.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-white text-sm">
-                  <span className="text-red-400">✕</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-
-          {/* Physician Loan */}
-          <GlassCard hover className="border-cyan-500/30 bg-gray-800">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
-                <Stethoscope className="w-6 h-6 text-cyan-400" />
-              </div>
-              <h3 className="text-white font-semibold text-xl">{copy.comparison.physician.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {copy.comparison.physician.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-white text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
           </GlassCard>
         </div>
       </Section>
