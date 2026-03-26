@@ -15,17 +15,13 @@ import { ArrowRight, CheckCircle2, Stethoscope, FileText, MapPin, Award, Downloa
 // Homepage copy
 const copy = {
   hero: {
-    headline: "Mortgage strategy for the way you actually build a life.",
-    subheadline: "Premium mortgage guidance for homebuyers who demand more than a rate quote. Maggie Blank brings 15+ years of Lowcountry expertise to physicians, high-net-worth professionals, and self-employed borrowers who deserve a partner, not a processor.",
+    headline: "A concierge-level experience in physician home financing",
+    subheadline: "Specializing in physician relocation to the Lowcountry, Maggie Blank offers a tailored approach to home financing — combining 15+ years of local insight with a process designed to make your move effortless.",
     ctaPrimary: "Schedule a Consultation",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Explore Loan Options",
     ctaSecondaryLink: "/loan-solutions",
-    trustBullets: [
-      "Synovus Bank Mortgage Banker",
-      "NMLS #504377",
-      "President's Club 2024 & 2025"
-    ],
+    trustBullets: [],
     microProof: "Maggie has helped Lowcountry families finance over $150M in homes"
   },
 
