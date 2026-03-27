@@ -117,9 +117,6 @@ export default function Navbar() {
             <span className={`text-xs tracking-widest uppercase ${
               isScrolled ? 'text-[#777777]' : 'text-[#777777]'
             }`}>Mortgage Advisor</span>
-            <span className={`text-xs tracking-widest uppercase ${
-              isScrolled ? 'text-[#777777]' : 'text-[#777777]'
-            }`}>NMLS 504377</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -214,40 +211,55 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4 bg-white rounded-lg shadow-xl overflow-hidden"
+              className="md:hidden bg-white border-t border-gray-100"
             >
-              {navLinks.map((link) => (
-                <div key={link.label}>
-                  {link.children ? (
-                    <>
-                      <div className="px-4 py-3 text-[#777777] text-sm font-medium">{link.label}</div>
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block px-6 py-3 text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8] transition-colors"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </>
-                  ) : (
-                    <Link
-                      href={link.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block px-4 py-3 text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8] transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  )}
-                </div>
-              ))}
-              <div className="p-4 border-t border-[#E5E5E5]">
+              {/* Brand Header */}
+              <div className="px-4 py-4 border-b border-gray-100">
+                <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="block">
+                  <div className="font-semibold text-lg text-[#333333]">Maggie Blank</div>
+                  <div className="text-xs text-[#777777] uppercase tracking-widest mt-0.5">Mortgage Advisor</div>
+                </Link>
+              </div>
+
+              {/* Navigation Links */}
+              <div className="py-2">
+                {navLinks.map((link) => (
+                  <div key={link.label}>
+                    {link.children ? (
+                      <>
+                        <div className="px-4 py-3 text-[#526E7A] text-sm font-semibold">{link.label}</div>
+                        <div className="pl-4">
+                          {link.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block px-4 py-2.5 text-[#555555] text-sm hover:text-[#526E7A] hover:bg-gray-50"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="block px-4 py-3 text-[#333333] font-medium hover:bg-gray-50"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA */}
+              <div className="p-4 bg-gray-50">
                 <Link
                   href="https://www.synovus.com/maggieblank"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full text-center px-5 py-3 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg"
+                  className="block w-full text-center px-5 py-3.5 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg"
                 >
                   Get Pre-Approved
                 </Link>

@@ -30,7 +30,7 @@ export default function GlassCard({
       transition={{ duration: 0.5, delay }}
       className={`rounded-xl p-6 shadow-md ${
         hover 
-          ? 'hover:shadow-xl hover:-translate-y-1 transition-all duration-300' 
+          ? 'hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out' 
           : ''
       } ${solidWhite ? 'bg-white' : ''} ${className}`}
     >

@@ -312,14 +312,13 @@ export default function AboutPage() {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/30 mb-6"
             >
-              <span className="text-pink-600 text-sm font-medium">Your Lowcountry Mortgage Expert</span>
             </motion.div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 mb-6 tracking-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
               Meet <span className="text-gradient-pink">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-gray-800 max-w-2xl mx-auto mb-10">
+            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10">
               {copy.hero.subheadline}
             </p>
 
@@ -331,10 +330,10 @@ export default function AboutPage() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + index * 0.1, duration: 0.4 }}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-200/80 border border-white/10"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/20 border border-white/30"
                 >
-                  <Shield className="w-4 h-4 text-cyan-600" />
-                  <span className="text-gray-800 text-sm">{bullet}</span>
+                  <Shield className="w-4 h-4 text-white" />
+                  <span className="text-white text-sm">{bullet}</span>
                 </motion.div>
               ))}
             </div>
@@ -348,14 +347,14 @@ export default function AboutPage() {
             >
               <Link
                 href={copy.hero.ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-gray-800 font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all hover:-translate-y-1"
               >
                 {copy.hero.ctaPrimary}
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href={copy.hero.ctaSecondaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-200/80 border border-white/20 text-gray-800 font-semibold rounded-xl hover:bg-gray-200 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/30 transition-all"
               >
                 {copy.hero.ctaSecondary}
               </Link>
