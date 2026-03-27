@@ -64,10 +64,22 @@ export default function SchoolsPage() {
       region: "Bluffton Area Schools",
       schools: [
         {
+          name: "May River High School",
+          type: "High School",
+          description: "Newer high school serving the Bluffton community with modern facilities, strong academics, and athletic programs.",
+          link: "https://www.mayriverhigh.org"
+        },
+        {
           name: "Bluffton High School",
           type: "High School",
           description: "Modern high school serving Bluffton with strong academics, athletics, and arts programs.",
           link: "https://www.blufftonhigh.org"
+        },
+        {
+          name: "Bluffton Middle School",
+          type: "Middle School",
+          description: "Serving middle school students in the Bluffton area with comprehensive curriculum and extracurricular activities.",
+          link: "https://www.blufftonmiddle.org"
         },
         {
           name: "H.E. McCracken Middle School",
@@ -80,6 +92,26 @@ export default function SchoolsPage() {
           type: "Elementary",
           description: "Award-winning elementary school serving the Bluffton community.",
           link: "https://www.bcescowboy.org"
+        },
+        {
+          name: "River Ridge Academy",
+          type: "Middle School",
+          description: "Middle school serving the Bluffton area with comprehensive academic programs and student activities.",
+          link: ""
+        },
+        {
+          name: "Red Cedar Elementary",
+          type: "Elementary",
+          description: "Elementary school serving the Bluffton community with strong academic foundations.",
+          link: ""
+        },
+        {
+          name: "Bluffton Elementary",
+          type: "Elementary",
+          description: "Elementary school serving the historic Bluffton area with quality educational programs.",
+          address: "150 & 160 H.E. McCracken Circle, Bluffton SC 29910",
+          phone: "843-706-8500",
+          link: "https://www.bles.beaufortschools.net"
         },
         {
           name: "Pritchardville Elementary",
@@ -169,39 +201,38 @@ export default function SchoolsPage() {
       </Section>
 
       {/* Public Schools */}
-      <Section id="public-schools" background="dark">
+      <Section id="public-schools" background="gradient">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Public Schools in the Lowcountry
           </h2>
-          <p className="text-white max-w-2xl mx-auto">
+          <p className="text-gray-800 max-w-2xl mx-auto">
             The Lowcountry has excellent public school options. Here are the schools serving Bluffton and Hilton Head areas.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {publicSchoolRegions.map((region, regionIndex) => (
-            <GlassCard key={region.region} solidWhite hover className="border-cyan-500/20">
-              <h3 className="text-xl font-semibold text-white mb-6">{region.region}</h3>
-              <div className="space-y-4">
-                {region.schools.map((school, index) => (
-                  <div key={school.name} className="flex items-start gap-3 p-3 bg-white/10 rounded-lg">
-                    <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
-                      <Building2 className="w-5 h-5 text-cyan-400" />
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        <h4 className="text-white font-medium">{school.name}</h4>
-                        <span className="px-2 py-0.5 bg-cyan-500/20 rounded text-xs text-cyan-400">
-                          {school.type}
-                        </span>
-                      </div>
-                      <p className="text-white text-sm">{school.description}</p>
-                    </div>
+            region.schools.map((school, index) => (
+              <GlassCard key={school.name} solidWhite hover delay={(regionIndex * region.schools.length + index) * 0.05} className="border-purple-500/20 hover:border-purple-500/50 flex flex-col">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                    <Building2 className="w-5 h-5 text-purple-600" />
                   </div>
-                ))}
-              </div>
-            </GlassCard>
+                  <div>
+                    <h3 className="text-gray-800 font-semibold">{school.name}</h3>
+                    <p className="text-purple-600 text-sm">{school.type}</p>
+                  </div>
+                </div>
+                <p className="text-gray-800 text-sm mb-4 flex-grow">{school.description}</p>
+                {school.address && (
+                  <p className="text-gray-600 text-xs mb-1">{school.address}</p>
+                )}
+                {school.phone && (
+                  <p className="text-gray-600 text-xs">Ph {school.phone}</p>
+                )}
+              </GlassCard>
+            ))
           ))}
         </div>
       </Section>

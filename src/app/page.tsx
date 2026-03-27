@@ -103,39 +103,6 @@ const copy = {
     ]
   },
 
-  processTimeline: {
-    headline: "From application to keys — clarity at every step.",
-    steps: [
-      {
-        number: "01",
-        title: "Discovery",
-        description: "We talk. Your goals, timeline, and financial picture. No paperwork yet."
-      },
-      {
-        number: "02",
-        title: "Pre-Approval",
-        description: "Full underwriting decision in writing. Know exactly what you can afford."
-      },
-      {
-        number: "03",
-        title: "Home Search Strategy",
-        description: "With your realtor, we structure offers that win."
-      },
-      {
-        number: "04",
-        title: "Underwriting",
-        description: "Documentation, verification, and communication. You stay informed."
-      },
-      {
-        number: "05",
-        title: "Closing",
-        description: "Signing, keys, and congratulations. Done right."
-      }
-    ],
-    cta: "Start Your Journey",
-    ctaLink: "/contact"
-  },
-
   testimonials: {
     headline: "What realtors and clients say.",
     items: [
@@ -329,14 +296,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
-      {/* Process Timeline Section */}
-      <ProcessTimeline
-        headline={copy.processTimeline.headline}
-        steps={copy.processTimeline.steps}
-        cta={copy.processTimeline.cta}
-        ctaLink={copy.processTimeline.ctaLink}
-      />
 
       {/* Testimonials Section */}
       <TestimonialCarousel
