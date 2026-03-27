@@ -116,7 +116,10 @@ export default function Navbar() {
             }`}>Maggie Blank</span>
             <span className={`text-xs tracking-widest uppercase ${
               isScrolled ? 'text-[#777777]' : 'text-[#777777]'
-            }`}>Mortgage Banker</span>
+            }`}>Mortgage Advisor</span>
+            <span className={`text-xs tracking-widest uppercase ${
+              isScrolled ? 'text-[#777777]' : 'text-[#777777]'
+            }`}>NMLS 504377</span>
           </Link>
 
           {/* Desktop Navigation */}

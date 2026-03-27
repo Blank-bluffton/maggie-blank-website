@@ -35,7 +35,7 @@ const copy = {
     ctaSecondary: "Explore Loan Options",
     ctaSecondaryLink: "/loan-solutions",
     trustBullets: [
-      "Synovus Bank Mortgage Banker",
+      "Synovus Bank Mortgage Advisor",
       "NMLS #504377",
       "President's Club 2024 & 2025"
     ]
@@ -61,7 +61,7 @@ Maggie was featured in My FrontPage Story (January 2023) for her remarkable dedi
       { icon: Award, text: "President's Club 2024 & 2025" },
       { icon: Star, text: "Best in Class Customer Experience Award" },
       { icon: Shield, text: "NMLS #504377" },
-      { icon: Users, text: "Synovus Bank Mortgage Banker" }
+      { icon: Users, text: "Synovus Bank Mortgage Advisor" }
     ]
   },
 

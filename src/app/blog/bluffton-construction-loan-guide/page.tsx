@@ -46,7 +46,7 @@ const articleJsonLd = {
   "author": {
     "@type": "Person",
     "name": "Maggie Blank",
-    "jobTitle": "Mortgage Banker at Synovus Bank"
+    "jobTitle": "Mortgage Advisor at Synovus Bank"
   },
   "publisher": {
     "@type": "Organization",

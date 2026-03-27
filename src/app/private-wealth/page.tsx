@@ -64,28 +64,6 @@ const copy = {
     ]
   },
 
-  benefits: {
-    headline: "Why high-net-worth clients choose Maggie",
-    items: [
-      {
-        title: "Portfolio Lending Expertise",
-        description: "We work with investors and business owners who need flexibility beyond traditional underwriting."
-      },
-      {
-        title: "Speed & Discretion",
-        description: "Private wealth transactions move fast. We deliver pre-approvals in 24-48 hours with confidential service."
-      },
-      {
-        title: "Custom Structures",
-        description: "Interest-only, balloon payments, ARM options, and cross-collateralization. We build what fits your strategy."
-      },
-      {
-        title: "Local Lowcountry Knowledge",
-        description: "We understand the nuances of high-value properties in Bluffton, Hilton Head, and surrounding areas."
-      }
-    ]
-  },
-
   requirements: {
     headline: "Qualifying for private wealth mortgages",
     items: [
@@ -181,33 +159,6 @@ export default function PrivateWealthPage() {
               </GlassCard>
             </Link>
           ))}
-        </div>
-      </Section>
-
-      {/* Benefits Section */}
-      <Section id="benefits" background="dark" backgroundImage="/IMG_4405.jpg">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              {copy.benefits.headline}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {copy.benefits.items.map((item, index) => (
-              <GlassCard key={item.title} solidWhite darkText hover className="border-pink-500/20">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="w-5 h-5 text-pink-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                    <p className="text-white text-sm">{item.description}</p>
-                  </div>
-                </div>
-              </GlassCard>
-            ))}
-          </div>
         </div>
       </Section>
 

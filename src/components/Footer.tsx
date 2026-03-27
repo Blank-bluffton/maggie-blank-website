@@ -84,7 +84,7 @@ export default function Footer({
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-semibold text-lg tracking-tight">Maggie Blank</span>
-                <span className="text-xs text-[#CDB291] tracking-widest uppercase">Mortgage Banker</span>
+                <span className="text-xs text-[#CDB291] tracking-widest uppercase">Mortgage Advisor</span>
               </div>
             </Link>
 
