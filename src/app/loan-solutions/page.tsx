@@ -46,11 +46,7 @@ const copy = {
   hero: {
     headline: "Find Your Perfect Loan",
     subheadline: "Whether you're a physician, high-net-worth professional, or self-employed, we have mortgage solutions tailored to your unique situation. Explore our loan options below.",
-    trustBullets: [
-      "Competitive Rates",
-      "Local Lowcountry Expertise",
-      "Personalized Guidance"
-    ]
+    trustBullets: [],
   },
 
   cta: {
