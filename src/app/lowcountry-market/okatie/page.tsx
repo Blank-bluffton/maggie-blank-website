@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Section from '@/components/Section';
+import CountUp from '@/components/CountUp';
 import GlassCard from '@/components/GlassCard';
 import CTABand from '@/components/CTABand';
 import Link from 'next/link';
@@ -162,7 +163,7 @@ export default function OkatiePage() {
             >
               <GlassCard solidWhite hover className="text-center py-6">
                 <p className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                  {stat.value}
+                  {/[0-9]/.test(stat.value) ? <CountUp value={stat.value} /> : stat.value}
                 </p>
                 <p className="text-white mt-1 text-sm">{stat.label}</p>
               </GlassCard>

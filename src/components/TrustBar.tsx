@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Shield, Award, TrendingUp, Users, MapPin, Phone, Mail, Star } from 'lucide-react';
+import CountUp from '@/components/CountUp';
 
 interface Stat {
   value: string;
@@ -75,7 +76,7 @@ export default function TrustBar() {
               <div className="flex justify-center mb-2">
                 <Icon className="w-5 h-5 text-cyan-400" />
               </div>
-              <p className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</p>
+              <p className="text-2xl md:text-3xl font-bold text-gradient"><CountUp value={stat.value} /></p>
               <p className="text-xs md:text-sm text-slate-400 mt-1">{stat.label}</p>
             </motion.div>
           );

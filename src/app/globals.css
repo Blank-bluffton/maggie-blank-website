@@ -72,7 +72,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 600;
-  color: var(--text-primary);
+  /* Let section and utility colors control contrast on each surface. */
+  color: inherit;
   line-height: 1.2;
 }
 
@@ -103,6 +104,96 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-white);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
+}
+
+/*
+ * Legacy component aliases. These are intentionally opaque rather than
+ * decorative glass: important mortgage guidance and form controls must stay
+ * readable over the site's imagery and ambient gradients.
+ */
+.glass-card {
+  background: rgba(45, 62, 70, 0.97);
+  color: var(--text-light);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.glass-card-light {
+  background: var(--bg-white);
+  color: var(--text-primary);
+  border: 1px solid #E3E7E8;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-soft);
+}
+
+.glass-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: var(--radius-sm);
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.glass-input:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 2px;
+  border-color: #FFFFFF;
+}
+
+.glass-button,
+.glass-button-secondary {
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  color: var(--text-light);
+  background: var(--color-deep-teal);
+  border: 1px solid var(--color-deep-teal);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.glass-button-secondary {
+  background: transparent;
+  color: var(--color-deep-teal);
+}
+
+.glass-button:hover,
+.glass-button-secondary:hover {
+  background: var(--color-slate-blue);
+  color: var(--text-light);
+}
+
+.text-gradient,
+.text-gradient-mixed,
+.text-gradient-pink {
+  color: var(--color-deep-teal);
+}
+
+.glow-cyan {
+  box-shadow: 0 10px 26px rgba(82, 110, 122, 0.28);
+}
+
+/* A white card is always a light reading surface, regardless of its parent. */
+.surface-light :is(h1, h2, h3, h4, h5, h6, p, li, blockquote) {
+  color: var(--text-primary);
+}
+
+.surface-light .text-cyan-600,
+.surface-light .text-pink-600,
+.surface-light .text-purple-600 {
+  color: var(--color-deep-teal);
 }
 
 /* Gold accent bar */
@@ -214,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--color-muted-gold);
+  color: #8A6931;
 }
 
 .label-dark {

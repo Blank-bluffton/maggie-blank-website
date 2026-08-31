@@ -18,6 +18,7 @@ const navLinks = [
     ]
   },
   { href: '/concierge', label: 'Concierge Approach' },
+  { href: '/about', label: 'Meet Maggie' },
   { 
     label: 'Lowcountry Market', 
     children: [
@@ -34,20 +35,12 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileOpenGroup, setMobileOpenGroup] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -86,42 +79,28 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white shadow-lg' 
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo - links to homepage */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-md overflow-hidden transition-all duration-300 ${
-              isScrolled 
-                ? 'bg-gradient-to-br from-[#526E7A] to-[#4A6D7C]' 
-                : 'bg-white shadow-lg'
-            }`}>
+          {/* Complete original brand lockup always returns home. */}
+          <Link href="/" aria-label="Maggie Blank home" className="flex items-center gap-2.5 rounded-lg group">
+            <div className="flex h-12 w-12 items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <img 
-                src="/maggie-blank-logo.png" 
-                alt="Maggie Blank Logo" 
-                className="w-10 h-10 object-contain"
+                src="/maggie-blank-logo-transparent.png"
+                alt=""
+                className="h-12 w-12 object-contain drop-shadow-[0_2px_5px_rgba(82,110,122,0.2)]"
               />
             </div>
-          </Link>
-
-          {/* Text - links to About page */}
-          <Link href="/about" className="flex flex-col group">
-            <span className={`font-semibold text-lg tracking-tight ${
-              isScrolled ? 'text-[#333333]' : 'text-[#333333]'
-            }`}>Maggie Blank</span>
-            <span className={`text-xs tracking-widest uppercase ${
-              isScrolled ? 'text-[#777777]' : 'text-[#777777]'
-            }`}>Mortgage Advisor</span>
+            <span className="flex flex-col">
+              <span className="text-lg font-semibold tracking-tight text-[#333333]">Maggie Blank</span>
+              <span className="mt-0.5 text-xs tracking-widest text-[#526E7A] uppercase">Mortgage Advisor</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
+          <div className="hidden xl:flex items-center gap-0.5">
+            {navLinks.filter((link) => link.label !== 'Contact').map((link) => (
               <div 
                 key={link.label} 
                 ref={link.children ? dropdownRef : undefined}
@@ -133,10 +112,8 @@ export default function Navbar() {
                   <button
                     onClick={() => toggleDropdown(link.label)}
                     onMouseEnter={() => setOpenDropdown(link.label)}
-                    className={`flex items-center gap-1 px-4 py-2 transition-colors rounded-lg ${
-                      isScrolled 
-                        ? 'text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8]' 
-                        : 'text-[#333333] hover:text-[#526E7A] hover:bg-white/50'
+                    className={`flex items-center gap-1 px-3 xl:px-4 py-2 transition-colors rounded-lg ${
+                      'text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8]'
                     } ${openDropdown === link.label ? 'text-[#526E7A] font-semibold' : ''}`}
                   >
                     {link.label}
@@ -145,12 +122,10 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`px-4 py-2 transition-colors rounded-lg ${
+                    className={`px-3 xl:px-4 py-2 transition-colors rounded-lg ${
                       pathname === link.href 
                         ? 'text-[#526E7A] font-semibold' 
-                        : isScrolled 
-                          ? 'text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8]'
-                          : 'text-[#333333] hover:text-[#526E7A] hover:bg-white/50'
+                        : 'text-[#555555] hover:text-[#526E7A] hover:bg-[#F8F8F8]'
                     }`}
                   >
                     {link.label}
@@ -186,10 +161,10 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden xl:block">
             <Link
               href="https://www.synovus.com/maggieblank"
-              className="px-6 py-3 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300"
+              className="inline-flex whitespace-nowrap px-5 xl:px-6 py-3 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300"
             >
               Get Pre-Approved
             </Link>
@@ -198,7 +173,9 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-[#333333]"
+            className="xl:hidden p-2 text-[#333333]"
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -211,13 +188,16 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white border-t border-gray-100"
+              className="md:hidden max-h-[calc(100vh-64px)] overflow-y-auto border-t border-gray-100 bg-white"
             >
               {/* Brand Header */}
-              <div className="px-4 py-4 border-b border-gray-100">
-                <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="block">
-                  <div className="font-semibold text-lg text-[#333333]">Maggie Blank</div>
-                  <div className="text-xs text-[#777777] uppercase tracking-widest mt-0.5">Mortgage Advisor</div>
+              <div className="border-b border-gray-100 px-4 py-3">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2.5">
+                  <img src="/maggie-blank-logo-transparent.png" alt="" className="h-10 w-10 object-contain drop-shadow-[0_2px_4px_rgba(82,110,122,0.16)]" />
+                  <div>
+                    <div className="font-semibold text-lg text-[#333333]">Maggie Blank</div>
+                    <div className="text-xs text-[#777777] uppercase tracking-widest mt-0.5">Mortgage Advisor</div>
+                  </div>
                 </Link>
               </div>
 
@@ -227,19 +207,39 @@ export default function Navbar() {
                   <div key={link.label}>
                     {link.children ? (
                       <>
-                        <div className="px-4 py-3 text-[#526E7A] text-sm font-semibold">{link.label}</div>
-                        <div className="pl-4">
-                          {link.children.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              onClick={() => setIsMobileMenuOpen(false)}
-                              className="block px-4 py-2.5 text-[#555555] text-sm hover:text-[#526E7A] hover:bg-gray-50"
+                        <button
+                          type="button"
+                          onClick={() => setMobileOpenGroup(mobileOpenGroup === link.label ? null : link.label)}
+                          className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-[#526E7A] hover:bg-[#F8F8F8]"
+                          aria-expanded={mobileOpenGroup === link.label}
+                        >
+                          {link.label}
+                          <ChevronDown className={`h-4 w-4 transition-transform ${mobileOpenGroup === link.label ? 'rotate-180' : ''}`} />
+                        </button>
+                        <AnimatePresence initial={false}>
+                          {mobileOpenGroup === link.label && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: 'auto', opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.18 }}
+                              className="overflow-hidden bg-[#F8F8F8]"
                             >
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
+                              <div className="pb-2 pl-4">
+                                {link.children.map((child) => (
+                                  <Link
+                                    key={child.href}
+                                    href={child.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="block px-4 py-3 text-sm text-[#555555] hover:bg-white hover:text-[#526E7A]"
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
                       </>
                     ) : (
                       <Link
@@ -255,7 +255,7 @@ export default function Navbar() {
               </div>
 
               {/* CTA */}
-              <div className="p-4 bg-gray-50">
+              <div className="sticky bottom-0 border-t border-gray-100 bg-white p-4 shadow-[0_-8px_20px_rgba(0,0,0,0.06)]">
                 <Link
                   href="https://www.synovus.com/maggieblank"
                   onClick={() => setIsMobileMenuOpen(false)}

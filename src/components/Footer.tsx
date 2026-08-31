@@ -52,7 +52,7 @@ export default function Footer({
     { text: "Self-Employed", href: "/self-employed" },
     { text: "Blog", href: "/blog" },
     { text: "Lowcountry Market", href: "/lowcountry-market" },
-    { text: "About Maggie", href: "/about" },
+    { text: "Meet Maggie", href: "/about" },
     { text: "Resources", href: "/resources" },
     { text: "Contact", href: "/contact" }
   ];
@@ -79,17 +79,17 @@ export default function Footer({
           <div className="lg:col-span-2">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 mb-6 group">
-              <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-md">
-                <span className="text-[#526E7A] font-bold text-lg">MB</span>
+              <div className="flex h-12 w-12 items-center justify-center">
+                <img src="/maggie-blank-logo-transparent.png" alt="" className="h-12 w-12 object-contain drop-shadow-[0_2px_5px_rgba(255,255,255,0.24)]" />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-semibold text-lg tracking-tight">Maggie Blank</span>
-                <span className="text-xs text-[#CDB291] tracking-widest uppercase">Mortgage Advisor</span>
+                <span className="text-xs text-[#F4E6CD] tracking-widest uppercase">Mortgage Advisor</span>
               </div>
             </Link>
 
             {/* Description */}
-            <p className="text-white/80 mb-8 max-w-md">
+            <p className="text-white mb-8 max-w-md">
               Premium mortgage guidance for homebuyers who demand more than a rate quote. 
               Serving physicians, first-time buyers, and self-employed borrowers in the Lowcountry.
             </p>
@@ -101,7 +101,7 @@ export default function Footer({
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="text-[#C5A059]"
+                  className="text-white"
                 >
                   Thanks for subscribing!
                 </motion.p>
@@ -165,7 +165,7 @@ export default function Footer({
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-white/80 hover:text-[#C5A059] transition-colors"
+                    className="text-white hover:text-white hover:underline transition-colors"
                   >
                     {link.text}
                   </Link>
@@ -181,7 +181,7 @@ export default function Footer({
               <li>
                 <Link
                   href="/blog"
-                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="text-white hover:text-white hover:underline transition-colors"
                 >
                   All Articles
                 </Link>
@@ -189,7 +189,7 @@ export default function Footer({
               <li>
                 <Link
                   href="/blog/physician-loans-2026"
-                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="text-white hover:text-white hover:underline transition-colors"
                 >
                   Physician Loans
                 </Link>
@@ -197,7 +197,7 @@ export default function Footer({
               <li>
                 <Link
                   href="/blog/first-time-buyer-programs-sc"
-                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="text-white hover:text-white hover:underline transition-colors"
                 >
                   First-Time Buyers
                 </Link>
@@ -205,7 +205,7 @@ export default function Footer({
               <li>
                 <Link
                   href="/blog/buying-in-golf-community"
-                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="text-white hover:text-white hover:underline transition-colors"
                 >
                   Local Market
                 </Link>
@@ -213,7 +213,7 @@ export default function Footer({
               <li>
                 <Link
                   href="/blog/self-employed-mortgage-guide"
-                  className="text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="text-white hover:text-white hover:underline transition-colors"
                 >
                   Self-Employed
                 </Link>
@@ -227,7 +227,7 @@ export default function Footer({
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#C5A059] flex-shrink-0 mt-0.5" />
-                <span className="text-white/80">
+                <span className="text-white">
                   3 Belfair Village Drive<br />
                   Bluffton, SC 29910
                 </span>
@@ -235,25 +235,25 @@ export default function Footer({
               <li>
                 <a
                   href="tel:8437063101"
-                  className="flex items-center gap-3 text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="flex items-center gap-3 text-white hover:text-white hover:underline transition-colors"
                 >
                   <Phone className="w-5 h-5 text-[#C5A059]" />
-                  (843) 706-3101 <span className="text-white/50">Office</span>
+                  (843) 706-3101 <span className="text-white">Office</span>
                 </a>
               </li>
               <li>
                 <a
                   href="tel:8435757768"
-                  className="flex items-center gap-3 text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="flex items-center gap-3 text-white hover:text-white hover:underline transition-colors"
                 >
                   <Phone className="w-5 h-5 text-[#C5A059]" />
-                  (843) 575-7768 <span className="text-white/50">Cell</span>
+                  (843) 575-7768 <span className="text-white">Cell</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:maggieblank@synovus.com"
-                  className="flex items-center gap-3 text-white/80 hover:text-[#C5A059] transition-colors"
+                  className="flex items-center gap-3 text-white hover:text-white hover:underline transition-colors"
                 >
                   <Mail className="w-5 h-5 text-[#C5A059]" />
                   maggieblank@synovus.com
@@ -266,16 +266,16 @@ export default function Footer({
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               {footerLegal.copyright}
             </p>
             
             <div className="flex items-center gap-6">
-              <span className="text-white/60 text-sm">{footerLegal.nmls}</span>
-              <Link href="/privacy" className="text-white/60 hover:text-[#C5A059] text-sm transition-colors">
+              <span className="text-white text-sm">{footerLegal.nmls}</span>
+              <Link href="/privacy" className="text-white hover:text-white hover:underline text-sm transition-colors">
                 {footerLegal.privacy}
               </Link>
-              <Link href="/terms" className="text-white/60 hover:text-[#C5A059] text-sm transition-colors">
+              <Link href="/terms" className="text-white hover:text-white hover:underline text-sm transition-colors">
                 {footerLegal.terms}
               </Link>
             </div>

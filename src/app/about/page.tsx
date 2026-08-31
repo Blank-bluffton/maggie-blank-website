@@ -6,8 +6,9 @@ import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import CTABand from '@/components/CTABand';
+import CountUp from '@/components/CountUp';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { 
   Award, 
   Shield, 
@@ -225,7 +226,7 @@ function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
           className="text-center"
         >
           <div className="text-3xl sm:text-4xl font-bold text-gradient-pink mb-1">
-            {stat.value}
+            <CountUp value={stat.value} />
           </div>
           <div className="text-sm text-gray-800">{stat.label}</div>
         </motion.div>
@@ -285,19 +286,22 @@ function TrustBullet({ text, delay }: { text: string; delay: number }) {
 }
 
 export default function AboutPage() {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <>
       {/* Hero Section */}
-      <section 
-        className="relative min-h-[80vh] flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: 'url(/IMG_4398.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        <div className="absolute inset-0 bg-[#333333]/80" />
+      <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
+        <motion.div
+          className="absolute inset-0 bg-cover bg-center brightness-110 contrast-[0.98]"
+          style={{ backgroundImage: 'url(/IMG_4398.jpg)' }}
+          animate={prefersReducedMotion ? { scale: 1 } : { scale: [1, 1.035, 1] }}
+          transition={prefersReducedMotion ? { duration: 0 } : { duration: 26, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <div className="absolute inset-0 bg-[#1F2E35]/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1F2E35]/38 via-[#1F2E35]/18 to-[#1F2E35]/40" />
         <GradientOrbs />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(15,34,40,0.5)_0%,rgba(15,34,40,0.24)_48%,transparent_76%)]" />
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center">
           <motion.div
@@ -305,20 +309,11 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/30 mb-6"
-            >
-            </motion.div>
-
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
-              Meet <span className="text-gradient-pink">Maggie Blank</span>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold !text-white mb-6 tracking-tight drop-shadow-[0_3px_14px_rgba(0,0,0,0.72)]">
+              Meet <span className="!text-white">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10">
+            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
               {copy.hero.subheadline}
             </p>
 

@@ -6,6 +6,7 @@ import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import FAQAccordion from '@/components/FAQAccordion';
 import CTABand from '@/components/CTABand';
+import CountUp from '@/components/CountUp';
 import Link from 'next/link';
 import { 
   MapPin, 
@@ -562,7 +563,7 @@ export default function LowcountryMarketPage() {
             <motion.div key={index} variants={itemVariants}>
               <GlassCard solidWhite hover className="text-center py-8">
                 <p className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
-                  {stat.value}
+                  <CountUp value={stat.value} />
                 </p>
                 <p className="text-white mt-2">{stat.label}</p>
               </GlassCard>

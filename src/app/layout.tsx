@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     description: "Mortgage strategy for physicians, first-time buyers, and self-employed borrowers. Expert guidance in Bluffton, Hilton Head, and the SC Lowcountry.",
     images: [
       {
-        url: "/maggie-blank-logo.png",
-        width: 1024,
-        height: 1024,
-        alt: "Maggie Blank - Lowcountry Mortgage Advisor Logo"
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Maggie Blank - Lowcountry Mortgage Advisor"
       }
     ]
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Maggie Blank | Premium Mortgage Lending in the Lowcountry",
     description: "Mortgage strategy for physicians, first-time buyers, and self-employed borrowers. Expert guidance in Bluffton, Hilton Head, and the SC Lowcountry.",
     creator: "@maggieblank",
-    images: ["/maggie-blank-logo.png"]
+    images: ["/opengraph-image"]
   },
   robots: {
     index: true,
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     google: "google-site-verification-code",
   },
   icons: {
-    icon: [{ url: "/favicon.png" }],
-    apple: "/favicon.png",
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: "/icon.png",
   },
 };
 
@@ -97,8 +97,8 @@ export default function RootLayout({
             },
             "priceRange": "$$",
             "openingHours": "Mo-Fr 09:00-17:00",
-            "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
-            "logo": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
+            "image": "https://www.lowcountrymortgageadvisor.com/opengraph-image",
+            "logo": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo-transparent.png",
             "sameAs": [
               "https://www.facebook.com/maggie.blank",
               "https://www.linkedin.com/in/maggieblank"
@@ -135,7 +135,7 @@ export default function RootLayout({
             { text: "First-Time Buyers", href: "/first-time-buyers" },
             { text: "Construction Loans", href: "/construction" },
             { text: "Lowcountry Market", href: "/lowcountry-market" },
-            { text: "About Maggie", href: "/about" },
+            { text: "Meet Maggie", href: "/about" },
             { text: "Resources", href: "/resources" },
             { text: "Contact", href: "/contact" }
           ]}

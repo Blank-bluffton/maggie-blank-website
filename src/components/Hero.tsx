@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import CountUp from '@/components/CountUp';
 
 interface HeroProps {
   headline: string;
@@ -49,7 +50,7 @@ export default function Hero({
           />
         )}
         {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-[#F8F8F8]/70" />
+        <div className="absolute inset-0 bg-[#F8F8F8]/82 lg:bg-gradient-to-r lg:from-[#F8F8F8]/95 lg:via-[#F8F8F8]/82 lg:to-[#F8F8F8]/58" />
         {/* Subtle pattern */}
         <div 
           className="absolute inset-0 opacity-[0.03]"
@@ -184,15 +185,15 @@ export default function Hero({
                     
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
-                        <p className="text-3xl font-bold text-[#333333]">30-45</p>
+                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="30-45" /></p>
                         <p className="text-sm text-[#777777]">Days to Close</p>
                       </div>
                       <div>
-                        <p className="text-3xl font-bold text-[#333333]">$250M+</p>
+                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="$250M+" /></p>
                         <p className="text-sm text-[#777777]">Funded Locally</p>
                       </div>
                       <div>
-                        <p className="text-3xl font-bold text-[#333333]">99%</p>
+                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="99%" /></p>
                         <p className="text-sm text-[#777777]">On-Time Rate</p>
                       </div>
                     </div>

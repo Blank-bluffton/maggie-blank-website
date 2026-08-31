@@ -1,60 +1,63 @@
-# Maggie Blank — Lowcountry Mortgage Advisor
+# Maggie Blank | Lowcountry Mortgage Advisor
 
-> Mortgage guidance from Maggie Blank of Synovus Bank for physicians, first-time buyers, self-employed borrowers, and other homebuyers in Bluffton, Hilton Head Island, Beaufort, Okatie, and the South Carolina Lowcountry. NMLS #504377.
+> Official website for Maggie Blank, a Synovus Bank mortgage advisor serving physicians, professionals, first-time buyers, self-employed borrowers, and homeowners in Bluffton, Hilton Head Island, Beaufort, Okatie, and the South Carolina Lowcountry. NMLS #504377.
 
-This site provides general educational information about mortgage programs, construction and refinance options, relocation, and Lowcountry housing considerations. Loan availability and terms are subject to underwriting, credit, property approval, and applicable lender requirements.
+This site provides educational mortgage and local-market information. Loan terms, rates, eligibility, and approvals depend on individual circumstances and lender requirements. For personalized or current lending guidance, contact Maggie directly.
 
 ## Primary Pages
 
 - [Home](https://www.lowcountrymortgageadvisor.com/): Overview of Maggie Blank's mortgage advisory services and Lowcountry expertise.
-- [About Maggie](https://www.lowcountrymortgageadvisor.com/about): Professional background and approach.
-- [Concierge Approach](https://www.lowcountrymortgageadvisor.com/concierge): The site's personalized mortgage process.
-- [Loan Solutions](https://www.lowcountrymortgageadvisor.com/loan-solutions): Overview of available financing paths.
-- [Physician Loans](https://www.lowcountrymortgageadvisor.com/physician-loans): Mortgage options designed for physicians.
-- [First-Time Buyers](https://www.lowcountrymortgageadvisor.com/first-time-buyers): Programs and guidance for first-time homebuyers.
-- [Self-Employed Borrowers](https://www.lowcountrymortgageadvisor.com/self-employed): Documentation and financing guidance for self-employed borrowers.
-- [Conventional Loans](https://www.lowcountrymortgageadvisor.com/conventional): Conventional mortgage information.
-- [Construction Loans](https://www.lowcountrymortgageadvisor.com/construction): Construction-to-permanent financing information.
-- [Private Wealth Mortgages](https://www.lowcountrymortgageadvisor.com/private-wealth): Jumbo and portfolio lending information.
-- [Refinancing](https://www.lowcountrymortgageadvisor.com/refinance): Refinance strategies and considerations.
-- [Resources](https://www.lowcountrymortgageadvisor.com/resources): Mortgage tools and educational resources.
-- [Apply](https://www.lowcountrymortgageadvisor.com/apply): How to begin the mortgage process.
-- [Contact](https://www.lowcountrymortgageadvisor.com/contact): Contact information and consultation request.
+- [About Maggie](https://www.lowcountrymortgageadvisor.com/about): Professional background, local experience, and approach to mortgage guidance.
+- [Loan Solutions](https://www.lowcountrymortgageadvisor.com/loan-solutions): Overview of available mortgage programs and borrower scenarios.
+- [Concierge Approach](https://www.lowcountrymortgageadvisor.com/concierge): High-touch mortgage planning and support process.
+- [Resources](https://www.lowcountrymortgageadvisor.com/resources): Home financing resources and buyer guides.
+- [Contact](https://www.lowcountrymortgageadvisor.com/contact): Contact information and consultation request options.
+- [Apply](https://www.lowcountrymortgageadvisor.com/apply): Steps for beginning a purchase or refinance application.
+
+## Mortgage Programs
+
+- [Physician Loans](https://www.lowcountrymortgageadvisor.com/physician-loans): Mortgage options designed for doctors and other medical professionals.
+- [First-Time Buyers](https://www.lowcountrymortgageadvisor.com/first-time-buyers): Guidance and loan options for first-time homebuyers.
+- [Self-Employed Borrowers](https://www.lowcountrymortgageadvisor.com/self-employed): Documentation and mortgage strategies for business owners and independent professionals.
+- [Private Wealth Mortgages](https://www.lowcountrymortgageadvisor.com/private-wealth): Jumbo, portfolio, and tailored financing for complex financial profiles.
+- [Construction Loans](https://www.lowcountrymortgageadvisor.com/construction): Construction-to-permanent financing for custom homes and major renovations.
+- [Conventional Loans](https://www.lowcountrymortgageadvisor.com/conventional): Conventional mortgage features, requirements, and benefits.
+- [Refinance](https://www.lowcountrymortgageadvisor.com/refinance): Rate-and-term, cash-out, and other refinancing strategies.
 
 ## Lowcountry Market Guides
 
-- [Lowcountry Market](https://www.lowcountrymortgageadvisor.com/lowcountry-market): Regional market overview and community guide.
-- [Bluffton](https://www.lowcountrymortgageadvisor.com/lowcountry-market/bluffton): Bluffton housing and community information.
-- [Hilton Head Island](https://www.lowcountrymortgageadvisor.com/lowcountry-market/hilton-head): Hilton Head Island housing and community information.
-- [Beaufort](https://www.lowcountrymortgageadvisor.com/lowcountry-market/beaufort): Beaufort housing and community information.
-- [Okatie](https://www.lowcountrymortgageadvisor.com/lowcountry-market/okatie): Okatie housing and community information.
-- [Neighborhoods](https://www.lowcountrymortgageadvisor.com/lowcountry-market/neighborhoods): Lowcountry neighborhood comparisons.
-- [Builders](https://www.lowcountrymortgageadvisor.com/lowcountry-market/builders): Local builder information.
-- [Realtors](https://www.lowcountrymortgageadvisor.com/lowcountry-market/realtors): Local real estate professional information.
-- [Closing Attorneys](https://www.lowcountrymortgageadvisor.com/lowcountry-market/closing-attorneys): South Carolina closing attorney information.
-- [Insurance](https://www.lowcountrymortgageadvisor.com/lowcountry-market/insurance): Coastal insurance considerations.
-- [Schools](https://www.lowcountrymortgageadvisor.com/lowcountry-market/schools): Local school information.
-- [Local Services](https://www.lowcountrymortgageadvisor.com/lowcountry-market/services): Local services and relocation resources.
+- [Lowcountry Market](https://www.lowcountrymortgageadvisor.com/lowcountry-market): Overview of buying and financing homes in the South Carolina Lowcountry.
+- [Bluffton](https://www.lowcountrymortgageadvisor.com/lowcountry-market/bluffton): Bluffton communities, lifestyle, and homebuying considerations.
+- [Hilton Head Island](https://www.lowcountrymortgageadvisor.com/lowcountry-market/hilton-head): Hilton Head Island communities and coastal homebuying considerations.
+- [Beaufort](https://www.lowcountrymortgageadvisor.com/lowcountry-market/beaufort): Beaufort neighborhoods, lifestyle, and local housing considerations.
+- [Okatie](https://www.lowcountrymortgageadvisor.com/lowcountry-market/okatie): Okatie communities and homebuying considerations.
+- [Neighborhoods](https://www.lowcountrymortgageadvisor.com/lowcountry-market/neighborhoods): Guide to notable Lowcountry neighborhoods and residential communities.
+- [Builders](https://www.lowcountrymortgageadvisor.com/lowcountry-market/builders): Local builder information for Lowcountry buyers and construction clients.
+- [Closing Attorneys](https://www.lowcountrymortgageadvisor.com/lowcountry-market/closing-attorneys): Information about the South Carolina real estate closing process and local attorneys.
+- [Insurance](https://www.lowcountrymortgageadvisor.com/lowcountry-market/insurance): Coastal property, flood, wind, and homeowners insurance considerations.
+- [Realtors](https://www.lowcountrymortgageadvisor.com/lowcountry-market/realtors): Local real estate professional resources.
+- [Schools](https://www.lowcountrymortgageadvisor.com/lowcountry-market/schools): Public and private school information for relocating families.
+- [Local Services](https://www.lowcountrymortgageadvisor.com/lowcountry-market/services): Services and providers useful during a Lowcountry move.
 
-## Mortgage Insights
+## Mortgage and Homebuying Articles
 
-- [All Articles](https://www.lowcountrymortgageadvisor.com/blog): Mortgage and Lowcountry articles.
-- [Physician Loans in 2026](https://www.lowcountrymortgageadvisor.com/blog/physician-loans-2026): Physician mortgage guide.
-- [First-Time Buyer Programs in South Carolina](https://www.lowcountrymortgageadvisor.com/blog/first-time-buyer-programs-sc): State program overview.
-- [Self-Employed Mortgage Guide](https://www.lowcountrymortgageadvisor.com/blog/self-employed-mortgage-guide): Bank statements versus tax returns.
-- [Bluffton Construction Loan Guide](https://www.lowcountrymortgageadvisor.com/blog/bluffton-construction-loan-guide): Financing a new build in Bluffton.
-- [Best Mortgage Rate in the Lowcountry](https://www.lowcountrymortgageadvisor.com/blog/how-to-get-the-best-mortgage-rate-in-the-lowcountry): Factors that influence mortgage pricing.
-- [Understanding South Carolina Closing Costs](https://www.lowcountrymortgageadvisor.com/blog/understanding-closing-costs-in-south-carolina): Buyer closing-cost overview.
-- [Lowcountry Flood Insurance](https://www.lowcountrymortgageadvisor.com/blog/lowcountry-flood-insurance): Flood zones, coverage, and cost considerations.
-- [Buying in a Golf Community](https://www.lowcountrymortgageadvisor.com/blog/buying-in-golf-community): Financing and ownership considerations.
-- [Moving to the Lowcountry Checklist](https://www.lowcountrymortgageadvisor.com/blog/the-ultimate-move-to-lowcountry-checklist): Relocation planning checklist.
-- [Tax Tips for Lowcountry Homeowners](https://www.lowcountrymortgageadvisor.com/blog/tax-tips-lowcountry-homeowners): General homeowner tax considerations.
-- [Refinance Now or Wait](https://www.lowcountrymortgageadvisor.com/blog/refinance-now-or-wait): Refinance decision framework.
-- [Why Local Lenders Matter](https://www.lowcountrymortgageadvisor.com/blog/why-local-lenders-beat-big-banks-for-lowcountry-buyers): Local lending considerations.
+- [Mortgage Insights Blog](https://www.lowcountrymortgageadvisor.com/blog): Index of mortgage, homebuying, refinancing, and local-market articles.
+- [Building a Home in Bluffton: Construction Loan Guide](https://www.lowcountrymortgageadvisor.com/blog/bluffton-construction-loan-guide): Construction-to-permanent loan and custom-build guidance.
+- [Buying in a Golf Community](https://www.lowcountrymortgageadvisor.com/blog/buying-in-golf-community): HOA, club, insurance, and financing considerations for Lowcountry golf communities.
+- [First-Time Buyer Programs in South Carolina](https://www.lowcountrymortgageadvisor.com/blog/first-time-buyer-programs-sc): Overview of assistance and financing programs for South Carolina buyers.
+- [How to Get the Best Mortgage Rate in the Lowcountry](https://www.lowcountrymortgageadvisor.com/blog/how-to-get-the-best-mortgage-rate-in-the-lowcountry): Factors and strategies that affect mortgage pricing.
+- [Lowcountry Flood Insurance](https://www.lowcountrymortgageadvisor.com/blog/lowcountry-flood-insurance): Flood zones, coverage requirements, costs, and savings considerations.
+- [Physician Loans in 2026](https://www.lowcountrymortgageadvisor.com/blog/physician-loans-2026): Physician mortgage qualifications, benefits, and tradeoffs.
+- [Refinance Now or Wait?](https://www.lowcountrymortgageadvisor.com/blog/refinance-now-or-wait): Factors to evaluate when deciding whether to refinance.
+- [Self-Employed Mortgage Guide](https://www.lowcountrymortgageadvisor.com/blog/self-employed-mortgage-guide): Bank-statement and tax-return documentation approaches.
+- [Tax Tips for Lowcountry Homeowners](https://www.lowcountrymortgageadvisor.com/blog/tax-tips-lowcountry-homeowners): General homeowner tax considerations and deductions.
+- [Move-to-Lowcountry Checklist](https://www.lowcountrymortgageadvisor.com/blog/the-ultimate-move-to-lowcountry-checklist): Planning checklist for relocating to the Lowcountry.
+- [Understanding Closing Costs in South Carolina](https://www.lowcountrymortgageadvisor.com/blog/understanding-closing-costs-in-south-carolina): Typical buyer closing costs and the state closing process.
+- [Why Local Lenders Beat Big Banks for Lowcountry Buyers](https://www.lowcountrymortgageadvisor.com/blog/why-local-lenders-beat-big-banks-for-lowcountry-buyers): Benefits of local market knowledge and lending support.
 
 ## Additional Resources
 
 - [Lowcountry Physician Relocation Guide (PDF)](https://www.lowcountrymortgageadvisor.com/Lowcountry%20Physician%20Relocation%20Guide.pdf): Downloadable relocation guide.
-- [Privacy Policy](https://www.lowcountrymortgageadvisor.com/privacy): Privacy practices.
-- [Terms of Service](https://www.lowcountrymortgageadvisor.com/terms): Website terms.
+- [Privacy Policy](https://www.lowcountrymortgageadvisor.com/privacy): Website privacy practices.
+- [Terms](https://www.lowcountrymortgageadvisor.com/terms): Website terms and disclosures.
 - [XML Sitemap](https://www.lowcountrymortgageadvisor.com/sitemap.xml): Canonical public URL inventory.

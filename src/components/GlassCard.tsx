@@ -32,7 +32,7 @@ export default function GlassCard({
         hover 
           ? 'hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out' 
           : ''
-      } ${solidWhite ? 'bg-white' : ''} ${className}`}
+      } ${solidWhite ? 'bg-white surface-light' : ''} ${className}`}
     >
       <div className={darkText ? 'text-gray-800' : ''}>
         {children}
