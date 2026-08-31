@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Building a Home in Bluffton: Construction Loan Guide 2026",
     description: "Complete guide to construction loans in Bluffton, SC. Learn about construction-to-permanent loans and how to finance your custom home build in the Lowcountry.",
-    url: "https://maggie-website-pi.vercel.app/blog/bluffton-construction-loan-guide",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/bluffton-construction-loan-guide",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
     authors: ["Maggie Blank"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Complete guide to construction loans in Bluffton, SC. Learn about construction-to-permanent loans and building your custom home."
   },
   alternates: {
-    canonical: "https://maggie-website-pi.vercel.app/blog/bluffton-construction-loan-guide"
+    canonical: "https://www.lowcountrymortgageadvisor.com/blog/bluffton-construction-loan-guide"
   }
 };
 
@@ -60,7 +60,7 @@ const articleJsonLd = {
   "dateModified": "2026-03-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://maggie-website-pi.vercel.app/blog/bluffton-construction-loan-guide"
+    "@id": "https://www.lowcountrymortgageadvisor.com/blog/bluffton-construction-loan-guide"
   },
   "articleSection": "Mortgage Education",
   "wordCount": 1400

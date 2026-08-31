@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "First-Time Buyer Programs in South Carolina: 2026 Guide",
     description: "Complete guide to first-time home buyer programs in South Carolina. Learn about SC Housing loans, down payment assistance, and affordable mortgage options in the Lowcountry.",
-    url: "https://maggie-website-pi.vercel.app/blog/first-time-buyer-programs-sc",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/first-time-buyer-programs-sc",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
     authors: ["Maggie Blank"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Complete guide to first-time home buyer programs in South Carolina. Learn about SC Housing loans and down payment assistance."
   },
   alternates: {
-    canonical: "https://maggie-website-pi.vercel.app/blog/first-time-buyer-programs-sc"
+    canonical: "https://www.lowcountrymortgageadvisor.com/blog/first-time-buyer-programs-sc"
   }
 };
 
@@ -60,7 +60,7 @@ const articleJsonLd = {
   "dateModified": "2026-03-18",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://maggie-website-pi.vercel.app/blog/first-time-buyer-programs-sc"
+    "@id": "https://www.lowcountrymortgageadvisor.com/blog/first-time-buyer-programs-sc"
   },
   "articleSection": "Mortgage Education",
   "wordCount": 1100

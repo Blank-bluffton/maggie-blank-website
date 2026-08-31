@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://maggie-website-pi.vercel.app/blog/tax-tips-lowcountry-homeowners",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/tax-tips-lowcountry-homeowners",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     title: "Tax Tips for Lowcountry Homeowners",
     description: "Essential tax deductions and strategies for homeowners in Bluffton, Hilton Head, and Beaufort.",
@@ -247,7 +247,7 @@ export default function TaxTipsBlog() {
           "dateModified": "2026-03-10",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/tax-tips-lowcountry-homeowners"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/tax-tips-lowcountry-homeowners"
           }
         }) }}
       />

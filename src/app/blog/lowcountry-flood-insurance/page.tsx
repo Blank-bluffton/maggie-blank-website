@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://maggie-website-pi.vercel.app/blog/lowcountry-flood-insurance",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/lowcountry-flood-insurance",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     title: "Flood Insurance in the Lowcountry: Costs, Zones, and Savings",
     description: "Understand flood insurance requirements, costs, and savings strategies for Bluffton, Hilton Head, and Beaufort homeowners.",
@@ -238,7 +238,7 @@ export default function FloodInsuranceBlog() {
           "dateModified": "2026-01-20",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/lowcountry-flood-insurance"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/lowcountry-flood-insurance"
           }
         }) }}
       />

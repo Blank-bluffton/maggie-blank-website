@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Self-Employed Mortgage: Bank Statements vs Tax Returns",
     description: "Complete guide to self-employed mortgage options. Learn how bank statement loans compare to tax return financing for self-employed borrowers.",
-    url: "https://maggie-website-pi.vercel.app/blog/self-employed-mortgage-guide",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/self-employed-mortgage-guide",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
     authors: ["Maggie Blank"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Complete guide to self-employed mortgage options. Learn how bank statement loans compare to tax return financing."
   },
   alternates: {
-    canonical: "https://maggie-website-pi.vercel.app/blog/self-employed-mortgage-guide"
+    canonical: "https://www.lowcountrymortgageadvisor.com/blog/self-employed-mortgage-guide"
   }
 };
 
@@ -60,7 +60,7 @@ const articleJsonLd = {
   "dateModified": "2026-03-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://maggie-website-pi.vercel.app/blog/self-employed-mortgage-guide"
+    "@id": "https://www.lowcountrymortgageadvisor.com/blog/self-employed-mortgage-guide"
   },
   "articleSection": "Mortgage Education",
   "wordCount": 1300

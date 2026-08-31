@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://maggie-website-pi.vercel.app/blog/buying-in-golf-community",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/buying-in-golf-community",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     title: "Buying in a Golf Community: What Lowcountry Buyers Need to Know",
     description: "Everything Bluffton, Hilton Head, and Beaufort buyers need to know about purchasing a home in a golf community — from HOA fees to financing options.",
@@ -195,7 +195,7 @@ export default function GolfCommunityBlog() {
           "dateModified": "2025-12-15",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/buying-in-golf-community"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/buying-in-golf-community"
           }
         }) }}
       />

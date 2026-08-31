@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Maggie Blank" }],
   creator: "Maggie Blank",
   publisher: "Synovus Bank",
-  metadataBase: new URL("https://maggie-website-pi.vercel.app"),
+  metadataBase: new URL("https://www.lowcountrymortgageadvisor.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://maggie-website-pi.vercel.app",
+    url: "https://www.lowcountrymortgageadvisor.com",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     title: "Maggie Blank | Premium Mortgage Lending in the Lowcountry",
     description: "Mortgage strategy for physicians, first-time buyers, and self-employed borrowers. Expert guidance in Bluffton, Hilton Head, and the SC Lowcountry.",
@@ -80,7 +80,7 @@ export default function RootLayout({
             "@type": "MortgageOrLoan",
             "name": "Maggie Blank - Lowcountry Mortgage Advisor",
             "description": "Premium mortgage guidance for physicians, first-time buyers, and self-employed borrowers in the SC Lowcountry.",
-            "url": "https://maggie-website-pi.vercel.app",
+            "url": "https://www.lowcountrymortgageadvisor.com",
             "telephone": "+1-843-706-3101",
             "email": "maggieblank@synovus.com",
             "address": {
@@ -97,8 +97,8 @@ export default function RootLayout({
             },
             "priceRange": "$$",
             "openingHours": "Mo-Fr 09:00-17:00",
-            "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
-            "logo": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+            "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
+            "logo": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
             "sameAs": [
               "https://www.facebook.com/maggie.blank",
               "https://www.linkedin.com/in/maggieblank"

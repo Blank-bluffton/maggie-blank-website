@@ -324,9 +324,9 @@ export default function BlogPost() {
           "dateModified": "2026-02-18",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/the-ultimate-move-to-lowcountry-checklist"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/the-ultimate-move-to-lowcountry-checklist"
           },
-          "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+          "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
           "articleSection": "Local Market",
           "keywords": ["move to Lowcountry", "relocating to Bluffton", "moving to Hilton Head", "Lowcountry relocation guide"]
         }) }}
