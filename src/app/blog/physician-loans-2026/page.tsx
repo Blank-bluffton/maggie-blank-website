@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Physician Loans: Everything Doctors Need to Know in 2026",
     description: "Complete guide to physician mortgage loans for doctors. Learn about 0% down options, student debt handling, and financing in the Lowcountry.",
-    url: "https://maggie-website-pi.vercel.app/blog/physician-loans-2026",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/physician-loans-2026",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     type: "article",
     authors: ["Maggie Blank"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Complete guide to physician mortgage loans for doctors. Learn about 0% down options and financing in the Lowcountry."
   },
   alternates: {
-    canonical: "https://maggie-website-pi.vercel.app/blog/physician-loans-2026"
+    canonical: "https://www.lowcountrymortgageadvisor.com/blog/physician-loans-2026"
   }
 };
 
@@ -60,7 +60,7 @@ const articleJsonLd = {
   "dateModified": "2026-03-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://maggie-website-pi.vercel.app/blog/physician-loans-2026"
+    "@id": "https://www.lowcountrymortgageadvisor.com/blog/physician-loans-2026"
   },
   "articleSection": "Mortgage Education",
   "wordCount": 1200

@@ -270,9 +270,9 @@ export default function BlogPost() {
           "dateModified": "2026-02-10",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/why-local-lenders-beat-big-banks-for-lowcountry-buyers"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/why-local-lenders-beat-big-banks-for-lowcountry-buyers"
           },
-          "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+          "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
           "articleSection": "Mortgage Strategy",
           "keywords": ["local lender", "big bank mortgage", "Lowcountry mortgage", "Bluffton lender", "Hilton Head lender"]
         }) }}

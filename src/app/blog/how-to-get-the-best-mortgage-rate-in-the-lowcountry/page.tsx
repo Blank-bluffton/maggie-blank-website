@@ -259,9 +259,9 @@ export default function BlogPost() {
           "dateModified": "2026-01-15",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/how-to-get-the-best-mortgage-rate-in-the-lowcountry"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/how-to-get-the-best-mortgage-rate-in-the-lowcountry"
           },
-          "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+          "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
           "articleSection": "Mortgage Strategy",
           "keywords": ["best mortgage rate", "Lowcountry mortgage rates", "Bluffton SC mortgage", "Hilton Head mortgage rates"]
         }) }}

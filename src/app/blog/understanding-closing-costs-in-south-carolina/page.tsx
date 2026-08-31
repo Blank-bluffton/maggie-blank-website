@@ -322,9 +322,9 @@ export default function BlogPost() {
           "dateModified": "2026-01-22",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/understanding-closing-costs-in-south-carolina"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/understanding-closing-costs-in-south-carolina"
           },
-          "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+          "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
           "articleSection": "Mortgage Education",
           "keywords": ["closing costs South Carolina", "Lowcountry closing costs", "Bluffton SC closing costs", "transfer tax SC"]
         }) }}

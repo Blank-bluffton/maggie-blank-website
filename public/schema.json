@@ -3,7 +3,7 @@
   "@type": "MortgageOrLoan",
   "name": "Maggie Blank - Lowcountry Mortgage Advisor",
   "description": "Premium mortgage guidance for physicians, first-time buyers, and self-employed borrowers in the SC Lowcountry.",
-  "url": "https://maggie-website-pi.vercel.app",
+  "url": "https://www.lowcountrymortgageadvisor.com",
   "telephone": "+1-843-706-3101",
   "email": "maggieblank@synovus.com",
   "address": {
@@ -20,8 +20,8 @@
   },
   "priceRange": "$$",
   "openingHours": "Mo-Fr 09:00-17:00",
-  "image": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
-  "logo": "https://maggie-website-pi.vercel.app/maggie-blank-logo.png",
+  "image": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
+  "logo": "https://www.lowcountrymortgageadvisor.com/maggie-blank-logo.png",
   "sameAs": [
     "https://www.facebook.com/maggie.blank",
     "https://www.linkedin.com/in/maggieblank",

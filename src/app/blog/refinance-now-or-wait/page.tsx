@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://maggie-website-pi.vercel.app/blog/refinance-now-or-wait",
+    url: "https://www.lowcountrymortgageadvisor.com/blog/refinance-now-or-wait",
     siteName: "Maggie Blank - Lowcountry Mortgage Advisor",
     title: "Refinance Now or Wait? Lowcountry Market Analysis",
     description: "Analysis of current refinance rates and market conditions for Bluffton, Hilton Head, and Beaufort homeowners.",
@@ -256,7 +256,7 @@ export default function RefinanceBlog() {
           "dateModified": "2026-02-18",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://maggie-website-pi.vercel.app/blog/refinance-now-or-wait"
+            "@id": "https://www.lowcountrymortgageadvisor.com/blog/refinance-now-or-wait"
           }
         }) }}
       />
