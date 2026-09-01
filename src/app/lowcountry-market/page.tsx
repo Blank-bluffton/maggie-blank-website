@@ -28,13 +28,7 @@ const copy = {
     ctaPrimary: "Talk Local",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Explore Communities",
-    ctaSecondaryLink: "#communities",
-    trustBullets: [
-      "Bluffton",
-      "Hilton Head",
-      "Beaufort",
-      "Okatie"
-    ]
+    ctaSecondaryLink: "#communities"
   },
 
   marketOverview: {
@@ -498,7 +492,6 @@ export default function LowcountryMarketPage() {
         ctaPrimaryLink={copy.hero.ctaPrimaryLink}
         ctaSecondary={copy.hero.ctaSecondary}
         ctaSecondaryLink={copy.hero.ctaSecondaryLink}
-        trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4401.JPG"
       />

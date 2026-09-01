@@ -151,8 +151,27 @@ export default function SchoolsPage() {
       <Hero
         headline="Lowcountry Schools"
         subheadline="Explore educational options from private schools to public districts across Bluffton, Hilton Head, and Beaufort."
-        ctaPrimary="Learn More"
+        ctaPrimary={null}
         ctaPrimaryLink="#private-schools"
+        ctaSecondary={null}
+        customCta={
+          <div className="flex w-full max-w-md flex-nowrap justify-center gap-3 sm:w-auto sm:max-w-none sm:justify-start sm:gap-4">
+            <Link
+              href="#private-schools"
+              className="inline-flex flex-1 items-center justify-center gap-2 px-4 py-4 text-sm sm:flex-none sm:px-8 sm:text-base bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300 group"
+            >
+              Private Schools
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="#public-schools"
+              className="inline-flex flex-1 items-center justify-center gap-2 px-4 py-4 text-sm sm:flex-none sm:px-8 sm:text-base bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300 group"
+            >
+              Public Schools
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        }
         variant="compact"
       />
 

@@ -8,9 +8,9 @@ import CountUp from '@/components/CountUp';
 interface HeroProps {
   headline: string;
   subheadline: string;
-  ctaPrimary?: string;
+  ctaPrimary?: string | null;
   ctaPrimaryLink?: string;
-  ctaSecondary?: string;
+  ctaSecondary?: string | null;
   ctaSecondaryLink?: string;
   trustBullets?: string[];
   microProof?: string;
@@ -33,6 +33,7 @@ export default function Hero({
   customCta
 }: HeroProps) {
   const isFull = variant === 'full';
+  const hasCtas = Boolean(ctaPrimary || ctaSecondary || customCta);
 
   return (
     <section className={`relative min-h-screen flex items-center justify-center overflow-hidden ${
@@ -113,31 +114,37 @@ export default function Hero({
             </motion.p>
 
             {/* CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <Link
-                href={ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300 group"
+            {hasCtas && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                {ctaPrimary}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                href={ctaSecondaryLink}
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#526E7A] font-semibold rounded-lg border-2 border-[#526E7A] hover:bg-[#526E7A] hover:text-white transition-all duration-300"
-              >
-                {ctaSecondary}
-              </Link>
-              {customCta && (
-                <div className="mt-4 sm:mt-0">
-                  {customCta}
-                </div>
-              )}
-            </motion.div>
+                {ctaPrimary && (
+                  <Link
+                    href={ctaPrimaryLink}
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#526E7A] to-[#4A6D7C] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#526E7A]/30 transition-all duration-300 group"
+                  >
+                    {ctaPrimary}
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                )}
+                {ctaSecondary && (
+                  <Link
+                    href={ctaSecondaryLink}
+                    className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#526E7A] font-semibold rounded-lg border-2 border-[#526E7A] hover:bg-[#526E7A] hover:text-white transition-all duration-300"
+                  >
+                    {ctaSecondary}
+                  </Link>
+                )}
+                {customCta && (
+                  <div className={ctaPrimary || ctaSecondary ? 'mt-4 sm:mt-0' : undefined}>
+                    {customCta}
+                  </div>
+                )}
+              </motion.div>
+            )}
 
             {/* Micro proof */}
             {microProof && (
