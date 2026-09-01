@@ -22,10 +22,6 @@ const copy = {
   hero: {
     headline: "Financing for the exceptional.",
     subheadline: "Sophisticated mortgage solutions for high-net-worth individuals, executives, and affluent homeowners in the Lowcountry. When standard loans aren't enough, we deliver custom financing.",
-    ctaPrimary: "Discuss Your Needs",
-    ctaPrimaryLink: "/contact",
-    ctaSecondary: "Explore Options",
-    ctaSecondaryLink: "#options",
     trustBullets: [],
   },
 
@@ -92,10 +88,8 @@ export default function PrivateWealthPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
-        ctaPrimary={copy.hero.ctaPrimary}
-        ctaPrimaryLink={copy.hero.ctaPrimaryLink}
-        ctaSecondary={copy.hero.ctaSecondary}
-        ctaSecondaryLink={copy.hero.ctaSecondaryLink}
+        ctaPrimary={null}
+        ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4395.jpg"

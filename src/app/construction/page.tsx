@@ -6,7 +6,6 @@ import CTABand from '@/components/CTABand';
 import Link from 'next/link';
 import { 
   Hammer, 
-  Home, 
   Building, 
   Clock, 
   CheckCircle2,
@@ -213,36 +212,6 @@ export default function ConstructionPage() {
             </div>
           </GlassCard>
         </div>
-      </Section>
-
-      {/* Process CTA */}
-      <Section>
-        <GlassCard hover className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 border-cyan-500/20">
-          <div className="text-center max-w-3xl mx-auto">
-            <Home className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Your Dream Home Starts Here
-            </h2>
-            <p className="text-white text-lg mb-8">
-              Whether you're building a custom home on the water, a family home in Belfair, or a retirement retreat in Sun City, we make construction financing simple.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
-              >
-                Start Your Build
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="/apply"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-pink-500/50 text-white font-semibold rounded-xl hover:bg-pink-500/10 transition-all"
-              >
-                Apply Now
-              </Link>
-            </div>
-          </div>
-        </GlassCard>
       </Section>
 
       {/* FAQ Section */}
