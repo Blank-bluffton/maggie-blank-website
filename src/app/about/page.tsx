@@ -7,7 +7,6 @@ import GlassCard from '@/components/GlassCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import CTABand from '@/components/CTABand';
 import CountUp from '@/components/CountUp';
-import Link from 'next/link';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { 
   Award, 
@@ -22,24 +21,14 @@ import {
   Calendar,
   Phone,
   Mail,
-  CheckCircle2,
-  ArrowRight
+  CheckCircle2
 } from 'lucide-react';
 
 // About page content
 const copy = {
   hero: {
     headline: "Meet Maggie Blank",
-    subheadline: "Mortgage banker. Lowcountry expert. Advocate for your financial success.",
-    ctaPrimary: "Schedule a Consultation",
-    ctaPrimaryLink: "/contact",
-    ctaSecondary: "Explore Loan Options",
-    ctaSecondaryLink: "/loan-solutions",
-    trustBullets: [
-      "Synovus Bank Mortgage Advisor",
-      "NMLS #504377",
-      "President's Club 2024 & 2025"
-    ]
+    subheadline: "Mortgage banker. Lowcountry expert. Advocate for your financial success."
   },
 
   story: {
@@ -159,59 +148,6 @@ const scaleIn = {
   }
 };
 
-// Background gradient component
-function GradientOrbs() {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <motion.div 
-        className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-20"
-        style={{
-          background: 'radial-gradient(circle, rgba(236, 72, 153, 0.4) 0%, transparent 70%)'
-        }}
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.15, 0.25, 0.15]
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div 
-        className="absolute top-1/3 right-1/4 w-80 h-80 rounded-full opacity-20"
-        style={{
-          background: 'radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, transparent 70%)'
-        }}
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.15, 0.2]
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div 
-        className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full opacity-15"
-        style={{
-          background: 'radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, transparent 70%)'
-        }}
-        animate={{
-          scale: [1, 1.15, 1],
-          opacity: [0.1, 0.2, 0.1]
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-    </div>
-  );
-}
-
 // Stats component
 function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
   return (
@@ -225,10 +161,10 @@ function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
           transition={{ delay: index * 0.15, duration: 0.5 }}
           className="text-center"
         >
-          <div className="text-3xl sm:text-4xl font-bold text-gradient-pink mb-1">
+          <div className="text-3xl sm:text-4xl font-bold text-[#D7B36A] mb-1">
             <CountUp value={stat.value} />
           </div>
-          <div className="text-sm text-gray-800">{stat.label}</div>
+          <div className="text-sm font-medium text-slate-100">{stat.label}</div>
         </motion.div>
       ))}
     </div>
@@ -245,10 +181,10 @@ function PersonalFact({ icon: Icon, text, delay }: { icon: any; text: string; de
       transition={{ delay, duration: 0.5 }}
       className="flex items-center gap-3"
     >
-      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
-        <Icon className="w-5 h-5 text-pink-600" />
+      <div className="w-10 h-10 rounded-xl border border-[#D7B36A]/25 bg-[#D7B36A]/10 flex items-center justify-center flex-shrink-0">
+        <Icon className="w-5 h-5 text-[#E1C57E]" />
       </div>
-      <span className="text-gray-800">{text}</span>
+      <span className="text-slate-100">{text}</span>
     </motion.div>
   );
 }
@@ -261,10 +197,10 @@ function CredentialBadge({ icon: Icon, text, delay }: { icon: any; text: string;
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ delay, duration: 0.4 }}
-      className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200/80 border border-pink-500/20"
+      className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#526E7A]/25 bg-white shadow-sm"
     >
-      <Icon className="w-4 h-4 text-pink-600" />
-      <span className="text-sm text-gray-800">{text}</span>
+      <Icon className="w-4 h-4 text-[#526E7A]" />
+      <span className="text-sm font-medium text-[#26363D]">{text}</span>
     </motion.div>
   );
 }
@@ -279,8 +215,8 @@ function TrustBullet({ text, delay }: { text: string; delay: number }) {
       transition={{ delay, duration: 0.4 }}
       className="flex items-start gap-3"
     >
-      <CheckCircle2 className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
-      <span className="text-gray-800">{text}</span>
+      <CheckCircle2 className="w-5 h-5 text-[#D7B36A] flex-shrink-0 mt-0.5" />
+      <span className="text-slate-100">{text}</span>
     </motion.div>
   );
 }
@@ -291,19 +227,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
+      <section className="relative overflow-hidden py-28 sm:py-32">
         <motion.div
-          className="absolute inset-0 bg-cover bg-center brightness-110 contrast-[0.98]"
+          className="absolute inset-0 bg-cover bg-center brightness-[0.78] contrast-110"
           style={{ backgroundImage: 'url(/IMG_4398.jpg)' }}
           animate={prefersReducedMotion ? { scale: 1 } : { scale: [1, 1.035, 1] }}
           transition={prefersReducedMotion ? { duration: 0 } : { duration: 26, repeat: Infinity, ease: 'easeInOut' }}
         />
-        <div className="absolute inset-0 bg-[#1F2E35]/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1F2E35]/38 via-[#1F2E35]/18 to-[#1F2E35]/40" />
-        <GradientOrbs />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(15,34,40,0.5)_0%,rgba(15,34,40,0.24)_48%,transparent_76%)]" />
+        <div className="absolute inset-0 bg-[#14242B]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#13242C]/70 via-[#1F343B]/48 to-[#14242B]/72" />
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -313,77 +247,24 @@ export default function AboutPage() {
               Meet <span className="!text-white">Maggie Blank</span>
             </h1>
             
-            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
+            <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
               {copy.hero.subheadline}
             </p>
-
-            {/* Trust bullets */}
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
-              {copy.hero.trustBullets.map((bullet, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 + index * 0.1, duration: 0.4 }}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/20 border border-white/30"
-                >
-                  <Shield className="w-4 h-4 text-white" />
-                  <span className="text-white text-sm">{bullet}</span>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* CTA buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Link
-                href={copy.hero.ctaPrimaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all hover:-translate-y-1"
-              >
-                {copy.hero.ctaPrimary}
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href={copy.hero.ctaSecondaryLink}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/30 transition-all"
-              >
-                {copy.hero.ctaSecondary}
-              </Link>
-            </motion.div>
           </motion.div>
         </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2">
-            <motion.div 
-              className="w-1.5 h-3 bg-cyan-400 rounded-full"
-              animate={{ opacity: [1, 0.5, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            />
-          </div>
-        </motion.div>
       </section>
 
       {/* Stats Section */}
-      <section className="relative py-16 overflow-hidden">
+      <section className="relative bg-[#F7F5F0] py-16 overflow-hidden">
         <div className="max-w-4xl mx-auto px-6">
-          <GlassCard hover className="bg-gray-800">
+          <GlassCard hover className="border border-white/10 bg-[#203139] shadow-[0_16px_36px_rgba(20,36,43,0.18)]">
             <StatsBar stats={copy.professional.stats} />
           </GlassCard>
         </div>
       </section>
 
       {/* Story Section */}
-      <Section id="story" background="dark">
+      <Section id="story" background="dark" className="!bg-[#1F2E35]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -396,7 +277,7 @@ export default function AboutPage() {
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              <GlassCard hover className="bg-gray-800">
+              <GlassCard hover className="border border-white/10 bg-[#2A3E47]">
                 <img 
                   src="/IMG_1750.jpg" 
                   alt="Maggie Blank with her family" 
@@ -418,7 +299,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Professional Credentials Section */}
-      <Section id="professional" background="gradient">
+      <Section id="professional" background="gradient" className="bg-[#F7F5F0]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -426,7 +307,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26363D] mb-8 text-center">
               {copy.professional.headline}
             </h2>
             
@@ -445,7 +326,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Why Clients Choose Maggie Section */}
-      <Section id="why-clients" background="dark">
+      <Section id="why-clients" background="dark" className="!bg-[#1F2E35]">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -467,7 +348,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Personal Section */}
-      <Section id="personal" background="gradient">
+      <Section id="personal" background="gradient" className="bg-[#F7F5F0]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -475,15 +356,15 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26363D] mb-4 text-center">
               {copy.personal.headline}
             </h2>
             
-            <p className="text-gray-800 text-center mb-8 max-w-xl mx-auto">
+            <p className="text-[#43545C] text-center mb-8 max-w-xl mx-auto">
               {copy.personal.intro}
             </p>
             
-            <GlassCard hover className="bg-gray-800">
+            <GlassCard hover className="border border-white/10 bg-[#203139] shadow-[0_16px_36px_rgba(20,36,43,0.18)]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {copy.personal.facts.map((fact, index) => (
                   <PersonalFact 
@@ -507,6 +388,7 @@ export default function AboutPage() {
 
       {/* CTA Band Section */}
       <CTABand
+        variant="luxury"
         headline={copy.cta.headline}
         subhead={copy.cta.subhead}
         ctaPrimary={copy.cta.ctaPrimary}

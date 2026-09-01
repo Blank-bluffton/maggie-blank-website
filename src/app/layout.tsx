@@ -132,7 +132,6 @@ export default function RootLayout({
           links={[
             { text: "Home", href: "/" },
             { text: "Physician Loans", href: "/physician-loans" },
-            { text: "First-Time Buyers", href: "/first-time-buyers" },
             { text: "Construction Loans", href: "/construction" },
             { text: "Lowcountry Market", href: "/lowcountry-market" },
             { text: "Meet Maggie", href: "/about" },
