@@ -24,10 +24,6 @@ const copy = {
   hero: {
     headline: "Conventional loans — the gold standard in homeownership.",
     subheadline: "Flexible, competitive, and widely accessible. Conventional financing offers some of the best rates and terms for buyers who qualify. Let's see if it's right for you.",
-    ctaPrimary: "Get Pre-Approved",
-    ctaPrimaryLink: "/apply",
-    ctaSecondary: "See Requirements",
-    ctaSecondaryLink: "#requirements",
     trustBullets: [],
   },
 
@@ -141,10 +137,8 @@ export default function ConventionalLoansPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
-        ctaPrimary={copy.hero.ctaPrimary}
-        ctaPrimaryLink={copy.hero.ctaPrimaryLink}
-        ctaSecondary={copy.hero.ctaSecondary}
-        ctaSecondaryLink={copy.hero.ctaSecondaryLink}
+        ctaPrimary={null}
+        ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4406.JPG"

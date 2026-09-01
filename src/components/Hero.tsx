@@ -34,10 +34,11 @@ export default function Hero({
 }: HeroProps) {
   const isFull = variant === 'full';
   const hasCtas = Boolean(ctaPrimary || ctaSecondary || customCta);
+  const isContentOnlyCompact = !isFull && !hasCtas;
 
   return (
-    <section className={`relative min-h-screen flex items-center justify-center overflow-hidden ${
-      isFull ? 'pt-20' : 'pt-28 pb-16'
+    <section className={`relative flex items-center justify-center overflow-hidden ${
+      isFull ? 'min-h-screen pt-20' : isContentOnlyCompact ? 'pt-32 pb-20 sm:py-32' : 'min-h-screen pt-28 pb-16'
     }`}>
       {/* Background - Warm Off-white with optional image */}
       <div className="absolute inset-0 bg-[#F8F8F8]">
@@ -63,14 +64,14 @@ export default function Hero({
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className={`relative z-10 mx-auto px-4 sm:px-6 lg:px-8 ${isContentOnlyCompact ? 'max-w-4xl' : 'max-w-7xl'}`}>
+        <div className={`grid gap-12 lg:gap-16 items-center ${isContentOnlyCompact ? 'grid-cols-1' : 'lg:grid-cols-2'}`}>
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
+            className={isContentOnlyCompact ? 'text-center' : 'text-center lg:text-left'}
           >
             {/* Trust badges */}
             {trustBullets.length > 0 && (
@@ -108,7 +109,7 @@ export default function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg sm:text-xl text-[#555555] mb-8 max-w-xl mx-auto lg:mx-0"
+              className={`text-lg sm:text-xl text-[#555555] mb-8 max-w-xl mx-auto ${isContentOnlyCompact ? '' : 'lg:mx-0'}`}
             >
               {subheadline}
             </motion.p>

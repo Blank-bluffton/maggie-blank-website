@@ -20,10 +20,6 @@ const copy = {
   hero: {
     headline: "Build Your Dream Home",
     subheadline: "Construction-to-permanent financing that moves with you from groundbreaking to housewarming. One loan, one closing, one simplified path to your new home in the Lowcountry.",
-    ctaPrimary: "Get Started",
-    ctaPrimaryLink: "/contact",
-    ctaSecondary: "Learn How It Works",
-    ctaSecondaryLink: "#how-it-works",
     trustBullets: [],
   },
 
@@ -134,10 +130,8 @@ export default function ConstructionPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
-        ctaPrimary={copy.hero.ctaPrimary}
-        ctaPrimaryLink={copy.hero.ctaPrimaryLink}
-        ctaSecondary={copy.hero.ctaSecondary}
-        ctaSecondaryLink={copy.hero.ctaSecondaryLink}
+        ctaPrimary={null}
+        ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4401.JPG"
@@ -210,7 +204,7 @@ export default function ConstructionPage() {
                 We work with experienced local builders who understand coastal construction, permits, and the unique challenges of building in Beaufort County.
               </p>
               <Link
-                href="/contact"
+                href="/lowcountry-market/builders"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-medium rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all"
               >
                 Get Builder Recommendations
