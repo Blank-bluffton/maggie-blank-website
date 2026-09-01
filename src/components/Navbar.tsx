@@ -190,19 +190,8 @@ export default function Navbar() {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden max-h-[calc(100vh-64px)] overflow-y-auto border-t border-gray-100 bg-white"
             >
-              {/* Brand Header */}
-              <div className="border-b border-gray-100 px-4 py-3">
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2.5">
-                  <img src="/maggie-blank-logo-transparent.png" alt="" className="h-10 w-10 object-contain drop-shadow-[0_2px_4px_rgba(82,110,122,0.16)]" />
-                  <div>
-                    <div className="font-semibold text-lg text-[#333333]">Maggie Blank</div>
-                    <div className="text-xs text-[#777777] uppercase tracking-widest mt-0.5">Mortgage Advisor</div>
-                  </div>
-                </Link>
-              </div>
-
               {/* Navigation Links */}
-              <div className="py-2">
+              <div className="pb-2">
                 {navLinks.map((link) => (
                   <div key={link.label}>
                     {link.children ? (
