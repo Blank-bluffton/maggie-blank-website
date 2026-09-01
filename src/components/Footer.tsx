@@ -172,6 +172,14 @@ export default function Footer({
                 </li>
               ))}
             </ul>
+            <a
+              href="https://www.synovus.com/maggieblank"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#C5A059] px-4 py-3 font-semibold text-[#333333] transition-colors hover:bg-[#CDB291]"
+            >
+              Apply Now
+            </a>
           </div>
 
           {/* Blog Section */}
