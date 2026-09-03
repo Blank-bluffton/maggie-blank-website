@@ -22,10 +22,6 @@ const copy = {
   hero: {
     headline: "Physician loans built for how doctors actually earn.",
     subheadline: "Specialized mortgage programs designed for physicians, dentists, and high-income medical professionals. Get financing that understands your unique income situation.",
-    ctaPrimary: "Get Pre-Approved",
-    ctaPrimaryLink: "/apply",
-    ctaSecondary: "Learn About Requirements",
-    ctaSecondaryLink: "#requirements",
     trustBullets: [],
   },
 
@@ -133,10 +129,8 @@ export default function PhysicianLoansPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
-        ctaPrimary={copy.hero.ctaPrimary}
-        ctaPrimaryLink={copy.hero.ctaPrimaryLink}
-        ctaSecondary={copy.hero.ctaSecondary}
-        ctaSecondaryLink={copy.hero.ctaSecondaryLink}
+        ctaPrimary={null}
+        ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4397.jpg"
