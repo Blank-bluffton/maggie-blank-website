@@ -16,6 +16,9 @@ interface HeroProps {
   microProof?: string;
   variant?: 'full' | 'compact';
   backgroundImage?: string;
+  backgroundClassName?: string;
+  overlayClassName?: string;
+  contentTone?: 'dark' | 'light';
   customCta?: React.ReactNode;
 }
 
@@ -30,6 +33,9 @@ export default function Hero({
   microProof,
   variant = 'full',
   backgroundImage,
+  backgroundClassName,
+  overlayClassName,
+  contentTone = 'dark',
   customCta
 }: HeroProps) {
   const isFull = variant === 'full';
@@ -45,14 +51,14 @@ export default function Hero({
         {/* Lowcountry background image */}
         {backgroundImage && (
           <div 
-            className="absolute inset-0 bg-cover bg-center"
+            className={`absolute inset-0 bg-cover ${backgroundClassName ?? 'bg-center'}`}
             style={{
               backgroundImage: `url(${backgroundImage})`,
             }}
           />
         )}
         {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-[#F8F8F8]/82 lg:bg-gradient-to-r lg:from-[#F8F8F8]/95 lg:via-[#F8F8F8]/82 lg:to-[#F8F8F8]/58" />
+        <div className={`absolute inset-0 ${overlayClassName ?? 'bg-[#F8F8F8]/82 lg:bg-gradient-to-r lg:from-[#F8F8F8]/95 lg:via-[#F8F8F8]/82 lg:to-[#F8F8F8]/58'}`} />
         {/* Subtle pattern */}
         <div 
           className="absolute inset-0 opacity-[0.03]"
@@ -98,8 +104,11 @@ export default function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#333333] leading-tight mb-6 font-serif"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className={`text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-serif ${contentTone === 'light' ? 'text-white drop-shadow-[0_2px_18px_rgba(0,0,0,0.42)]' : 'text-[#333333]'}`}
+              style={{
+                fontFamily: "'Playfair Display', Georgia, serif",
+                color: contentTone === 'light' ? '#ffffff' : '#333333',
+              }}
             >
               {headline}
             </motion.h1>
@@ -109,7 +118,7 @@ export default function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className={`text-lg sm:text-xl text-[#555555] mb-8 max-w-xl mx-auto ${isContentOnlyCompact ? '' : 'lg:mx-0'}`}
+              className={`text-lg sm:text-xl mb-8 max-w-xl mx-auto ${contentTone === 'light' ? 'text-white/90' : 'text-[#555555]'} ${isContentOnlyCompact ? '' : 'lg:mx-0'}`}
             >
               {subheadline}
             </motion.p>
@@ -153,7 +162,7 @@ export default function Hero({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="mt-8 text-sm text-[#333333] font-medium"
+                className={`mt-8 text-sm font-medium ${contentTone === 'light' ? 'text-white/90' : 'text-[#333333]'}`}
               >
                 {microProof}
               </motion.p>

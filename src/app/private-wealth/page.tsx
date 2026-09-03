@@ -92,7 +92,10 @@ export default function PrivateWealthPage() {
         ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
-        backgroundImage="/IMG_4395.jpg"
+        backgroundImage="/private-wealth-estate-aerial.png"
+        backgroundClassName="bg-[position:62%_center] sm:bg-[position:60%_center] lg:bg-[position:58%_center]"
+        overlayClassName="bg-[#07110e]/54 sm:bg-[#07110e]/50 lg:bg-gradient-to-r lg:from-[#07110e]/64 lg:via-[#07110e]/46 lg:to-[#07110e]/20"
+        contentTone="light"
       />
 
       {/* Options Section */}
