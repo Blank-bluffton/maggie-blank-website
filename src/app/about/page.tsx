@@ -79,8 +79,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-28 sm:py-32">
         <motion.div
-          className="absolute inset-0 bg-cover bg-center brightness-[0.78] contrast-110"
-          style={{ backgroundImage: 'url(/IMG_4398.jpg)' }}
+          className="absolute inset-0 bg-cover bg-[position:center_34%] brightness-[0.78] contrast-110"
+          style={{ backgroundImage: 'url(/maggie-blank-hero-portrait.png)' }}
           animate={prefersReducedMotion ? { scale: 1 } : { scale: [1, 1.035, 1] }}
           transition={prefersReducedMotion ? { duration: 0 } : { duration: 26, repeat: Infinity, ease: 'easeInOut' }}
         />
