@@ -9,7 +9,8 @@ import {
   ArrowRight,
   CheckCircle2,
   Sparkles,
-  Wallet
+  Wallet,
+  Hammer
 } from 'lucide-react';
 
 const loanTypes = [
@@ -39,6 +40,15 @@ const loanTypes = [
     highlight: 'Competitive Rates',
     cta: 'Learn More',
     color: 'cyan'
+  },
+  {
+    slug: 'construction',
+    icon: Hammer,
+    title: 'Construction Loans',
+    description: 'Construction-to-permanent financing that keeps your build and long-term mortgage in one streamlined loan, from groundbreaking to housewarming.',
+    highlight: 'One Loan, One Closing',
+    cta: 'Learn More',
+    color: 'pink'
   }
 ];
 
