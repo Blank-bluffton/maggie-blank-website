@@ -23,6 +23,7 @@ interface HeroProps {
   introContentClassName?: string;
   visualContent?: React.ReactNode;
   mobileVisualContent?: React.ReactNode;
+  hideVisual?: boolean;
   microProofClassName?: string;
   customCta?: React.ReactNode;
 }
@@ -45,6 +46,7 @@ export default function Hero({
   introContentClassName,
   visualContent,
   mobileVisualContent,
+  hideVisual = false,
   microProofClassName,
   customCta
 }: HeroProps) {
@@ -197,7 +199,7 @@ export default function Hero({
           </motion.div>
 
           {/* Visual/Image Area */}
-          {isFull && (
+          {isFull && !hideVisual && (
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

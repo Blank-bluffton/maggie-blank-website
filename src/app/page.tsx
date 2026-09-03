@@ -9,7 +9,6 @@ import FAQAccordion from '@/components/FAQAccordion';
 import CTABand from '@/components/CTABand';
 import LeadCaptureModal from '@/components/LeadCaptureModal';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { ArrowRight, CheckCircle2, Stethoscope, MapPin, Award, Download } from 'lucide-react';
 
@@ -164,19 +163,10 @@ export default function Home() {
         microProof={copy.hero.microProof}
         microProofClassName="text-xs sm:text-sm font-semibold uppercase tracking-[0.12em] text-[#526E7A]"
         variant="full"
-        visualContent={
-          <div className="relative max-w-md mx-auto">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#D7B36A]/30 to-[#526E7A]/20 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-[#D7B36A]/35 bg-white p-3 shadow-[0_24px_60px_rgba(31,46,53,0.22)]">
-              <Image src="/homepage-lowcountry-hero.png" alt="Lowcountry marsh at sunset" width={340} height={340} sizes="(min-width: 1024px) 31vw, 0px" className="w-full aspect-square object-cover object-center rounded-[1.45rem]" />
-            </div>
-          </div>
-        }
-        mobileVisualContent={
-          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-[#D7B36A] bg-white shadow-lg">
-            <Image src="/homepage-lowcountry-hero.png" alt="Lowcountry marsh at sunset" fill sizes="80px" className="object-cover object-center" />
-          </div>
-        }
+        backgroundImage="/homepage-lowcountry-hero.png"
+        backgroundClassName="bg-[position:62%_center] sm:bg-center"
+        overlayClassName="bg-[#F8F8F8]/82 sm:bg-gradient-to-r sm:from-[#F8F8F8]/95 sm:via-[#F8F8F8]/82 sm:to-[#F8F8F8]/45"
+        hideVisual
       />
 
       {/* Why Maggie Section */}
