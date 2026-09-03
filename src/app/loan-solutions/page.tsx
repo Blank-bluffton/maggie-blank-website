@@ -55,7 +55,7 @@ const loanTypes = [
 const copy = {
   hero: {
     headline: "Find Your Perfect Loan",
-    subheadline: "Whether you're a physician, high-net-worth professional, or self-employed, we have mortgage solutions tailored to your unique situation. Explore our loan options below.",
+    subheadline: "Your financial picture is unique. Your mortgage should be too. Whether you're a physician beginning a new chapter, building your dream home, purchasing a luxury property, or navigating the complexities of self-employment, the right financing can make all the difference. I specialize in personalized mortgage solutions designed around your career, your financial goals, and the way you live. From physician and construction loan to jumbo, conventional, and specialized financing, I'll help you explore your options and identify the strategy that makes the most sense for you.",
     trustBullets: [],
   },
 
@@ -76,6 +76,23 @@ export default function LoanSolutionsPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
+        introContent={
+          <div className="space-y-5 sm:space-y-6">
+            <p>
+              Your financial picture is unique. Your mortgage should be too.
+            </p>
+            <p>
+              Whether you&apos;re a physician beginning a new chapter, building your dream home, purchasing a luxury property, or navigating the complexities of self-employment, the right financing can make all the difference. I specialize in personalized mortgage solutions designed around your career, your financial goals, and the way you live.
+            </p>
+            <p>
+              From physician and construction loan to jumbo, conventional, and specialized financing, I&apos;ll help you explore your options and identify the strategy that makes the most sense for you.
+            </p>
+            <p className="border-t border-[#526E7A]/20 pt-5 sm:pt-6 mt-7 sm:mt-8 text-xl sm:text-2xl font-semibold leading-snug text-[#3D5B67] font-serif">
+              Exceptional homes and exceptional careers deserve a higher level of Lending.
+            </p>
+          </div>
+        }
+        introContentClassName="max-w-3xl leading-relaxed"
         ctaPrimary={null}
         ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}

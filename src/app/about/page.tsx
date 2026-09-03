@@ -1,83 +1,35 @@
 "use client";
 
-import { useState } from 'react';
-import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import GlassCard from '@/components/GlassCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import CTABand from '@/components/CTABand';
-import CountUp from '@/components/CountUp';
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
+import { motion, useReducedMotion } from 'framer-motion';
 import { 
   Award, 
   Shield, 
   MapPin, 
   Star, 
   Users, 
-  Heart, 
-  Ship, 
-  Hammer, 
-  Flower2,
-  Calendar,
   Phone,
-  Mail,
-  CheckCircle2
 } from 'lucide-react';
 
 // About page content
 const copy = {
   hero: {
     headline: "Meet Maggie Blank",
-    subheadline: "Mortgage banker. Lowcountry expert. Advocate for your financial success."
+    subheadline: "Mortgage Advisor. Lowcountry Expert. Your Advocate from Application to Closing."
   },
 
-  story: {
-    headline: "Helping Lowcountry families build their futures",
-    body: `Maggie Blank Dunning has been helping families finance their dreams in the Lowcountry for over 15 years. Starting her career in banking, she discovered her passion for mortgages — not the paperwork, but the people behind it.
-
-At Synovus Bank, Maggie specializes in serving physicians, first-time homebuyers, and self-employed borrowers who need more than a rate quote. They need a partner who understands their unique financial journey.
-
-Maggie was featured in My FrontPage Story (January 2023) for her remarkable dedication — she once saved her son's life during an ATV accident, demonstrating the same fierce determination she brings to every client relationship.`
-  },
-
-  professional: {
-    headline: "Professional excellence you can trust",
-    stats: [
-      { value: "15+", label: "Years Experience" },
-      { value: "150M+", label: "In Homes Financed" },
-      { value: "1000+", label: "Families Helped" }
-    ],
-    credentials: [
-      { icon: Award, text: "President's Club 2024 & 2025" },
-      { icon: Star, text: "Best in Class Customer Experience Award" },
-      { icon: Shield, text: "NMLS #504377" },
-      { icon: Users, text: "Synovus Bank Mortgage Advisor" }
-    ]
-  },
-
-  whyClients: {
-    headline: "Why clients choose Maggie",
-    bullets: [
-      "Clear communication — no jargon, just straightforward guidance",
-      "Responsive support — you work directly with Maggie, not a call center",
-      "Local expertise — she lives and lends in the Lowcountry",
-      "A champion in your corner — committed to your success",
-      "15+ years of experience navigating complex loan scenarios",
-      "Proven track record of closing on time, every time"
-    ]
-  },
-
-  personal: {
-    headline: "Beyond the numbers",
-    intro: "Maggie is as dedicated to her community as she is to her clients.",
-    facts: [
-      { icon: Heart, text: "Married to Ben Dunning since 2013" },
-      { icon: Users, text: "Proud mom of twins Robert and Reagan" },
-      { icon: Ship, text: "Family boat outings on the Lowcountry waters" },
-      { icon: Hammer, text: "Passionate about carpentry — building with her hands" },
-      { icon: Flower2, text: "Koi pond building — creating serene backyard escapes" }
-    ]
-  },
+  expectations: [
+    { icon: Award, title: "Personalized strategies", text: "Mortgage guidance shaped around your goals—not a one-size-fits-all approach." },
+    { icon: Shield, title: "Complex-income guidance", text: "Thoughtful support for nuanced income and financial situations." },
+    { icon: MapPin, title: "Local market knowledge", text: "A clear perspective on Lowcountry communities, homes, and market dynamics." },
+    { icon: Users, title: "Professional coordination", text: "Collaboration with your Realtor, builder, financial advisor, and other professionals." },
+    { icon: Phone, title: "Clear communication", text: "Proactive updates and direct, responsive guidance throughout the process." },
+    { icon: Star, title: "Concierge-level experience", text: "A seamless, high-touch process designed to make financing feel more manageable." }
+  ],
 
   testimonials: {
     headline: "What clients say about working with Maggie",
@@ -119,108 +71,6 @@ Maggie was featured in My FrontPage Story (January 2023) for her remarkable dedi
   }
 };
 
-// Animation variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { 
-    opacity: 1, 
-    scale: 1,
-    transition: { duration: 0.5, ease: "easeOut" }
-  }
-};
-
-// Stats component
-function StatsBar({ stats }: { stats: { value: string; label: string }[] }) {
-  return (
-    <div className="grid grid-cols-3 gap-4">
-      {stats.map((stat, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.15, duration: 0.5 }}
-          className="text-center"
-        >
-          <div className="text-3xl sm:text-4xl font-bold text-[#D7B36A] mb-1">
-            <CountUp value={stat.value} />
-          </div>
-          <div className="text-sm font-medium text-slate-100">{stat.label}</div>
-        </motion.div>
-      ))}
-    </div>
-  );
-}
-
-// Personal fact card
-function PersonalFact({ icon: Icon, text, delay }: { icon: any; text: string; delay: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.5 }}
-      className="flex items-center gap-3"
-    >
-      <div className="w-10 h-10 rounded-xl border border-[#D7B36A]/25 bg-[#D7B36A]/10 flex items-center justify-center flex-shrink-0">
-        <Icon className="w-5 h-5 text-[#E1C57E]" />
-      </div>
-      <span className="text-slate-100">{text}</span>
-    </motion.div>
-  );
-}
-
-// Credential badge
-function CredentialBadge({ icon: Icon, text, delay }: { icon: any; text: string; delay: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.4 }}
-      className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#526E7A]/25 bg-white shadow-sm"
-    >
-      <Icon className="w-4 h-4 text-[#526E7A]" />
-      <span className="text-sm font-medium text-[#26363D]">{text}</span>
-    </motion.div>
-  );
-}
-
-// Bullet point with check
-function TrustBullet({ text, delay }: { text: string; delay: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.4 }}
-      className="flex items-start gap-3"
-    >
-      <CheckCircle2 className="w-5 h-5 text-[#D7B36A] flex-shrink-0 mt-0.5" />
-      <span className="text-slate-100">{text}</span>
-    </motion.div>
-  );
-}
-
 export default function AboutPage() {
   const prefersReducedMotion = useReducedMotion();
 
@@ -254,129 +104,104 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="relative bg-[#F7F5F0] py-16 overflow-hidden">
-        <div className="max-w-4xl mx-auto px-6">
-          <GlassCard hover className="border border-white/10 bg-[#203139] shadow-[0_16px_36px_rgba(20,36,43,0.18)]">
-            <StatsBar stats={copy.professional.stats} />
-          </GlassCard>
-        </div>
-      </section>
-
-      {/* Story Section */}
-      <Section id="story" background="dark" className="!bg-[#1F2E35]">
+      {/* Professional Advisory Section */}
+      <Section id="professional" background="gradient" className="!bg-[#F7F5F0]">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 text-center">
-              {copy.story.headline}
-            </h2>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              <GlassCard hover className="border border-white/10 bg-[#2A3E47]">
-                <img 
-                  src="/IMG_1750.jpg" 
-                  alt="Maggie Blank with her family" 
-                  className="w-full h-auto rounded-lg"
-                />
-                <p className="text-white text-sm text-center mt-4">
-                  Maggie with her family — Robert and Reagan
-                </p>
-              </GlassCard>
-              
-              <div className="space-y-4 text-white leading-relaxed text-lg">
-                {copy.story.body.split('\n\n').map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-[#A4813A] mb-4">A higher-touch approach to financing</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26363D] mb-8">Mortgage guidance built around your life.</h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-5 sm:space-y-6 text-base sm:text-lg leading-relaxed text-[#43545C]">
+              <p>For more than 15 years, I&apos;ve helped individuals and families navigate home financing with confidence.</p>
+              <p>My role goes far beyond quoting an interest rate or processing a mortgage. As a Mortgage Advisor with Synovus Bank, I work with buyers throughout the Lowcountry, with particular expertise in physician mortgages, luxury and private wealth lending, and construction financing.</p>
+              <p>Whether you&apos;re purchasing your first home, relocating for a new medical position, or building a custom home, I provide a hands-on, highly responsive experience from our first conversation through closing.</p>
+            </div>
+
+            <div className="mt-14 sm:mt-16">
+              <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
+                <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-[#A4813A] mb-3">What you can expect when you work with me</p>
+                <h3 className="text-2xl sm:text-3xl font-bold text-[#26363D]">Clear strategy. Thoughtful guidance. A seamless experience.</h3>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                {copy.expectations.map((expectation, index) => {
+                  const Icon = expectation.icon;
+                  return (
+                    <motion.div
+                      key={expectation.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.06, duration: 0.45 }}
+                    >
+                      <GlassCard hover solidWhite darkText className="h-full border border-[#D7B36A]/15 shadow-[0_12px_28px_rgba(31,46,53,0.08)]">
+                        <div className="w-11 h-11 rounded-xl bg-[#526E7A]/10 flex items-center justify-center mb-5">
+                          <Icon className="w-5 h-5 text-[#526E7A]" />
+                        </div>
+                        <h4 className="text-lg font-semibold text-[#26363D] mb-2">{expectation.title}</h4>
+                        <p className="text-sm leading-relaxed text-[#5A6970]">{expectation.text}</p>
+                      </GlassCard>
+                    </motion.div>
+                  );
+                })}
               </div>
             </div>
-          </motion.div>
-        </div>
-      </Section>
 
-      {/* Professional Credentials Section */}
-      <Section id="professional" background="gradient" className="bg-[#F7F5F0]">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26363D] mb-8 text-center">
-              {copy.professional.headline}
-            </h2>
-            
-            <div className="flex flex-wrap justify-center gap-3">
-              {copy.professional.credentials.map((cred, index) => (
-                <CredentialBadge 
-                  key={index} 
-                  icon={cred.icon} 
-                  text={cred.text} 
-                  delay={index * 0.1} 
-                />
-              ))}
+            <div className="max-w-4xl mx-auto mt-12 sm:mt-16 border-l-2 border-[#D7B36A] pl-5 sm:pl-7">
+              <p className="text-xl sm:text-2xl font-serif font-semibold leading-snug text-[#314850]">My goal is simple: make the mortgage process easier, more personal, and more strategic, so you can focus on the life you&apos;re building beyond the closing table.</p>
             </div>
           </motion.div>
         </div>
       </Section>
 
-      {/* Why Clients Choose Maggie Section */}
-      <Section id="why-clients" background="dark" className="!bg-[#1F2E35]">
-        <div className="max-w-3xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 text-center">
-              {copy.whyClients.headline}
-            </h2>
-            
-            <div className="space-y-4">
-              {copy.whyClients.bullets.map((bullet, index) => (
-                <TrustBullet key={index} text={bullet} delay={index * 0.1} />
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </Section>
-
-      {/* Personal Section */}
-      <Section id="personal" background="gradient" className="bg-[#F7F5F0]">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26363D] mb-4 text-center">
-              {copy.personal.headline}
-            </h2>
-            
-            <p className="text-[#43545C] text-center mb-8 max-w-xl mx-auto">
-              {copy.personal.intro}
-            </p>
-            
-            <GlassCard hover className="border border-white/10 bg-[#203139] shadow-[0_16px_36px_rgba(20,36,43,0.18)]">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {copy.personal.facts.map((fact, index) => (
-                  <PersonalFact 
-                    key={index} 
-                    icon={fact.icon} 
-                    text={fact.text} 
-                    delay={index * 0.1} 
-                  />
-                ))}
+      {/* Lowcountry Lifestyle Section */}
+      <Section id="lowcountry-life" background="dark" className="!bg-[#1F2E35]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -28 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="order-2 lg:order-1"
+            >
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-[#E1C57E] mb-4">Lowcountry roots</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-7">More than mortgages.<br />This is home.</h2>
+              <div className="space-y-5 text-base sm:text-lg leading-relaxed text-slate-100">
+                <p>The Lowcountry isn&apos;t simply the market I serve. It&apos;s the community my family and I call home. I&apos;ve been a resident for more than 20 years.</p>
+                <p>Outside of mortgage banking, I&apos;m a wife and mom, and my family is at the center of everything I do. Much of our time is spent outdoors, enjoying the lifestyle that makes this part of South Carolina so special—from horses to boating and exploring everything the Lowcountry has to offer.</p>
+                <p>Being part of this community gives me a perspective that goes beyond financing homes. When someone moves to the Lowcountry, they&apos;re not simply choosing a house. They&apos;re choosing a community, schools, neighborhoods, activities, friendships, and a lifestyle for their family.</p>
+                <p>That is especially important when I work with physicians relocating to the area. I want to be more than the person handling your mortgage. I want to be your local resource and connection, helping introduce clients to the communities, professionals, Realtors, schools, and resources that make their transition easier.</p>
+                <p>My clients often become friends, neighbors, and members of the same community where I&apos;m raising my own family. That&apos;s one of the reasons every relationship matters so much to me.</p>
               </div>
-            </GlassCard>
-          </motion.div>
+              <p className="mt-8 sm:mt-10 text-xl sm:text-2xl font-serif font-semibold leading-snug text-[#E1C57E]">For me, helping someone finance a home isn&apos;t just a transaction. It&apos;s helping them begin their next chapter in a place I&apos;m proud to call home.</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 28 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="order-1 lg:order-2 grid grid-cols-2 gap-4 sm:gap-5"
+            >
+              <figure className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.25)]">
+                <Image src="/IMG_1750.jpg" alt="Maggie&apos;s children enjoying the Lowcountry outdoors" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-center" />
+              </figure>
+              <figure className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10">
+                <Image src="/IMG_4567.jpg" alt="Live oaks along a Lowcountry road" fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
+              </figure>
+              <figure className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10">
+                <Image src="/IMG_4395.JPG" alt="Lowcountry harbor and lighthouse" fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
+              </figure>
+            </motion.div>
+          </div>
         </div>
       </Section>
 

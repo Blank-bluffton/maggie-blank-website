@@ -19,6 +19,8 @@ interface HeroProps {
   backgroundClassName?: string;
   overlayClassName?: string;
   contentTone?: 'dark' | 'light';
+  introContent?: React.ReactNode;
+  introContentClassName?: string;
   customCta?: React.ReactNode;
 }
 
@@ -36,6 +38,8 @@ export default function Hero({
   backgroundClassName,
   overlayClassName,
   contentTone = 'dark',
+  introContent,
+  introContentClassName,
   customCta
 }: HeroProps) {
   const isFull = variant === 'full';
@@ -114,14 +118,25 @@ export default function Hero({
             </motion.h1>
 
             {/* Subheadline */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className={`text-lg sm:text-xl mb-8 max-w-xl mx-auto ${contentTone === 'light' ? 'text-white/90' : 'text-[#555555]'} ${isContentOnlyCompact ? '' : 'lg:mx-0'}`}
-            >
-              {subheadline}
-            </motion.p>
+            {introContent ? (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className={`text-lg sm:text-xl mb-8 max-w-xl mx-auto ${contentTone === 'light' ? 'text-white/90' : 'text-[#555555]'} ${isContentOnlyCompact ? '' : 'lg:mx-0'} ${introContentClassName ?? ''}`}
+              >
+                {introContent}
+              </motion.div>
+            ) : (
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className={`text-lg sm:text-xl mb-8 max-w-xl mx-auto ${contentTone === 'light' ? 'text-white/90' : 'text-[#555555]'} ${isContentOnlyCompact ? '' : 'lg:mx-0'}`}
+              >
+                {subheadline}
+              </motion.p>
+            )}
 
             {/* CTAs */}
             {hasCtas && (
