@@ -21,6 +21,9 @@ interface HeroProps {
   contentTone?: 'dark' | 'light';
   introContent?: React.ReactNode;
   introContentClassName?: string;
+  visualContent?: React.ReactNode;
+  mobileVisualContent?: React.ReactNode;
+  microProofClassName?: string;
   customCta?: React.ReactNode;
 }
 
@@ -40,6 +43,9 @@ export default function Hero({
   contentTone = 'dark',
   introContent,
   introContentClassName,
+  visualContent,
+  mobileVisualContent,
+  microProofClassName,
   customCta
 }: HeroProps) {
   const isFull = variant === 'full';
@@ -83,6 +89,12 @@ export default function Hero({
             transition={{ duration: 0.6 }}
             className={isContentOnlyCompact ? 'text-center' : 'text-center lg:text-left'}
           >
+            {isFull && mobileVisualContent && (
+              <div className="flex justify-center mb-6 lg:hidden">
+                {mobileVisualContent}
+              </div>
+            )}
+
             {/* Trust badges */}
             {trustBullets.length > 0 && (
               <motion.div
@@ -177,7 +189,7 @@ export default function Hero({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className={`mt-8 text-sm font-medium ${contentTone === 'light' ? 'text-white/90' : 'text-[#333333]'}`}
+                className={`mt-8 text-sm font-medium ${contentTone === 'light' ? 'text-white/90' : 'text-[#333333]'} ${microProofClassName ?? ''}`}
               >
                 {microProof}
               </motion.p>
@@ -192,52 +204,29 @@ export default function Hero({
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative hidden lg:block"
             >
-              {/* Card with stats */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#C5A059]/20 to-[#526E7A]/20 rounded-2xl blur-2xl" />
-                <div className="relative bg-white rounded-2xl p-8 min-h-[400px] shadow-xl">
-                  {/* Stats representation */}
-                  <div className="space-y-8">
-                    {/* Gold accent bar */}
-                    <div className="w-16 h-1 bg-[#C5A059] rounded-full" />
-                    
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center">
-                        <span className="text-[#526E7A] font-bold">1</span>
+              {visualContent ?? (
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#C5A059]/20 to-[#526E7A]/20 rounded-2xl blur-2xl" />
+                  <div className="relative bg-white rounded-2xl p-8 min-h-[400px] shadow-xl">
+                    <div className="space-y-8">
+                      <div className="w-16 h-1 bg-[#C5A059] rounded-full" />
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center"><span className="text-[#526E7A] font-bold">1</span></div>
+                        <div className="h-px flex-1 bg-gradient-to-r from-[#526E7A]/30 to-transparent" />
+                        <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center"><span className="text-[#526E7A] font-bold">2</span></div>
+                        <div className="h-px flex-1 bg-gradient-to-r from-[#526E7A]/30 to-transparent" />
+                        <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center"><span className="text-[#526E7A] font-bold">3</span></div>
                       </div>
-                      <div className="h-px flex-1 bg-gradient-to-r from-[#526E7A]/30 to-transparent" />
-                      <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center">
-                        <span className="text-[#526E7A] font-bold">2</span>
+                      <div className="grid grid-cols-3 gap-4 text-center">
+                        <div><p className="text-3xl font-bold text-[#333333]"><CountUp value="30-45" /></p><p className="text-sm text-[#777777]">Days to Close</p></div>
+                        <div><p className="text-3xl font-bold text-[#333333]"><CountUp value="$250M+" /></p><p className="text-sm text-[#777777]">Funded Locally</p></div>
+                        <div><p className="text-3xl font-bold text-[#333333]"><CountUp value="99%" /></p><p className="text-sm text-[#777777]">On-Time Rate</p></div>
                       </div>
-                      <div className="h-px flex-1 bg-gradient-to-r from-[#526E7A]/30 to-transparent" />
-                      <div className="w-12 h-12 rounded-xl bg-[#526E7A]/10 flex items-center justify-center">
-                        <span className="text-[#526E7A] font-bold">3</span>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-3 gap-4 text-center">
-                      <div>
-                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="30-45" /></p>
-                        <p className="text-sm text-[#777777]">Days to Close</p>
-                      </div>
-                      <div>
-                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="$250M+" /></p>
-                        <p className="text-sm text-[#777777]">Funded Locally</p>
-                      </div>
-                      <div>
-                        <p className="text-3xl font-bold text-[#333333]"><CountUp value="99%" /></p>
-                        <p className="text-sm text-[#777777]">On-Time Rate</p>
-                      </div>
-                    </div>
-
-                    <div className="pt-6 border-t border-[#E5E5E5]">
-                      <p className="text-center text-[#555555]">
-                        Trusted by physicians, professionals & first-time buyers
-                      </p>
+                      <div className="pt-6 border-t border-[#E5E5E5]"><p className="text-center text-[#555555]">Trusted by physicians, professionals & first-time buyers</p></div>
                     </div>
                   </div>
                 </div>
-              </div>
+              )}
             </motion.div>
           )}
         </div>

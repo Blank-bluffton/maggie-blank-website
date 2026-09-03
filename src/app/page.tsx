@@ -9,20 +9,21 @@ import FAQAccordion from '@/components/FAQAccordion';
 import CTABand from '@/components/CTABand';
 import LeadCaptureModal from '@/components/LeadCaptureModal';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowRight, CheckCircle2, Stethoscope, FileText, MapPin, Award, Download } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Stethoscope, MapPin, Award, Download } from 'lucide-react';
 
 // Homepage copy
 const copy = {
   hero: {
-    headline: "Strategic Mortgage Guidance for Physicians Moving to the Lowcountry",
-    subheadline: "From your first offer to closing day, experience a seamless, high-touch approach to financing your move to the Lowcountry — built entirely around your career, timeline, and financial strategy.",
-    ctaPrimary: "Schedule a Consultation",
+    headline: "Exceptional Financing for Physicians Moving to the Lowcountry",
+    subheadline: "Specialized physician mortgage solutions paired with local expertise and a concierge-level experience—from your first conversation through closing and beyond.",
+    ctaPrimary: "Schedule a Private Consultation",
     ctaPrimaryLink: "/contact",
     ctaSecondary: "Explore Loan Options",
     ctaSecondaryLink: "/loan-solutions",
     trustBullets: [],
-    microProof: "Maggie has helped Lowcountry families finance over $250M in homes"
+    microProof: "Local Expertise. Physician-Focused Financing. Concierge Service."
   },
 
   whyMaggie: {
@@ -146,22 +147,35 @@ export default function Home() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
+        introContent={
+          <div className="space-y-4">
+            <p>{copy.hero.subheadline}</p>
+            <p className="text-sm sm:text-base font-semibold uppercase tracking-[0.14em] text-[#526E7A] leading-relaxed">
+              Physician Mortgages <span className="text-[#C5A059]">•</span> Luxury Financing <span className="text-[#C5A059]">•</span> Relocation Expertise <span className="text-[#C5A059]">•</span> Local Guidance
+            </p>
+          </div>
+        }
+        introContentClassName="max-w-2xl"
         ctaPrimary={copy.hero.ctaPrimary}
         ctaPrimaryLink={copy.hero.ctaPrimaryLink}
         ctaSecondary={copy.hero.ctaSecondary}
         ctaSecondaryLink={copy.hero.ctaSecondaryLink}
         trustBullets={copy.hero.trustBullets}
         microProof={copy.hero.microProof}
+        microProofClassName="text-xs sm:text-sm font-semibold uppercase tracking-[0.12em] text-[#526E7A]"
         variant="full"
-        backgroundImage="/IMG_4408.JPG"
-        customCta={
-          <button
-            onClick={() => setIsGuideModalOpen(true)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
-          >
-            <Download className="w-5 h-5" />
-            Download Free Guide
-          </button>
+        visualContent={
+          <div className="relative max-w-md mx-auto">
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#D7B36A]/30 to-[#526E7A]/20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-[#D7B36A]/35 bg-white p-3 shadow-[0_24px_60px_rgba(31,46,53,0.22)]">
+              <Image src="/homepage-lowcountry-hero.png" alt="Lowcountry marsh at sunset" width={340} height={340} sizes="(min-width: 1024px) 31vw, 0px" className="w-full aspect-square object-cover object-center rounded-[1.45rem]" />
+            </div>
+          </div>
+        }
+        mobileVisualContent={
+          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-[#D7B36A] bg-white shadow-lg">
+            <Image src="/homepage-lowcountry-hero.png" alt="Lowcountry marsh at sunset" fill sizes="80px" className="object-cover object-center" />
+          </div>
         }
       />
 
@@ -294,6 +308,22 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </Section>
+
+      {/* Physician Relocation Guide */}
+      <Section id="physician-guide" background="dark" className="!bg-[#1F2E35]">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-[#E1C57E] mb-4">A resource for your move</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">The Physician&apos;s Guide to the Lowcountry</h2>
+          <p className="max-w-2xl mx-auto text-slate-100 text-lg leading-relaxed mb-8">A thoughtful starting point for physicians relocating to the area—from communities and schools to financing considerations and local resources.</p>
+          <button
+            onClick={() => setIsGuideModalOpen(true)}
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-[#D7B36A] text-[#1F2E35] font-semibold hover:bg-[#E1C57E] transition-colors"
+          >
+            <Download className="w-5 h-5" />
+            Download the Physician&apos;s Guide
+          </button>
         </div>
       </Section>
 
