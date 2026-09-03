@@ -134,6 +134,7 @@ export default function PhysicianLoansPage() {
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="https://media-production.lp-cdn.com/cdn-cgi/image/format%3Dauto%2Cquality%3D85%2Cfit%3Dscale-down%2Cwidth%3D1280/https%3A/media-production.lp-cdn.com/media/a0cde3e7-68b2-4f6d-a2dc-0db631ff3856"
+        backgroundClassName="bg-[position:62%_center] sm:bg-[position:60%_center] lg:bg-[position:58%_center]"
       />
 
       {/* Benefits Section */}

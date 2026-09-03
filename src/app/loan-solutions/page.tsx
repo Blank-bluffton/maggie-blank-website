@@ -66,6 +66,8 @@ export default function LoanSolutionsPage() {
       <Hero
         headline={copy.hero.headline}
         subheadline={copy.hero.subheadline}
+        ctaPrimary={null}
+        ctaSecondary={null}
         trustBullets={copy.hero.trustBullets}
         variant="compact"
         backgroundImage="/IMG_4402.jpg"
